@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "seed": "node --experimental-strip-types scripts/seed.ts"
   },
   "dependencies": {
     "geist": "^1.3.1",
