@@ -17,7 +17,11 @@ Built at the Grok Bot Community Engineering London Hackathon, 22 Oct 2026. Track
 npm install && npm run dev
 ```
 
-The app works end to end today on seed data in `lib/seed.ts`. Each owner swaps their baseline for the real thing.
+That is the whole setup. Leads come from the committed London map in `data/london.json`, so it runs with no Supabase key and no API token. Paste an event URL on http://localhost:3000.
+
+![Ranked backers for the Company Brain Buildathon](docs/backer-demo.png)
+
+The pitch for one of those rows is in [DEMO.md](DEMO.md). Pushing the top leads to Notion needs `NOTION_TOKEN` (see `.env.example`).
 
 ## Team docs
 
