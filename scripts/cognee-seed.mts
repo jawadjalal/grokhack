@@ -19,12 +19,7 @@ for (const b of backings) {
 }
 const docs = [...byEvent].map(([event, list]) => `London event "${event}" was backed by: ${list.join('; ')}. Source pages were scraped by Backer on 2026-10-22.`)
 
-for (const text of docs) {
-  const form = new FormData()
-  form.append('datasetName', 'backer')
-  form.append('raw_data', text)
-  const res = await fetch(`${BASE}/api/v1/add`, { method: 'POST', headers: H, body: form })
-  console.log('add', res.status, text.slice(0, 70))
-}
+const add = await fetch(`${BASE}/api/v1/add_text`, { method: 'POST', headers: { ...H, 'content-type': 'application/json' }, body: JSON.stringify({ textData: docs, datasetName: 'backer' }) })
+console.log('add_text', add.status, docs.length, 'documents', (await add.text()).slice(0, 200))
 const res = await fetch(`${BASE}/api/v1/cognify`, { method: 'POST', headers: { ...H, 'content-type': 'application/json' }, body: JSON.stringify({ datasets: ['backer'] }) })
 console.log('cognify', res.status)
