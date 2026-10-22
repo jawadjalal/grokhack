@@ -49,7 +49,7 @@ The "wow" moment in the demo is a pitch that reads like the organiser actually r
 | Large | Headline | £1,500 |
 | Venue | Venue | In kind, £0 |
 
-Scale by `max(0.5, audienceSize / 80)`, rounded to the nearest £50. Missing audience size uses 80 for pricing only; the email never presents that estimate as actual attendance. Reuse the team's size classifications in `lib/seed.ts`: startup → small, scaleup → medium, giant → large. These are supplied planning assumptions, not independently researched company facts. Optional `PITCH_SPONSOR_SIZES` JSON in `.env.local` overrides them by lowercase domain, e.g. `{"example.com":"large"}`. Missing or invalid overrides use the seed classification, or unknown for an unmapped sponsor. No size is inferred from the match score or sponsor name.
+Scale by `max(0.5, audienceSize / 80)`, rounded to the nearest £50. Missing audience size uses 80 for pricing only; the email never presents that estimate as actual attendance. The scraped map's `size: 'startup'` is a placeholder, so it is treated as unknown. Supply explicit size assumptions using optional `PITCH_SPONSOR_SIZES` JSON in `.env.local`, keyed by lowercase domain, e.g. `{"example.com":"large"}`. Missing or invalid configuration defaults to unknown. No size is inferred from the match score, sponsor name or placeholder field.
 
 ### Verification and integration
 
@@ -57,4 +57,4 @@ Scale by `max(0.5, audienceSize / 80)`, rounded to the nearest £50. Missing aud
 - `npm run typecheck` and `npm run build`.
 - UI owner: the current UI eagerly calls the pitch route for every match in parallel. Each request falls back independently on provider failure; agree on lazy generation or concurrency limits if the team's model quota is low. Shared `Lead` and `EventInput` contracts are unchanged.
 
-Live verification on 22 Oct 2026: `grok-4.20-0309-non-reasoning` returned accepted model-written fit sentences for five sponsor drafts and one venue draft in 0.78–1.27 seconds each. The completed emails contained 64–71 words across subject and body. The current account's Grok 4.7 exceeded the timeout in the initial check; use the measured non-reasoning model for this demo. These timings are observations, not a service guarantee. Keep the API key only in local/deployment environment configuration.
+Live verification on 22 Oct 2026: `grok-4.20-0309-non-reasoning` returned accepted model-written fit sentences for five sponsor drafts and one venue draft, all under five seconds and 120 words. The current account's Grok 4.7 exceeded the timeout in the initial check; use the measured non-reasoning model for this demo. These checks are observations, not a service guarantee. Keep the API key only in local/deployment environment configuration.

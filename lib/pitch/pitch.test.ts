@@ -44,14 +44,14 @@ function modelReturning(text: string) {
 }
 
 test('five seed sponsors produce short drafts with supplied backing evidence', async () => {
-  const sponsors = match(event).filter(item => ['supabase', 'cognee', 'zero', 'notion', 'cursor'].includes(item.sponsorId))
+  const sponsors = match(event).filter(item => ['supabase.com', 'cognee.ai', 'zero.inc', 'notion.com', 'cursor.com'].includes(item.domain))
   assert.equal(sponsors.length, 5)
   for (const sponsor of sponsors) {
     const started = performance.now()
     const result = await pitch(event, sponsor)
     assert.ok(performance.now() - started < 5000)
     assert.ok(wordCount(`${result.pitch!.subject} ${result.pitch!.body}`) < 120)
-    assert.match(result.pitch!.body, /Grok Bot Community Engineering London Hackathon/)
+    assert.ok(sponsor.pastBackings.some(backing => result.pitch!.body.includes(backing.event)))
     assert.equal(result.pitch!.body.match(/\?/g)?.length, 1)
     assert.deepEqual(result.pastBackings, sponsor.pastBackings)
   }
@@ -84,13 +84,13 @@ test('missing or malformed size configuration uses a conservative unknown-size p
   }
 })
 
-test('pricing reuses the latest team seed sizes and allows explicit overrides', () => {
+test('pricing treats scraped placeholder sizes as unknown and permits explicit overrides', () => {
   const candidates = match(event)
-  assert.equal(price(event, candidates.find(item => item.sponsorId === 'notion')!).suggestedTier, 'Headline')
-  assert.equal(price(event, candidates.find(item => item.sponsorId === 'supabase')!).suggestedTier, 'Partner')
-  assert.equal(price(event, candidates.find(item => item.sponsorId === 'cognee')!).suggestedTier, 'Supporter')
+  assert.equal(price(event, candidates.find(item => item.domain === 'notion.com')!).suggestedTier, 'Supporter')
+  assert.equal(price(event, candidates.find(item => item.domain === 'supabase.com')!).suggestedTier, 'Supporter')
+  assert.equal(price(event, candidates.find(item => item.domain === 'cognee.ai')!).suggestedTier, 'Supporter')
   process.env.PITCH_SPONSOR_SIZES = '{"supabase.com":"large"}'
-  assert.equal(price(event, candidates.find(item => item.sponsorId === 'supabase')!).suggestedTier, 'Headline')
+  assert.equal(price(event, candidates.find(item => item.domain === 'supabase.com')!).suggestedTier, 'Headline')
 })
 
 test('AI fit sentence is combined with supplied evidence and code-calculated pricing', async () => {

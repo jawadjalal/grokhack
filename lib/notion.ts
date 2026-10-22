@@ -49,7 +49,7 @@ async function ensureDatabase(): Promise<string> {
 }
 
 export async function push(event: EventInput, leads: Lead[]): Promise<Lead[]> {
-  if (!process.env.NOTION_TOKEN) throw new Error('Set NOTION_TOKEN to push to Notion')
+  if (!process.env.NOTION_TOKEN) throw new Error("Notion isn't connected yet: add NOTION_TOKEN")
   const db = await ensureDatabase()
   const out: Lead[] = []
   // Notion allows about 3 requests a second.

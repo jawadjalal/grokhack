@@ -1,6 +1,5 @@
 import { z } from 'zod'
 import type { EventInput, Lead } from '../types'
-import { sponsors } from '../seed'
 
 // Indicative asks for an 80-person event, not researched market prices.
 // Company size must be supplied explicitly; match score is not company size.
@@ -12,7 +11,6 @@ export const PRICE_RULES = {
 } as const
 
 const sizesSchema = z.record(z.string(), z.enum(['small', 'medium', 'large']))
-const SEED_SIZES = { startup: 'small', scaleup: 'medium', giant: 'large' } as const
 const normaliseDomain = (value: string) => value.toLowerCase().replace(/^www\./, '')
 
 function sponsorSize(domain: string): keyof typeof PRICE_RULES {
@@ -22,9 +20,8 @@ function sponsorSize(domain: string): keyof typeof PRICE_RULES {
     const override = sizes.success ? sizes.data[key] : undefined
     if (override) return override
   } catch { /* Invalid overrides do not block the demo. */ }
-  // Reuse the team's supplied company-size classifications from the map.
-  const size = sponsors.find(sponsor => normaliseDomain(sponsor.domain) === key)?.size
-  return size ? SEED_SIZES[size] : 'unknown'
+  // The scraped map's `size` field is a placeholder, not company-size evidence.
+  return 'unknown'
 }
 
 export function price(event: EventInput, lead: Lead) {

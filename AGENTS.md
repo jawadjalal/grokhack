@@ -5,7 +5,7 @@ You are helping one person on a 5-person hackathon team. Code freeze is 21:50 on
 ## Before you write code
 
 1. Read `README.md`, `docs/PLAN.md`, and the doc for your person in `docs/`.
-2. Run it: `npm install Run it: `npm install && npm run dev`Run it: `npm install && npm run dev` rm -rf .next Run it: `npm install && npm run dev`Run it: `npm install && npm run dev` npm run dev` (Next.js 16; if you see "Failed to read source code" from node_modules/next, you skipped the npm install), open http://localhost:3000, paste https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon and press enter. Everything already works end to end on seed data. Your job is to make your one part real, not to rebuild the app.
+2. Run it: `npm install && rm -rf .next && npm run dev` (Next.js 16; if you see "Failed to read source code" from node_modules/next, you skipped the npm install), open http://localhost:3000, paste https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon and press enter. Everything already works end to end on seed data. Your job is to make your one part real, not to rebuild the app.
 
 ## Rules
 
