@@ -342,26 +342,21 @@ export default function Home() {
         {busy && <Skeleton step={step} />}
 
         {!leads.length && !busy && (
-          <section style={{ paddingTop: '8vh', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-            <h1 className="rise" style={{ fontSize: 'clamp(48px, 6.2vw, 92px)', lineHeight: 0.94, letterSpacing: '-0.05em', margin: 0, fontWeight: 600, textWrap: 'balance' }}>
+          <section style={{ paddingTop: '9vh', maxWidth: 1040 }}>
+            <h1 className="rise" style={{ fontSize: 'clamp(52px, 7vw, 104px)', lineHeight: 0.92, letterSpacing: '-0.055em', margin: 0, fontWeight: 600 }}>
               Who will back
               <br />
-              your event?
+              <span style={{ color: 'var(--ink3)' }}>your event?</span>
             </h1>
-            <p className="rise" style={{ fontSize: 19, color: 'var(--ink2)', margin: '28px 0 0', maxWidth: 560, lineHeight: 1.5, textWrap: 'pretty', animationDelay: '.08s' }}>
-              Backer knows who paid for London&apos;s tech events. Paste yours and get the sponsors and venues most likely to say yes, what to ask for, and the email.
+            <p className="rise" style={{ fontSize: 20, color: 'var(--ink2)', margin: '26px 0 0', maxWidth: 460, lineHeight: 1.45, letterSpacing: '-0.01em', animationDelay: '.08s' }}>
+              The sponsors and venues most likely to say yes, ranked by who already paid for events like yours.
             </p>
-            <HeroStats />
-            <p className="rise" style={{ fontSize: 14, color: 'var(--ink3)', margin: '26px 0 0', maxWidth: 680, lineHeight: 1.5, textWrap: 'balance', animationDelay: '.22s' }}>
-              <span style={{ display: 'inline-flex', verticalAlign: '-2px', marginRight: 7 }}>
-                <Icon name="sparkle" size={15} />
-              </span>
-              Paste your event link in the box below, or ask it to draft outreach, a launch post or a Luma event.
-            </p>
-            {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
-            <div className="rise" style={{ marginTop: 14, fontSize: 13.5, color: 'var(--ink2)', display: 'flex', justifyContent: 'center', animationDelay: '.26s' }}>
+            <div className="rise" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '10px 18px', marginTop: 28, fontSize: 13.5, color: 'var(--ink2)', animationDelay: '.16s' }}>
               <LocationPicker loc={loc} />
+              <span aria-hidden style={{ width: 1, height: 16, background: 'var(--divider)' }} />
+              <HeroStats />
             </div>
+            {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
             <div style={{ width: '100%', textAlign: 'left' }}>
               <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => run(url)} />
             </div>
@@ -678,12 +673,12 @@ function HeroStats() {
     </span>
   )
   return (
-    <p className="rise" aria-live="polite" style={{ margin: '22px 0 0', fontSize: 14, color: 'var(--ink3)', display: 'flex', gap: '6px 18px', justifyContent: 'center', flexWrap: 'wrap', animationDelay: '.15s', opacity: stats ? undefined : 0.6, transition: 'opacity .3s' }}>
+    <p aria-live="polite" style={{ margin: 0, fontSize: 13.5, color: 'var(--ink3)', display: 'flex', gap: '6px 18px', flexWrap: 'wrap', opacity: stats ? undefined : 0.6, transition: 'opacity .3s' }}>
       {item(stats?.events, 'London tech events')}
       <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'var(--divider)' }} />
       {item(stats?.sponsors, 'sponsors on record')}
       <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'var(--divider)' }} />
-      {item(stats?.backings, 'backings with a source')}
+      {item(stats?.backings, 'sourced backings')}
     </p>
   )
 }

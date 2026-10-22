@@ -111,9 +111,9 @@ export function NearbyEvents({ near, ready = true, onPick }: { near: SavedLocati
   const loading = !data || data.key !== key
 
   return (
-    <section aria-labelledby="nearby-title" aria-busy={loading} className="rise" style={{ margin: '56px auto 0', maxWidth: 760, animationDelay: '.32s' }}>
+    <section aria-labelledby="nearby-title" aria-busy={loading} className="rise" style={{ margin: '64px 0 0 -16px', maxWidth: 820, animationDelay: '.32s' }}>
       <style>{css}</style>
-      <div style={{ textAlign: 'center' }}>
+      <div style={{ textAlign: 'left', paddingLeft: 16 }}>
         <h2 id="nearby-title" style={{ fontSize: 22, fontWeight: 600, letterSpacing: '-0.02em', margin: 0 }}>
           Tech events near {place}
         </h2>
