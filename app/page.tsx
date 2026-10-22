@@ -1,13 +1,18 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
+import ChatDock from '@/components/ChatDock'
+import DraftsPanel from '@/components/DraftsPanel'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
 import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
+import { leadKey, readLocal, writeLocal, type PipelineLead } from '@/lib/pipeline'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
 const PUSH_LIMIT = 15
+const LAST_KEY = 'backer.last.v1'
 const SHOW = 40 // rows pitched and shown; the rest are counted
 const STRONG = 60 // fit at or above this counts toward the money on the table
 
@@ -184,7 +189,7 @@ function CountUp({ to, delay = 0 }: { to: number; delay?: number }) {
 }
 
 export default function Home() {
-  const [input, setInput] = useState('')
+  const [lastQuery, setLastQuery] = useState('')
   const [step, setStep] = useState(-1)
   const [ms, setMs] = useState(0)
   const [ranked, setRanked] = useState(0)
@@ -194,9 +199,51 @@ export default function Home() {
   const [open, setOpen] = useState<Lead | null>(null)
   const [pushing, setPushing] = useState(false)
   const [error, setError] = useState('')
+  const [saved, setSaved] = useState(0)
+  const [note, setNote] = useState('')
+  const [prefill, setPrefill] = useState('')
 
-  async function run() {
-    if (!input.trim() || step >= 0) return
+  // The last ranking survives a reload or a trip to another page.
+  useEffect(() => {
+    try {
+      const last = JSON.parse(localStorage.getItem(LAST_KEY) ?? 'null')
+      if (last?.event && Array.isArray(last.leads) && last.leads.length) {
+        setEvent(last.event)
+        setLeads(last.leads)
+        setRanked(last.ranked ?? last.leads.length)
+        setMs(last.ms ?? 0)
+        setLastQuery(last.query ?? '')
+      }
+    } catch { /* storage blocked */ }
+  }, [])
+
+  useEffect(() => {
+    if (!event || !leads.length) return
+    try { localStorage.setItem(LAST_KEY, JSON.stringify({ event, leads, ranked, ms, query: lastQuery })) } catch { /* ignore */ }
+  }, [event, leads, ranked, ms, lastQuery])
+
+  // From the CRM: /?sponsor=<domain> opens the chat on outreach to that company.
+  useEffect(() => {
+    const id = new URLSearchParams(window.location.search).get('sponsor')
+    if (!id) return
+    const name = new URLSearchParams(window.location.search).get('name') || id
+    setPrefill(`Draft outreach to ${name}`)
+    window.history.replaceState(null, '', '/')
+  }, [])
+
+  // Links and event descriptions rank every backer; everything else goes to the chat.
+  function intercept(text: string) {
+    const t = text.trim()
+    const find = t.match(/^(?:find|rank|get)\s+(?:me\s+)?(?:backers|sponsors|venues)\s+(?:for|to)\s+(.+)$/i)
+    if (/^https?:\/\/\S+$/i.test(t)) { run(t); return true }
+    if (find) { run(find[1]); return true }
+    return false
+  }
+
+  async function run(q?: string) {
+    const input = (q ?? '').trim()
+    if (!input || step >= 0) return
+    setLastQuery(input)
     const t0 = performance.now()
     setError('')
     setOpen(null)
@@ -214,6 +261,8 @@ export default function Home() {
       setEvent(ev)
       setLeads(priced)
       setFilter('all')
+      setSaved(0)
+      setNote('')
       setMs(performance.now() - t0)
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e))
@@ -229,14 +278,27 @@ export default function Home() {
     if (!event) return
     setPushing(true)
     setError('')
+    setNote('')
+    // The pipeline always gets the leads; Notion gets them too when it is connected.
+    const save = (ls: Lead[]) => {
+      const now = new Date().toISOString()
+      const have = readLocal()
+      const known = new Set(have.map(leadKey))
+      const fresh: PipelineLead[] = ls.map(l => ({ sponsorId: l.sponsorId, name: l.name, domain: l.domain, kind: l.kind, score: l.score, status: 'To contact', tier: l.suggestedTier, priceGbp: l.suggestedPriceGbp, event: event.name, notionUrl: l.notionUrl, updatedAt: now }))
+      const byKey = new Map(fresh.map(l => [leadKey(l), l]))
+      writeLocal([...have.map(h => { const f = byKey.get(leadKey(h)); return f ? { ...h, notionUrl: f.notionUrl ?? h.notionUrl, score: f.score } : h }), ...fresh.filter(f => !known.has(leadKey(f)))])
+      setSaved(ls.length)
+    }
+    save(top)
     try {
       const done = await post<Lead[]>('/api/push', { event, leads: top })
       const byId = new Map(done.map(l => [l.sponsorId, l]))
       setLeads(ls => ls.map(l => byId.get(l.sponsorId) ?? l))
       setOpen(o => (o ? (byId.get(o.sponsorId) ?? o) : o))
       track(event, done.filter(l => l.notionUrl), 'pushed')
-    } catch (e) {
-      setError(e instanceof Error ? e.message : String(e))
+      save(top.map(l => byId.get(l.sponsorId) ?? l))
+    } catch {
+      setNote('Notion is not connected, saved to your pipeline')
     } finally {
       setPushing(false)
     }
@@ -245,22 +307,26 @@ export default function Home() {
   const busy = step >= 0
   const strong = shown.filter(l => l.score >= STRONG)
   const total = strong.filter(l => l.kind === 'sponsor').reduce((s, l) => s + (l.suggestedPriceGbp ?? 0), 0)
-  const allPushed = top.length > 0 && top.every(l => l.notionUrl)
+  const allPushed = saved > 0 || (top.length > 0 && top.every(l => l.notionUrl))
 
   return (
     <div style={{ minHeight: '100vh' }}>
       <header style={{ position: 'sticky', top: 0, zIndex: 5, height: 56, display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', background: 'var(--canvas)', borderBottom: '1px solid var(--divider)' }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: 9 }}>
-          <Icon name="star" size={22} />
-          <strong style={{ fontSize: 16.5, letterSpacing: '-0.01em' }}>Backer</strong>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 8, fontSize: 14.5 }}>
+          <strong style={{ fontWeight: 600, letterSpacing: '-0.01em' }}>Find backers</strong>
+          {event && !busy && (
+            <span style={{ color: 'var(--ink3)', display: 'flex', gap: 8, alignItems: 'center', minWidth: 0 }}>
+              <span>/</span>
+              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', maxWidth: 420 }}>{event.name}</span>
+            </span>
+          )}
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-          <a className="btn" href="/memory" style={{ fontSize: 14 }}>
-            Memory
-          </a>
-          <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer" style={{ fontSize: 14 }}>
-            <Icon name="star" size={16} /> Open source, MIT
-          </a>
+          {saved > 0 && (
+            <Link className="btn pop" href="/pipeline" style={{ fontSize: 13.5 }}>
+              <Icon name="chart" size={16} /> {saved} in pipeline <span className="chev">›</span>
+            </Link>
+          )}
         </div>
       </header>
 
@@ -277,7 +343,10 @@ export default function Home() {
             <p style={{ fontSize: 19, color: 'var(--ink2)', margin: '20px 0 0', maxWidth: 520, lineHeight: 1.5 }}>
               Backer knows who paid for London&apos;s tech events. Paste yours and get the sponsors and venues most likely to say yes, what to ask for, and the email.
             </p>
-            {error && !busy && <ErrorLine message={error} onRetry={run} />}
+            <p style={{ fontSize: 14, color: 'var(--ink3)', margin: '28px 0 0', display: 'flex', gap: 8, alignItems: 'center' }}>
+              <Icon name="sparkle" size={15} /> Paste your event link in the box below, or ask it to draft outreach, a launch post or a Luma event.
+            </p>
+            {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
           </section>
         )}
 
@@ -317,13 +386,14 @@ export default function Home() {
                   ))}
                 </div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  {note && !error && <Link href="/pipeline" className="pop" style={{ color: 'var(--ink3)', fontSize: 13, marginRight: 8, textDecoration: 'none', whiteSpace: 'nowrap' }}>{note} ›</Link>}
                   {error && <span style={{ color: 'var(--ink2)', fontSize: 13, marginRight: 8, maxWidth: 340, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', display: 'flex', gap: 6, alignItems: 'center' }} title={error}><span style={{ width: 6, height: 6, borderRadius: 1.5, background: '#c62f35', flex: 'none' }} />{error}</span>}
                   <button className="btn" onClick={() => exportCsv(event, shown)} style={{ height: 34, fontSize: 13.5 }}>
                     <Icon name="doc" size={16} /> Export CSV
                   </button>
                   <button className={`btn btn-primary${pushing ? ' pushing' : ''}`} onClick={push} disabled={pushing || allPushed} style={{ height: 34, fontSize: 13.5, minWidth: 196, justifyContent: 'center' }}>
-                    <Icon name={allPushed ? 'check' : 'notion'} size={16} />
-                    {allPushed ? `${top.length} in Notion` : pushing ? 'Pushing to Notion…' : `Push top ${top.length} to Notion`}
+                    <Icon name={allPushed ? 'check' : 'chart'} size={16} />
+                    {allPushed ? (top.every(l => l.notionUrl) ? `${top.length} in pipeline and Notion` : `${top.length} in pipeline`) : pushing ? 'Adding to pipeline…' : `Add top ${top.length} to pipeline`}
                   </button>
                 </div>
               </div>
@@ -343,13 +413,13 @@ export default function Home() {
         )}
       </main>
 
-      <Composer value={input} onChange={setInput} onRun={run} busy={busy} compact={!!leads.length} />
+      <ChatDock context={{ event: event ?? undefined, leads, location: 'London' }} onFindBackers={q => run(q || lastQuery)} intercept={intercept} prefill={prefill} />
       {open && event && <Drawer lead={open} event={event} onClose={() => setOpen(null)} />}
     </div>
   )
 }
 
-const COLS = '24px minmax(200px, 1.3fr) 150px minmax(220px, 1.6fr) 110px 76px'
+const COLS = '24px minmax(170px, 1.3fr) 150px minmax(160px, 1.6fr) 100px 70px'
 
 function Row({ lead: l, rank, active, onOpen }: { lead: Lead; rank: number; active: boolean; onOpen: () => void }) {
   return (
@@ -415,75 +485,6 @@ function Row({ lead: l, rank, active, onOpen }: { lead: Lead; rank: number; acti
   )
 }
 
-// Hand-drawn arrow for the annotations around the composer.
-function Squiggle({ flip }: { flip?: boolean }) {
-  return (
-    <svg width="46" height="34" viewBox="0 0 46 34" fill="none" style={{ transform: flip ? 'scaleX(-1)' : undefined, flex: 'none' }}>
-      <path d="M3 4c9 1 22 4 28 12 3 4 4 8 4 13" stroke="var(--ink3)" strokeWidth="1.6" strokeLinecap="round" />
-      <path d="M30 24l5 6 4-7" stroke="var(--ink3)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  )
-}
-
-function Composer({ value, onChange, onRun, busy, compact }: { value: string; onChange: (v: string) => void; onRun: () => void; busy: boolean; compact: boolean }) {
-  return (
-    <div style={{ position: 'fixed', left: 0, right: 0, bottom: 0, padding: '28px 24px 22px', background: 'linear-gradient(to top, var(--canvas) 62%, transparent)', zIndex: 4, pointerEvents: 'none' }}>
-      <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative', pointerEvents: 'auto' }}>
-        {!compact && (
-          <div className="rise" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', padding: '0 18px 4px', color: 'var(--ink3)', fontSize: 13.5, animationDelay: '250ms' }}>
-            <span style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
-              <span style={{ paddingBottom: 18 }}>a Luma link works best</span>
-              <Squiggle />
-            </span>
-            <span style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
-              <Squiggle flip />
-              <span style={{ paddingBottom: 18 }}>nothing is sent until you say so</span>
-            </span>
-          </div>
-        )}
-        <form
-          onSubmit={e => {
-            e.preventDefault()
-            onRun()
-          }}
-          style={{ background: 'var(--bg)', borderRadius: 16, padding: 6, boxShadow: 'var(--pop), 0 0 0 1px var(--border)' }}
-        >
-          <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--subtle)', borderRadius: 11, padding: '6px 6px 6px 16px', boxShadow: 'inset 0 1px 2px rgba(0,0,0,.06), inset 0 0 0 1px var(--divider)' }}>
-            <Icon name="search" size={18} />
-            <input
-              value={value}
-              onChange={e => onChange(e.target.value)}
-              placeholder="Paste your event link, or describe it"
-              autoFocus
-              style={{ flex: 1, minWidth: 0, border: 0, outline: 0, fontSize: 16.5, padding: '10px 0', background: 'transparent' }}
-            />
-            <button className="btn btn-primary" type="submit" disabled={busy || !value.trim()} style={{ height: 40, padding: '0 16px', opacity: value.trim() ? 1 : 0.35 }}>
-              <Icon name="send" />
-              {busy ? 'Finding' : 'Find backers'}
-            </button>
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '7px 10px 3px', color: 'var(--ink3)', fontSize: 12.5 }}>
-            <span style={{ display: 'flex', gap: 14 }}>
-              <span style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
-                <Icon name="globe" size={14} /> London
-              </span>
-              <span style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
-                <Icon name="building" size={14} /> Sponsors and venues
-              </span>
-            </span>
-            <span>
-              <span className="mono" style={{ padding: '1px 5px', borderRadius: 4, background: 'var(--chip)' }}>
-                ↵
-              </span>{' '}
-              to run
-            </span>
-          </div>
-        </form>
-      </div>
-    </div>
-  )
-}
-
 // Sends the pitch to an address a person types. Nothing goes out on its own.
 function SendBox({ subject, body, onSent }: { subject: string; body: string; onSent?: (to: string) => void }) {
   const [to, setTo] = useState('')
@@ -536,6 +537,14 @@ function SendBox({ subject, body, onSent }: { subject: string; body: string; onS
 
 function Drawer({ lead, event, onClose }: { lead: Lead; event: EventInput; onClose: () => void }) {
   const [copied, setCopied] = useState(false)
+  // Keeps the chat composer clear of the drawer while it is open.
+  useEffect(() => {
+    const root = document.documentElement
+    root.style.setProperty('--drawer-w', '470px')
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
+    window.addEventListener('keydown', onKey)
+    return () => { root.style.removeProperty('--drawer-w'); window.removeEventListener('keydown', onKey) }
+  }, [onClose])
   return (
     <aside key={lead.sponsorId} style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: 470, zIndex: 10, background: 'var(--bg)', boxShadow: 'var(--drawer), 0 0 0 1px var(--divider)', display: 'flex', flexDirection: 'column', animation: 'slide .35s var(--ease)' }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 12, padding: '18px 20px' }}>
@@ -609,6 +618,11 @@ function Drawer({ lead, event, onClose }: { lead: Lead; event: EventInput; onClo
             <SendBox subject={lead.pitch.subject} body={lead.pitch.body} onSent={to => track(event, [lead], 'sent', { to_email: to, subject: lead.pitch!.subject, body: lead.pitch!.body })} />
           </section>
         )}
+
+        <section>
+          <h3 style={H3}>Drafts</h3>
+          <DraftsPanel event={event} lead={lead} />
+        </section>
 
         <LeadMemory lead={lead} event={event} />
       </div>
