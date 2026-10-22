@@ -6,9 +6,12 @@ import ChatDock from '@/components/ChatDock'
 import DraftsPanel from '@/components/DraftsPanel'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
+import { LocationPicker } from '@/components/LocationPicker'
+import { NearbyEvents } from '@/components/NearbyEvents'
 import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
 import { leadKey, readLocal, writeLocal, type PipelineLead } from '@/lib/pipeline'
+import { shortLabel, useLocation, type LocationApi } from '@/lib/useLocation'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
 const PUSH_LIMIT = 15
@@ -199,6 +202,9 @@ export default function Home() {
   const [open, setOpen] = useState<Lead | null>(null)
   const [pushing, setPushing] = useState(false)
   const [error, setError] = useState('')
+  const loc = useLocation()
+  const [place, setPlace] = useState('London') // where the shown results were ranked for
+
   const [saved, setSaved] = useState(0)
   const [note, setNote] = useState('')
   const [prefill, setPrefill] = useState('')
@@ -249,15 +255,17 @@ export default function Home() {
     setOpen(null)
     try {
       setStep(0)
-      const isUrl = /^https?:\/\//.test(input.trim())
-      const ev = await post<EventInput>('/api/event', isUrl ? { url: input.trim() } : { text: input })
+      const isUrl = /^https?:\/\//.test(input)
+      const ev = await post<EventInput>('/api/event', isUrl ? { url: input } : { text: input })
       setStep(1)
-      const matched = await post<Lead[]>('/api/match', ev)
+      const { lat, lng, radiusKm, label } = loc.location
+      const matched = await post<Lead[]>('/api/match', { ...ev, near: { lat, lng, radiusKm, label } })
       setStep(2)
       // Pitch the top of the list; a lead whose pitch fails still shows, without one.
       const head = matched.slice(0, SHOW)
       const priced = await Promise.all(head.map(l => post<Lead>('/api/pitch', { event: ev, lead: l }).catch(() => l)))
       setRanked(matched.length)
+      setPlace(shortLabel(label))
       setEvent(ev)
       setLeads(priced)
       setFilter('all')
@@ -347,6 +355,10 @@ export default function Home() {
               <Icon name="sparkle" size={15} /> Paste your event link in the box below, or ask it to draft outreach, a launch post or a Luma event.
             </p>
             {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
+            <div style={{ marginTop: 18, fontSize: 13.5, color: 'var(--ink2)' }}>
+              <LocationPicker loc={loc} />
+            </div>
+            <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => run(url)} />
           </section>
         )}
 
@@ -355,7 +367,7 @@ export default function Home() {
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 32 }}>
               <div style={{ minWidth: 0 }}>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
-                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} London backers ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
+                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} {place === 'London' ? 'London backers' : `backers near ${place}`} ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
                 </div>
                 <h2 style={{ fontSize: 28, lineHeight: 1.12, letterSpacing: '-0.028em', margin: '8px 0 0', fontWeight: 600, maxWidth: 640, textWrap: 'balance' }}>{event.name}</h2>
                 <Finding leads={shown} onOpen={setOpen} />
