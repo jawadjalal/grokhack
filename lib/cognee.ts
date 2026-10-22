@@ -58,7 +58,7 @@ export async function cogneeSearch(query: string): Promise<string | null> {
       fetch(`${BASE}/api/v1/search`, { method: 'POST', headers: headers({ 'content-type': 'application/json' }), body: JSON.stringify({ query, search_type: 'GRAPH_COMPLETION', datasets: [DATASET] }), signal }),
     )
     if (!res.ok) return null
-    return flatten(await res.json()) || null
+    return flatten(await res.json()).replace(/\*\*/g, "").trim() || null
   } catch {
     return null
   }
