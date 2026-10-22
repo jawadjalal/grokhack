@@ -1,6 +1,6 @@
 // Loads lib/seed.ts into Supabase through the REST API. Safe to re-run (upserts).
 // Run: npm run db:seed
-import { backings, sponsors } from '../lib/seed.ts'
+import { backings, sponsors } from '../lib/seed'
 
 const URL = process.env.SUPABASE_URL ?? process.env.NEXT_PUBLIC_SUPABASE_URL
 const KEY = process.env.SUPABASE_SERVICE_ROLE_KEY ?? process.env.SUPABASE_SECRET_KEY

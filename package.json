@@ -9,7 +9,7 @@
     "typecheck": "tsc --noEmit",
     "test:pitch": "node --import tsx --test lib/pitch/*.test.ts",
     "seed": "node --experimental-strip-types scripts/seed.ts",
-    "db:seed": "node --env-file=.env.local --experimental-strip-types --no-warnings scripts/seed-db.ts"
+    "db:seed": "tsx --env-file=.env.local scripts/seed-db.mts"
   },
   "engines": {
     "node": ">=22"

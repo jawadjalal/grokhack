@@ -21,33 +21,68 @@ function fitColor(score: number) {
   return score >= 55 ? 'var(--go)' : 'var(--ink3)'
 }
 
-// The screen's one finding: who to email first, and why.
-function finding(leads: Lead[]) {
+// The screen's one finding: who to email first, and why, with the action beside it.
+function Finding({ leads, onOpen }: { leads: Lead[]; onOpen: (l: Lead) => void }) {
   const proven = leads.filter(l => l.pastBackings.length).slice(0, 2)
-  const top = leads[0]
-  if (!top) return ''
-  if (proven.length === 2) return `${proven[0].name} and ${proven[1].name} already backed an event like this. Email them first.`
-  if (proven.length === 1) return `${proven[0].name} already backed an event like this. Email them first, then ${leads.find(l => l !== proven[0])?.name}.`
-  return `Nobody on record has backed an event like this yet. ${top.name} fits best on focus and audience.`
+  const first = proven[0] ?? leads[0]
+  if (!first) return null
+  const Name = ({ l }: { l: Lead }) => (
+    <button onClick={() => onOpen(l)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, border: 0, padding: '1px 6px 1px 3px', borderRadius: 6, background: 'var(--bg)', boxShadow: '0 0 0 1px var(--border)', color: 'var(--ink)', fontWeight: 550, verticalAlign: 'baseline' }}>
+      <Mark domain={l.domain} size={18} /> {l.name}
+    </button>
+  )
+  return (
+    <p style={{ margin: '10px 0 0', fontSize: 16, color: 'var(--ink2)', lineHeight: 1.7, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 6 }}>
+      {proven.length ? (
+        <>
+          <Name l={proven[0]} />
+          {proven[1] && (
+            <>
+              and <Name l={proven[1]} />
+            </>
+          )}
+          {proven.length > 1 ? 'have' : 'has'} already backed an event like this.
+        </>
+      ) : (
+        <>
+          Nobody on record has backed one like this yet. <Name l={first} /> fits best.
+        </>
+      )}
+      <button className="btn" onClick={() => onOpen(first)} style={{ height: 28, padding: '0 8px', color: 'var(--ink)', fontWeight: 550 }}>
+        Email {first.name} first <span className="chev">›</span>
+      </button>
+    </p>
+  )
 }
 
-// How the money splits across tiers among the strong fits.
+// How the money on the table splits across tiers. Zero tiers are left out.
 function Ladder({ leads }: { leads: Lead[] }) {
-  const tiers = (['Headline', 'Partner', 'Supporter'] as const).map(t => ({ t, n: leads.filter(l => l.kind === 'sponsor' && l.score >= STRONG && l.suggestedTier === t).length }))
-  const sum = tiers.reduce((a, x) => a + x.n, 0) || 1
-  const shade = { Headline: 'var(--go)', Partner: 'color-mix(in srgb, var(--go) 55%, white)', Supporter: 'color-mix(in srgb, var(--go) 25%, white)' }
+  const tiers = (['Headline', 'Partner', 'Supporter'] as const)
+    .map(t => {
+      const ls = leads.filter(l => l.kind === 'sponsor' && l.score >= STRONG && l.suggestedTier === t)
+      return { t, n: ls.length, gbp: ls.reduce((a, l) => a + (l.suggestedPriceGbp ?? 0), 0) }
+    })
+    .filter(x => x.n)
+  const sum = tiers.reduce((a, x) => a + x.gbp, 0) || 1
+  const shade = { Headline: 'var(--go)', Partner: '#4f9c6c', Supporter: '#a7cdb4' }
+  if (!tiers.length) return null
   return (
-    <div style={{ marginTop: 10 }}>
-      <div style={{ display: 'flex', height: 6, borderRadius: 2, overflow: 'hidden', background: 'var(--chip)', gap: 2 }}>
-        {tiers.filter(x => x.n).map(x => (
-          <span key={x.t} className="reveal" style={{ width: `${(x.n / sum) * 100}%`, background: shade[x.t] }} />
+    <div style={{ marginTop: 12, width: 260, marginLeft: 'auto' }}>
+      <div style={{ display: 'flex', height: 8, gap: 2 }}>
+        {tiers.map((x, i) => (
+          <span key={x.t} className="reveal" style={{ width: `${(x.gbp / sum) * 100}%`, minWidth: 6, background: shade[x.t], borderRadius: 2, animationDelay: `${200 + i * 120}ms` }} />
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10, marginTop: 6, fontSize: 12, color: 'var(--ink3)' }}>
+      <div style={{ display: 'grid', gap: 3, marginTop: 8 }}>
         {tiers.map(x => (
-          <span key={x.t} style={{ whiteSpace: 'nowrap' }}>
-            <span className="mono" style={{ color: 'var(--ink2)' }}>{x.n}</span> {x.t.toLowerCase()}
-          </span>
+          <div key={x.t} style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: 12.5, color: 'var(--ink3)' }}>
+            <span style={{ width: 8, height: 8, borderRadius: 2, background: shade[x.t], flex: 'none' }} />
+            <span style={{ flex: 1, textAlign: 'left' }}>
+              {x.n} {x.t.toLowerCase()}
+              {x.n > 1 ? 's' : ''}
+            </span>
+            <span className="mono" style={{ color: 'var(--ink2)' }}>£{x.gbp.toLocaleString()}</span>
+          </div>
         ))}
       </div>
     </div>
@@ -236,20 +271,20 @@ export default function Home() {
 
         {!!leads.length && event && !busy && (
           <section className="rise" style={{ paddingTop: 24 }}>
-            <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 32 }}>
               <div style={{ minWidth: 0 }}>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
                   <Icon name="sparkle" size={15} /> {leads.length} London backers ranked in {(ms / 1000).toFixed(1)}s
                 </div>
-                <h2 style={{ fontSize: 28, lineHeight: 1.15, letterSpacing: '-0.025em', margin: '8px 0 0', fontWeight: 600, maxWidth: 700 }}>{event.name}</h2>
-                <p style={{ margin: '8px 0 0', fontSize: 15.5, color: 'var(--ink2)', maxWidth: 640 }}>{finding(shown)}</p>
+                <h2 style={{ fontSize: 28, lineHeight: 1.12, letterSpacing: '-0.028em', margin: '8px 0 0', fontWeight: 600, maxWidth: 640, textWrap: 'balance' }}>{event.name}</h2>
+                <Finding leads={shown} onOpen={setOpen} />
               </div>
               <div style={{ textAlign: 'right', flex: 'none', minWidth: 220 }}>
                 <div className="mono" style={{ fontSize: 32, fontWeight: 600, letterSpacing: '-0.03em', lineHeight: 1 }}>
                   {filter === 'venue' ? shown.length : `£${total.toLocaleString()}`}
                 </div>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, marginTop: 6 }}>
-                  {filter === 'venue' ? 'venues to ask for space' : `if the ${strong.filter(l => l.kind === 'sponsor').length} strongest fits say yes`}
+                  {filter === 'venue' ? 'venues to ask for space' : `on the table from ${strong.filter(l => l.kind === 'sponsor').length} strong fits`}
                 </div>
                 {filter !== 'venue' && <Ladder leads={shown} />}
               </div>
