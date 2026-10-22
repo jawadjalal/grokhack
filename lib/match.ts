@@ -3,7 +3,8 @@
 //   Focus         35  does what they care about match the event's topic
 //   Audience      15  do they want the people this event brings
 //   Habit         10  do they back hackathons and community events at all
-// Avi: tune the weights or add an LLM pass on the top 15 (docs/02-matching.md).
+// Then, if XAI_API_KEY is set, Grok rewrites the reasons for the top 15.
+// Scores stay rule-based either way.
 import type { BackerMap } from './data'
 import { type Audience, backings as seedBackings, sponsors as seedSponsors } from './seed'
 import type { EventInput, Lead } from './types'
@@ -43,8 +44,13 @@ const AUDIENCE_HINTS: Record<Audience, string> = {
   community: 'community',
 }
 
-export function match(event: EventInput, map: Pick<BackerMap, 'sponsors' | 'backings'> = { sponsors: seedSponsors, backings: seedBackings }): Lead[] {
-  const { sponsors, backings } = map
+type SponsorMap = Pick<BackerMap, 'sponsors' | 'backings'>
+
+export async function match(event: EventInput, map: SponsorMap = { sponsors: seedSponsors, backings: seedBackings }): Promise<Lead[]> {
+  return withGrokReasons(event, fit(event, map), map.sponsors)
+}
+
+function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
   const want = concepts(`${event.name} ${event.topic} ${event.description ?? ''}`)
   const audience = (Object.keys(AUDIENCE_HINTS) as Audience[]).filter(a => want.has(a))
   if (!audience.length) audience.push('developers')
@@ -55,12 +61,13 @@ export function match(event: EventInput, map: Pick<BackerMap, 'sponsors' | 'back
       const pastAll = backings.filter(b => b.sponsorId === s.id)
 
       // Track record: each past backing counts by how close its topic is to ours.
+      // Mostly similarity, so backing an AI hackathon says little about a fintech one.
       const sims = pastAll.map(b => {
         const t = concepts(b.eventTopic)
         const shared = [...want].filter(w => t.has(w)).length
         return Math.min(1, shared / 4)
       })
-      const track = Math.round(Math.min(40, sims.reduce((a, x) => a + 18 + 12 * x, 0)))
+      const track = Math.round(Math.min(40, sims.reduce((a, x) => a + 6 + 24 * x, 0)))
 
       // Focus: share of their interests that this event hits, plus a bonus for the strongest overlaps.
       const theirs = s.tags.flatMap(t => [...concepts(t)])
@@ -83,8 +90,11 @@ export function match(event: EventInput, map: Pick<BackerMap, 'sponsors' | 'back
       ]
 
       const reasons: string[] = []
-      if (pastAll.length) reasons.push(`Backed ${pastAll[0].event.replace(/ London Hackathon$/, '')}${pastAll.length > 1 ? ` and ${pastAll.length - 1} more` : ''}`)
+      const backed = pastAll.length ? `Backed ${pastAll[0].event.replace(/ London Hackathon$/, '')}${pastAll.length > 1 ? ` and ${pastAll.length - 1} more` : ''}` : ''
+      // Lead with the backing only when it was a similar event.
+      if (backed && Math.max(...sims) >= 0.5) reasons.push(backed)
       if (hits.length) reasons.push(`Cares about ${hits.slice(0, 3).join(', ')}`)
+      if (backed && !reasons.includes(backed)) reasons.push(backed)
       if (aud.length) reasons.push(`Wants ${aud.join(' and ')} in the room`)
       if (!reasons.length) reasons.push('Adjacent audience')
 
@@ -100,4 +110,94 @@ export function match(event: EventInput, map: Pick<BackerMap, 'sponsors' | 'back
       } satisfies Lead
     })
     .sort((a, b) => b.score - a.score)
+}
+
+// Grok pass: better reasons for the top 15, citing only backings in the data.
+// No key, a timeout or a bad reply keeps the rule-based reasons.
+const GROK_TOP = 15
+const GROK_TIMEOUT_MS = 8000
+const GROK_URL = `${process.env.XAI_BASE_URL ?? 'https://api.x.ai/v1'}/chat/completions`
+const MODEL = process.env.MODEL ?? 'grok-4-fast-non-reasoning'
+
+// A reason that claims a backing must cite one by tag, e.g. "Backed [B1]".
+const CLAIM = /\b(backed|backs|sponsor(ed|s)?|partner(ed)?|hosted|supported|funded)\b/i
+
+const written = new Map<string, Map<string, string[]>>()
+
+async function withGrokReasons(event: EventInput, leads: Lead[], sponsors: SponsorMap['sponsors']): Promise<Lead[]> {
+  const key = process.env.XAI_API_KEY
+  if (!key) return leads
+  const cacheKey = JSON.stringify([event.name, event.topic, event.description, event.audienceSize, event.url])
+  try {
+    const reasons = written.get(cacheKey) ?? (await grokReasons(key, event, leads.slice(0, GROK_TOP), sponsors))
+    if (written.size > 50) written.clear()
+    written.set(cacheKey, reasons)
+    return leads.map(l => (reasons.get(l.sponsorId)?.length ? { ...l, reasons: reasons.get(l.sponsorId)! } : l))
+  } catch (e) {
+    console.warn('[match] Grok reasons skipped:', e instanceof Error ? e.message : e)
+    return leads
+  }
+}
+
+// Swap [B1] tags for real event names. Drop any reason that claims a backing
+// without a tag, or cites a tag that doesn't exist.
+export function cite(reason: string, past: Lead['pastBackings']): string | null {
+  let bad = false
+  const tagged = /\[B\d+\]/.test(reason)
+  const out = reason.replace(/\[B(\d+)\]/g, (_, n: string) => {
+    const b = past[Number(n) - 1]
+    if (!b) bad = true
+    return b ? b.event.replace(/ London Hackathon$/, '') : ''
+  })
+  if (bad || (CLAIM.test(reason) && !tagged)) return null
+  return out.replace(/\s+/g, ' ').trim().slice(0, 90) || null
+}
+
+async function grokReasons(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors']): Promise<Map<string, string[]>> {
+  const candidates = top.map(l => {
+    const s = sponsors.find(s => s.id === l.sponsorId)
+    return {
+      id: l.sponsorId,
+      name: l.name,
+      kind: l.kind,
+      size: s?.size,
+      caresAbout: s?.tags,
+      wantsInTheRoom: s?.audience,
+      fit: l.fit?.map(f => `${f.label} ${f.points}/${f.max}: ${f.note}`),
+      backings: l.pastBackings.map((b, i) => `[B${i + 1}] ${b.event} (${b.role})`),
+    }
+  })
+  const system = [
+    'You help London community organisers find sponsors and venues. For one event you get candidates with a rule-based fit breakdown.',
+    'For each candidate write 1 to 3 reasons, under 60 characters each, why they would back this exact event. Specific to this event and audience, plain words, no hype. Lead with the strongest.',
+    'Only mention a past backing by its tag, e.g. "Backed [B1] as venue partner". Never claim a backing, sponsorship or partnership that is not in that candidate\'s backings list. With no backings, argue from fit alone.',
+    'Reply with JSON only: {"leads":[{"id":"...","reasons":["..."]}]}, one entry per candidate.',
+  ].join('\n')
+
+  const res = await fetch(GROK_URL, {
+    method: 'POST',
+    headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' },
+    body: JSON.stringify({
+      model: MODEL,
+      response_format: { type: 'json_object' },
+      messages: [
+        { role: 'system', content: system },
+        { role: 'user', content: JSON.stringify({ event, candidates }) },
+      ],
+    }),
+    signal: AbortSignal.timeout(GROK_TIMEOUT_MS),
+  })
+  if (!res.ok) throw new Error(`${res.status} ${(await res.text()).slice(0, 200)}`)
+  const text: string = (await res.json()).choices?.[0]?.message?.content ?? ''
+  const json = JSON.parse(text.slice(text.indexOf('{'), text.lastIndexOf('}') + 1))
+  if (!Array.isArray(json.leads)) throw new Error('reply had no leads array')
+
+  const out = new Map<string, string[]>()
+  for (const j of json.leads as { id?: string; reasons?: unknown }[]) {
+    const lead = top.find(l => l.sponsorId === j.id)
+    if (!lead || !Array.isArray(j.reasons)) continue
+    const ok = j.reasons.map(r => cite(String(r), lead.pastBackings)).filter((r): r is string => !!r)
+    if (ok.length) out.set(lead.sponsorId, ok.slice(0, 3))
+  }
+  return out
 }
