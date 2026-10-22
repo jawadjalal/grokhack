@@ -2,7 +2,6 @@
 
 import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
-import ChatDock from '@/components/ChatDock'
 import DraftsPanel from '@/components/DraftsPanel'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
@@ -207,7 +206,7 @@ export default function Home() {
 
   const [saved, setSaved] = useState(0)
   const [note, setNote] = useState('')
-  const [prefill, setPrefill] = useState('')
+  const [input, setInput] = useState('')
 
   // The last ranking survives a reload or a trip to another page.
   useEffect(() => {
@@ -233,7 +232,7 @@ export default function Home() {
     const id = new URLSearchParams(window.location.search).get('sponsor')
     if (!id) return
     const name = new URLSearchParams(window.location.search).get('name') || id
-    setPrefill(`Draft outreach to ${name}`)
+    setInput(name)
     window.history.replaceState(null, '', '/')
   }, [])
 
@@ -358,7 +357,7 @@ export default function Home() {
             </div>
             {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
             <div style={{ width: '100%', textAlign: 'left' }}>
-              <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => run(url)} />
+              <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => { setInput(url); run(url) }} />
             </div>
           </section>
         )}
@@ -426,7 +425,7 @@ export default function Home() {
         )}
       </main>
 
-      <ChatDock context={{ event: event ?? undefined, leads, location: 'London' }} onFindBackers={q => run(q || lastQuery)} intercept={intercept} prefill={prefill} />
+      <Composer value={input} onChange={setInput} onRun={() => run(input)} busy={busy} compact={!!leads.length} loc={loc} />
       {open && event && <Drawer lead={open} event={event} onClose={() => setOpen(null)} />}
     </div>
   )
@@ -495,6 +494,73 @@ function Row({ lead: l, rank, active, onOpen }: { lead: Lead; rank: number; acti
         )}
       </span>
     </button>
+  )
+}
+
+// Hand-drawn arrow for the annotations around the composer.
+function Squiggle({ flip }: { flip?: boolean }) {
+  return (
+    <svg width="46" height="34" viewBox="0 0 46 34" fill="none" style={{ transform: flip ? 'scaleX(-1)' : undefined, flex: 'none' }}>
+      <path d="M3 4c9 1 22 4 28 12 3 4 4 8 4 13" stroke="var(--ink3)" strokeWidth="1.6" strokeLinecap="round" />
+      <path d="M30 24l5 6 4-7" stroke="var(--ink3)" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  )
+}
+
+function Composer({ value, onChange, onRun, busy, compact, loc }: { value: string; onChange: (v: string) => void; onRun: () => void; busy: boolean; compact: boolean; loc: LocationApi }) {
+  return (
+    <div style={{ position: 'fixed', left: 'var(--side-w, 0px)', right: 0, bottom: 0, padding: '28px 24px 22px', background: 'linear-gradient(to top, var(--canvas) 62%, transparent)', zIndex: 4, pointerEvents: 'none' }}>
+      <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative', pointerEvents: 'auto' }}>
+        {!compact && (
+          <div className="rise" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', padding: '0 18px 4px', color: 'var(--ink3)', fontSize: 13.5, animationDelay: '250ms' }}>
+            <span style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
+              <span style={{ paddingBottom: 18 }}>a Luma link works best</span>
+              <Squiggle />
+            </span>
+            <span style={{ display: 'flex', alignItems: 'flex-end', gap: 4 }}>
+              <Squiggle flip />
+              <span style={{ paddingBottom: 18 }}>nothing is sent until you say so</span>
+            </span>
+          </div>
+        )}
+        <form
+          onSubmit={e => {
+            e.preventDefault()
+            onRun()
+          }}
+          style={{ background: 'var(--bg)', borderRadius: 16, padding: 6, boxShadow: 'var(--pop), 0 0 0 1px var(--border)' }}
+        >
+          <div style={{ display: 'flex', alignItems: 'center', gap: 8, background: 'var(--subtle)', borderRadius: 11, padding: '6px 6px 6px 16px', boxShadow: 'inset 0 1px 2px rgba(0,0,0,.06), inset 0 0 0 1px var(--divider)' }}>
+            <Icon name="search" size={18} />
+            <input
+              value={value}
+              onChange={e => onChange(e.target.value)}
+              placeholder="Paste your event link, or describe it"
+              autoFocus
+              style={{ flex: 1, minWidth: 0, border: 0, outline: 0, fontSize: 16.5, padding: '10px 0', background: 'transparent' }}
+            />
+            <button className="btn btn-primary" type="submit" disabled={busy || !value.trim()} style={{ height: 40, padding: '0 16px', opacity: value.trim() ? 1 : 0.35 }}>
+              <Icon name="send" />
+              {busy ? 'Finding' : 'Find backers'}
+            </button>
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '7px 10px 3px', color: 'var(--ink3)', fontSize: 12.5 }}>
+            <span style={{ display: 'flex', gap: 14 }}>
+              <LocationPicker loc={loc} />
+              <span style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
+                <Icon name="building" size={14} /> Sponsors and venues
+              </span>
+            </span>
+            <span>
+              <span className="mono" style={{ padding: '1px 5px', borderRadius: 4, background: 'var(--chip)' }}>
+                ↵
+              </span>{' '}
+              to run
+            </span>
+          </div>
+        </form>
+      </div>
+    </div>
   )
 }
 
