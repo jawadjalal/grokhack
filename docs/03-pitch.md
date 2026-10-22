@@ -4,6 +4,10 @@
 
 The "wow" moment in the demo is a pitch that reads like the organiser actually researched the sponsor.
 
+## Paste this into your AI
+
+> Read AGENTS.md and docs/03-pitch.md. Improve lib/pitch.ts only: replace the template email with an LLM-written one (under 120 words, names real past backings only, one clear ask). Keep the price table visible in code. Fall back to the current template if the call fails.
+
 ## Build
 
 1. `lib/pitch/index.ts`: `pitch(event: EventInput, lead: Lead): Promise<Lead>`

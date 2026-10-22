@@ -4,6 +4,10 @@
 
 Turn the map into a ranked list for one event. This is what the judges look at first.
 
+## Paste this into your AI
+
+> Read AGENTS.md and docs/02-matching.md. Improve lib/match.ts only: keep the four-part fit score and its drawer breakdown, tune the weights, and add an optional LLM pass that rewrites reasons for the top 15 using only the backings in the data. Fall back to the current scoring if the LLM call fails.
+
 ## Build
 
 1. `lib/match/index.ts`: `match(event: EventInput): Promise<Lead[]>`

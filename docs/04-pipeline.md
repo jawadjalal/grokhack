@@ -4,6 +4,10 @@
 
 Organisers already live in Notion. Backer should drop leads straight into a board they can work from.
 
+## Paste this into your AI
+
+> Read AGENTS.md and docs/04-pipeline.md. lib/notion.ts already pushes leads to Notion. Test it with my NOTION_TOKEN and NOTION_PARENT_PAGE_ID in .env.local, fix anything broken, and make the board view look good. Only touch lib/notion.ts and app/api/push/route.ts.
+
 ## Build
 
 1. Create a Notion integration and a database "Backer pipeline" with properties: Name (title), Domain (url), Kind (select), Score (number), Status (select: To contact, Contacted, Replied, Call, Signed, No), Tier (select), Price GBP (number), Event (text), Reasons (text). Page body holds the pitch.
