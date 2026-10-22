@@ -17,7 +17,11 @@ Built at the Grok Bot Community Engineering London Hackathon, 22 Oct 2026. Track
 npm install && npm run dev
 ```
 
-The matching and pitch flow currently uses seed data in `lib/seed.ts`. A real Notion push needs a private server token and the Backer data source ID.
+That is the whole setup. Leads come from the committed London map in `data/london.json` (loaded by `lib/seed.ts`), so ranking works with no Supabase key and no API token. Paste an event URL on http://localhost:3000.
+
+![Ranked backers for the Company Brain Buildathon](docs/backer-demo.png)
+
+The pitch for one of those rows is in [DEMO.md](DEMO.md). A real Notion push needs a private server token and the Backer data source ID.
 
 ## Notion pipeline
 
