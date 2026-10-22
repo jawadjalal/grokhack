@@ -1,0 +1,867 @@
+[
+  {
+    "id": "luma:q89atyak",
+    "source": "luma",
+    "url": "https://luma.com/q89atyak",
+    "name": "Debate: 'This house would boycott all the Frontier labs'",
+    "organiser": "PauseAI UK",
+    "categories": [
+      "AI"
+    ],
+    "date": "2026-10-23",
+    "tech": false,
+    "why": "Out: PauseAI UK activist debate on boycotting AI labs; AI policy/ethics for a general audience, not building tech (rubric ambiguity: compare test label for the Oxford-style AI creativity debate)"
+  },
+  {
+    "id": "luma:0snxaye7",
+    "source": "luma",
+    "url": "https://luma.com/0snxaye7",
+    "name": "The Control Delusion Book Launch",
+    "categories": [
+      "Arts & Culture",
+      "Books"
+    ],
+    "date": "2026-10-23",
+    "description": "To mark the release of my new book, The Control Delusion: The Pathology of Power and the Hi-Res Mind I am hosting an exclusive, invitation-only celebration on Friday, 23 October. This is a private event to formally launch the release of the book, share some of the insights and extend my heartfelt thanks to everyone who has supported me in bringing this work to life.\nWe have secured the private upstairs room at The Mulberry Bush in Waterloo for the evening.\nThe Details:\nDate: Friday, 23 October 2026\nTime: 18:30-20:30\nLocation: The Mulberry Bush (Private Upstairs Room), 89 Upper Ground, London SE1 9PP\nAgenda: Drinks and arrivals at 19:00, followed by a short reading from the book and an unfiltered Q&A at 20:00.",
+    "tech": false,
+    "why": "Out: private book launch with drinks and a reading"
+  },
+  {
+    "id": "luma:0yngh8do",
+    "source": "luma",
+    "url": "https://luma.com/0yngh8do",
+    "name": "Sniser launch event",
+    "categories": [
+      "Arts & Culture"
+    ],
+    "date": "2026-10-23",
+    "description": "Sniser Launch Event — Where Fans Fund What Comes Next\nJoin us at Shoreditch Arts Club for the official launch of  Sniser , a new music platform designed to help artists fund their next release directly through their fans.\nSniser gives artists the opportunity to share exclusive pre-release content and raise funding before their music is officially released. Fans get closer to the creative process while directly supporting the artists and music they want to see succeed.\nThe evening will include an introduction to Sniser and how the platform works,  live performances from artists already using the platform , a Q&A session, and an opportunity to meet artists, creators and members of the Sniser team.\nWhether you're an  artist, music fan, creator or someone working in the music industry , this is an opportunity to see a different approach to funding and releasing independent music.\nDate:  Friday 23 October 2026  Time:  7:00 PM – 9:00 PM  Venue:  Shoreditch Arts Club, 6 Redchurch Street, London E2 7DD  Entry:  Free — RSVP required\nFund the music. Back the artist. Be there before the release.",
+    "tech": false,
+    "why": "Out: launch party of a music platform for artists and fans, live performances; audience is musicians, not builders"
+  },
+  {
+    "id": "luma:8ugr3nfi",
+    "source": "luma",
+    "url": "https://luma.com/8ugr3nfi",
+    "name": "CEE Founders Drinks · hosted by Inovo",
+    "categories": [
+      "Tech"
+    ],
+    "date": "2026-10-23",
+    "description": "Drinks (and a bite) for early-stage founders from Central & Eastern Europe building in London.\n8 people, no pitches, no slides - just good food, cocktails and honest conversations about building from London with CEE roots.\nWe’ll be at Double Standard, the bar at The Standard in King’s Cross (opposite St Pancras).\nExact table details after approval.\nHosted by Bartek Podgórski, Inovo VC (pre-seed and seed, CEE).\nApproval required.",
+    "tech": true,
+    "why": "In: drinks for early-stage CEE founders building in London, hosted by a pre-seed VC (Inovo)"
+  },
+  {
+    "id": "luma:ua4jlqxj",
+    "source": "luma",
+    "url": "https://luma.com/ua4jlqxj",
+    "name": "Badminton Social",
+    "categories": [
+      "Fitness"
+    ],
+    "date": "2026-10-24",
+    "description": "🏸  Badminton Social by Sakhi\nLooking for people to play badminton with in London? Come join our beginner-friendly Badminton Social — designed to help you  play, meet new people and have fun  without the pressure of being good at the game.\nCome alone or bring a friend — beginners are absolutely welcome. 🤍\nWhat to expect:  🏸 Beginner-friendly games  👯 Meet & play with new people  ✨ Relaxed, social atmosphere  🤍 All about playing, laughing & connecting\nSpaces are limited based on court capacity, so please complete your payment as soon as you receive the link.\nCome for badminton. Leave with new people to play with. 🏸✨\nHosted by Sakhi — Meet • Create • Connect",
+    "tech": false,
+    "why": "Out: badminton social"
+  },
+  {
+    "id": "luma:xwo20ivp",
+    "source": "luma",
+    "url": "https://luma.com/xwo20ivp",
+    "name": "Real-Time Vision Challenge with XRlabs - NVIDIA x Playground x Oxford Seed Fund",
+    "organiser": "Oxbridge AI X",
+    "categories": [
+      "AI"
+    ],
+    "date": "2026-10-24",
+    "description": "Spend a Saturday building real-time AI perception for live surgery, inside the company actually doing it.\n🩺 NO MEDICAL BACKGROUND NEEDED   This is a computer vision challenge, not a medical one. You don't need to know anything about surgery or medicine: if you can train and ship vision models, you're exactly who we're looking for. Engineers, ML researchers, students and builders from any field are welcome.\nXRlabs builds computer vision for live operations, under some of the hardest latency and reliability constraints in the industry. It was founded by Ali Haddad, a practising neurosurgeon who left the operating theatre to fix it. For one day, their data, their stack and their engineering team are yours.\nAn honest look at what real-time vision costs when a surgeon is waiting. Not a demo dataset, not a toy problem.\n🤖 THE CHALLENGE   Train and deploy a model that tells surgical instruments apart in live video, on NVIDIA cloud compute. You enter as an individual and build on XRlabs' synthetic surgical video, with a live leaderboard all day. The top five have their models tested on real surgical video. The task is revealed at 10:20, but you know now what you are training for.\nWarm up beforehand on any open dataset if you like, and bring it with you. A head start on your tooling is fair game and expected.\nDETAILS  📅 Saturday 24th October  ⏰ 10:00am to 7:00pm  📍 XRlabs, London Institute for Healthcare Engineering, 100 Lambeth Palace Road, London SE1 7AR  🏆 Prizes: £1,000   £600   £400, a Special Hardware Prize, and $100 in NVIDIA Brev credits for every participant  🤝 The hackathon is backed by Playground Global, Oxford Seed Fund and NVIDIA  🍕 Brunch, pizza, snacks and drinks on us all day  🔗 More details:  surgicalxr.oxbridgeaix.uk\n👥 WHO SHOULD APPLY   Computer vision enthusiasts, developers, researchers and more. Devs, builders, students and researchers across Oxford, Cambridge, Imperial and beyond. Also, anyone already working at a lab or a startup. No medical or surgical experience required.\nEntry is individual. Invite friends to apply too!\n✍️ HOW TO APPLY  Five minutes. Your LinkedIn, a GitHub or Scholar profile, and one thing you have built, linked or shown. No qualifying task, no homework.\nWe review applications as they arrive and send invitations continuously, so apply early and the first people will start hearing back by Monday 12th October. Screening is done by partners XRlabs and Oxbridge AIx.\nOnly 20 places!\nApplications close Thursday 22nd October.\nA super exclusive computer vision hackathon in Europe, designed for those who want to participate in the future of surgery!\n🎒 WHAT TO BRING   Your laptop  Chargers  Curious mind, no prior surgical knowledge required\nCompute is provided: $100 in NVIDIA Brev credits each, so you choose your own GPU. You own your code.  IMPORTANT NOTE!  Before you're invited, you sign an NDA and a data licence: models trained on XRlabs data aren't published or commercialised, and are deleted after the event.\nBrought to you by XRlabs, NVIDIA, Playground, Oxford Seed Fund and Oxbridge AIx, in partnership with OXAI, AI for Good Oxford, Oxford Entrepreneurs, Ox Founders, OxVC, Cambridge Entrepreneurs Society, BridgeFellows, and Imperial Entrepreneurs. 🚀\nQuestions? Email team@oxbridgeaix.uk\nYou've got this and We've Got Your Back!",
+    "tech": true,
+    "why": "In: one-day computer vision building challenge with NVIDIA, for ML engineers"
+  },
+  {
+    "id": "luma:zkjafnlt",
+    "source": "luma",
+    "url": "https://luma.com/zkjafnlt",
+    "name": "Canva Gen©️ - Student Hackathon London 🚀",
+    "organiser": "Bright Creative",
+    "categories": [
+      "Tech"
+    ],
+    "date": "2026-10-24",
+    "description": "What is a Student Hackathon?\nDon’t let the name fool you! A Hackathon is an intensive, one-day sprint where students come together to solve a specific challenge using creativity, strategy, and tools (like Canva!). It’s about teamwork, fast thinking, and hands-on making.\nThere is no coding involved\nWe are BACK! bringing together London’s most creative students for a full day of building and designing.\nWhy should you participate?\nBuild Your Portfolio:  Leave with high-quality work you can actually use. Industry Feedback:  Get your designs and ideas reviewed by the Canva team. Networking:  Meet other ambitious students from across London’s top universities. Exclusive Prizes:  We have some amazing rewards lined up (stay tuned—prizes will be announced soon!).\nThe Challenges  Expect high-energy tasks where you will have to solve problems related to:\nPersonal Branding:  Designing a standout visual identity. The Future Portfolio:  Rethinking how students showcase their work. Creative CVs:  Transforming the traditional resume into a digital experience.\n⚠️  IMPORTANT: Selection-Based Registration\nStep 1: Submit the Application Form  Complete the form to apply for the Hackathon. All applications will be reviewed.\nStep 2: Confirmation Email  Selected participants will receive a confirmation email and must confirm their attendance by  Thursday Oct 22nd\nYour spot is only secured once you have received the confirmation email and confirmed your participation.\nOpen to all undergraduate students, especially those in Year 2 or 3 of their degree programme. This event is c ompletely free for students.\n👉  Join the waitlist now and keep an eye on your inbox. The countdown starts today.  ⚡️",
+    "tech": true,
+    "why": "In: student hackathon run with Canva (hackathon by name, design/building sprint, tech company judging); no coding involved"
+  },
+  {
+    "id": "luma:vzp35rp7",
+    "source": "luma",
+    "url": "https://luma.com/vzp35rp7",
+    "name": "Typelevel Open Source Hack London",
+    "organiser": "Typelevel",
+    "categories": [
+      "Tech"
+    ],
+    "date": "2026-10-24",
+    "description": "Join the Typelevel community for a fun day of hacking, collaborating, and contributing to open source projects. Whether you’re a seasoned Scala developer or just getting started, this is the perfect opportunity to level up your skills, meet like-minded coders, and contribute to Open Source! We will follow the  Typelevel Code of Conduct .\nAfter a quick introduction, we will help everyone find a project they want to work on and disperse into groups. At end of the afternoon we'll gather up and share what we've done and learned that day :)\nAdditionally, during the hackathon Arman will teach a workshop on Cats Effect, FS2, and Calico. There is limited capacity, so select a \"Workshop\" ticket to reserve your space.\nRegistration is free! A  suggested donation of £20  will help make this event possible. Thank you for your support!\nAgenda\n10:00am - 🥐 Doors open. Come along, mingle and grab some breakfast.  10:30am - 💻 Quick introduction & find your hackmates!  1:00pm - 🥙 Lunch: Join us for some free food and drinks! Vegan and vegetarian options are provided. Let us know if you'd like something special - we'd be happy to accommodate.  2:00pm - 💻 Keep hacking!  3:30pm - 🥤 Join up and share what we've been working on.  4:00pm - ☕ Join us in a coffee shop to keep going!\nFrequently Asked Questions\nI am a novice Scala developer, is this the right event for me? 📚  Yes! One of the best ways to improve your Scala skills is by working on Open Source library and projects!\nI don't know what projects I should contribute to.. ↔️  We have a list of Typelevel-related projects that would love to have some contributions. Other than get-work-done libraries, we have cool projects like game engine, frontend framework, synthesiser!\nI have an idea for a Open Source project but it's a bit daunting. Can you help? 🏔️  Yes! We'd love to see more open source Scala projects and contributors! We can help you get started and provide technical guidance whenever you need it.",
+    "tech": true,
+    "why": "In: Typelevel open-source hack day"
+  },
+  {
+    "id": "luma:5lmt3kkn",
+    "source": "luma",
+    "url": "https://luma.com/5lmt3kkn",
+    "name": "dogAdvisor x Corgi 🐶 2 year birthday and Max Model launch",
+    "organiser": "dogAdvisor Events",
+    "categories": [
+      "AI"
+    ],
+    "date": "2026-10-24",
+    "description": "An unmissable celebration of two years with the launch of the world's safest AI model for dog owners\nWe're taking over  Corgi  as we celebrate two years of world-changing research at dogAdvisor and launch Max Series 5 (the world's best model for dog owners) to you two weeks before the whole world. Here's what to expect:\n\n🎂 A cake to celebrate 2 years!  🐶 We're unveiling Max Series 5 to the world  🐕 We're dogmaxxing, so Archie (the Corgi) will be in the house, and yes, there will be pup cups you'll be able to give him  🎨 A clay-making bar so you can craft your own corgi (and take it home!) and a breed bar to find your perfect match  🧢 Hat bar so you can get your own merch!  ✨ The UK's best AI leaders, YC founders, and investors  🧡 Hosted by Deni Darenberg (dogAdvisor's Founder) and the Corgi team at London's most iconic cafe for tech!\nIn the room\nThere's no dress code, just bring good vibes. We'll gather early stage and leading investors, AI founders and leaders, YC teams, and London's best talent in the room :)\nAbout dogAdvisor & Corgi\ndogAdvisor is a safety-focused AI research company building the world's safest models for dog owners , because 1 in 3 answers on dog health from generic AI models are wrong. Today, we help more than 16,000 dog owners a week, have saved the lives of four dogs, and have been featured in Microsoft News, Investopedia, NewsNation, Forbes, and more.\nCorgi is the full-stack insurance platform built for technology companies — coverage that actually keeps up with how startups build. We also run a 24/7 Corgi Café for founders, builders, and investors. Corgi is backed by more than $268 million in funding and valued at $1.3 billion.",
+    "tech": false,
+    "why": "Out: consumer birthday party for dog owners (cake, corgi, clay bar) around an AI product reveal; not for builders"
+  },
+  {
+    "id": "luma:globaltalentsalonlondon",
+    "source": "luma",
+    "url": "https://luma.com/globaltalentsalonlondon",
+    "name": "Global Talent Salon London",
+    "organiser": "Vietcetera Events",
+    "date": "2026-10-24",
+    "description": "Global Talent Salon London\n\nJanus, in partnership with Vietcetera, presents  Global Talent Salon: The Human Capital Opportunity in Vietnam  on  24 October 2026 at London Business School . The event brings together experienced Vietnamese professionals based in the UK with leaders in finance, investment and executive recruitment.\nFeaturing  Vu Huu Dien  and  An Vo , the programme connects two complementary perspectives: how Vietnamese businesses are financing their next phase of growth, and the talent they need to turn those ambitions into reality.\nThrough keynote talks, open discussions and networking, we will explore Vietnam’s evolving capital markets, the value of international experience and the practical considerations of building a career in Vietnam.\n\nSpeakers & Keynote Topics\nMr. Vu Huu Dien  Board Member, VIF Ho Chi Minh City | Chairman, HD Securities (HDS) | Senior Adviser, Sovico Group\nVietnam’s Capital Market at an Inflection Point: Where Talent and Capital Meet\nDrawing on more than 25 years in finance and investment in Vietnam, Mr. Dien will explore how the country’s capital markets are evolving and what these changes mean for businesses, investors and senior professionals.\nUnderstand the market shift:  Vietnam’s market upgrade journey, the development of bond and equity markets, and the expansion of funding beyond bank lending. Connect capital with growth:  How businesses such as Sovico raise and allocate capital to support expansion across sectors. Identify where your expertise can contribute:  The opportunities these developments could open for experienced professionals, overseas Vietnamese and international talent.\nMs. An Vo  Founding Partner & Managing Director, Janus Executive Search & Talent Advisory\nVietnam Talent Landscape: Where the Real Opportunities Are for Overseas Vietnamese and Expat Talent\nDrawing on more than 3,000 conversations with professionals, An will offer a practical perspective on hiring demand and what it takes to bring international experience into Vietnam’s business environment.\nUnderstand employer demand:  The capabilities businesses are seeking in senior talent. Assess the value of your international experience:  Identify your strengths and communicate their relevance to employers. Prepare for a career transition:  Explore common challenges and the questions to ask before accepting a role in Vietnam.\nDiscussion & Networking\nBring your questions to the speakers and continue the conversation with experienced professionals, business leaders and the MBA/EMBA community over canapés and drinks.\nEvent Details\nDate:  Saturday, 24 October 2026 Time:  1:00–4:00 PM, London time Venue:  Ratcliffe Building R-01 Lecture Theatre, London Business School, Regent’s Park Your ticket includes:  Canapés and drinks\nWho Should Join?\nSenior professionals and experienced specialists, particularly in banking, finance, consulting and technology, alongside MBA and EMBA students and graduates exploring opportunities in Vietnam.\nWhether you are actively considering a move or simply want to understand where your experience could fit, this is a space to ask candid questions and meet others exploring similar decisions.\nPlaces are limited. All registrations are subject to approval by the organizers. Your participation is confirmed only after your registration has been approved.\n\nAbout Janus\n\nJanus is a leading executive search firm in Asia, named among the “Top 10 Emerging Executive Search Firms in Asia” by ManageHR. Since entering Vietnam in 2020, Janus has become a trusted partner for strategic and senior hiring across the country’s largest companies and conglomerates. Over the past six years, its team of expert consultants has worked with more than 3,000 professionals worldwide, from overseas Vietnamese returning home to international leaders pursuing opportunities in Vietnam.\nLearn more at  janus-hk.com .",
+    "tech": false,
+    "why": "Out: Vietnam capital markets and executive talent salon; finance/recruitment, no tech focus"
+  },
+  {
+    "id": "luma:pgnnfcpd",
+    "source": "luma",
+    "url": "https://luma.com/pgnnfcpd",
+    "name": "Sikh Investors Club - Autumn Forum",
+    "organiser": "Sikh Investors Club",
+    "date": "2026-10-24",
+    "description": "Sikh Investors Club presents an  Autumn Forum  hosting Sikh businesses, charities, and projects of all kind. The format will exhibition-style where you can come and explore the stalls at your own pace and network with the attendees.\nIf you would like to host a stall, get in touch with us:  sikhinvestorsclub@gmail.com  (limited spaces).\n\nDress Code\nFormal Dress Code:   Men:  Lounge Suits  / Business Suits  Women:  Smart Day Dress /  Business Suits\n\nWhere & When:\nChamberlain Hotel, 130-135 Minories, London, EC3N 1NU\nSaturday, 24th October, 1PM-4PM\n\nTickets\nNon-Members:\nIf you are not currently a member of Sikh Investors Club, the ticket price is £15.\nThis helps cover venue costs, food and drink. Anything extras goes straight into our CIC's fund for future projects.\n\nMembers:\nIf you are an existing SIC member, you are invited to attend for free. Please RSVP via the link you will be sent directly via email.\n\nBecome a member at SikhInvestorsClub.com",
+    "tech": false,
+    "why": "Out: community investors forum with business and charity stalls; no tech or startup focus"
+  },
+  {
+    "id": "luma:jmh8g063",
+    "source": "luma",
+    "url": "https://luma.com/jmh8g063",
+    "name": "Audio Buffer London",
+    "organiser": "Audio Buffer London",
+    "categories": [
+      "Arts & Culture",
+      "Tech"
+    ],
+    "date": "2026-10-24",
+    "description": "Audio Buffer London  is our monthly meet-up for audio developers and creative technologists—bridging the gap between academic theory and the gritty reality of releasing professional audio tools.\nLed by Dr. Sinan Bokesoy, Audio Buffer is aimed at anyone developing software-hardware based music tools, be they students,  composers, academics, and other creative technologists. In a world of online isolation, we provide a physical environment to network, and stress-test ideas.\nAudio Buffer 06 will be kindly hosted by Goldsmiths, University of London, during their annual Manifold Art event and exhibition.\n\"Old, But Not Obsolete\" Zero-Inference Generative Systems\nSession #06 of Audio Buffer London shifts focus to the foundational algorithms of computational creativity.\nIn the current era of AI, the conversation is dominated by massive, pre-trained transformer models. Yet, for live generative music, these modern monoliths face a critical flaw: latency. Gradient descent over billions of parameters cannot happen in 5ms.\nThis brings us to tonight's thesis:  Old, but not obsolete.  The algorithms that truly drive live, interactive generative performance are rooted in the mid-to-late 20th century—Markov chains, Cellular Automata, Stochastic distributions, and Evolutionary computing. These architectures do not rely on a frozen corpus or massive server farms. They are live, rule-based, on-the-fly processes with near-zero inference time. Because learning and generation happen simultaneously, they are instruments you  inhabit  rather than oracles you query.\nSession #06 will examine four distinct applications built on these classic concepts, proving that foundational models still hold the key to real-time generative sonic art.\nRegistered attendees will receive a free license of Cosmosf M31.\nPresenters\nProf. Matthew Yee-King,  \"Clockwork\" (Markov Chains) & \"EvoSynth\" (Genetic Algorithms)\nMatthew presents two distinct systems spanning discrete logic and evolutionary computing. First, he introduces Clockwork, a custom Markov improviser that relies on explicit, real-time histograms built directly from the performer's input, implementing turn-taking as a physical quantity that charges and drains against a real clock.\nHe will also present EvoSynth, a system building upon concepts from his pioneering 2000 project  AudioServe . EvoSynth uses interactive genetic algorithms to search the space of all possible configurations for FM/AM synthesizer circuits. By cross-breeding small local \"islands\" of genomes, the system allows users to seamlessly mutate and discover novel waveforms on the fly.\nDr. Sinan Bökesoy  \"Cosmosf M31\" — Stochastic Distributions\nSinan presents his stochastic multi-scale MIDI event generator, Cosmosf M31. Rooted in the Xenakis lineage of aleatoric processes, M31 distributes discrete note events across varying time scales (macro, meso, micro) using a deep palette of stochastic functions. Instead of a pre-trained model guessing the next note, the performer continuously transforms a multi-dimensional parameter space in real time, navigating smoothly between rigidly ordered sequences and complex, disordered states.\nMichael Wallis  \"Cela\" — Cellular Automata & Expressive Interfaces\nJoining us from QMUL, Michael presents Cela, a MIDI controller designed to bridge the gap between musical skill and instrument playing. At its core is an 8x8 grid of toggles driven by the principles of Conway's Game of Life to autonomously generate evolving melodies and chords. Unlike models relying on vast data histories, Cela's memory is simply the current grid state. Michael will demonstrate how these hyper-local interactions create complex global sequences, while giving the performer deep expressive control through tactile BPM and ADSR parameters, alongside a physical light sensor that dynamically modulates the generated sound qualities.",
+    "tech": true,
+    "why": "In: monthly meetup for audio software/hardware developers and creative technologists"
+  },
+  {
+    "id": "luma:4dado4pn",
+    "source": "luma",
+    "url": "https://luma.com/4dado4pn",
+    "name": "Women's Health Summit by Juno",
+    "date": "2026-10-24",
+    "description": "Juno is hosting its first women's health event!\nWomen's health is still being overlooked. Juno (YC P26) is bringing together some of the UK's leading doctors to talk about women's health across skin, mental health and O&G.\nIntroducing our first panellists:\nIfeoma Ejikeme, MD  — Founder and Medical Director of Adonia Medical Clinic, named Best Clinic in London at the Aesthetics Awards several times.\nMs (Dr) Karen Joash  — Consultant O&G and Director of CATO at Imperial College Academic Health Science Centre.\nSerena Lai  — Consultant Psychiatrist and Associate Medical Director at the London Psychiatric Clinic.\nCome and join us to discuss women's health in a curated room, and enjoy afternoon tea at a 5-star hotel in London.\nSaturday 24 October 2026 · 2–6pm · London\nSpaces are limited 👀 Register to request a place; attendance is subject to host approval.",
+    "tech": false,
+    "why": "Out: doctors panel on women's health over afternoon tea; hosted by a YC startup but the topic is medicine"
+  },
+  {
+    "id": "luma:po4epp54",
+    "source": "luma",
+    "url": "https://luma.com/po4epp54",
+    "name": "Autoresearch: Agents x Science",
+    "categories": [
+      "AI"
+    ],
+    "date": "2026-10-24",
+    "description": "Lead an autonomous research lab and watch it collaborate with others.   Agents have grown capable enough to autonomously run experiments in verifiable domains. However, they often get stuck in local optima and drift from initial objectives. We are experimenting with a network of autoresearchers that can be steered by the human (you) and collaborate with other autoresearchers.\nWe'll be using the Efferents framework as a starting point:  Entangled-Research efferents\n\nTokens and snacks will be provided!\n\nTreat this like a mini hackathon. Bring your laptop!!!\n\nLet's see how far we can push collaborative autoresearchers in 3 hours.   Thanks to  Spark Grants  for making this possible!",
+    "tech": true,
+    "why": "In: hands-on mini hackathon steering autonomous AI research agents"
+  },
+  {
+    "id": "luma:riyodinner",
+    "source": "luma",
+    "url": "https://luma.com/riyodinner",
+    "name": "The RIYO Private Dinner",
+    "organiser": "RIYO Consultancy",
+    "date": "2026-10-24",
+    "description": "One Evening. One Private Dinner. A Rare Gathering.\nFollowing our sold-out London debut back in May, RIYO returns to the capital with  The RIYO Private Dinner  – an elevated evening bringing together Somali professionals across media, journalism, PR, communications, marketing, film, television, content and the wider creative industries for the first time.\nExpect an exceptional guest list that brings together Somali professionals from across the media and creative industries, including journalists from the BBC and ITV, professionals from TikTok, Netflix and Meta, and senior PR and marketing leaders with experience spanning Universal Music Group, Samsung, Virgin Media and Cannes Lions, alongside talent from leading agencies, businesses and creative organisations across sectors.\n\nWhether you arrive alone or with someone you know, the evening is designed to help you broaden your industry network, exchange ideas and build valuable relationships that can lead to future opportunities, collaborations and connections.\nThe evening will also feature a hosted conversation led by RIYO Consultancy's Founder & CEO, Hanna Yusuf, joined by senior industry voices to explore their experiences, perspectives and the evolving media and creative landscape.\nBy the end of the evening, we want you to know the room, and for the room to know  you .\nSpeaker announcements will be shared exclusively with confirmed ticket holders ahead of the evening.\n\nRIYO x Grilandia\nFor this edition, we are partnering with  Grilandia  to create an intimate private dining experience in the heart of central London.\nGuests will enjoy a fully halal two-course Lebanese dinner, beginning with a welcome drink on arrival in a private setting designed for exceptional food, conversation and connection.\nYour evening includes:\nWelcome drink on arrival Two-course halal dinner Drink served with dinner Private central London dining Curated seating and introductions Hosted networking Industry conversation and insights\nService charge is included. We will also accommodate dietary requirements wherever possible.\n\nNot in Media? You’re Still Invited\nYou don’t need to work in media to benefit from being in the room.\nWhether you’re early in your career, established in another field, considering a career move, building a business or simply curious about the media and creative industries, this is a chance to meet people you may not usually have access to, join the conversation and broaden your network.\nAnd if you already work in the industry, it’s an opportunity to connect beyond your usual circle, exchange ideas and build relationships across different areas of media and creativity.\nYou don’t need a certain title, background or level of experience to belong in the room – we want different perspectives, experiences and voices at the table, including yours.\n\nYour table awaits. Secure your seat now.",
+    "tech": false,
+    "why": "Out: private dinner for Somali media and creative professionals"
+  },
+  {
+    "id": "luma:age-nytd",
+    "source": "luma",
+    "url": "https://luma.com/age-nytd",
+    "name": "Longevity Table London",
+    "organiser": "Longevity Cities",
+    "date": "2026-10-24",
+    "description": "📅 Saturday, 24 October 2026\n🕕 18:30\n📍  KIN Restaurant, 21a Foley Street, London W1W 6DS\n🗣️ Hosted in English\n🎟️ Pay your own\nLongevity Table London is a relaxed community dinner for ten people who care about living longer and better, hosted by Longevity London at KIN in Fitzrovia. Expect good plant-based food and a table full of people who think about the same questions you do.\nWhat is this about?\nMost longevity conversations happen online, in podcasts and comment threads. This evening brings them to a real table, where you can swap notes on sleep, training or the study you read last week with people who find that just as interesting as you do. The group is small on purpose, so everyone actually gets to talk.\nWhat to expect\nWe start at 18:30 with a short round of introductions, so you know who is sitting next to you before the first plates arrive. After that, it is simply dinner and conversation, with no programme and no pitch. KIN cooks fully plant-based, with dishes that borrow from Asian and Middle Eastern kitchens, and you order whatever you like.\nWho is it for?\nAnyone in London with a genuine interest in longevity, whether you track your biomarkers or have only just started wondering what actually works. You do not need to be an expert, only curious and happy to meet new people.\nGood to know\nEveryone pays for their own food and drinks. There are 10 seats, so please only RSVP if you can make it. The table is booked under the name Maurice. Please be on time, because the introductions open the evening. We will take photos during dinner. If you prefer not to be in them, just let us know on the night.\nMake it a weekend\nOn Sunday, 25 October, we continue with our Matcha Walks: two sessions at 10:30 and 14:00, starting with a matcha in Marylebone and then a walk through Regent's Park. They have their own sign-up on our calendar, so pick the session that suits you.\nTen seats only. RSVP to save yours.\nAbout the host\nLongevity London is part of Longevity Cities, a global community making science-based longevity accessible, open, and human. From Munich and Berlin to London, Zürich, and beyond, we bring people together in cities around the world to learn, move, and live better, without the fear and without the extremes. More at  longevity-cities.com .",
+    "tech": false,
+    "why": "Out: longevity community dinner"
+  },
+  {
+    "id": "luma:taxm5kks",
+    "source": "luma",
+    "url": "https://luma.com/taxm5kks",
+    "name": "Rise Her Collective Women Founders Brunch in London",
+    "date": "2026-10-25",
+    "description": "Join us for a delicious brunch and networking event at Levent Borek, London with their famous breakfast at the centre of it all.\nTable filled with traditional flavours and a room full of inspiring women to connect with. No panels this time, just real conversations, new connections and a chance to get to know each other better.\nIf you’ve been meaning to meet the community, this is the perfect setting. Come along, bring your appetite and let’s gather around the table.\n\nTickets are nonrefundable and nontransferabl.",
+    "tech": false,
+    "why": "Out: women founders brunch with no startup or tech angle in the text; general women business community social (borderline)"
+  },
+  {
+    "id": "luma:tt9h72db",
+    "source": "luma",
+    "url": "https://luma.com/tt9h72db",
+    "name": "Coffee Meet Up",
+    "categories": [
+      "Tech"
+    ],
+    "date": "2026-10-25",
+    "description": "☕ Latin Women in Tech London  Coffee Meet Up\nJoin us for an informal coffee meet-up to  meet, connect and network  with other Latin women working in tech across London.\nNo agenda, no presentations, just  great coffee, good conversations and good vibes . Whether you're new to the community or have been around for a while, come along, meet new people and make some connections. 💜\n📍  Location:  Revealed when you sign up\n✨  Spots are limited , so please only register if you’re able to attend. If your plans change and you can no longer make it, please  unregister  to free up your spot for someone else.",
+    "tech": true,
+    "why": "In: Latin Women in Tech coffee meetup for women working in tech"
+  },
+  {
+    "id": "luma:nwj87gtl",
+    "source": "luma",
+    "url": "https://luma.com/nwj87gtl",
+    "name": "Finance x Startup Brunch",
+    "date": "2026-10-25",
+    "description": "Finance x Startup Brunch\n⏰ Sunday, 25 Oct - 12pm\n📍 22 Hoffman Square, N1 6DH London\nAn invite-only brunch for people in finance who are curious about making the jump into startups or founding a company in the future and ex-Finance startup operators and founders.\nAround the table: bankers and investors interested in startups, and ex-finance professionals who’ve since joined or built startups.\nThe idea is simple: discussing what it takes to go from Finance into building.\nYour hosts are Ines, Computer Scientist & VC investor and Andy, ex-Founder who raised funding from Eric Schmidt",
+    "tech": true,
+    "why": "In: invite-only brunch about moving from finance into founding or joining startups, VC-hosted"
+  },
+  {
+    "id": "luma:yvdw1qil",
+    "source": "luma",
+    "url": "https://luma.com/yvdw1qil",
+    "name": "YAAD Clubhouse: Work, Create and Lounge + Controversy Club",
+    "organiser": "YAAD Black History Month Clubhouse",
+    "categories": [
+      "Arts & Culture"
+    ],
+    "date": "2026-10-24",
+    "description": "Mornings  are quiet - no music, head down, get stuff done whether it's digital or analog.\nBy  afternoon  the energy rises - start chatting to your neighbour whilst light music plays in the background.\nEvening  - Bring your most controversial opinion and try to convince a panel of 3 audience members that you're right. Five spots available to present, audience panel rotates with each presentation. Register to sign up as a presenter\n\nCome to work, come to make something, or come to do absolutely nothing except yap.\nWe've got  work  space,  creative  space and  lounge  space - all yours from 12pm-10pm.\nEquipment on site to use (for free):\nDJ setup - decks, headphones + speakers (afternoon onwards) Sewing machines (x2) Cricut Maker 3 machine Cricut Heat press Craft supplies (paints, brushes, pens, hot glue gun etc) Fabrics Photography setup - lighting, backdrop stand\nDrinks and snacks available in the clubhouse.\nBlack Black Blackity Black\nWe're proud to be exhibiting Black art and Black brands in our space this month. If you want to find our more about them or buy their work, simply scan the QR codes next to their work.\nYAAD yuh seh?!\nWe're a new non-profit CIC building a clubhouse for the Culture and the Curious: a multifunctional makerspace, co-working hub and third space for over-25s in West London. We ran 29 creative workshops and events over the summer, but you don't have to call yourself a creative to join us.\nFrom the corporate mandem to app founders, filmmakers to marketing associates, hobbymaxers to designers - everyone's welcome, and you deserve to be here.\nThis is our first month-long residency and our first Black History Month. Expect a warm and sophisticated space that smells like Oud and is inspired by Caribbean and African interiors.",
+    "tech": false,
+    "why": "Out: Black History Month co-working, creative lounge and debate club"
+  },
+  {
+    "id": "luma:8xtyviyz",
+    "source": "luma",
+    "url": "https://luma.com/8xtyviyz",
+    "name": "Brunch Club October",
+    "organiser": "In Our Era",
+    "categories": [
+      "Food & Drink"
+    ],
+    "date": "2026-10-24",
+    "description": "October brunch club is taking us to Bills London Bridge!",
+    "tech": false,
+    "why": "Out: brunch club"
+  },
+  {
+    "id": "eventbrite:1997144173986",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/ai-for-equity-book-launch-london-tickets-1997144173986",
+    "name": "AI for Equity book launch (London)",
+    "organiser": "Jenny Garrett OBE",
+    "categories": [
+      "City/Town",
+      "Community & Culture",
+      "Appearance or Signing",
+      "Equity",
+      "Technology",
+      "Ai",
+      "Leadership",
+      "Intergenerational",
+      "Booklaunch"
+    ],
+    "date": "2026-11-12",
+    "description": "Join us in London for the AI for Equity book launch - connect, and explore how AI can boost fairness!\n\nAI for Equity book launch (London)\n\nWhat if the loudest story about AI is the wrong one?\n18 months ago, while the headlines insisted AI would deepen every divide, we asked the opposite question: what if AI could help solve some of the world's hardest equity problems?\nThe search for answers became a podcast, then a book. AI for Equity: Creating a More Equitable Society for All (Emerald) , and this is its London launch.\nThis is not a panel discussion. Expect two generations on one stage answering your questions side by side - disagreement welcome - and a room that gets to vote, argue and change its mind.\nJoin co-authors Jenny Garrett OBE, leadership expert and author, and Leah Sunshine, founder of Dawn Intelligence and co-host of the AI for Equity podcast, for an evening built around your questions and the stories of the pioneers already using AI to open up education, inclusion and opportunity.\nOn the night Drinks and connection from 6.30pm. Two generations, one stage, your questions answered live. Signed books, and an ending you'll have a hand in.\nTickets Free entry - just bring your curiosity. Already pre-ordered the book? Bring your copy and we'll sign it on the night. £19.99 - includes a copy of AI for Equity, signed by both authors and waiting for you at registration.\nWhen you register, tell us the one question about AI and equity you'd want two generations to answer. The best ones make it on stage.\nThursday 12 November 2026, 6.00pm to 8.30pm, University of Westminster, London.",
+    "tech": false,
+    "why": "Out: book launch on AI and social equity, leadership/policy audience, not building tech"
+  },
+  {
+    "id": "eventbrite:2001750181679",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/tour-of-kirkaldys-testing-works-including-machine-run-tickets-2001750181679",
+    "name": "Tour of Kirkaldy's  Testing Works including machine run",
+    "organiser": "Kirkaldy's Testing Works",
+    "categories": [
+      "Science",
+      "Science & Technology",
+      "Attraction",
+      "History",
+      "Tour",
+      "Construction",
+      "Museum",
+      "Engineering",
+      "Victorian",
+      "London",
+      "Industry",
+      "Demonstrations",
+      "Machine"
+    ],
+    "date": "2026-11-01",
+    "description": "Join us to tour David Kirkaldy's world-famous Testing & Experimenting Works and to see the Universal Testing Machine in action.\n\nDavid Kirkaldy's Testing & Experimenting Works at 99 Southwark Street set the first international standards in materials testing; a science that has wide-reaching effects on everyday life today.\n\nToday, this unique Victorian workshop keeps alive our direct link with Kirkaldy's innovation, at the heart of this bustling commercial district of London. Kirkaldy's Testing Works preserves Kirkaldy's unique Universal Testing Machine - the huge hydraulic powered machine he designed and had built in Leeds - in full working order in the premises he built to house it.\n\nAs well as presenting the story of the family who ran the business for almost 100 years and of the wider development of materials testing, the workshop and the Universal Testing Machine provide a unique crucible for new experimentation and collaboration - which can inspire future generations of scientists and artists alike to continue enquiring into the properties of the materials on which we build our lives.\n\nYour tour around the Works will take about 2-hours 30-minutes including an introductory video, demonstrations of some of the smaller machines in our collection and will feature as its highlight a demonstration of the Universal Testing Machine.\n\nAt this time, we are not offering Concessions tickets or refunds due to problems with our financial security caused by the lockdown. We hope that you understand our position as a small museum fully reliant on ticket sales.\n\nWe&#x27;re also now opening on some weekday evenings for shorter tours of the Museum. More info here.\n\nEven in these strange times, we hope you&#x27;ll join us in celebrating the vision of a forgotten hero of engineering science.\n\nFind out more on our website here.\n\nImages: ©Peter Dazeley",
+    "tech": false,
+    "why": "Out: heritage tour of a Victorian materials testing works"
+  },
+  {
+    "id": "eventbrite:2001563231506",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/society-of-electron-microscope-technology-semt-meeting-tickets-2001563231506",
+    "name": "Society of Electron Microscope Technology (SEMT) meeting",
+    "organiser": "The Francis Crick Institute",
+    "categories": [
+      "Science",
+      "Science & Technology",
+      "Meeting or Networking Event",
+      "Electronmicroscopy",
+      "scientificresearch",
+      "semtmeeting2024",
+      "microscopetechnology",
+      "nanostructureanalysis"
+    ],
+    "date": "2026-12-07",
+    "description": "The next SEMT meeting will be held on 7th December 2026 at the Francis Crick Institute.\n\nThe Society of Electron Microscope Technology will be hosting talks from seven invited speakers and eight early career talks through the RMS beginners competition. Our speakers will be covering subjects as diverse as new instrument design, bioimaging and cryo-SEM, using SEM to supplement macrophotography, new probes for confocal microscopy, appilications in EBSD, atom probe microscopy, XPS, Raman spectroscopy and microscopy applications in food research.\nThis is planned to be both an in-person and virtual meeting for people who wish to attend virtually. Because we will have all of the normal costs associated with running the one day meeting, including room hire charges, speaker travel, and other affiliated costs, registration is the same whether you attend in person or stream the event. Details of how the meeting will be streamed will be sent to registrants on the 2nd December.\n\nFor more information, please visit the SEMT website.",
+    "tech": false,
+    "why": "Out: electron microscopy society meeting; lab science instrumentation, not computing"
+  },
+  {
+    "id": "eventbrite:1999663040985",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/for-your-inspiration-into-the-wild-tickets-1999663040985",
+    "name": "For Your Inspiration: Into the wild",
+    "organiser": "The Royal Institution",
+    "categories": [
+      "Medicine",
+      "Science & Technology",
+      "Seminar or Talk",
+      "Lecture",
+      "Education",
+      "Science",
+      "Careers",
+      "Talk",
+      "Activities",
+      "medical_education",
+      "climate_action",
+      "educational_event"
+    ],
+    "date": "2026-11-13",
+    "description": "A wild evening exploring the range of careers working with animals\n\nFrom caring for pets and protecting wildlife to advancing veterinary medicine and animal welfare, working with animals offers endless opportunities to make a difference. Animals inspire us to explore, discover and connect with the natural world in meaningful ways.\n\nDuring the event, there will be a Q&A in the Theatre from people working across a wide range of animal-related careers, who will share their experiences caring for, studying and protecting animals and then open up the floor to questions from the audience.\n\nFor the rest of the evening, you are free to explore interactive activities and demonstrations throughout the building. Meet experts from research organisations, charities and universities across the UK. Learn about the wide range of roles that support animal health, welfare, conservation and research, and take part in hands-on activities that bring these careers to life.\n\nThis session offers an inspiring introduction to the incredible breadth of opportunities available to those who are passionate about animals, from veterinary science and conservation to animal behaviour, education and care.\n\nThese events are designed for young people aged 13+, and offer an exciting hands-on experience of a huge range of scientific topics. Featuring scientists from Universities and companies from across the UK, these events give young people the chance to explore in depth a topic, talk to scientists working in this field, and discover the wide range of different jobs available. Adults are also welcome and encouraged to come along too, together with their young people.\nAll young people under the age of 13 need to be accompanied by a paying adult. This event is free for Ri Young Members 13 and over.\nBy booking to attend events at the Royal Institution, you confirm that you have read and accept the Ri's event terms and conditions. You also agree to abide by our code of conduct, and help to create a great experience for yourself and your fellow participants.\nEvent image credit: Freezer on Unsplash",
+    "tech": false,
+    "why": "Out: Royal Institution evening on careers with animals"
+  },
+  {
+    "id": "eventbrite:1998909571337",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/can-we-learn-to-be-happier-what-science-says-tickets-1998909571337",
+    "name": "Can We Learn to Be Happier? What Science Says",
+    "organiser": "Mind Circles",
+    "categories": [
+      "Science",
+      "Science & Technology",
+      "Seminar or Talk",
+      "Science",
+      "Nature",
+      "Psychology",
+      "Neuroscience",
+      "Brain",
+      "Neuroplasticity",
+      "Neurodiversity",
+      "Mentalhealthawareness",
+      "Selfawareness",
+      "Cognition"
+    ],
+    "date": "2026-11-02",
+    "description": "Can happiness be learned? Explore what positive psychology reveals about attention and the small habits that may help us thrive\n\nMost of us imagine happiness will come after the next achievement, when life becomes less stressful, or when our circumstances finally improve.\nBut what if psychology tells a different story?\nIn this interactive Mind Circles Talk, Julia Coggins explores what positive psychology research can teach us about happiness, wellbeing and what it means to flourish.\nWhy does the mind seem so quick to notice problems, threats and what is going wrong? What actually influences our longer-term wellbeing? And can the way we direct our attention and shape our everyday habits make a meaningful difference?\nMoving beyond the idea of simply “thinking positively”, Julia will explore the psychology behind happiness and how small, intentional changes in attention and behaviour may influence the way we experience everyday life.\nThrough research, reflection and interactive exercises, you’ll have the opportunity to put these ideas into practice and explore what may support your own wellbeing.\nYou’ll leave with:\nA clearer understanding of the psychology of happiness, wellbeing and flourishing.\nInsight into why the mind is naturally drawn to problems, threats and what is missing.\nPractical ways to direct your attention towards what matters and what is working.\nA simple, evidence-informed happiness habit to experiment with over the following week.\nIdeas for making positive changes specific, realistic and sustainable in everyday life.\nAbout Julia Coggins\nJulia Coggins has more than 25 years’ experience in HR and employee relations, alongside over a decade designing and leading mental health and wellbeing initiatives.\nAs a Non-Clinical Mental Health & Wellbeing Lead, Julia worked in partnership with the South London and Maudsley NHS Foundation Trust (SLaM) Recovery College and the Maudsley Charity, supporting the development and delivery of practical approaches to mental wellbeing, resilience and positive behaviour change.\nShe has also designed and delivered successful workplace wellbeing programmes, workshops and initiatives focused on helping people think, work and feel better.\nToday, Julia is a Positive Mindset and Wellbeing Coach, Barefoot-trained coach and NLP Practitioner, with a particular interest in positive psychology, happiness habits, mindset, resilience and behaviour change.\nThrough her transformational coaching, workplace programmes, talks and retreats, Julia combines her extensive professional experience with insights from positive psychology to help people turn understanding into action. Her approach focuses on small, sustainable changes that build confidence, strengthen resilience and help people lead happier, more fulfilling lives.\nWebsite: www.juliacogginscoaching.com\nInstagram: https://www.instagram.com/juliacogginscoach/\nLinkedIn: https://www.linkedin.com/in/julia-coggins-7457714/\nEvent Schedule\nPlease arrive by 19:15 to check in and get settled before the talk begins, doors will close at this time so we can start the talk promptly at 19:30.\n19:00 – 19:30 Arrival & Warm-Up Activity\n19:30 – 20:15 ExpertTalk\n20:15 – 20:30 Q&A\n20:30 – 20:45 Optional Continue the Conversation\n\nIn Person OR Livestream/Recording\nEarly Bird: Discounted early-access ticket. Includes in-person entry, livestream access, and recording.\nCommunity Ticket: Lower-cost ticket for students, lower-income attendees, carers, or anyone currently facing financial barriers. Includes in-person entry, livestream access, and recording.\nGeneral Admission: Standard in-person ticket. Includes livestream access and recording.\nFinal Release: Final allocation of in-person tickets. Includes livestream access and recording.\nBring a friend (admits 2): Grab a +1 and share the fun! Includes in person tickets, livestream access and recording for both\nOR\nLivestream & Recording: ONLY remote access ticket with livestream and recording included.All recordings will be ",
+    "tech": false,
+    "why": "Out: psychology/neuroscience talk on happiness"
+  },
+  {
+    "id": "eventbrite:2003086250898",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/nature-within-how-the-natural-world-shapes-our-minds-bodies-health-tickets-2003086250898",
+    "name": "Nature Within: How the Natural World Shapes Our Minds, Bodies & Health",
+    "organiser": "Applied Neuroscience Association (ANA)",
+    "categories": [
+      "Science",
+      "Science & Technology",
+      "Seminar or Talk",
+      "Neurology",
+      "Neuroscience",
+      "Biodiversity",
+      "Brainhealth",
+      "planetaryhealth",
+      "environmentalhealth",
+      "natureandhealth",
+      "appliedneuroscience",
+      "humanbiology",
+      "naturewithin"
+    ],
+    "date": "2026-10-28",
+    "description": "In-person edition of the ANA WAND October Spotlight on the Brain with Dr James Bashford\n\n\"Reconnecting with Nature is the most important public health intervention of our time.\"\nWhat happens when we stop thinking about the brain, body and environment as separate things?\nJoin ANA at King’s College London for a special hybrid (online/in-person) edition of the October Spotlight on the Brain with Dr James Bashford.\nDate: Wednesday 28 October 2026\nTime: 19:00-21:00 GMT London time\nVenue: King’s College London, Bush House, 30 Aldwych, London, WC2B 4BG\nArrival: Registration opens from 18:30 GMT, Bush House North Wing Reception\nFormat: HYBRID - ONLINE and IN-PERSON followed by networking\nIf you cannot make it in-person, you can register to join us online HERE\nDr Bashford returns following a blazing introduction at #WAND2026 to continue exploring his book 'Nature Within: How the Natural World Shapes Our Minds, Bodies & Health — an invitation to rethink some of the boundaries we routinely draw between ourselves and the world around us.\nThe distinction between “human health” and the “natural world” can make intuitive sense, but biologically we are organisms within nature. Our nervous, immune, sensory, metabolic and cellular systems develop in continuous interaction with the environments in which we live.\nDrawing on ideas explored in his book and the thinking that led to and has developed since its publication, the evening will open up a wider conversation about the relationships between brain, body, behaviour and environment — and what an organism-first perspective might contribute to the way we think about human health and wellbeing and the world about us.\nThere will be plenty of space for questions, discussion and challenge, followed by an informal networking session where we will continue the conversation around a question posed to everyone in the room.\nThis hybrid session is part of the ANA October Spotlight on Brain Health: 10 talks across October exploring the brain and nervous system from different perspectives.",
+    "tech": false,
+    "why": "Out: neuroscience and nature health talk"
+  },
+  {
+    "id": "eventbrite:1991897158020",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/uk-neqas-microbiology-division-event-tackling-superbugs-the-amr-challenge-tickets-1991897158020",
+    "name": "UK NEQAS Microbiology Division Event Tackling Superbugs - The AMR Challenge",
+    "organiser": "UK NEQAS",
+    "categories": [
+      "Science",
+      "Science & Technology",
+      "Conference",
+      "Quality",
+      "Microbiology",
+      "Pathogens",
+      "ukneqas"
+    ],
+    "date": "2026-11-27",
+    "description": "An opportunity to hear expert speakers and meet members of the UK NEQAS Microbiology Division, as well asnetworking with other participants.\n\nUK NEQAS Microbiology Division 2026 Scientific Meeting\nTACKLING SUPERBUGS - THE AMR CHALLENGE!\nLocation\nThe Royal National Hotel, 38-51 Bedford Way, London WC1H 0DG\nDate\nFriday 27 November 2026\nTime\n09:30-15:30\nWhat to expect\nOn the day, delegates will have the opportunity to hear presentations by experts, meet with commercial companies to get an update on the latest technology available, network with other participants, and meet with members of the UK NEQAS Microbiology Division as well as members of their Steering Committee and Advisory Groups.\nRegistration will be open from 08:45\nRefreshments and lunch will be provided\nDelegates will receive a meeting pack\nA certificate of attendance will be provided\nThe meeting room, lunch and refreshments area, and toilets are all located on the ground floor of the Royal National Hotel\nEmail address for any queries is: userday@ukneqasmicro.org.uk\nTicket information\nEARLY BIRD OFFER! £95 + vat per person. Offer ends 09/10/2026. Register and pay for your place by the 9 October 2026, to receive an early bird offer of £95 + vat per person\nGENERAL ADMISSION £120 + vat per person.\n\nWays to Pay\nThis event requires online payment at the time of booking.\nThis is the easiest and most convenient way to pay and is our chosen method of payment.\n\nFurther information\nPlease email: userday@ukneqasmicro.org.uk",
+    "tech": false,
+    "why": "Out: microbiology quality conference on antimicrobial resistance"
+  },
+  {
+    "id": "eventbrite:1998476570219",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/the-history-of-witchcraft-women-magic-rituals-and-the-patriarchy-tickets-1998476570219",
+    "name": "The History of Witchcraft & Women: Magic, rituals and the patriarchy",
+    "organiser": "Seed Talks",
+    "categories": [
+      "Historic",
+      "Community & Culture",
+      "Seminar or Talk",
+      "Women",
+      "Witchcraft",
+      "Londonevents",
+      "Datenightideas",
+      "history_talk",
+      "femininealchemy",
+      "witchcrafthistory",
+      "womenandmagic",
+      "patriarchyrituals",
+      "magicalheritage"
+    ],
+    "date": "2026-11-09",
+    "description": "Uncover the fascinating history of witchcraft and how patriarchal ideas shaped the image of a witch. Followed by Q&A.\n\nThe image of a female witch, with broom and black cat serving the devil, is ingrained in pop culture. But where did this stereotype come from? The concept of witchcraft emerged slowly over the course of several centuries as a result of theological, intellectual, and cultural changes in ideas about demons and heresy.\nMagical practices were varied - including love magic, healing, and various forms of prognostication. And it certainly wasn’t always associated with women. In fact, more ‘sinister’ magic like necromancy - which relied heavily on the power of demons - was mostly done by men. This type of magic involved a lot of education that simply wasn’t accessible to women at the time. So how come this image of evil women practising magic - witches - came about?\nThis talk will use feminist approaches to the past to explore medieval changes in ideas about magic, gender, and heresy in order to better understand the emergence of witchcraft at the end of the middle ages. We will also look at witchcraft in relation to female sexuality and fears about women’s access to ritual power throughout history.\nDoors open at 7pm, talk starts at 7.30pm - come down early to grab a good seat!\nFollow us on IG @seedtalks\nDr Jennifer Farrell is a lecturer in medieval history at the University of Exeter. With interests in both gender and the medieval supernatural, her research and teaching focuses on cultural developments and their relationship to socio-political changes in Western Europe during the high and late middle ages (c. 1000- c. 1500). She has published on subjects including medieval prophecy; fairies in medieval history and romance; the relationship between literary representations of fairies, the supernatural, and gender; and is currently working on a book focused on Geoffrey of Monmouth and the origins of the Arthurian legends. Her teaching has included undergraduate and postgraduate courses looking at medieval gender and sexuality, universities and learning in the middle ages, magic in the middle ages, sexualities across time and space, and the legends of King Arthur.\nThis is a 16+ event\nTestimonials from our guests\n⭐ Super Interesting talks! Fun and Informative - Ally S.\n⭐ Expertly run, talks are always super informative and a lot of fun! Couldn’t recommend these enough! 5 star. - Owen S\n⭐ Very interesting topics, and very well organised. Would 100% recommend - Jordo S\n\nWitchcraftHistory #FeministHistory #MagicAndGender #Witches #MedievalMagic #WitchcraftStudies #GenderAndPower #MedievalHistory #Herstory #WitchHunt #WitchcraftStereotypes #HistoryOfMagic #FeministApproaches #MedievalWomen #HistoryUncovered #CulturalHistory #WomenAndPower",
+    "tech": false,
+    "why": "Out: history talk on witchcraft"
+  },
+  {
+    "id": "eventbrite:1999016732860",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/inspirational-women-in-law-awards-2026-tickets-1999016732860",
+    "name": "Inspirational Women in Law Awards 2026",
+    "organiser": "Next 100 Years",
+    "categories": [
+      "Education",
+      "Charity & Causes",
+      "Conference",
+      "Women",
+      "Awards",
+      "Law",
+      "Inspirational",
+      "2024"
+    ],
+    "date": "2026-11-03",
+    "description": "We are delighted to invite you to...\nA Celebration of Our Role Models in Law:\nT﻿he Inspirational Women in Law Awards 2026.\n\nThe Annual Inspirational Women in Law Awards from Next 100 Years seek to identify individuals from across the legal profession who are leading the way in improving equality and diversity.\nThe Awards recognise those who are both excelling in their areas of practice and are working for the changes needed to ensure women working in the law are able to thrive.\nIn their 11th edition, this year the celebration of the award winners will be framed by a celebration of the achievements of all those who continue to be role models in the legal profession. With keynote speeches delivered by three industry-leading VIP guests, as well as a sparkling drinks reception, networking opportunities with top lawyers from across the UK and beyond and, of course, the Awards Presentation to the 2026 Winners, this Celebration of Our Role Models in Law is not one to be missed!!\nNominations categories are below:\nIN-HOUSE LAWYER OF THE YEAR\nSOLICITOR OF THE YEAR\nCHAMPION OF THE YEAR\nMENTOR OF THE YEAR\nLAW STUDENT OF THE YEAR\nCILEX LAWYER / CHARTERED LEGAL EXECUTIVE OF THE YEAR\nRISING STAR OF THE YEAR\nBARRISTER OF THE YEAR\nPARALEGAL OF THE YEAR\nLEGAL ACADEMIC OF THE YEAR",
+    "tech": false,
+    "why": "Out: legal profession diversity awards"
+  },
+  {
+    "id": "eventbrite:2002392845905",
+    "source": "eventbrite",
+    "url": "https://www.eventbrite.co.uk/e/londons-unique-monthly-party-for-gay-professionals-tickets-2002392845905",
+    "name": "London's unique monthly party  for gay professionals",
+    "organiser": "Village Drinks",
+    "categories": [
+      "LGBT",
+      "Community & Culture",
+      "Party or Social Gathering",
+      "Gaymen",
+      "gay_singles",
+      "gay_dating",
+      "gay_events",
+      "gay_men",
+      "gay_speeddating",
+      "gay_networking_night"
+    ],
+    "date": "2026-10-29",
+    "description": "Get ready to mingle, network, and have a blast with hundreds of professional gay men\n\nLondon’s premier social networking party for gay professional guys. A great crowd, familiar faces and plenty of new people to meet. 🥂\nJoin Village Drinks on Thursday 29 October for an evening of drinks, conversation and good company with like-minded guys from across London.\nCatch up with friends, widen your circle or simply enjoy a night out with guys you’d like to know better.\nOur venue? Farmers & Fletchers in the City!\nThis month, we're heading to a rather special venue in the heart of the City of London. Home to two of London's historic livery companies, Farmers & Fletchers combines centuries of City tradition with stylish, contemporary interiors.\nJust moments from Barbican, this elegant venue features a striking spiral staircase and an impressive Great Hall — a fantastic setting for another memorable Village Drinks evening. 🥂\nComing on your own? You’ll be in good company. Lots of our guests do, and we’ll be there to welcome you.\n📍 Farmers & Fletchers in the City\n3 Cloth Street, London EC1A 7LD\n1 minute from Barbican station, and a short walk from Farringdon.\n🗓 Thursday 29 October\n🕕 6.30pm until late\nMeet YOUR people. We’ll see you there! 🥂\nThe Village Drinks Team\nKnown by the company we keep",
+    "tech": false,
+    "why": "Out: party for gay professionals"
+  },
+  {
+    "id": "meetup:316960637",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316960637/",
+    "name": "Women in Business, Founders, Entrepreneurs and Professionals Networking Event",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Entrepreneur Networking",
+      "Entrepreneurship",
+      "Startup Businesses",
+      "Professional Networking",
+      "Business Networking"
+    ],
+    "date": "2026-10-29",
+    "description": "Welcome to Networx London\n\nWomen leaders, entrepreneurs, founders, and ambitious professionals this evening is for you. Looking to expand your network, share experiences, and connect with inspiring women across industries?\n\nJoin us for a focused yet relaxed networking evening bringing together\nwomen entrepreneurs, business leaders, founders, executives, and professionals from across London’s vibrant business community.\n\n📍 Devonshire Terrace – Liverpool Street, London A stylish Central London venue moments from Liverpool Street Station, ideal for after-work networking, startup networking and business networking in London.\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm intro\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Informal Networking (no pitches\\, no pressure)\n\n💡 Why Attend? Connect with women entrepreneurs, founders, executives, and professionals in a welcoming networking environment. Exchange ideas, build valuable relationships, discover new opportunities, and learn from the experiences of women shaping the future of business, leadership, and innovation.\n\nWho Should Attend: Women founders, entrepreneurs, business owners, executives, professionals, consultants, freelancers, startup leaders, and aspiring entrepreneurs, as well as allies and professionals interested in supporting women in business, leadership, entrepreneurship, and career growth.\n\nLimited spots! Register today and hit Follow for updates on future weekly events.\n\n📸 Event Photography Please note that photos and videos may be taken for promotional purposes.",
+    "tech": false,
+    "why": "Out: general women in business networking across industries"
+  },
+  {
+    "id": "meetup:316501841",
+    "source": "meetup",
+    "url": "https://www.meetup.com/speed-network-now/events/316501841/",
+    "name": "AI Agents & Productivity Speed Networking London — After Work",
+    "organiser": "Speed Network Now",
+    "categories": [
+      "Business",
+      "Entrepreneur Networking",
+      "Technology",
+      "Speed Networking"
+    ],
+    "date": "2026-10-30",
+    "description": "*AI tools can save you hours every week, but most people barely use them properly. The professionals getting ahead are the ones sharing what actually works.*\nWhat the event is\nThis After Work Speed Networking event focuses on one thing: how professionals are really using AI agents and productivity tools. You'll have around 8 short, structured conversations and swap real workflows and tips with people outside your usual circle. No lectures. No sales pitches. Just useful conversation.\n👥 Who should attend\nProfessionals from different industries who use AI in their everyday work, plus AI and technology providers building new tools. Some will be just starting out with AI agents. Others will be well ahead. Either way, you'll find people worth talking to.\n🎟️ Your ticket includes\n\n* 1 drink + a bite, included\n* 8 structured conversations\n* Open networking before and after the structured session\n\nWhy attend\n\n* Pick up AI workflows and tools you can try the next day\n* Compare notes with people solving similar problems\n* Find out which AI tools are actually worth your time\n* Meet new people in a relaxed setting over drinks, not another video call\n\n📅 Agenda\n6:00–6:30pm: Arrival, drinks and open networking\n6:30–6:40pm: Welcome and a quick explainer on how the evening works 6:40–7:30pm: Structured networking, 8 short conversations with a new question each round\n7:30–8:00pm: Drinks and open networking continue\n\nPlaces are limited and these events sell out. Book your ticket now and see how other professionals are getting more done with AI.",
+    "tech": true,
+    "why": "In: speed networking whose stated topic is AI agents and productivity tools (AI in the title)"
+  },
+  {
+    "id": "meetup:316867503",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316867503/",
+    "name": "London Business Networking: Founders, Executives & Investors",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Business",
+      "Entrepreneurship",
+      "Startup Businesses",
+      "Professional Networking",
+      "Business Networking"
+    ],
+    "date": "2026-10-29",
+    "description": "Welcome to Networx London\n\nFounders, executives, entrepreneurs, investors and ambitious professionals, this evening is for you.\n\nLooking to expand your network, build strategic partnerships, explore new business opportunities, or connect with like-minded professionals?\n\nJoin us for an engaging networking evening bringing together founders, executives, business leaders, investors, entrepreneurs, and professionals from across London’s vibrant business community.\n\n📍 Venue: Devonshire Terrace: Founders, executives, entrepreneurs, investors and ambitious professionals, this evening is for you.\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm intro\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Informal Networking (no pitches\\, no pressure)\n\n💡 Why Attend? Expand your network, meet potential partners, discover new opportunities, and connect with like-minded professionals in a welcoming environment.\n\nWho Should Attend: Founders, entrepreneurs, business owners, executives, investors, consultants, and professionals looking to grow their network and build valuable business relationships.\n\nLimited spots! Register today and hit Follow for updates on future weekly events.\n\n📸 Event Photography Please note that photos and videos may be taken for promotional purposes.\n\nWhatsApp [https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4](https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4 \"https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4\")",
+    "tech": false,
+    "why": "Out: general business networking for founders, executives and investors across industries"
+  },
+  {
+    "id": "meetup:316784907",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316784907/",
+    "name": "Business Networking London | Founders, Entrepreneurs & SME Owners",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Entrepreneurship",
+      "Startup Businesses",
+      "Professional Networking",
+      "Small Business",
+      "Business Networking"
+    ],
+    "date": "2026-10-27",
+    "description": "Welcome to Networx London!\n\nAre you a business owner, SME leader, entrepreneur, or professional looking to grow your network and discover new business opportunities?\n\nJoin us for a relaxed and engaging networking evening bringing together small and medium-sized business owners, founders, entrepreneurs, consultants, and professionals from a wide range of industries.\n\n📍 Venue: Singer Tavern, Liverpool Street: A vibrant venue just moments from Liverpool Street Station, perfect for after-work networking, meaningful connections and new business opportunities.\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm intro\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Informal Networking (no pitches\\, no pressure)\n\n💡 Why Attend? Connect with entrepreneurs, SME owners and business leaders, explore partnerships and discover new opportunities.\n\n👥 Who Should Attend? Founders, business owners, directors, consultants, freelancers and professionals looking to expand their network and grow their business.\n\n📸 Photos and videos may be taken for promotional purposes.\n\nWhatsApp 👉 [https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4](https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4 \"https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4\")",
+    "tech": false,
+    "why": "Out: business networking for SME owners and entrepreneurs"
+  },
+  {
+    "id": "meetup:316881391",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316881391/",
+    "name": "Asia Fusion: Tech, AI & Culture | Networx London x AspirASIAN (Dataiku)",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Entrepreneurship",
+      "Startup Businesses",
+      "Professional Networking",
+      "Small Business",
+      "Business Networking"
+    ],
+    "date": "2026-11-03",
+    "description": "Welcome to Networx London for a special Asia Fusion:\n\nTech & AI evening in partnership with AspirASIAN, the Asian Culture Employee Resource Group (ERG) at Dataiku.\n\nThis collaboration brings together technology, business and Asian culture, connecting founders, entrepreneurs, AI and technology professionals, investors, innovators and business leaders from across London's diverse ecosystem.\n\nThrough our partnership with AspirASIAN, we're adding an Asian cultural dimension to the Networx experience while creating a space to exchange ideas, build meaningful connections and explore opportunities across AI, innovation and technology. It's also an opportunity to share experiences, perspectives and celebrate the contributions shaping London's Asian tech community.\n\n📍 Venue: Lucy Wong A stylish venue in the heart of Fitzrovia, providing a relaxed setting for after-work networking and meaningful conversations.\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm Introduction\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Networking\\, Tech Conversations & Connections\n\n💡 Why Attend? Founders, entrepreneurs, AI and technology professionals, investors, engineers, innovators, business leaders and anyone interested in technology, innovation, Asian culture and international business connections.\n\n👥 Who Should Attend: Startup founders, entrepreneurs, VCs, angel investors, tech professionals, developers, product leaders, business owners and professionals working across technology, innovation and investment.\n\n📸 Event Photography: Photos and videos may be taken during the event for promotional purposes.\nFollow our LinkedIn page for upcoming events, community highlights, partnerships and opportunities.\n\nWhatsApp [https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4](https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4 \"https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4\")",
+    "tech": true,
+    "why": "In: Tech and AI networking evening with Dataiku's employee group; tech and AI named in the title"
+  },
+  {
+    "id": "meetup:316783112",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316783112/",
+    "name": "Property & Real Estate Networking London | Investors & Developers",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Business",
+      "Community",
+      "Entrepreneurship",
+      "Professional Networking",
+      "Business Networking"
+    ],
+    "date": "2026-10-27",
+    "description": "Welcome to Networx London!\n\nLooking to connect with London's real estate and property community?\n\nJoin an evening of networking with property investors, brokers, entrepreneurs, and industry professionals from across the city.\n\nDiscover new opportunities, exchange insights, explore partnerships, and build valuable business connections in a relaxed and welcoming environment.\n\n📍 Venue: Singer Tavern, Liverpool Street: A vibrant venue just moments from Liverpool Street Station, perfect for after-work networking, meaningful connections and new business opportunities.\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm intro\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Informal Networking (no pitches\\, no pressure)\n\n💡 Why Attend? Meet London's property investors and industry professionals, exchange ideas, explore partnerships and discover new opportunities in real estate and property investment.\n\n👥 Who should attend? Property investors, developers, agents, brokers, architects, designers, entrepreneurs and anyone looking to grow their network in the property industry.\n\n📸 Photos and videos may be taken for promotional purposes.\n\nFollow for updates on future weekly events.\n\n📸 Event Photography Please note that photos and videos may be taken for promotional purposes.\n\nWhatsApp 👉 [https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4](https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4 \"https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4\")",
+    "tech": false,
+    "why": "Out: property and real estate networking"
+  },
+  {
+    "id": "meetup:317052239",
+    "source": "meetup",
+    "url": "https://www.meetup.com/women-in-product-london/events/317052239/",
+    "name": "Networking Breakfast ☕🧋",
+    "organiser": "Women in Product - London",
+    "categories": [
+      "Innovation",
+      "Product Management",
+      "Professional Networking"
+    ],
+    "date": "2026-10-27",
+    "description": "We're excited to announce our next breakfast networking event! ☕\nJoin us at [Redemption Roasters (Holborn)](https://redemptionroasters.com/pages/locations_sub_page/holborn), for a tea or coffee and a chat before you start the working day!\n\nThis event will be relaxed and informal, with the chance to meet and connect with other Women in Product London members. There's no presentations, it's just about making connections and starting the day feeling energised and refreshed.\n\nFree to attend, you can buy hot or cold drinks and breakfast items from the cafe. Children 👶🏼 welcome.\n\nPlease note this is not a private space, so you'll see us at the venue securing some tables inside the venue. The main host will be there until 8:30am but feel free to stay until 9:00am!",
+    "tech": true,
+    "why": "In: Women in Product community breakfast (product management)"
+  },
+  {
+    "id": "meetup:316836789",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-networking-for-startups-professionals/events/316836789/",
+    "name": "Tech Networking London | Startups, Founders & Innovation",
+    "organiser": "Networx London - Connect & Grow",
+    "categories": [
+      "Entrepreneurship",
+      "Startup Businesses",
+      "Professional Networking",
+      "Technology",
+      "Business Networking"
+    ],
+    "date": "2026-11-03",
+    "description": "Welcome to Networx London Tech Night\n\nan evening bringing together startup founders, entrepreneurs, tech professionals, angel investors, VCs and innovators from across London’s technology ecosystem.\n\nFrom AI, FinTech, Cloud, Data and emerging technologies to startup funding, investment and business growth,\n\nWhether you're looking to raise capital, discover investment opportunities, meet potential partners, find new clients or expand your professional network, this is an opportunity to make valuable connections in a relaxed environment — no pitches, no pressure.\n\n📍 Venue: Lucy Wong A stylish venue in the heart of Fitzrovia, providing a relaxed setting for after-work networking and meaningful conversations\n\n📅 Event Schedule\n18:30 – 19:00 | Welcome & Warm Introduction\n19:00 – 19:30 | Open Networking\n19:30 – 21:30 | Networking\\, Tech Conversations & Connections\n\n💡 Why Attend? Connect with founders, investors and tech professionals, explore funding and investment opportunities, exchange ideas and discover potential partnerships, clients and collaborations.\n\n👥 Who Should Attend: Startup founders, entrepreneurs, VCs, angel investors, tech professionals, developers, business owners and professionals working across technology, innovation and investment.\n\n📸 Event Photography Photos and videos may be taken during the event for promotional purposes.\n\nWhatsApp 👉 [https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4](https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4 \"https://chat.whatsapp.com/CqELVmSFMTbGsJN0y0X1KW?s=sh&p=a&mlu=4\")",
+    "tech": true,
+    "why": "In: tech networking night for startup founders, tech professionals and VCs"
+  },
+  {
+    "id": "meetup:316996796",
+    "source": "meetup",
+    "url": "https://www.meetup.com/londonlinux/events/316996796/",
+    "name": "London Linux Drinks: \"Ghosts outta da machine\" Edition",
+    "organiser": "London Linux",
+    "categories": [
+      "Linux",
+      "Professional Networking",
+      "Social",
+      "Open Source",
+      "Technology"
+    ],
+    "date": "2026-10-28",
+    "description": "It got dark, and a lot cooler all of a sudden, so come hide in the pub with like-minded people with a common interest in Linux at the October Linux London Meetup. Whether you are a complete neophyte or Linux warrior with decades of experience, come join the chat about distros, networks, open-source software, personal projects, ... or completely unrelated topics.\n\nThe London Linux Drinks meetups are informal, free to attend, and welcomes new attendees. By all means encourage others to come with you.\n\nThe venue is the Hand & Racquet in Wimbledon (25-27 Wimbledon Hill Rd, SW19 7NE). [https://www.greeneking.co.uk/pubs/greater-london/hand-and-racquet](https://www.greeneking.co.uk/pubs/greater-london/hand-and-racquet)\n\nChris and Gulraj will be sharing hosting duties with at least one of us present at each meetup. Whilst we realise that this venue is not as convenient for some people as our central London former haunts, the pub is only 2 minutes walk from the station, and Wimbledon is exceptionally well connected (only 17 minutes out of London Waterloo mainline, lies on the Sutton branch of the Thameslink, and is a terminus of both the District Line and the Croydon Tramlink).\n\nThe pub is on the flat, at street level, including the toilets, although the space reserved for us (presently, at least) is a raised mezzanine area up a small number of steps at the back of the pub. We aim to be inclusive, so if this presents an issue, we'll work with the pub to adjust the arrangements in the future.\n\nSign-ups are open. Please come join us.\n\nDirections from the station:\n\nExit the station through the main concourse (near the District Line platforms), turn right along the main road, passing the taxi rank on Orinoco Lane. Cross Alexandra Road at the traffic lights, pass the gym on the corner, then continue past the chemist to reach the pub.",
+    "tech": true,
+    "why": "In: London Linux community drinks; tech community organiser, chat about distros and open source"
+  },
+  {
+    "id": "meetup:316882869",
+    "source": "meetup",
+    "url": "https://www.meetup.com/the-women-s-data-ai-table/events/316882869/",
+    "name": "Women in Data & AI London Lunch | At The Table",
+    "organiser": "At The Table Women in Data, AI & Beyond",
+    "date": "2026-11-15",
+    "description": "### At The Table\n\nA small networking lunch for women in Data, AI & beyond\n\nAt The Table is an intimate networking lunch for women working across data, AI, governance, risk, technology, transformation, policy and related fields.\n\nThis is deliberately small.\nJust six women around one table, including the host.\n\nThe purpose is to make meaningful professional connections while giving everyone enough time to understand what the other women actually do, what they are working towards and where there might be opportunities to support, introduce, collaborate or help one another.\n\nWhether you're building your career, growing a business, considering your next move or simply want to expand your professional circle, this is a chance to meet women working in and around some of the same spaces.\n\nThere are no panels, presentations or formal pitches.\nNo speed networking.\nNo pressure to work a room.\n\nIt is networking, just around one table rather than across a crowded room.\n\n### Who is it for?\n\nWomen working across areas such as data, AI, governance, risk, compliance, technology, digital transformation, cybersecurity, product, policy, research, consulting and adjacent fields.\n\nYou do not need to have “AI” or “data” in your job title. What matters is that your work, business or professional interests meaningfully touch this space.\n\n### What to expect\n\nEach table is limited to five guest places, with six women in total including the host.\n\nKeeping the gathering small means everyone has the opportunity to take part in the conversation and leave knowing more than simply another person's name and job title.\n\nExpect a polished but relaxed setting, intelligent conversation, professional networking and a mix of discussion about careers, business, work, ideas and whatever else naturally comes up around the table.\n\nThe aim is simple: leave with a handful of meaningful professional connections rather than dozens of introductions you barely remember.\n\n### The details\n\nGroup size: 6 women, including the host\nFormat: Networking lunch\nLocation: The Delaunay, 55 Aldwych, London WC2B 4BB\nDate: Sunday 15 November 2026\nTime: 1:30 pm–3:30 pm\nFood and drinks: Guests order and pay for their own food and drinks directly with the restaurant.\n\n### Event fee\n\nThere is a £10 event fee to reserve your place.\nThe fee helps cover the platform and administration costs involved in running At The Table. Food and drinks are paid for separately at the restaurant, and the event fee is not deducted from your restaurant bill.\n\n### Finding us\n\nThe reservation will be under At The Table – Bess.\nI’ll be there a little before 1:30 pm. When you arrive, simply ask the restaurant team for the At The Table reservation.",
+    "tech": true,
+    "why": "In: networking lunch for women working in data and AI"
+  },
+  {
+    "id": "meetup:312536046",
+    "source": "meetup",
+    "url": "https://www.meetup.com/london-data-intelligence-network/events/312536046/",
+    "name": "London Data Intelligence Network | Meetup | Oct 2026",
+    "organiser": "London: Data Intelligence Network",
+    "categories": [
+      "Big Data",
+      "Data Mining",
+      "Data Science",
+      "Predictive Analytics",
+      "R Project for Statistical Computing"
+    ],
+    "date": "2026-11-05",
+    "description": "Welcome, London Data Intelligence Network!\n\n[London Data Intelligence Network](https://www.meetup.com/london-data-intelligence-network/?eventOrigin=your_groups) is a community-based networking event bringing people together to meet peers, share stories, and build meaningful relationships around data intelligence.\n\nHosted by [Datacove](https://datacove.co.uk/), award-winning Brighton-based R, Python and Shiny experts, these events also offer inspiring talks, hands-on sessions, and open knowledge sharing, all in a friendly, inclusive environment. Whether you’re just starting out in data or a seasoned expert, there’s always something new to discover, spark your curiosity, and take back to the office.\n\nWe run four events each year in London, offering fresh insights, lively discussions, and opportunities to connect with the wider Data Intelligence Network, anchored by the [EARL Data Intelligence Conference](https://earl-conference.com/), our flagship event held in Brighton each October.\n\nThe events are supported by the generous team at [Incubeta](https://incubeta.com/find-us/london-united-kingdom/).\n\nFor more information, sponsorship opportunities, or to get involved as a speaker, contact us at [[admin@datacove.co.uk](mailto:admin@datacove.co.uk)]([https://datacove.co.uk/contact/](https://datacove.co.uk/contact/)) or visit [https://datacove.co.uk](https://datacove.co.uk/)\n\n--- Important Information ---\n\nThis is a paid event. Your ticket entitles you to pizza and drink options (soft and alcoholic beverages available).\n\nAs standard, we cater for Vegetarian, Vegan, and GF. Please contact an organiser for any other requirements.\n\nYou can book your tickets online through [Ticketpass](https://ticketpass.org/event/EMUCND/london-data-intelligence-network-oct-2026) at a discounted rate:\n\n* General Admission: £8 online / £10 at the door\n* Student Admission: £4 online / £5 at the door\n\nStudents must bring an NUS card or any other form of student ID. Cash and card accepted on the door.\n\n--- Talk Information ---\n\nInterpretable Boosted Linear Modelling.\n\nWe’re delighted to be joined by Paul Beard, Actuary at Pacific Life Re.\n\nThe talk will focus on the \"IBLM\" package, which I authored and had accepted to CRAN. In short, Interpretable Boosted Linear Modelling (IBLM) is a technique for fitting machine learning models in R that combines a conventional generalised linear model (GLM) with a modern machine learning model (e.g., XGBoost).\n---\nHow to Tell a Clear Story with Data\n\nWe also welcome Tom Price, Senior Commercial Analytics Manager at Worldpay.\n\nHe will explore how to make data analysis easier for an audience to understand and act on. He’ll share a simple approach to turning analysis into a clear story by focusing on what matters, why it matters and what the audience should take away.\n\n--- Schedule & Refreshments ---\n\nNow, refreshments! Drinks and nibbles will be served from 6pm. Talks will commence at 6:30pm/6:45pm and the event will conclude at 8pm. The conversation will continue after the event at a local pub.\n\n--- Sponsorship Information ---\n\nOur event relies heavily on sponsorship from companies that attend. Please contact the organisers or [admin@datacove.co.uk](https://datacove.co.uk/) to get involved.\n\n--- Arrival Instructions ---\n\nPlease arrive at The Bower and locate the reception, where staff will be there to guide you to the correct floor.\n\nWhat3Words: magma.clip.achieving\n\n--- Registration Etiquette ---\n\nAt our meetups, the event is sometimes capped by the space. We’re committed to keeping these events accessible for everyone, but to make that possible, we need your help. Please ensure your registration is kept up to date. If your plans change, simply update your RSVP to reflect your availability. Thank you for your understanding and cooperation.\n\nPlease feel free to spread the word. We look forward to seeing you all again!",
+    "tech": true,
+    "why": "In: data intelligence network with talks by R/Python experts"
+  },
+  {
+    "id": "meetup:317049101",
+    "source": "meetup",
+    "url": "https://www.meetup.com/data-science-festival-london/events/317049101/",
+    "name": "Building Data at Scale: Engineering for Speed, Reliability and Accuracy",
+    "organiser": "Data Science Festival - London",
+    "date": "2026-11-04",
+    "description": "Welcome to DSF Sandbox Sessions!\n\nTop tech talks and masterclasses from the best in the industry. Every month, and completely free. The catch? There isn’t one. Just a monthly dose of epic content to power up your data passion!\n\n[SIGN UP FOR THIS EVENT HERE!](https://datasciencefestival.com/session/tem-sandbox-session/)\n\nEvent details\n📆 Date: Wednesday 4th November 2026\n⏰ Time: 6:00 – 9:00 PM GMT\n💡 Topic: Building Data at Scale: Engineering for Speed, Reliability and Accuracy\n🗣️ Speakers: [Tim Renton](https://datasciencefestival.com/speaker/tim-renton/), [Antonio Alvarez Caballero](https://datasciencefestival.com/speaker/antonio-alvarez-caballero/), [Matt Bailey](https://datasciencefestival.com/speaker/matt-bailey/), [Yijie Hsieh](https://datasciencefestival.com/speaker/yijie-hsieh/) and [Yong Ren](https://datasciencefestival.com/speaker/yong-ren/)\n\nHow do you build a data platform that delivers pricing decisions in under a minute, supports machine learning models and still provides accurate, auditable data for financial reporting?\n\nJoin Data Science Festival and tem at Battersea Power Station for an evening exploring the real-world engineering challenges behind building and scaling a modern data platform.\n\nWe'll hear how tem's data function has evolved from Google Sheets to a modern technology stack featuring ClickHouse, dbt, Omni and AWS, including the technical decisions, challenges and lessons learned along the way.\n\nThe evening will feature a keynote from tem's Head of Data, a panel discussion bringing together practitioners from across data engineering, analytics and machine learning,\nand plenty of opportunities to network over food and drinks.\n\nCheck out the full session details below!\n\nKEYNOTE SESSION\nFrom Google Sheets to Sub-Minute Pricing: Lessons in Scaling a Data Platform\nSpeaker: [Tim Renton](https://datasciencefestival.com/speaker/tim-renton/), Head of Data @ tem\n\nWhen you're building the data function at a growing technology company, how do you know which foundations to invest in, which shortcuts are worth taking and when it's time to rethink your approach?\n\nAt tem, the data platform has evolved from Google Sheets to a modern stack supporting complex energy transactions, with pricing decisions delivered in under a minute.\n\nIn this session, Tim Renton shares the journey of building and scaling tem's data function, exploring the architectural decisions, technical challenges and lessons learned along the way.\n\nDiscover how the team's approach to data engineering, analytics and infrastructure has evolved as the business has grown, the trade-offs involved in balancing speed with reliability, and what Tim would do differently if he were starting again.\n\nPANEL SESSION\nSpeed vs Accuracy: The Hidden Trade Offs of Modern Data Engineering\n\nWhat happens when the same data needs to support real-time decisions, financial reporting, machine learning and regulatory compliance, all with different expectations around speed, accuracy and reliability?\n\nAt tem, these aren't hypothetical challenges. The data platform supports energy pricing decisions in under a minute while also providing consistent, reconciled and auditable information across the wider business.\n\nBringing together practitioners from across data engineering, machine learning and analytics, this panel explores the technical and organisational challenges of building a shared data platform that works for everyone.\n\nWe'll explore questions including:\n\n* How do you balance low-latency requirements with data quality and accuracy?\n* Where should responsibility for data quality, definitions and ownership sit?\n* How do you design a platform that supports both operational decisions and financial reporting?\n* What happens when different teams have conflicting requirements?\n* How do data engineering, analytics engineering and machine learning teams work together to solve these problems?\n\nExpect a practical discussion about the trade-offs, architectural choices and collaborati",
+    "tech": true,
+    "why": "In: Data Science Festival talks on data engineering at scale"
+  },
+  {
+    "id": "meetup:316749006",
+    "source": "meetup",
+    "url": "https://www.meetup.com/omni-ai-analytics/events/316749006/",
+    "name": "Omni AI Analytics Meetup London #2",
+    "organiser": "Omni AI Analytics Meetup",
+    "categories": [
+      "Artificial Intelligence",
+      "Data Analytics",
+      "Data Science",
+      "Business Intelligence & Data Warehousing",
+      "Self Service BI"
+    ],
+    "date": "2026-10-29",
+    "description": "Come along to the second edition of the Omni AI Analytics Meetup in London to learn from people who work hands-on with data, analytics, and AI technology every day.\n\nYou will hear real stories about putting modern tools into practice, learn how experts build data products, and explore what this means for business outcomes.\n\n- - LINE-UP - -\n\nEnhancing the Data Model with AI\n*[Jasim Alladin, Engineering Lead, Infinite Lambda](https://www.linkedin.com/in/jasim-alladin/)*\n\nJasim will use AI to analyse a spreadsheet and enhance the data model, exploring what to look out for along the way and how it can unlock more interesting analytical work.\n\nYou Can Migrate the Technology. Can You Migrate the Culture?\n*[Ben Woolley, Data & Analytics Manager, News Broadcasting](https://www.linkedin.com/in/ben-woolley-6162a0b7/)*\n\nThere is more to migrating analytics platforms than the technical work. Ben will walk through how News Broadcasting handled its move from Tableau to Omni, covering the structured rollout alongside the harder work of shifting user mindsets. Join this session to hear practical takeaways on building user trust and a self-service data culture that sticks.\n\n- - MEET YOUR HOST – –\n[Sai Gude](https://www.linkedin.com/in/sai-gude/) is head of Omni at Infinite Lambda, where he helps analytics teams make the most of AI-powered analytics. At the meetup, Sai will help navigate the discussion and make sure all voices are heard, so insights can flow freely and we can all have a great time.\n\n- - TIME & PLACE – –\nThursday, 29 October\n6:30 pm\n[Arcadia Games](https://maps.app.goo.gl/3YvYyBoSJNdsbem8A) Board Game Club\n\n– – GOOD TO KNOW – –\n😋 Snacks will be provided. You can buy a drink at the bar.\n👋🏽 Event organiser: [Infinite Lambda](https://www.linkedin.com/company/infinite-lambda/posts)\n\n- - ABOUT THE COMMUNITY - -\nThe Omni AI Analytics Meetup is a casual group that exchanges knowledge and best practices for building better analytics. Come along to hear from peers, make friends, and stay on top of the latest in the industry. No sales pitches, just insights and good vibes.",
+    "tech": true,
+    "why": "In: AI analytics meetup (BI, data analytics)"
+  },
+  {
+    "id": "meetup:316296032",
+    "source": "meetup",
+    "url": "https://www.meetup.com/graphdb-uk/events/316296032/",
+    "name": "AI Builders London",
+    "organiser": "Graph Database - United Kingdom",
+    "date": "2026-11-10",
+    "description": "Register: [https://luma.com/lon-nov10](https://luma.com/lon-nov10)\n\n## Join our informal meetup for the biggest AI nerds!\n\n​We share the latest insights about: AI dev tools, Agent frameworks, RAG, vibe coding, OpenClaw, Claude Code and more!\n\n## ​// FOR WHO\n\n* ​✅ Devs, Product peeps, Data lovers, ML engineers, Founders\n* ​✅ Anyone building with AI\n* ​⚠️ Some LLM knowledge required!*\n\n## ​// FORMAT\n\n* ​🎤 Innovative AI Demos — from EU + Silicon Valley leaders\n* ​💻 Builder Tool Demos — ship fast, explain faster\n* ​🤝 🍻 A LOT of time for informal networking\n* ​🍕 Yummy Pizza & Snacks",
+    "tech": true,
+    "why": "In: AI builders meetup with dev tool and agent demos"
+  },
+  {
+    "id": "meetup:316267481",
+    "source": "meetup",
+    "url": "https://www.meetup.com/devsecops-london-gathering/events/316267481/",
+    "name": "DSOLG October Event",
+    "organiser": "DevSecOps - London Gathering",
+    "categories": [
+      "Cloud Security",
+      "Cybersecurity",
+      "Web Application Security",
+      "Information Security",
+      "Web API Design"
+    ],
+    "date": "2026-10-28",
+    "description": "## Details\n\nWelcome to the DevSecOps London Gathering October Event on Wednesday 28 October! We bring you another night of great speakers, as well as the usual conversations, pizza and beer!\n\n📍 Hosted at Autogen AI, 123 Pentonville Road, London, N1 9LG\n📅 Wednesday, 28 October 2026\n🕕 6:00–8:00 PM\n\n## Talk Abstracts:\n\nTalk 1 - Intent Graphs by Daramola Benjamin\nAn AI agent executing a task is filling in fields the user never specified. Book a flight to Dubai on Emirates, window seat, and cabin class, baggage, and refundability are all left open by default, not by choice. Sometimes the agent fills that gap with excess authority, a security failure. Sometimes it fills it with a wrong default, a correction failure. Both come from the same missing distinction.\nThis talk shows, from primary sources, where current standards stop. Web Bot Auth proves which agent sent a request but explicitly excludes the end user from its scope. RFC 8693 token exchange records a delegation chain but has no mechanism for capturing consent. Neither has an object for what a task actually was, which is a schema gap, not a cryptography gap.\nThe Intent Graph closes it: a shared schema where every task field is tagged declared or open dependency between fields is explicit, and revoking a permission or correcting a wrong outcome are the same graph operation at different points in time. The correction mechanism, causal scoping compensation, and an append only log, is walked through a flight booking where a wrong cabin class gets refunded and rebooked without touching the seat, the dates, or anything else that was already right.\n\nThe talk closes on the harder case: a structural material substitution and a surgical tool approaching an exclusion zone, where correction arrives too late to matter. One rule, the correction window of a field against the system's detection and response latency, decides whether the right response is fail open and correct after, or fail closed and verify before.\nSpeaker Bio:\nDaramola Benjamin is an applied economist and engineer, and Head of Engineering at Levered. His current work is the Intent Graph, a schema and system architecture for identity, delegation, and correction in AI agent systems, closing the gap between what today's standards secure and what autonomous agents actually need. This work has produced a full system architecture, a research paper, a published technical analysis of agentic identity and permissioning, and a competitive review of the space. He has spoken on the Intent Graph at Practically AI, Manchester. Daramola designs systems and builds product end to end, with a background spanning fintech, commerce, and SaaS that shaped how he approaches identity and delegation as a systems problem with real consequences when it goes wrong.\n\nTalk 2 - You’ve Generated Your SBOM. Now What? by Viktor Petersson\nThe EU Cyber Resilience Act (CRA) makes Software Bills of Materials (SBOMs) a requirement for products in scope. Many teams are still tackling generation, but that is only the beginning. Real products contain multiple components, each with its own SBOM. Understanding what shipped means linking those SBOMs to specific releases and keeping that history useful for years.\nViktor Petersson co-led the CISA working group on SBOM generation. This talk starts with SBOM 101 and introduces sbomify-action, an open source, opinionated implementation of the blueprint developed by that group for generating high-quality SBOMs in CI/CD.\nWe then explore what happens after generation: retaining SBOMs, tracking components across releases, and putting the CRA’s ongoing vulnerability-handling requirements into practice. We’ll cover monitoring CVEs, prioritising findings using CISA’s Known Exploited Vulnerabilities (KEV) catalogue and Exploit Prediction Scoring System (EPSS), and communicating product impact through Vulnerability Exploitability eXchange (VEX).\nUsing the open source sbomify platform (github.com/sbomify/sbomify), we’ll show how",
+    "tech": true,
+    "why": "In: DevSecOps meetup"
+  },
+  {
+    "id": "meetup:316572939",
+    "source": "meetup",
+    "url": "https://www.meetup.com/the-friendly-meetup-actuaries-quants/events/316572939/",
+    "name": "Actuaries, Quantitative Finance Professionals Meet in a pub and make Friends",
+    "organiser": "The Friendly Meetup for Actuaries and Quants",
+    "categories": [
+      "Insurance",
+      "Make New Friends",
+      "Social Networking",
+      "Investment Banking",
+      "Quantitative Finance"
+    ],
+    "date": "2026-10-27",
+    "description": "Hi new friends and old, we're baaaack!\n\nWe got together because we all agree it’s surprisingly hard to meet others in our field outside of work or a commercial conference.\n\nAs a smaller group, we make meaningful connections with like-minded actuaries and quants. Lifelong friendships are forged along the way!\n\nWhether you're a veteran, a rising star, or simply new in town and want to expand your social circle, get into the insurance and banking space, or see a friend you know, this is the place to be!\n\nNo guest speakers nor rigid agenda, just a casual meetup and lots of fun conversation! 🥳\n\nWe're also on Luma, so please follow us there too! [https://luma.com/friendly-actuaries](https://luma.com/friendly-actuaries)\n\nSee you soon!\n\nNOTE: Please remember to bring your ID with you, as all guests must be of legal age to enter the venue.\n\nAbout Us\n\nWe're a sister group of [The Friendly Data Meetup London](https://www.meetup.com/the-friendly-data-meetup/?eventOrigin=home_groups_you_organize), a bootstrapped 2000+ person group (and still maintains that small cozy vibe!). This one is focused on actuaries and quants :D\n\n🤗 Welcome actuaries, quants and friends! Sometimes, it can be difficult to make friends within the field, and that's what we're all about! We're a group of like minded individuals who understand the highs and lows of working in finance and insurance.\n✅ Our primary goal is to have higher quality conversations that are more meaningful, with smaller groups so that we get to spend more attention on each individual.\n💯 If you're already reading this, you're definitely welcome! We welcome everyone, whether you're already in the field, looking to get started or just curious!\n🗨️ Bring your friends, bring your plus ones, we're all just here to have a good laugh and a good chat about the world, even if it isn't always about our work.\n\nOur values:\n📖 Openness - We welcome everyone\n🤝 Trust - Build long-lasting friendships together\n💝 Care - Be kind to others and help each other out\n\nWho it's for:\n- Life Actuaries\n- Non-Life Actuaries\n- Health Actuaries\n- Pensions Actuaries\n- Reinsurance Actuaries\n- Quantitative Analysts\n- Quantitative Traders\n- Investment Bankers\n- Portfolio Managers\n- Financial Engineers\n- Entrepreneurs\\, Contractors\n- Anyone who works with Insurance\\, Pensions\\, Hedge Funds\\, Investment Banks\\, Asset Managers etc.\n- Anyone looking to get into the space\n- Friends\n\nHow to Make the Most of the Meetup\nThe Friendly Meetup for Actuaries and Quants has one simple purpose: meaningful connections.\nWe're not just a community of people, we're friends who get invested in each others lives.\nWe check in on our friends regularly, and personally.\nSo come and join us, more than just once or twice!\n\nCode of Conduct:\nThe Friendly Meetup welcomes all genders, nationalities, ethnicities, backgrounds, identities etc. There is a strict no discrimination policy in adherence to our code of conduct and our guiding principles. We maintain a zero-tolerance policy for hateful or antisocial behaviour.\nIn short, be kind to others. Do not insult or put down others. Behave professionally, don't make others uncomfortable. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for The Friendly Meetup.",
+    "tech": false,
+    "why": "Out: pub social for actuaries and quants (finance social)"
+  },
+  {
+    "id": "meetup:316931982",
+    "source": "meetup",
+    "url": "https://www.meetup.com/design-impact-lab/events/316931982/",
+    "name": "#5 - semiotics ideation worskhop",
+    "organiser": "design impact lab",
+    "categories": [
+      "Interaction Design",
+      "Social Entrepreneurship",
+      "Design Thinking",
+      "Service Design",
+      "User Experience"
+    ],
+    "date": "2026-10-24",
+    "description": "Meet likeminded UX professionals and experience a new way to ideate with a researcher at UAL.\n\nOur next event is a bit different - one of our members, Mary, is working on her thesis project for UAL's MA in User Experience Design and is hosting a session at the university for us to try it out.\n\nShe's built a card-based ideation method that uses visual symbolism and semiotics to trigger unexpected ideas - almost like tarot meets design thinking!\n\nThere's also a custom AI agent she's developed that plays the role of an \"idea psychic,\" helping you reframe problems and push past obvious solutions.\n\nShe needs people to use it on a real brief so she can observe what works and what doesn't. You’ll get to try an unusual creative method and help shape a member’s research project, while also having the opportunity to meet and spend time discussing with other creatives.\n\n*\n\n​The Details:\n\n* Location: London College of Communication (UAL), Elephant & Castle, London SE1 6SB\n* ​Capacity: We’re keeping this to a small group to ensure everyone can connect and contribute. Please ensure your RSVP is up to date and let us know if you're unable to attend.\n* What to bring: Bring some ID on the day for entry to UAL.\n* ​Vibe: Friendly and relaxed!\n\n*\n\n​Why Join?\n​If you’re a designer or researcher who wants to use your skills for more than just conversion, come say hi.\n​It’s a chance to meet like-minded people and consider how design can solve universal human problems.\n\n​Who is this for?\n​Our events are for UX designers, researchers and other strategic and creative thinkers who are passionate about using their skills for social good, not just profit. Please note that this is not a networking event, or a place to find a job.\n\n​Who are the hosts?\n\nMary is a UX designer from Iran, currently based in London pursuing her masters in Experience Design at UAL.\n\nMax is a London based design researcher. Until recently he was based in Tokyo, where he ran a small design agency and spent over 10 years as a meetup organizer. He's exploring ways to bring designers together to use our skills to work on meaningful problems.\n\n*This event is being advertised on multiple sites, so the actual number of attendees will be different to what appears on meetup.",
+    "tech": true,
+    "why": "In: UX professionals design-ideation workshop (UX community, AI agent tool); product/UX design (borderline)"
+  },
+  {
+    "id": "meetup:316912814",
+    "source": "meetup",
+    "url": "https://www.meetup.com/pel-network/events/316912814/",
+    "name": "Interior Design and Hospitality Networking Event",
+    "organiser": "PEL Networking",
+    "categories": [
+      "Interior Design",
+      "Business Development",
+      "Entrepreneur Networking",
+      "Professional Networking"
+    ],
+    "date": "2026-11-05",
+    "description": "PEL Network helps you connect with the right people at luxurious locations. So you can boost your business ten fold. We welcome interior designers, architects, builders, real estate developers, entrepreneurs, investors, business leaders and professionals from various fields.\n\nWe always choose the luxurious lounges all around London so you can network in peace and focus. We make sure you feel comfortable and fulfill all of your needs. Our locations are at the heart of central london so it's easy for you to travel to and from. Food and drinks are also available at our venues.\n\nFor our event, we have reserved an area of the venue so that we can mix and mingle and meet old and new friends, new contacts, and new clients too! We encourage everyone to talk to as many people in the event as possible. That said, once you feel a certain chemistry or opportunity with someone, we encourage to talk with them on a deeper level. We forget about 90% of people after a goodnight sleep. However when we establish an emotional resonance with someone, they will remember us the next day.\n\nProgram: The evening's format is called personalized networking. No more being stuck in 10 min superficial conversations and exchanging cards or linkedin. It is designed for networking in a relaxed setting, providing an opportunity to meet fellow business leaders, entrepreneurs, and investors. We emphasize building genuine relationships on a personal level. I will be there to help with introductions and get over the barrier of anxiety when approaching someone you don't know.\n\nHow many people are attending? The venue has a capacity limit of 40 guests, and due to the popularity of our events and the unique ambiance of the location, we anticipate this event will reach full capacity quickly. We strongly advise securing your reservation early to ensure attendance. If you haven't gotten a ticket, you can pay when you arrive but it will be 50% more expensive than buying it in advance. Our events achieve success through a straightforward yet impactful strategy. A few days prior to the event, we establish a WhatsApp group for attendees interested in pre-event networking, enabling participants to arrange meetings both for the event day and beforehand. On the day of the event, you will experience a relaxing atmosphere with a hospitable and encouraging community.\n\nDress code: business casual (no trainers, no jeans)\n\nRefund policy: Advance purchase tickets are offered at a discounted rate compared to those bought on the event day. Please note, these tickets are non-refundable but can be transferred to another individual of your choosing.\n\nPEL Network Membership: If you buy the yearly membership for our PEL Network you will receive the following benefits.\n\n1. All the events are free for the whole year.\n2. Join the members only community chats and events.\n3. One free Motivational Profile Test\n4. One free Sensory Personality Test\n5. One free book a month (from our collections)\n6. Free Consultation for your business growth, marketing, employee engagement and sales.",
+    "tech": false,
+    "why": "Out: interior design and hospitality networking"
+  },
+  {
+    "id": "meetup:317091104",
+    "source": "meetup",
+    "url": "https://www.meetup.com/hqi-cultural-artist-studio/events/317091104/",
+    "name": "The Model is the Message - a talk on ML and AI: inference, ethics and the arts",
+    "organiser": "HQI - Cultural & Artist Studio",
+    "categories": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Creativity",
+      "Privacy",
+      "AI Ethics"
+    ],
+    "date": "2026-10-29",
+    "description": "A free 1-hour talk by Marcel Top and Tessa Edwards on creativity and exploration in Machine Learning and AI as both the instrument and subject of societal critique and reflective self-evaluation. From deepfakes and facial recognition to digital privacy, surveillance and ethics around AI and creativity.\n\n### About the Artists\n\n[Marcel Top](https://www.instagram.com/marceltoptop/?hl=en \"https://www.instagram.com/marceltoptop/?hl=en\") is a visual artist working between Belgium and London. Top researches the topics of mass surveillance, privacy, data collection. In his practice, he layers a traditional approach to documentary research with a more experimental use of new technologies (such as facial recognition, movement analysis, and deepfakes). The artist uses these technologies to visualise and examine scenarios in which people can protect themselves and their rights by gaining knowledge and reclaiming control of surveillance tools.\n\nTop’s work has been exhibited internationally, including FOMU Antwerp, Fotofestiwal Łódź, Athens Photo Festival, Circulation(s) and PhEST. He received the Encontros da Imagem Discovery Award for *Reversed Surveillance* (2024), the Prix Médiatine (2024), Folio #3 from the Institut pour la photographie (2023), and a PhMuseum Grant exhibition award (2022). His work is held in the collections of the University of the Arts London and the Institut pour la photographie in Lille.\n\n[Tessa Edwards](https://www.instagram.com/babylon_kingkong?stkn=MTF1N2swdnZ4YTFxeg== \"https://www.instagram.com/babylon_kingkong?stkn=MTF1N2swdnZ4YTFxeg==\") is a creative technologist who moved from fashion into filmmaking and spatial computing before turning to machine learning. She treats ML as a material — working with its latent spaces, flaws, and logic as the medium itself. Her recent work spans deepfake analysis, psychoacoustics, and the use of steganography and hidden signals to explore perception, concealment, and the ways intelligent systems operate in dimensions beyond human reach. As an advocate for privacy and AI safety, Tessa’s work explores the ambiguities of ethical technology systems.\n\nCurated by HQI.\nHosted by The Studio at White City Place.",
+    "tech": false,
+    "why": "Out: artists' talk on AI ethics, surveillance and the arts at a cultural studio"
+  },
+  {
+    "id": "meetup:315268838",
+    "source": "meetup",
+    "url": "https://www.meetup.com/3dlondon/events/315268838/",
+    "name": "3D London | 3D Networking Community",
+    "organiser": "3D London",
+    "categories": [
+      "CG Artists",
+      "Animation & Visual Effects",
+      "Computer Graphics",
+      "Fashion Technology",
+      "Visual Effects"
+    ],
+    "date": "2026-11-04",
+    "description": "3D London, Wednesday 4th November @ Truckles\n\nHosted by [Nadia Monte](https://www.linkedin.com/in/nadia-monte-57436571/) & [Ewan Couper](https://www.linkedin.com/in/ewancouper/).\n\nDetails soon\n\nThanks to our sponsors for supporting our monthly meetups.\n[SiNi Software](https://www.sinisoftware.com/) , [Chaos](https://www.chaos.com/) , [NTI](https://www.nti-group.com/uk/) , [Itoosoft](https://www.itoosoft.com/) , [Heata](https://www.heata.co/)\n\n#3dlondon #monthlymeetup",
+    "tech": true,
+    "why": "In: monthly meetup of 3D/CG and visualisation professionals sponsored by 3D software companies (Chaos, Itoosoft); borderline creative tech"
+  },
+  {
+    "id": "meetup:316725379",
+    "source": "meetup",
+    "url": "https://www.meetup.com/cbsnuk/events/316725379/",
+    "name": "CBSN at Lucy Wong: October Networking in The Courtyard",
+    "organiser": "Chinese Business & Social Network",
+    "categories": [
+      "Chinese Culture",
+      "Entrepreneur Networking",
+      "Startup Businesses",
+      "New In Town",
+      "Professional Networking"
+    ],
+    "date": "2026-10-28",
+    "description": "Join us for a chiilled evening of good vibes and great connections in the courtyard with CBSN this October!\nCBSN at Lucy Wong: October Networking in The Courtyard\nJoin the Chinese Business & Social Network for an evening of conversation and new connections at Lucy Wong in Fitzrovia.\nWhether you’ve been to a CBSN gathering before or this will be your first, you’re welcome to come along. Meet people from across London’s Chinese and China-connected community, catch up with familiar faces, and make a few new ones in the relaxed setting of The Courtyard.\nWednesday 28 October 2026\n6:00–8:30 pm\nThe Courtyard at Lucy Wong, Fitzrovia, London W1T 1JN\nCome on your own or bring a friend. We’ll be there to welcome you.\nBook your place: here on Meetup or on Eventbrite: [https://tinyurl.com/c2vhzr6c](https://tinyurl.com/c2vhzr6c)\nYajie, Charles and Maggie\nCBSN",
+    "tech": false,
+    "why": "Out: Chinese business and social network evening"
+  },
+  {
+    "id": "meetup:316963809",
+    "source": "meetup",
+    "url": "https://www.meetup.com/elevate_social/events/316963809/",
+    "name": "Elegant Encounters Soirée - Evening of Introductions & Networking",
+    "organiser": "ELEVATE SOCIAL - New Exclusive Social Network -",
+    "date": "2026-10-24",
+    "description": "Elevate returns with another evening of elegant encounters! We have just landed on meetup, join in!\n\nThis is an invitation to slow down, relax, and experience connections in a more relaxed and refined form.\n\n*This event is ticketed! Please get your ticket [here](https://www.eventbrite.co.uk/e/2003175942167): *\n➡️ Your name has to be on the guestlist to enter.\n\nOur setting for the evening: an elegant piano bar in the heart of Kensington.\n\nExpect wonderful atmosphere, flowing conversation and thoughtful introductions throughout the evening, with plenty of opportunities to meet intriguing new people and expand your circle.\n\nWhy join?\nMeet exceptional people – an intriguing mix of ambitious, classy, sociable professionals.\nCreate meaningful connections – Elevate is all about cheering for each other alongside people who make your world feel bigger, brighter, and infinitely more exciting!\nDiscover beautiful venues - We are constantly on the lookout for what's wonderful and worth experiencing.\nMore to look forward to – Elevate offers weekly events and luxury experiences so plenty to look forward to!\n---\nDress code: Smart, Elegant\n---\nArrival: Please mention you're joining Elevate + Your Name\n---\nElevate is the new prestigious social network where every event and every connection aim to elevate members' lives: socially and professionally, creating a community of ambition, authenticity and true belonging.\nFor all the upcoming events and experiences follow [@elevate__.social](https://www.instagram.com/elevate__.social/)\n---\nThis is ELEVATE - Your Community - Your Next Level.\n---",
+    "tech": false,
+    "why": "Out: social introductions evening at a piano bar"
+  }
+]

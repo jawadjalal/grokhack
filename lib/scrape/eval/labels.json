@@ -1,0 +1,658 @@
+{
+  "eventbrite:1454868975269": {
+    "tech": true,
+    "why": "In: applied tech for a sector (recruitment/HR tech stack) aimed at practitioners; audience is recruiters, not builders"
+  },
+  "eventbrite:1975359354003": {
+    "tech": false,
+    "why": "Out: property investment expo, no tech or startup focus"
+  },
+  "eventbrite:1978095430682": {
+    "tech": false,
+    "why": "Out: finance (ETF) summit for advisers and institutions, no tech focus"
+  },
+  "eventbrite:1979381989815": {
+    "tech": false,
+    "why": "Out: trading careers expo, trading with no builder angle"
+  },
+  "eventbrite:1982025045265": {
+    "tech": false,
+    "why": "Out: hospitality/travel inclusion summit, general business"
+  },
+  "eventbrite:1982267048102": {
+    "tech": true,
+    "why": "In: Women in Telecoms & Technology panel of women tech founders"
+  },
+  "eventbrite:1983164153368": {
+    "tech": false,
+    "why": "Out: faith gathering (prayer and worship)"
+  },
+  "eventbrite:1984049622831": {
+    "tech": false,
+    "why": "Out: bio-based industry awards gala; industrial biotech, not building digital technology"
+  },
+  "eventbrite:1984957457188": {
+    "tech": false,
+    "why": "Out: pilot training careers fair, not tech roles"
+  },
+  "eventbrite:1985797237995": {
+    "tech": true,
+    "why": "In: symposium on computational image-analysis tools, developers demo methods; academic but topic is software"
+  },
+  "eventbrite:1986312777989": {
+    "tech": false,
+    "why": "Out: academic ecology discussion meeting (Royal Society)"
+  },
+  "eventbrite:1986974510248": {
+    "tech": false,
+    "why": "Out: private investor/stock market show, finance with no tech or startup focus"
+  },
+  "eventbrite:1987383069259": {
+    "tech": true,
+    "why": "In: Royal Society meeting on neuromorphic computing hardware for AI; academic but topic is computing"
+  },
+  "eventbrite:1989297128261": {
+    "tech": true,
+    "why": "In: cybersecurity technology conference for FS security and tech leaders"
+  },
+  "eventbrite:1989761098007": {
+    "tech": true,
+    "why": "In: women's hackathon (coding) by EduHub"
+  },
+  "eventbrite:1990377383333": {
+    "tech": true,
+    "why": "In: edtech/data-in-schools conference with solution providers, aimed at practitioners"
+  },
+  "eventbrite:1990787464898": {
+    "tech": true,
+    "why": "In: BCS AI for Health talks (LLMs in diagnosis, AI regulation), applied AI for practitioners"
+  },
+  "eventbrite:1990954600806": {
+    "tech": false,
+    "why": "Out: botany/taxonomy academic symposium"
+  },
+  "eventbrite:1991452127923": {
+    "tech": false,
+    "why": "Out: academic discussion meeting on nanoscale optical sensor research, science rather than building tech"
+  },
+  "eventbrite:1992134304331": {
+    "tech": false,
+    "why": "Out: beauty consumer show"
+  },
+  "eventbrite:1992200293707": {
+    "tech": true,
+    "why": "In: networking for London infosec professionals and security startups (tech roles)"
+  },
+  "eventbrite:1992914505935": {
+    "tech": false,
+    "why": "Out: art fair"
+  },
+  "eventbrite:1993006053757": {
+    "tech": false,
+    "why": "Out: public science/entertainment talk on the paranormal"
+  },
+  "eventbrite:1993007134991": {
+    "tech": false,
+    "why": "Out: public chemistry lecture, not about building technology"
+  },
+  "eventbrite:1993008282423": {
+    "tech": false,
+    "why": "Out: public neuroscience lecture"
+  },
+  "eventbrite:1993606629094": {
+    "tech": true,
+    "why": "In: public Ri lecture but topic is computing (materials for quantum computers)"
+  },
+  "eventbrite:1993616375245": {
+    "tech": true,
+    "why": "In: public Ri lecture but topic is AI (tiny, physical AI)"
+  },
+  "eventbrite:1993617111447": {
+    "tech": false,
+    "why": "Out: general business and investment summit (UK-Africa), no tech focus"
+  },
+  "eventbrite:1993936431542": {
+    "tech": false,
+    "why": "Out: HR/future-of-work networking and talks, not tech"
+  },
+  "eventbrite:1997151137815": {
+    "tech": false,
+    "why": "Out: geography/geopolitics book talk"
+  },
+  "eventbrite:1997567287530": {
+    "tech": false,
+    "why": "Out: general entrepreneurship talk from the British Library small-business centre; founders span tech, VC, entertainment and hospitality, theme is community not startups"
+  },
+  "eventbrite:1998357962460": {
+    "tech": false,
+    "why": "Out: plastic surgery research day (medical)"
+  },
+  "eventbrite:1998745866692": {
+    "tech": false,
+    "why": "Out: drug repurposing conference (medical research), not building technology"
+  },
+  "eventbrite:1998900463094": {
+    "tech": false,
+    "why": "Out: investment research procurement conference, finance"
+  },
+  "eventbrite:1999014969586": {
+    "tech": false,
+    "why": "Out: public neuroscience of music talk"
+  },
+  "eventbrite:1999413737311": {
+    "tech": true,
+    "why": "In: AI summit for tech leaders and businesses on AI adoption"
+  },
+  "eventbrite:2000013627599": {
+    "tech": true,
+    "why": "In: fintech podcast live show by 11:FS for the fintech industry"
+  },
+  "eventbrite:2000177231944": {
+    "tech": true,
+    "why": "In: talk on quantum computing and AI with IBM as partner; public audience but topic is computing"
+  },
+  "eventbrite:2000391517879": {
+    "tech": false,
+    "why": "Out: activist group talk on Arctic ice thickening; climate science for the public, not practitioners"
+  },
+  "eventbrite:2000420785419": {
+    "tech": false,
+    "why": "Out: clinical critical-care conference; healthtech tag but audience is clinicians"
+  },
+  "eventbrite:2000977559746": {
+    "tech": false,
+    "why": "Out: academic astronomy early-career event"
+  },
+  "eventbrite:2000980711172": {
+    "tech": false,
+    "why": "Out: philosophy lecture on children's reliance on AI, not about building AI"
+  },
+  "eventbrite:2001187238902": {
+    "tech": false,
+    "why": "Out: brand/marketing talk at Virgin StartUp for small businesses; marketing topic, Virgin StartUp is not a tech host"
+  },
+  "eventbrite:2001240272527": {
+    "tech": false,
+    "why": "Out: architecture lecture"
+  },
+  "eventbrite:2001567305692": {
+    "tech": true,
+    "why": "In: KNIME data and AI customer conference with agentic AI workshop"
+  },
+  "eventbrite:2002204715201": {
+    "tech": false,
+    "why": "Out: Halloween party"
+  },
+  "eventbrite:2002336816319": {
+    "tech": false,
+    "why": "Out: music industry networking party"
+  },
+  "eventbrite:2002554121284": {
+    "tech": true,
+    "why": "In: investor and founder pitch night"
+  },
+  "eventbrite:2002574784087": {
+    "tech": false,
+    "why": "Out: generic careers event (CV reviews, career panel) hosted at Braze; non-tech topic at a tech company"
+  },
+  "eventbrite:2003063755614": {
+    "tech": true,
+    "why": "In: vibe-coding/no-code mobile app building workshop"
+  },
+  "eventbrite:2003199695213": {
+    "tech": true,
+    "why": "In: startup funding networking for founders, VCs and angels"
+  },
+  "eventbrite:2003359984643": {
+    "tech": false,
+    "why": "Out: biography talk on Stephen Hawking"
+  },
+  "eventbrite:2003397891022": {
+    "tech": true,
+    "why": "In: document automation hackathon"
+  },
+  "eventbrite:42772249951": {
+    "tech": false,
+    "why": "Out: general business exhibition and networking, no tech focus"
+  },
+  "eventbrite:46879248093": {
+    "tech": true,
+    "why": "In: angel investment show where startups pitch to investors; generic business organiser"
+  },
+  "luma:151r4ad1": {
+    "tech": true,
+    "why": "In: bi-weekly startup social for founders and operators run by a startup; board games are not fitness or sport, so the run-club rule does not apply"
+  },
+  "luma:1e7tvpzz": {
+    "tech": false,
+    "why": "Out: fashion (jeans) launch party"
+  },
+  "luma:3i3uijvd": {
+    "tech": false,
+    "why": "Out: generic careers fair (law, finance, tech, professional services)"
+  },
+  "luma:3lquw02s": {
+    "tech": false,
+    "why": "Out: fashion pop-up shop"
+  },
+  "luma:4gsodxj4": {
+    "tech": false,
+    "why": "Out: walk for founders; outdoor activity even though attendees are startup people"
+  },
+  "luma:4kvb1hrk": {
+    "tech": false,
+    "why": "Out: book club"
+  },
+  "luma:4lkgf2hc": {
+    "tech": true,
+    "why": "In: UX design networking evening on design and technology (charity fundraiser)"
+  },
+  "luma:5luq6uxf": {
+    "tech": false,
+    "why": "Out: creative-industry talk on physical experiences (Central Saint Martins)"
+  },
+  "luma:63g6l0e5": {
+    "tech": false,
+    "why": "Out: think-tank philosophy lecture"
+  },
+  "luma:6p4pf7pr": {
+    "tech": false,
+    "why": "Out: regenerative design panel for the creative/fashion sector"
+  },
+  "luma:6xip72je": {
+    "tech": true,
+    "why": "In: Solana microstructure/DeFi event prioritising builders and core devs, crypto infra sponsors"
+  },
+  "luma:8h1u8bvw": {
+    "tech": false,
+    "why": "Out: supper club dinner"
+  },
+  "luma:AI4Oct26": {
+    "tech": true,
+    "why": "In: AI community meetup on building agents, Google speaker"
+  },
+  "luma:a5yfh2ve": {
+    "tech": true,
+    "why": "In: buildathon building AI plug-ins"
+  },
+  "luma:age-q5is": {
+    "tech": false,
+    "why": "Out: wellness walk"
+  },
+  "luma:aw3il7e5": {
+    "tech": false,
+    "why": "Out: hiking trip"
+  },
+  "luma:bfgjvco9": {
+    "tech": false,
+    "why": "Out: scavenger hunt, general social"
+  },
+  "luma:breakpoint2026": {
+    "tech": true,
+    "why": "In: Solana protocol conference for builders and industry"
+  },
+  "luma:c8mk9aof": {
+    "tech": false,
+    "why": "Out: supper club"
+  },
+  "luma:da0ioqx8": {
+    "tech": false,
+    "why": "Out: startup operators run club; rubric says the activity is running"
+  },
+  "luma:dl0m714h": {
+    "tech": true,
+    "why": "In: tech careers event on finding a job in tech after layoffs"
+  },
+  "luma:eo722inl": {
+    "tech": false,
+    "why": "Out: fashion house CEO speaker event"
+  },
+  "luma:eveur09a": {
+    "tech": true,
+    "why": "In: community engineering hackathon with Grok Bot and Cursor"
+  },
+  "luma:extreme-weather": {
+    "tech": true,
+    "why": "In: AI/ML for extreme weather prediction, applied tech night by a tech society"
+  },
+  "luma:fwyhkq6w": {
+    "tech": false,
+    "why": "Out: film screening and discussion; AI company host leans in but the activity is film"
+  },
+  "luma:g9q690i2": {
+    "tech": true,
+    "why": "In: React/React Native developer meetup"
+  },
+  "luma:gh66ltup": {
+    "tech": false,
+    "why": "Out: 5K run at a crypto conference; activity is running"
+  },
+  "luma:gkmdzbk9": {
+    "tech": true,
+    "why": "In: agentic AI in financial services for practitioners"
+  },
+  "luma:granola-gemini-hackathon": {
+    "tech": true,
+    "why": "In: hackathon building with Gemini at Granola"
+  },
+  "luma:granola-raspberry-pi": {
+    "tech": true,
+    "why": "In: talk with Raspberry Pi founder at a tech company, topic is computing"
+  },
+  "luma:h43nt6jj": {
+    "tech": true,
+    "why": "In: social for founders, investors and builders of the startup ecosystem at Second Home; chess is a table game, not fitness or sport"
+  },
+  "luma:h8zer2ek": {
+    "tech": true,
+    "why": "In: data/AI hackathon on agent eval harnesses"
+  },
+  "luma:izmqq0pd": {
+    "tech": false,
+    "why": "Out: music/DJ party"
+  },
+  "luma:k479y31u": {
+    "tech": true,
+    "why": "In: security company (Intruder) event on pentesting"
+  },
+  "luma:l1z4azjp": {
+    "tech": false,
+    "why": "Out: entrepreneurship through acquisition (buying SMEs), general business, no tech or startup focus"
+  },
+  "luma:london-hh-26": {
+    "tech": true,
+    "why": "In: Solana hacker house"
+  },
+  "luma:m3pbljlh": {
+    "tech": true,
+    "why": "In: data hackathon at Newspeak House"
+  },
+  "luma:m8q7l68w": {
+    "tech": true,
+    "why": "In: startup ecosystem event with VC network (SusHi Tech London)"
+  },
+  "luma:novabook-0uce": {
+    "tech": true,
+    "why": "In: VC fireside on scaling startups"
+  },
+  "luma:p41k1z3g": {
+    "tech": true,
+    "why": "In: Gemini hackathon at Imperial"
+  },
+  "luma:phtg8nap": {
+    "tech": true,
+    "why": "In: VC summit for founders and investors"
+  },
+  "luma:pqlsyokj": {
+    "tech": false,
+    "why": "Out: artist talk at a gallery"
+  },
+  "luma:q3uykk0n": {
+    "tech": true,
+    "why": "In: women engineers event with Snyk on AI agents shipping code"
+  },
+  "luma:qa1ds94p": {
+    "tech": true,
+    "why": "In: one-day AI hackathon with open models"
+  },
+  "luma:qh2p3qij": {
+    "tech": false,
+    "why": "Out: coffee shop relaunch party"
+  },
+  "luma:ra3hwn6i": {
+    "tech": false,
+    "why": "Out: ceramics exhibition and film"
+  },
+  "luma:rek0kyyz": {
+    "tech": true,
+    "why": "In: debate on AI and creativity run by a founders community; topic AI but not about building"
+  },
+  "luma:revenueengine": {
+    "tech": true,
+    "why": "In: founders and GTM leaders on scaling startups, with Revolut and Pylon"
+  },
+  "luma:rprxn1eb": {
+    "tech": false,
+    "why": "Out: music collaborator mixer"
+  },
+  "luma:scale-or-die-26": {
+    "tech": true,
+    "why": "In: Solana developer summit for engineers and protocol developers"
+  },
+  "luma:stv9t10o": {
+    "tech": false,
+    "why": "Out: music podcast live filming"
+  },
+  "luma:t7w030vo": {
+    "tech": true,
+    "why": "In: startup house party for founders and builders with demos; party format leans out"
+  },
+  "luma:techsummit": {
+    "tech": true,
+    "why": "In: KCL Tech student tech conference and tech careers fair"
+  },
+  "luma:uyqc0kwq": {
+    "tech": false,
+    "why": "Out: climate policy lecture"
+  },
+  "luma:w5ygfmcy": {
+    "tech": false,
+    "why": "Out: general networking event, no tech focus"
+  },
+  "luma:wjyuhipj": {
+    "tech": false,
+    "why": "Out: supper club"
+  },
+  "luma:xjd0fs6x": {
+    "tech": true,
+    "why": "In: Lovable community hackathon"
+  },
+  "luma:z7g0eoa3": {
+    "tech": false,
+    "why": "Out: poker night at a digital-assets finance conference; activity is poker, trading crowd"
+  },
+  "luma:zrk45rju": {
+    "tech": false,
+    "why": "Out: film screening"
+  },
+  "meetup:310429777": {
+    "tech": true,
+    "why": "In: Dynamics 365 & Power Platform user group day"
+  },
+  "meetup:312852209": {
+    "tech": false,
+    "why": "Out: river walk and pub social"
+  },
+  "meetup:315179847": {
+    "tech": false,
+    "why": "Out: general social for 30s and 40s"
+  },
+  "meetup:315544471": {
+    "tech": false,
+    "why": "Out: family office/private equity networking, finance with no tech focus"
+  },
+  "meetup:315651661": {
+    "tech": false,
+    "why": "Out: property investment networking; PropTech in title but content is property deals"
+  },
+  "meetup:315651664": {
+    "tech": false,
+    "why": "Out: travel and hospitality business networking; mentions startups but no tech focus"
+  },
+  "meetup:315666129": {
+    "tech": true,
+    "why": "In: OpenUK open-source meetup on agentic AI in FS"
+  },
+  "meetup:315992081": {
+    "tech": true,
+    "why": "In: Cloud Native London meetup"
+  },
+  "meetup:316055738": {
+    "tech": false,
+    "why": "Out: social night at Tate Lates"
+  },
+  "meetup:316172181": {
+    "tech": true,
+    "why": "In: Data & AI London meetup talks"
+  },
+  "meetup:316183895": {
+    "tech": true,
+    "why": "In: Elastic user group on coding agents"
+  },
+  "meetup:316370709": {
+    "tech": false,
+    "why": "Out: law and property business networking"
+  },
+  "meetup:316578225": {
+    "tech": true,
+    "why": "In: panel on AI and software engineering"
+  },
+  "meetup:316601122": {
+    "tech": false,
+    "why": "Out: philosophy discussion group"
+  },
+  "meetup:316610078": {
+    "tech": false,
+    "why": "Out: run club"
+  },
+  "meetup:316628568": {
+    "tech": true,
+    "why": "In: AI/ML and cybersecurity networking for founders and professionals"
+  },
+  "meetup:316641107": {
+    "tech": true,
+    "why": "In: startup networking for founders and investors; generic business organiser"
+  },
+  "meetup:316641162": {
+    "tech": false,
+    "why": "Out: finance, banking and property networking"
+  },
+  "meetup:316670803": {
+    "tech": false,
+    "why": "Out: logistics and financial services business networking; AI mentioned only as context"
+  },
+  "meetup:316679005": {
+    "tech": true,
+    "why": "In: BBC tech meetup on connected TV app development"
+  },
+  "meetup:316693716": {
+    "tech": false,
+    "why": "Out: women in business networking, no tech focus"
+  },
+  "meetup:316693719": {
+    "tech": true,
+    "why": "In: women in tech, fintech, AI and startups event; generic business organiser"
+  },
+  "meetup:316694616": {
+    "tech": false,
+    "why": "Out: futurist policy discussion on technoprogressive politics, not building tech"
+  },
+  "meetup:316715528": {
+    "tech": false,
+    "why": "Out: run club"
+  },
+  "meetup:316732568": {
+    "tech": false,
+    "why": "Out: book club social"
+  },
+  "meetup:316752051": {
+    "tech": true,
+    "why": "In: GDG Android developers meetup"
+  },
+  "meetup:316764787": {
+    "tech": false,
+    "why": "Out: founders running club; activity is running"
+  },
+  "meetup:316785145": {
+    "tech": true,
+    "why": "In: startup funding networking for founders, VCs and angels"
+  },
+  "meetup:316836682": {
+    "tech": false,
+    "why": "Out: founders, SME owners and professionals business networking; Vonage spotlight is on general business growth, no tech or startup focus"
+  },
+  "meetup:316872381": {
+    "tech": false,
+    "why": "Out: fitness and volunteering group"
+  },
+  "meetup:316894266": {
+    "tech": true,
+    "why": "In: tech founders and researchers networking with keynotes on AI, medtech, robotics"
+  },
+  "meetup:316897150": {
+    "tech": true,
+    "why": "In: indie makers/bootstrapped founders meetup"
+  },
+  "meetup:316908181": {
+    "tech": true,
+    "why": "In: fintech/payments and AI networking; mixed with general finance"
+  },
+  "meetup:316908182": {
+    "tech": true,
+    "why": "In: networking on AI and digital transformation with AI specialists and founders, hosted by tech companies (3Edit, Getshop Today); host leans in"
+  },
+  "meetup:316909711": {
+    "tech": true,
+    "why": "In: developer talks on harness engineering/software factory"
+  },
+  "meetup:316926189": {
+    "tech": true,
+    "why": "In: AI community meetup on building agents"
+  },
+  "meetup:316933624": {
+    "tech": false,
+    "why": "Out: basketball"
+  },
+  "meetup:316944404": {
+    "tech": true,
+    "why": "In: C++ London developer meetup"
+  },
+  "meetup:316953049": {
+    "tech": true,
+    "why": "In: London.js JavaScript meetup"
+  },
+  "meetup:316954458": {
+    "tech": false,
+    "why": "Out: social skills workshop"
+  },
+  "meetup:316957735": {
+    "tech": true,
+    "why": "In: Microsoft Fabric & Power BI user group"
+  },
+  "meetup:316961500": {
+    "tech": false,
+    "why": "Out: general social"
+  },
+  "meetup:316962274": {
+    "tech": false,
+    "why": "Out: singles party"
+  },
+  "meetup:316993235": {
+    "tech": false,
+    "why": "Out: social run with food"
+  },
+  "meetup:316997681": {
+    "tech": true,
+    "why": "In: AI security engineers meetup"
+  },
+  "meetup:317013480": {
+    "tech": false,
+    "why": "Out: run and lunch social"
+  },
+  "meetup:317054890": {
+    "tech": true,
+    "why": "In: PyData London meetup"
+  },
+  "meetup:317057152": {
+    "tech": true,
+    "why": "In: hands-on AI agents workshop with Neo4j and Google Cloud"
+  },
+  "meetup:317070787": {
+    "tech": false,
+    "why": "Out: local business owners coffee conversations"
+  },
+  "meetup:317092009": {
+    "tech": false,
+    "why": "Out: language exchange"
+  }
+}
