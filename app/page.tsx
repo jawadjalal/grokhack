@@ -3,10 +3,12 @@
 import { useEffect, useMemo, useState } from 'react'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
+import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
 const PUSH_LIMIT = 15
+const SHOW = 40 // rows pitched and shown; the rest are counted
 const STRONG = 60 // fit at or above this counts toward the money on the table
 
 async function post<T>(path: string, body: unknown): Promise<T> {
@@ -21,33 +23,68 @@ function fitColor(score: number) {
   return score >= 55 ? 'var(--go)' : 'var(--ink3)'
 }
 
-// The screen's one finding: who to email first, and why.
-function finding(leads: Lead[]) {
+// The screen's one finding: who to email first, and why, with the action beside it.
+function Finding({ leads, onOpen }: { leads: Lead[]; onOpen: (l: Lead) => void }) {
   const proven = leads.filter(l => l.pastBackings.length).slice(0, 2)
-  const top = leads[0]
-  if (!top) return ''
-  if (proven.length === 2) return `${proven[0].name} and ${proven[1].name} already backed an event like this. Email them first.`
-  if (proven.length === 1) return `${proven[0].name} already backed an event like this. Email them first, then ${leads.find(l => l !== proven[0])?.name}.`
-  return `Nobody on record has backed an event like this yet. ${top.name} fits best on focus and audience.`
+  const first = proven[0] ?? leads[0]
+  if (!first) return null
+  const Name = ({ l }: { l: Lead }) => (
+    <button onClick={() => onOpen(l)} style={{ display: 'inline-flex', alignItems: 'center', gap: 6, border: 0, padding: '1px 6px 1px 3px', borderRadius: 6, background: 'var(--bg)', boxShadow: '0 0 0 1px var(--border)', color: 'var(--ink)', fontWeight: 550, verticalAlign: 'baseline' }}>
+      <Mark domain={l.domain} size={18} /> {l.name}
+    </button>
+  )
+  return (
+    <p style={{ margin: '10px 0 0', fontSize: 16, color: 'var(--ink2)', lineHeight: 1.7, display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 6 }}>
+      {proven.length ? (
+        <>
+          <Name l={proven[0]} />
+          {proven[1] && (
+            <>
+              and <Name l={proven[1]} />
+            </>
+          )}
+          {proven.length > 1 ? 'have' : 'has'} already backed an event like this.
+        </>
+      ) : (
+        <>
+          Nobody on record has backed one like this yet. <Name l={first} /> fits best.
+        </>
+      )}
+      <button className="btn" onClick={() => onOpen(first)} style={{ height: 28, padding: '0 8px', color: 'var(--ink)', fontWeight: 550 }}>
+        Email {first.name} first <span className="chev">›</span>
+      </button>
+    </p>
+  )
 }
 
-// How the money splits across tiers among the strong fits.
+// How the money on the table splits across tiers. Zero tiers are left out.
 function Ladder({ leads }: { leads: Lead[] }) {
-  const tiers = (['Headline', 'Partner', 'Supporter'] as const).map(t => ({ t, n: leads.filter(l => l.kind === 'sponsor' && l.score >= STRONG && l.suggestedTier === t).length }))
-  const sum = tiers.reduce((a, x) => a + x.n, 0) || 1
-  const shade = { Headline: 'var(--go)', Partner: 'color-mix(in srgb, var(--go) 55%, white)', Supporter: 'color-mix(in srgb, var(--go) 25%, white)' }
+  const tiers = (['Headline', 'Partner', 'Supporter'] as const)
+    .map(t => {
+      const ls = leads.filter(l => l.kind === 'sponsor' && l.score >= STRONG && l.suggestedTier === t)
+      return { t, n: ls.length, gbp: ls.reduce((a, l) => a + (l.suggestedPriceGbp ?? 0), 0) }
+    })
+    .filter(x => x.n)
+  const sum = tiers.reduce((a, x) => a + x.gbp, 0) || 1
+  const shade = { Headline: 'var(--go)', Partner: '#4f9c6c', Supporter: '#a7cdb4' }
+  if (!tiers.length) return null
   return (
-    <div style={{ marginTop: 10 }}>
-      <div style={{ display: 'flex', height: 6, borderRadius: 2, overflow: 'hidden', background: 'var(--chip)', gap: 2 }}>
-        {tiers.filter(x => x.n).map(x => (
-          <span key={x.t} className="reveal" style={{ width: `${(x.n / sum) * 100}%`, background: shade[x.t] }} />
+    <div style={{ marginTop: 12, width: 260, marginLeft: 'auto' }}>
+      <div style={{ display: 'flex', height: 8, gap: 2 }}>
+        {tiers.map((x, i) => (
+          <span key={x.t} className="reveal" style={{ width: `${(x.gbp / sum) * 100}%`, minWidth: 6, background: shade[x.t], borderRadius: 2, animationDelay: `${200 + i * 120}ms` }} />
         ))}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'flex-end', gap: 10, marginTop: 6, fontSize: 12, color: 'var(--ink3)' }}>
+      <div style={{ display: 'grid', gap: 3, marginTop: 8 }}>
         {tiers.map(x => (
-          <span key={x.t} style={{ whiteSpace: 'nowrap' }}>
-            <span className="mono" style={{ color: 'var(--ink2)' }}>{x.n}</span> {x.t.toLowerCase()}
-          </span>
+          <div key={x.t} style={{ display: 'flex', alignItems: 'center', gap: 7, fontSize: 12.5, color: 'var(--ink3)' }}>
+            <span style={{ width: 8, height: 8, borderRadius: 2, background: shade[x.t], flex: 'none' }} />
+            <span style={{ flex: 1, textAlign: 'left' }}>
+              {x.n} {x.t.toLowerCase()}
+              {x.n > 1 ? 's' : ''}
+            </span>
+            <span className="mono" style={{ color: 'var(--ink2)' }}>£{x.gbp.toLocaleString()}</span>
+          </div>
         ))}
       </div>
     </div>
@@ -150,6 +187,7 @@ export default function Home() {
   const [input, setInput] = useState('')
   const [step, setStep] = useState(-1)
   const [ms, setMs] = useState(0)
+  const [ranked, setRanked] = useState(0)
   const [event, setEvent] = useState<EventInput | null>(null)
   const [leads, setLeads] = useState<Lead[]>([])
   const [filter, setFilter] = useState<Filter>('all')
@@ -169,7 +207,10 @@ export default function Home() {
       setStep(1)
       const matched = await post<Lead[]>('/api/match', ev)
       setStep(2)
-      const priced = await Promise.all(matched.map(l => post<Lead>('/api/pitch', { event: ev, lead: l })))
+      // Pitch the top of the list; a lead whose pitch fails still shows, without one.
+      const head = matched.slice(0, SHOW)
+      const priced = await Promise.all(head.map(l => post<Lead>('/api/pitch', { event: ev, lead: l }).catch(() => l)))
+      setRanked(matched.length)
       setEvent(ev)
       setLeads(priced)
       setFilter('all')
@@ -193,6 +234,7 @@ export default function Home() {
       const byId = new Map(done.map(l => [l.sponsorId, l]))
       setLeads(ls => ls.map(l => byId.get(l.sponsorId) ?? l))
       setOpen(o => (o ? (byId.get(o.sponsorId) ?? o) : o))
+      track(event, done.filter(l => l.notionUrl), 'pushed')
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e))
     } finally {
@@ -212,9 +254,14 @@ export default function Home() {
           <Icon name="star" size={22} />
           <strong style={{ fontSize: 16.5, letterSpacing: '-0.01em' }}>Backer</strong>
         </div>
-        <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer" style={{ fontSize: 14 }}>
-          <Icon name="star" size={16} /> Open source, MIT
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          <a className="btn" href="/memory" style={{ fontSize: 14 }}>
+            Memory
+          </a>
+          <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer" style={{ fontSize: 14 }}>
+            <Icon name="star" size={16} /> Open source, MIT
+          </a>
+        </div>
       </header>
 
       <main style={{ width: '100%', maxWidth: 1120, margin: '0 auto', padding: '0 24px 220px' }}>
@@ -236,20 +283,20 @@ export default function Home() {
 
         {!!leads.length && event && !busy && (
           <section className="rise" style={{ paddingTop: 24 }}>
-            <div style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 24 }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 32 }}>
               <div style={{ minWidth: 0 }}>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
-                  <Icon name="sparkle" size={15} /> {leads.length} London backers ranked in {(ms / 1000).toFixed(1)}s
+                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} London backers ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
                 </div>
-                <h2 style={{ fontSize: 28, lineHeight: 1.15, letterSpacing: '-0.025em', margin: '8px 0 0', fontWeight: 600, maxWidth: 700 }}>{event.name}</h2>
-                <p style={{ margin: '8px 0 0', fontSize: 15.5, color: 'var(--ink2)', maxWidth: 640 }}>{finding(shown)}</p>
+                <h2 style={{ fontSize: 28, lineHeight: 1.12, letterSpacing: '-0.028em', margin: '8px 0 0', fontWeight: 600, maxWidth: 640, textWrap: 'balance' }}>{event.name}</h2>
+                <Finding leads={shown} onOpen={setOpen} />
               </div>
               <div style={{ textAlign: 'right', flex: 'none', minWidth: 220 }}>
                 <div className="mono" style={{ fontSize: 32, fontWeight: 600, letterSpacing: '-0.03em', lineHeight: 1 }}>
                   {filter === 'venue' ? shown.length : `£${total.toLocaleString()}`}
                 </div>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, marginTop: 6 }}>
-                  {filter === 'venue' ? 'venues to ask for space' : `if the ${strong.filter(l => l.kind === 'sponsor').length} strongest fits say yes`}
+                  {filter === 'venue' ? 'venues to ask for space' : `on the table from ${strong.filter(l => l.kind === 'sponsor').length} strong fits`}
                 </div>
                 {filter !== 'venue' && <Ladder leads={shown} />}
               </div>
@@ -297,7 +344,7 @@ export default function Home() {
       </main>
 
       <Composer value={input} onChange={setInput} onRun={run} busy={busy} compact={!!leads.length} />
-      {open && event && <Drawer lead={open} onClose={() => setOpen(null)} />}
+      {open && event && <Drawer lead={open} event={event} onClose={() => setOpen(null)} />}
     </div>
   )
 }
@@ -438,7 +485,7 @@ function Composer({ value, onChange, onRun, busy, compact }: { value: string; on
 }
 
 // Sends the pitch to an address a person types. Nothing goes out on its own.
-function SendBox({ subject, body }: { subject: string; body: string }) {
+function SendBox({ subject, body, onSent }: { subject: string; body: string; onSent?: (to: string) => void }) {
   const [to, setTo] = useState('')
   const [state, setState] = useState<{ kind: 'idle' | 'sending' | 'sent' | 'error'; note?: string }>({ kind: 'idle' })
   async function send() {
@@ -446,6 +493,7 @@ function SendBox({ subject, body }: { subject: string; body: string }) {
     try {
       await post<{ id: string }>('/api/send', { to, subject, body })
       setState({ kind: 'sent', note: `Sent to ${to}` })
+      onSent?.(to)
     } catch (e) {
       setState({ kind: 'error', note: e instanceof Error ? e.message : String(e) })
     }
@@ -486,7 +534,7 @@ function SendBox({ subject, body }: { subject: string; body: string }) {
   )
 }
 
-function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
+function Drawer({ lead, event, onClose }: { lead: Lead; event: EventInput; onClose: () => void }) {
   const [copied, setCopied] = useState(false)
   return (
     <aside key={lead.sponsorId} style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: 470, zIndex: 10, background: 'var(--bg)', boxShadow: 'var(--drawer), 0 0 0 1px var(--divider)', display: 'flex', flexDirection: 'column', animation: 'slide .35s var(--ease)' }}>
@@ -558,9 +606,11 @@ function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
               <div style={{ fontWeight: 600, marginBottom: 10, fontSize: 14.5 }}>{lead.pitch.subject}</div>
               <div style={{ whiteSpace: 'pre-wrap', color: 'var(--ink2)', fontSize: 14.5, lineHeight: 1.55 }}>{lead.pitch.body}</div>
             </div>
-            <SendBox subject={lead.pitch.subject} body={lead.pitch.body} />
+            <SendBox subject={lead.pitch.subject} body={lead.pitch.body} onSent={to => track(event, [lead], 'sent', { to_email: to, subject: lead.pitch!.subject, body: lead.pitch!.body })} />
           </section>
         )}
+
+        <LeadMemory lead={lead} event={event} />
       </div>
 
       <div style={{ marginTop: 'auto', padding: '14px 20px', borderTop: '1px solid var(--divider)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>

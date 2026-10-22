@@ -22,6 +22,9 @@ export async function loadMap(): Promise<BackerMap> {
       get<{ sponsor_id: string; event: string; event_topic: string; role: string; url: string }[]>('backings_view?select=*'),
     ])
     if (!sponsors.length) throw new Error('empty')
+    // Scraped rows sometimes carry a broken domain; leave those out.
+    const valid = (d: string) => /^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(d)
+    sponsors.splice(0, sponsors.length, ...sponsors.filter(s => valid(s.domain)))
     return {
       sponsors,
       backings: backings.map(b => ({ sponsorId: b.sponsor_id, event: b.event, eventTopic: b.event_topic, role: b.role, url: b.url })),
