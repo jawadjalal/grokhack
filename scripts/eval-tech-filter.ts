@@ -5,7 +5,7 @@
 // test = ids whose sha1 starts with 0-4 (about a third), dev = the rest.
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
-import { classifyTech, techSignals, TECH_HIGH, TECH_LOW, TECH_MID, type TechVerdict } from '../lib/scrape/classify'
+import { classifyTech, techRoute, techSignals, TECH_HIGH, TECH_LOW, TECH_MID, type TechVerdict } from '../lib/scrape/classify'
 import type { RawEvent } from '../lib/scrape/sources/types'
 
 type Labelled = Pick<RawEvent, 'source' | 'url' | 'name' | 'organiser' | 'categories' | 'description'> & { id: string; tech: boolean; why?: string }
@@ -51,7 +51,7 @@ async function main() {
   const dev = rows.filter(r => !isTest(r.id))
   const test = rows.filter(r => isTest(r.id))
   console.log(`events ${rows.length} (tech ${rows.filter(r => r.tech).length})  dev ${dev.length}  test ${test.length}`)
-  console.log(`rules: tech at score >= ${TECH_HIGH}, not tech at <= ${TECH_LOW}, Grok in between; rules-only cut ${TECH_MID}`)
+  console.log(`rules: tech at score >= ${TECH_HIGH} with no negative signal, not tech at <= ${TECH_LOW} with no tech word in the name, Grok otherwise; rules-only cut ${TECH_MID}`)
 
   const ruleSays = (r: Labelled) => techSignals(r).score >= TECH_MID
   console.log('\nrules only')
@@ -68,10 +68,7 @@ async function main() {
   report('dev', score(dev, fullSays))
   report('test', score(test, fullSays))
 
-  const middle = rows.filter(r => {
-    const s = techSignals(r).score
-    return s > TECH_LOW && s < TECH_HIGH
-  }).length
+  const middle = rows.filter(r => techRoute(r) === 'grok').length
   const byGrok = rows.filter(r => v(r)?.by === 'grok').length
   const pct = (n: number) => `${((100 * n) / rows.length).toFixed(1)}%`
   console.log(`\nsent to Grok ${middle}/${rows.length} (${pct(middle)}), answered by Grok ${byGrok} (${pct(byGrok)})`)

@@ -39,9 +39,9 @@ const POSITIVE: Group[] = [
 ]
 
 const NEGATIVE: Group[] = [
-  { label: 'fitness', weight: 6, re: words(['run club', 'runclub', 'running club', 'running', '5 ?km?', '10 ?km?', 'yoga', 'pilates', 'fitness', 'gym', 'goodgym', 'basketball', 'football', 'tennis', 'padel', 'cycling', 'hike', 'hiking', 'walk', 'sports?', 'swim(?:ming)?', 'climbing', 'bouldering', 'meditation', 'wellness', 'breathwork']) },
+  { label: 'fitness', weight: 6, re: words(['run club', 'runclub', 'running club', 'running', '5 ?km?', '10 ?km?', 'yoga', 'pilates', 'fitness', 'gym', 'goodgym', 'basketball', 'football', 'tennis', 'padel', 'cycling', 'hike', 'hiking', 'walk', 'sports?', 'swim(?:ming)?', 'climbing', 'bouldering', 'strolls?', 'meditation', 'wellness', 'breathwork']) },
   { label: 'food', weight: 5, re: words(['wine', 'wine tasting', 'supper club', 'dinner party', 'cocktails?', 'brunch', 'coffee', 'tasting', 'six courses', 'beer', 'cookery', 'cooking class']) },
-  { label: 'arts', weight: 5, re: words(['comedy', 'stand-up', 'theatre', 'concert', 'gig', 'dj', 'music', 'musicians?', 'film', 'screening', 'cinema', 'exhibitions?', 'gallery', 'artists?', 'painting', 'ceramics', 'poetry', 'book club', 'bookshop', 'novel', 'fashion', 'beauty', 'jeans', 'denim', 'dance', 'podcast filming', 'opera', 'museum', 'craft']) },
+  { label: 'arts', weight: 5, re: words(['comedy', 'stand-up', 'theatre', 'concert', 'gig', 'dj', 'music', 'musicians?', 'film', 'screening', 'cinema', 'exhibitions?', 'gallery', 'artists?', 'painting', 'ceramics', 'poetry', 'book club', 'bookshop', 'novel', 'book launch(?:es)?', 'book signings?', 'author talks?', 'fashion', 'beauty', 'jeans', 'denim', 'dance', 'podcast filming', 'opera', 'museum', 'craft']) },
   { label: 'social', weight: 5, re: words(['dating', 'singles', 'speed dating', 'meet new people', 'make new friends', 'new friends', 'social circle', 'halloween', 'party', 'afterparty', 'pub quiz', 'scavenger hunt', 'poker', 'language exchange', 'socials']) },
   { label: 'finance', weight: 4, re: words(['property', 'properties', 'real estate', 'realestate', 'golden visas?', 'forex', 'trading', 'stocks?', 'stock market', 'etfs?', 'wealth', 'pensions?', 'retirement', 'family office', 'private equity', 'mortgages?', 'banking', 'private investors?']) },
   { label: 'faith', weight: 6, re: words(['church', 'worship', 'faith', 'christian', 'christianity', 'prayer', 'bible', 'mosque', 'spirituality']) },
@@ -55,7 +55,11 @@ const CATEGORY_NEGATIVE: Record<string, number> = {
   'arts & culture': 4, 'food & drink': 5, fitness: 6, running: 6, books: 5, 'religion & spirituality': 6,
   'fashion & beauty': 5, 'party or social gathering': 5, 'concert or performance': 5, 'real estate': 4,
   'seasonal & holiday': 4, 'halloween/haunt': 4, 'performing & visual arts': 5, medicine: 3, science: 2,
+  'appearance or signing': 4,
 }
+
+// Categories scored above aren't fed to the word groups too, so one tag counts once.
+const scoredCategory = (c: string) => Object.hasOwn(CATEGORY_POSITIVE, c.toLowerCase()) || Object.hasOwn(CATEGORY_NEGATIVE, c.toLowerCase())
 
 // Where a word appears matters: the name says what the event is.
 const FIELD_WEIGHT = { name: 1, organiser: 0.8, categories: 0.5, description: 0.35 }
@@ -66,7 +70,7 @@ function fieldTexts(ev: TechInput): Record<Field, string> {
   return {
     name: ev.name ?? '',
     organiser: ev.organiser ?? '',
-    categories: (ev.categories ?? []).join(' , ').replace(/_/g, ' '),
+    categories: (ev.categories ?? []).filter(c => !scoredCategory(c)).join(' , ').replace(/_/g, ' '),
     description: (ev.description ?? '').slice(0, 1200),
   }
 }
@@ -91,7 +95,9 @@ function sumGroups(groups: Group[], texts: Record<Field, string>, hits: string[]
   return { score, strongest }
 }
 
-export function techSignals(ev: TechInput): { score: number; hits: string[] } {
+export type TechSignals = { score: number; hits: string[]; builderInName: boolean }
+
+export function techSignals(ev: TechInput): TechSignals {
   const hits: string[] = []
   const texts = fieldTexts(ev)
   for (const f of Object.keys(texts) as Field[]) texts[f] = texts[f].replace(FALSE_FRIENDS, ' ')
@@ -108,11 +114,11 @@ export function techSignals(ev: TechInput): { score: number; hits: string[] } {
 
   for (const c of ev.categories ?? []) {
     const key = c.toLowerCase()
-    if (CATEGORY_POSITIVE[key]) {
+    if (Object.hasOwn(CATEGORY_POSITIVE, key)) {
       pos += CATEGORY_POSITIVE[key]
       hits.push(`+cat:${c}`)
     }
-    if (CATEGORY_NEGATIVE[key]) {
+    if (Object.hasOwn(CATEGORY_NEGATIVE, key)) {
       neg += CATEGORY_NEGATIVE[key]
       hits.push(`-cat:${c}`)
     }
@@ -124,7 +130,23 @@ export function techSignals(ev: TechInput): { score: number; hits: string[] } {
   if (builderInName) neg = 0
   else if (TECH_SOURCES.has(ev.source)) neg *= 0.3
 
-  return { score: Math.round((pos - neg) * 10) / 10, hits }
+  return { score: Math.round((pos - neg) * 10) / 10, hits, builderInName }
+}
+
+export type TechRoute = 'tech' | 'not tech' | 'grok'
+
+// Where an event goes: settled by the rules or sent to Grok. The rules accept
+// only clean cases (no negative signal, a description to back it up) and
+// reject only when the name has no tech or startup word at all.
+export function techRoute(ev: TechInput): TechRoute {
+  const { score, hits, builderInName } = techSignals(ev)
+  const trusted = builderInName || TECH_SOURCES.has(ev.source)
+  const negHit = hits.some(h => h.startsWith('-'))
+  const hasText = Boolean(ev.description?.trim())
+  if (score >= TECH_HIGH && (trusted || (!negHit && hasText))) return 'tech'
+  const namePos = POSITIVE.some(g => g.re.test(ev.name ?? ''))
+  if (score <= TECH_LOW && !namePos) return 'not tech'
+  return 'grok'
 }
 
 function rulesVerdict(ev: TechInput, cut: number): TechVerdict {
@@ -154,7 +176,8 @@ for, not by who might turn up.
 - Startup, founder and investor events: pitch nights, demo days, founder
   meetups, accelerator events, startup socials where the point is startups.
 - Applied tech for a sector, aimed at practitioners: AI in finance, fintech,
-  healthtech, legaltech, climate tech, edtech.
+  healthtech, legaltech, climate tech, edtech or school data systems.
+  Judge the sector from the agenda and description, not from tags.
 - Crypto/web3 events with a builder or industry angle (developer meetups,
   protocol conferences, hacker houses).
 - University tech societies and tech community events (DoCSoc, KCL Tech,
@@ -166,10 +189,15 @@ for, not by who might turn up.
 - Science or academic lectures that are not about building technology
   (biology, ecology, history, astronomy talks), unless the topic is computing,
   AI or engineering practice.
+- AI talks, debates or book launches whose angle is ethics, society, equity,
+  creativity or art. They are in only when the talk is about how the
+  technology works or is built.
+- Clinical or professional conferences for doctors, nurses or lawyers, even
+  when tagged healthtech or innovation.
 - Arts, theatre, music, comedy, film, book clubs, exhibitions.
-- Fitness, wellness, run clubs, sports and outdoor activities, even when the
-  attendees work in tech ("Operators Runclub" is out: the activity is running).
-- Food and drink, parties, dating, language exchange, faith, general
+- Fitness, wellness, run clubs, walks and strolls, sports and outdoor
+  activities, even when the attendees work in tech ("Operators Runclub" is out: the activity is running).
+- Food and drink (brunches, supper clubs), parties, dating, language exchange, faith, general
   community socials.
 - General business, sales, marketing, property or finance networking with no
   tech or startup focus. Generic careers fairs.
@@ -191,12 +219,13 @@ ${RUBRIC}
 Be strict. A non-tech event shown to users hurts far more than a missed one,
 so answer tech true only when building, working in or investing in technology
 or startups is the main point of the event. Notes:
-- The activity decides: a run, film screening, poker night, party or supper club is out even when tech people attend or a tech company hosts.
+- The activity decides: a run, walk or stroll, film screening, poker night, party, brunch or supper club is out even when tech people attend or a tech company hosts.
 - Board games or chess nights whose stated point is the startup community are startup socials, so in.
-- A public lecture or talk whose topic is computing, AI, quantum computers, robotics or engineering is in, even for a general audience. Philosophy, ethics, education, policy or futurism about technology is out, and so are other sciences (biology, chemistry, physics, medicine).
+- A public lecture or talk whose topic is computing, AI, quantum computers, robotics or engineering is in, even for a general audience. Philosophy, ethics, policy or futurism about technology is out, and so are other sciences (biology, chemistry, physics, medicine).
+- AI talks, debates or book launches whose angle is ethics, society, equity, creativity or art are out; they are in only when the talk is about how the technology works or is built.
 - Networking and business shows: in when tech, AI or startups (founders, startup investors, pitching) are the stated focus, for example named in the title, even if the format is a casual social. Out when tech is one industry among many, a passing mention, or the audience is "business owners", "entrepreneurs" and SMEs in general.
 - Entrepreneurship through acquisition, franchising, small-business, sector trade networking (logistics, finance, HR, travel) are out unless technology is the theme.
-- Sector events are in when they are about technology in that sector (fintech, AI in insurance, HR tech).
+- Sector events are in when they are about technology in that sector (fintech, AI in insurance, HR tech, edtech or school data systems for practitioners). Judge the sector from the agenda and description, not from tags: a clinical or professional conference for doctors, nurses or lawyers is out even when tagged healthtech or innovation.
 
 You get a JSON list of events, each with an "id". Reply with JSON only:
 {"verdicts":[{"id":"<id>","tech":true|false,"confidence":0.0-1.0,"reason":"<one short sentence>"}]}
@@ -204,9 +233,22 @@ Return exactly one verdict for every id.`
 
 // Part of the cache key, so editing the prompt doesn't reuse old answers.
 const PROMPT_ID = createHash('sha1').update(SYSTEM).digest('hex').slice(0, 8)
-const MODEL = () =>process.env.SCRAPE_MODEL ?? 'grok-4.20-0309-non-reasoning'
+const MODEL = () => process.env.SCRAPE_MODEL ?? 'grok-4.20-0309-non-reasoning'
 const BATCH = 4
 const PARALLEL = 4
+const CALL_MS = 20000
+// The whole Grok phase stops after this; the rules decide what's left.
+const BUDGET_MS = 60000
+// Stop calling after this many failures in a row.
+const MAX_FAILS = 3
+
+// Shared by every call in one classifyTech run. Aborting it stops the calls in flight too.
+type Run = { key: string; stop: AbortController; fails: number }
+const stopped = (run: Run) => run.stop.signal.aborted
+
+function failed(run: Run) {
+  if (++run.fails >= MAX_FAILS) run.stop.abort()
+}
 
 type Item = { url: string; text: string; key: string }
 type GrokVerdict = { tech: boolean; confidence: number; reason: string }
@@ -245,14 +287,15 @@ function asVerdict(x: unknown): GrokVerdict | undefined {
   return { tech: o.tech, confidence: c, reason: typeof o.reason === 'string' ? o.reason.slice(0, 300) : '' }
 }
 
-// One chat call for up to BATCH events. Returns verdicts by local id.
-async function askGrok(items: Item[], key: string): Promise<Map<string, GrokVerdict>> {
+// One chat call for up to BATCH events. Returns verdicts by url.
+async function askGrok(items: Item[], run: Run): Promise<Map<string, GrokVerdict>> {
   const out = new Map<string, GrokVerdict>()
+  if (stopped(run)) return out
   const events = items.map((it, i) => ({ id: `e${i}`, ...JSON.parse(it.text) }))
   try {
     const res = await fetch('https://api.x.ai/v1/chat/completions', {
       method: 'POST',
-      headers: { authorization: `Bearer ${key}`, 'content-type': 'application/json' },
+      headers: { authorization: `Bearer ${run.key}`, 'content-type': 'application/json' },
       body: JSON.stringify({
         model: MODEL(),
         temperature: 0,
@@ -262,9 +305,12 @@ async function askGrok(items: Item[], key: string): Promise<Map<string, GrokVerd
           { role: 'user', content: JSON.stringify(events) },
         ],
       }),
-      signal: AbortSignal.timeout(20000),
+      signal: AbortSignal.any([run.stop.signal, AbortSignal.timeout(CALL_MS)]),
     })
-    if (!res.ok) return out
+    if (!res.ok) {
+      failed(run)
+      return out
+    }
     const body = (await res.json()) as { choices?: { message?: { content?: string } }[] }
     const parsed = JSON.parse(body.choices?.[0]?.message?.content ?? '{}') as { verdicts?: unknown[] }
     for (const raw of parsed.verdicts ?? []) {
@@ -274,6 +320,8 @@ async function askGrok(items: Item[], key: string): Promise<Map<string, GrokVerd
       if (v && Number.isInteger(i) && items[i]) out.set(items[i].url, v)
     }
   } catch {}
+  if (out.size) run.fails = 0
+  else failed(run)
   return out
 }
 
@@ -297,13 +345,22 @@ function chunks<T>(list: T[], n: number): T[][] {
 }
 
 // Ask Grok about every item, retrying the ones that didn't come back once.
+// Gives up early when Grok is down or the time budget runs out.
 async function grokAll(items: Item[], key: string): Promise<Map<string, GrokVerdict>> {
   const got = new Map<string, GrokVerdict>()
-  let todo = items
-  for (let round = 0; round < 2 && todo.length; round++) {
-    const maps = await pool(chunks(todo, BATCH).map(batch => () => askGrok(batch, key)), PARALLEL)
-    for (const m of maps) for (const [url, v] of m) got.set(url, v)
-    todo = todo.filter(it => !got.has(it.url))
+  const run: Run = { key, stop: new AbortController(), fails: 0 }
+  const timer = setTimeout(() => run.stop.abort(), BUDGET_MS)
+  try {
+    let todo = items
+    for (let round = 0; round < 2 && todo.length && !stopped(run); round++) {
+      const before = got.size
+      const maps = await pool(chunks(todo, BATCH).map(batch => () => askGrok(batch, run)), PARALLEL)
+      for (const m of maps) for (const [url, v] of m) got.set(url, v)
+      if (got.size === before) break // nothing came back: don't repeat it
+      todo = todo.filter(it => !got.has(it.url))
+    }
+  } finally {
+    clearTimeout(timer)
   }
   return got
 }
@@ -315,9 +372,8 @@ export async function classifyTech(events: (TechInput & { url: string })[]): Pro
 
   for (const ev of events) {
     try {
-      const { score } = techSignals(ev)
       inputs.set(ev.url, ev)
-      if (score >= TECH_HIGH || score <= TECH_LOW) {
+      if (techRoute(ev) !== 'grok') {
         verdicts.set(ev.url, rulesVerdict(ev, TECH_MID))
         continue
       }

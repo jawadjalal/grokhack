@@ -15,7 +15,11 @@ const HACKATHON_SOURCES = new Set(['devpost', 'mlh', 'hackclub'])
 
 // Not something a tech company sponsors, whatever the topic: paid courses and
 // certifications, online sessions, general business networking, kids' classes, faith.
-const OFF_TOPIC = /\b(?:courses?|certification|instructor-led|online|business networking|property|real estate|ages? \d+|dajjal|sermon|bible|quran|church|mosque|halaqa)\b/i
+const OFF_TOPIC = /\b(?:courses?|certification|instructor-led|online|business networking|property|real estate|ages? \d+|dajjal|sermon|bible|quran|church|mosque|halaqa|seniors?|over 60s|year \d+(?:\s*-\s*\d+)?|kids|children|1-to-1|one-to-one|masterclass|book (?:talk|launch|club)|trading|beauty)\b/i
+
+// Common English words that STRONG_TECH and looksTech also know ('how we react',
+// 'data skills', 'tea & tech'). On loose-tag sources they don't count alone.
+const WEAK_TITLE_WORDS = /\b(?:react|data|code|tech|techs|technology|founders?|security|cloud|analytics|digital|innovation|automation|computers?|computing|robots?|ventures?|investors?)\b/gi
 
 // A title that names the tech itself, so an activity word can't outvote it
 // ("AI Movie Club" stays in; "Startups RunClub" does not).
@@ -40,16 +44,24 @@ export function isTech(ev: RawEvent): boolean {
   if (HACKATHON_SOURCES.has(ev.source)) return true
   const categories = LOOSE_TAG_SOURCES.has(ev.source) ? [] : (ev.categories ?? []).map(c => c.trim())
   if (ev.source === 'builderbase' && categories.some(c => /hackathon/i.test(c))) return true
-  if (OFF_TOPIC.test(ev.name)) return false
-  if (STRONG_TECH.test(ev.name)) return true
+  if (offTopic(ev)) return false
+  // Eventbrite titles must name the tech with a word that isn't everyday English.
+  const name = LOOSE_TAG_SOURCES.has(ev.source) ? ev.name.replace(WEAK_TITLE_WORDS, ' ') : ev.name
+  if (STRONG_TECH.test(name)) return true
   if (ACTIVITY.test(ev.name) || categories.some(c => ACTIVITY_CATEGORY.test(c))) return false
   if (categories.some(c => TECH_CATEGORY.test(c))) return true
   // Name, organiser and categories may use the broad word list; the description only the strict one.
-  const head = [ev.name, ev.organiser ?? '', categories.join(' ')].join('\n')
+  const organiser = LOOSE_TAG_SOURCES.has(ev.source) ? (ev.organiser ?? '').replace(WEAK_TITLE_WORDS, ' ') : ev.organiser ?? ''
+  const head = [name, organiser, categories.join(' ')].join('\n')
   if (looksTech(head) || STACK.test(head)) return true
   if (LOOSE_TAG_SOURCES.has(ev.source)) return false
   const body = (ev.description ?? '').slice(0, 400)
   return BODY_TECH.test(body) || STACK.test(body)
+}
+
+// Paid courses, kids' classes, faith and the like: never sponsorable, whatever a classifier says.
+export function offTopic(ev: RawEvent): boolean {
+  return OFF_TOPIC.test(ev.name)
 }
 
 export function inLondon(ev: RawEvent): boolean {

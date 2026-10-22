@@ -13,6 +13,9 @@ const LONDON_KM = 30
 const DAY_MS = 24 * 60 * 60 * 1000
 const MAX_CALENDARS = 25
 const MAX_FEED_PAGES = 20
+const FEED_TTL_MS = 60 * 60 * 1000 // new listings appear all day; event pages keep the 12h cache
+const MAX_MAYBE = 40 // feed events with no tech word in the title, checked by their Luma category
+const TECH_CATEGORY = /^(?:ai|tech|technology|crypto|web3|science & tech)$/i
 
 // London tech community calendars, verified 22 Oct 2026 with api.lu.ma/url?url=<slug>.
 // Not found then: hackradar, ukaiagentslab, unicornmafia, aitinkererslondon, encode,
@@ -112,11 +115,16 @@ export const discover: Discover = async opts => {
 
   const feed = await readFeed(to)
   const calendars = new Map<string, boolean>(KNOWN_CALENDARS.map(c => [c.id, c.all])) // id -> keep every event
+  const maybe: Candidate[] = []
   for (const e of feed ?? []) {
     const cal = e.calendar
     const calName = cal?.name ?? ''
     const tech = looksTech(e.event.name) || (!cal?.is_personal && looksTech(calName)) || KNOWN_IDS.has(cal?.api_id ?? '')
-    if (!tech) continue
+    if (!tech) {
+      // '200ms' by Jito Events: the title says nothing, the Luma category says Crypto.
+      if (!cal?.is_personal) maybe.push({ id: e.event.api_id, slug: e.event.url, name: e.event.name, start: Date.parse(e.event.start_at), fromFeed: true })
+      continue
+    }
     add({ id: e.event.api_id, slug: e.event.url, name: e.event.name, start: Date.parse(e.event.start_at), fromFeed: true })
     if (cal?.api_id && !cal.is_personal && !calendars.has(cal.api_id) && calendars.size < MAX_CALENDARS) {
       calendars.set(cal.api_id, looksTech(calName))
@@ -160,6 +168,19 @@ export const discover: Discover = async opts => {
   await take(upcoming, Math.ceil(opts.limit / 2))
   await take(past, opts.limit - out.length)
   await take(upcoming, opts.limit - out.length)
+  out.push(...(await byCategory(maybe.filter(c => c.start >= from && c.start <= to).slice(0, MAX_MAYBE), urls)))
+  return out
+}
+
+// Feed events whose title has no tech word: kept only when Luma files them under a tech category.
+async function byCategory(list: Candidate[], urls: Set<string>): Promise<RawEvent[]> {
+  const out: RawEvent[] = []
+  for (const c of list) {
+    const ev = await readEvent(c)
+    if (!ev || urls.has(ev.url) || !ev.categories?.some(cat => TECH_CATEGORY.test(cat.trim()))) continue
+    urls.add(ev.url)
+    out.push(ev)
+  }
   return out
 }
 
@@ -187,7 +208,7 @@ async function readFeed(to: number): Promise<FeedEntry[] | undefined> {
       (cursor ? `&pagination_cursor=${encodeURIComponent(cursor)}` : '')
     let data: FeedPage
     try {
-      data = await getJson<FeedPage>(url)
+      data = await getJson<FeedPage>(url, { ttlMs: FEED_TTL_MS })
     } catch {
       return page ? entries : undefined
     }

@@ -404,8 +404,8 @@
     "why": "Out: ceramics exhibition and film"
   },
   "luma:rek0kyyz": {
-    "tech": true,
-    "why": "In: debate on AI and creativity run by a founders community; topic AI but not about building"
+    "tech": false,
+    "why": "Out: debate on whether AI makes us less creative; AI talk with a creativity/society angle, not about how the technology works or is built"
   },
   "luma:revenueengine": {
     "tech": true,

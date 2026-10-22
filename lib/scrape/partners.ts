@@ -20,7 +20,7 @@ const MAX_TEXT = 15000
 const MAX_GROK = 4
 
 const PLATFORMS = /^(luma|lu\.ma|meetup|meetup\.com|devpost|eventbrite)$/i
-const GENERIC = /^(tba|tbc|tbd|sponsors?|partners?|venue|hosts?|organi[sz]ers?|judges?|speakers?|mentors?|you|we|us|everyone|community|the community|others?|more|our (sponsors|partners|community)|docs?|website|here|link|register|tickets?|apply|sign up|learn more)$/i
+const GENERIC = /^(tba|tbc|tbd|sponsors?|partners?|venue|hosts?|organi[sz]ers?|judges?|speakers?|mentors?|you|we|us|everyone|community|the community|others?|more|our (sponsors|partners|community)|docs?|website|here|link|register|tickets?|apply|sign up|learn more|newsletter|subscribe|follow us|blog|email|contact( us)?|podcast|linkedin|twitter|x|instagram|facebook|youtube|tiktok|discord|slack|whatsapp|telegram)$/i
 
 // Social, link-shortener, form and event-platform hosts never name a partner.
 const IGNORED_HOSTS = [
@@ -59,6 +59,7 @@ export async function findPartners(ev: RawEvent, known: Known[]): Promise<Scrape
       for (const f of raw) {
         const name = guardName(f.name, text)
         if (!name || isNoise(name, ev, people)) continue
+        if (notBackerInText(name, f.kind, text, ev.source === 'meetup')) continue
         add({ ...f, name, domain: resolveDomain(name, links, known, ev.url), sourceUrl: ev.url })
       }
     }
@@ -172,7 +173,8 @@ const PARTNER_HEAD = /^(?:[\w-]+\s+){0,2}(?:sponsors?|partners?)(?:\s*(?:&|and)\
 const INLINE_HEAD = /\b(?:(?:[\w-]+\s+)?(?:sponsors?|partners?|partner companies)\s*:|powered by|supported by|sponsored by|thanks to|in collaboration with|in partnership with|hosted at)\s+(.+)/i
 const CTA = /^(?:become|be|want|interested|looking|apply|email|contact|join)\b/i // 'Become a sponsor'
 const SKIP_HEAD = /^(?:hosts?|hosted by|organi[sz]ed by|organi[sz]ers?)\s*:?\s*$/i
-const STOP_HEAD = /^(?:judges?|speakers?|mentors?|schedule|agenda|tracks?|prizes?|faqs?|about|format|criteria|timeline|rules|tickets?|location|date|time|filming|practical|what|who|why|how|when|where)\b/i
+const SOCIALS = /\b(?:follow us|newsletter|subscribe|linkedin|instagram|twitter)\b/i
+const STOP_HEAD = /^(?:judges?|speakers?|mentors?|schedule|agenda|tracks?|prizes?|faqs?|about|format|criteria|timeline|rules|tickets?|location|date|time|filming|practical|what|who|why|how|when|where|follow|newsletter|subscribe|stay in touch|connect with us|socials?|contact)\b/i
 
 function fromHeadings(text: string): Found[] {
   const found: Found[] = []
@@ -206,6 +208,7 @@ function fromHeadings(text: string): Found[] {
       continue
     }
     if (!role) continue
+    if (SOCIALS.test(line)) continue // 'Follow us on X · LinkedIn · Newsletter'
     // 'Supabase, connection: Jane Doe - the database' -> 'Supabase'
     const head = line.split(/\s[-–—|]\s/)[0].replace(/,[^,:]*:.*$/, '')
     if (head.length > 60) continue
@@ -254,6 +257,33 @@ function isNoise(name: string, ev: RawEvent, people: Set<string>): boolean {
   return phrase || PLATFORMS.test(name) || GENERIC.test(name) || people.has(key) || key === nameKey(ev.name)
 }
 
+// Introduced as the host, organiser or a supplier rather than a backer:
+// 'Hosted by: X and Y', 'X is hosting', 'brought to you by X', 'event media by X',
+// or a co-host's employer in brackets ('Izzy Vahdati (Brighteye)').
+const BY_INTRO = /\b(?:hosted|co-hosted|brought to you|organi[sz]ed|presented|run|led|curated|produced)\s+by\b:?([^.!?\n]{0,80})$/i
+const VENDOR_INTRO = /\b(?:media|photography|photos|videography|video|filmed|filming|catering|food|drinks|refreshments|coffee|dj|music)\s+(?:by|from)\b:?([^.!?\n]{0,60})$/i
+const ROLE_WORDS = /\b(?:sponsor\w*|partner\w*|support\w*|powered|thanks|courtesy|venue|at|with|in collaboration)\b/i
+const PARTNER_BEFORE = /\b(?:in collaboration with|in partnership with|together with|with|supported by|powered by|sponsored by)\s*$/i
+const IS_HOSTING = /^(?:\s*(?:,|&|and)\s*[^.!?\n]{0,60}?)?\s+(?:is|are)\s+(?:hosting|co-hosting|organi[sz]ing|running|bringing you)\b/i
+
+// On Meetup 'hosted by X' names the company whose office is the venue, so it stays.
+export function notBackerInText(name: string, kind: string, text: string, hostIsVenue = false): boolean {
+  const re = new RegExp(`(?<![\\p{L}\\p{N}])${escapeRe(name)}(?![\\p{L}\\p{N}])`, 'giu')
+  const hits = [...text.matchAll(re)]
+  if (!hits.length) return false
+  const employer = hits.every(m => /\p{Lu}[\p{L}'-]+\s+\p{Lu}[\p{L}'-]+\s*\(\s*$/u.test(text.slice(Math.max(0, m.index - 60), m.index)))
+  if (employer) return true
+  return hits.some(m => {
+    const before = text.slice(Math.max(0, m.index - 120), m.index)
+    const after = text.slice(m.index + m[0].length, m.index + m[0].length + 100)
+    const vendor = before.match(VENDOR_INTRO)
+    if (vendor && !ROLE_WORDS.test(vendor[1])) return true
+    if (kind === 'venue' || hostIsVenue) return false // 'kindly hosted by Google' at their office
+    const by = before.match(BY_INTRO)
+    return (!!by && !ROLE_WORDS.test(by[1])) || (IS_HOSTING.test(after) && !PARTNER_BEFORE.test(before))
+  })
+}
+
 // Anchor text linked to a LinkedIn profile is a person, not an organisation.
 function personNames(links: RawLink[]): Set<string> {
   return new Set(links.filter(l => /linkedin\.com\/in\//i.test(l.href)).map(l => nameKey(l.text)))
@@ -289,14 +319,21 @@ function resolveDomain(name: string, links: RawLink[], known: Known[], eventUrl:
   if (byText) return byText.host
   const slug = key.replace(/[^a-z0-9]/g, '')
   if (slug.length >= 3) {
-    const labels = (host: string) => host.split('.').slice(0, -1)
-    const exact = usable.find(l => labels(l.host).includes(slug))
+    // Only the registrable label counts: 'uktv' is not uktv.workvivo.com (a SaaS tenant).
+    const exact = usable.find(l => mainLabel(l.host) === slug)
     if (exact) return exact.host
-    const partial = usable.find(l => labels(l.host).some(label => label.includes(slug)))
+    const partial = usable.find(l => mainLabel(l.host).includes(slug))
     if (partial) return partial.host
   }
   const match = known.find(k => k.domain && nameKey(k.name) === key)
   return match ? match.domain.toLowerCase().replace(/^www\./, '') : ''
+}
+
+// The label before the public suffix: uktv.workvivo.com -> workvivo, bcs.org.uk -> bcs.
+export function mainLabel(host: string): string {
+  const parts = host.toLowerCase().replace(/^www\./, '').split('.')
+  const two = parts.length >= 3 && /^(?:co|com|org|ac|gov|net|ltd|plc|sch|me)\.[a-z]{2}$/.test(parts.slice(-2).join('.'))
+  return parts[parts.length - (two ? 3 : 2)] ?? ''
 }
 
 // Lowercase host without www, or '' for ignored hosts and non-web links.
