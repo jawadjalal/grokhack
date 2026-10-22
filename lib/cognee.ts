@@ -27,10 +27,10 @@ async function withTimeout<T>(ms: number, fn: (signal: AbortSignal) => Promise<T
 export async function cogneeAdd(text: string): Promise<boolean> {
   if (!cogneeEnabled()) return false
   try {
-    const form = new FormData()
-    form.append('datasetName', DATASET)
-    form.append('raw_data', new Blob([text], { type: 'text/plain' }), `touch-${Date.now()}.txt`)
-    const res = await withTimeout(15000, signal => fetch(`${BASE}/api/v1/add`, { method: 'POST', headers: headers(), body: form, signal }))
+    // Cognee Cloud takes plain text as JSON on /add_text (/add expects file uploads in `data`).
+    const res = await withTimeout(15000, signal =>
+      fetch(`${BASE}/api/v1/add_text`, { method: 'POST', headers: headers({ 'content-type': 'application/json' }), body: JSON.stringify({ textData: [text], datasetName: DATASET }), signal }),
+    )
     return res.ok
   } catch {
     return false
@@ -58,7 +58,7 @@ export async function cogneeSearch(query: string): Promise<string | null> {
       fetch(`${BASE}/api/v1/search`, { method: 'POST', headers: headers({ 'content-type': 'application/json' }), body: JSON.stringify({ query, search_type: 'GRAPH_COMPLETION', datasets: [DATASET] }), signal }),
     )
     if (!res.ok) return null
-    return flatten(await res.json()) || null
+    return flatten(await res.json()).replace(/\*\*/g, "").trim() || null
   } catch {
     return null
   }
