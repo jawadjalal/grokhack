@@ -7,7 +7,7 @@ import DraftsPanel from '@/components/DraftsPanel'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
 import { LocationPicker } from '@/components/LocationPicker'
-import { NearbyEvents } from '@/components/NearbyEvents'
+import { NearbyEvents, useMapStats } from '@/components/NearbyEvents'
 import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
 import { leadKey, readLocal, writeLocal, type PipelineLead } from '@/lib/pipeline'
@@ -342,23 +342,29 @@ export default function Home() {
         {busy && <Skeleton step={step} />}
 
         {!leads.length && !busy && (
-          <section className="rise" style={{ paddingTop: '12vh' }}>
-            <h1 style={{ fontSize: 'clamp(44px, 5.6vw, 80px)', lineHeight: 0.96, letterSpacing: '-0.045em', margin: 0, fontWeight: 600 }}>
+          <section style={{ paddingTop: '8vh', display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+            <h1 className="rise" style={{ fontSize: 'clamp(48px, 6.2vw, 92px)', lineHeight: 0.94, letterSpacing: '-0.05em', margin: 0, fontWeight: 600, textWrap: 'balance' }}>
               Who will back
               <br />
               your event?
             </h1>
-            <p style={{ fontSize: 19, color: 'var(--ink2)', margin: '20px 0 0', maxWidth: 520, lineHeight: 1.5 }}>
+            <p className="rise" style={{ fontSize: 19, color: 'var(--ink2)', margin: '28px 0 0', maxWidth: 560, lineHeight: 1.5, textWrap: 'pretty', animationDelay: '.08s' }}>
               Backer knows who paid for London&apos;s tech events. Paste yours and get the sponsors and venues most likely to say yes, what to ask for, and the email.
             </p>
-            <p style={{ fontSize: 14, color: 'var(--ink3)', margin: '28px 0 0', display: 'flex', gap: 8, alignItems: 'center' }}>
-              <Icon name="sparkle" size={15} /> Paste your event link in the box below, or ask it to draft outreach, a launch post or a Luma event.
+            <HeroStats />
+            <p className="rise" style={{ fontSize: 14, color: 'var(--ink3)', margin: '26px 0 0', maxWidth: 680, lineHeight: 1.5, textWrap: 'balance', animationDelay: '.22s' }}>
+              <span style={{ display: 'inline-flex', verticalAlign: '-2px', marginRight: 7 }}>
+                <Icon name="sparkle" size={15} />
+              </span>
+              Paste your event link in the box below, or ask it to draft outreach, a launch post or a Luma event.
             </p>
             {error && !busy && <ErrorLine message={error} onRetry={() => run(lastQuery)} />}
-            <div style={{ marginTop: 18, fontSize: 13.5, color: 'var(--ink2)' }}>
+            <div className="rise" style={{ marginTop: 14, fontSize: 13.5, color: 'var(--ink2)', display: 'flex', justifyContent: 'center', animationDelay: '.26s' }}>
               <LocationPicker loc={loc} />
             </div>
-            <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => run(url)} />
+            <div style={{ width: '100%', textAlign: 'left' }}>
+              <NearbyEvents near={loc.location} ready={loc.ready} onPick={url => run(url)} />
+            </div>
           </section>
         )}
 
@@ -659,3 +665,25 @@ function Drawer({ lead, event, onClose }: { lead: Lead; event: EventInput; onClo
 }
 
 const H3: React.CSSProperties = { fontSize: 14.5, fontWeight: 600, margin: '0 0 6px' }
+
+// A quiet line of what Backer has on record, counted from data/london.json.
+function HeroStats() {
+  const stats = useMapStats()
+  const item = (n: number | undefined, label: string) => (
+    <span style={{ whiteSpace: 'nowrap' }}>
+      <span className="mono" style={{ color: 'var(--ink)', fontWeight: 500 }}>
+        {n === undefined ? '\u2007\u2007\u2007' : n.toLocaleString('en-GB')}
+      </span>{' '}
+      {label}
+    </span>
+  )
+  return (
+    <p className="rise" aria-live="polite" style={{ margin: '22px 0 0', fontSize: 14, color: 'var(--ink3)', display: 'flex', gap: '6px 18px', justifyContent: 'center', flexWrap: 'wrap', animationDelay: '.15s', opacity: stats ? undefined : 0.6, transition: 'opacity .3s' }}>
+      {item(stats?.events, 'London tech events')}
+      <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'var(--divider)' }} />
+      {item(stats?.sponsors, 'sponsors on record')}
+      <span aria-hidden style={{ width: 1, alignSelf: 'stretch', background: 'var(--divider)' }} />
+      {item(stats?.backings, 'backings with a source')}
+    </p>
+  )
+}

@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useRef, useState } from 'react'
-import { Icon, Mark } from '@/components/Mark'
+import { Mark } from '@/components/Mark'
 import { ago, VERB } from '@/components/Touches'
 import type { GEdge, GNode } from '@/lib/memory-graph'
 import type { Touch } from '@/lib/memory'
@@ -157,21 +157,12 @@ export default function MemoryPage() {
 
   return (
     <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      <header style={{ position: 'sticky', top: 0, zIndex: 5, height: 56, flex: 'none', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', background: 'var(--canvas)', borderBottom: '1px solid var(--divider)' }}>
-        <a href="/" style={{ display: 'flex', alignItems: 'center', gap: 9, textDecoration: 'none' }}>
-          <Icon name="star" size={22} />
-          <strong style={{ fontSize: 16.5, letterSpacing: '-0.01em' }}>Backer</strong>
-        </a>
-        <a className="btn" href="/" style={{ fontSize: 14 }}>
-          Back to ranking
-        </a>
-      </header>
 
       <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 360px', minHeight: 0 }}>
-        <div ref={wrap} style={{ position: 'relative', height: 'calc(100vh - 57px)', borderRight: '1px solid var(--divider)' }}>
+        <div ref={wrap} style={{ position: 'relative', height: '100vh', borderRight: '1px solid var(--divider)' }}>
           <div style={{ position: 'absolute', left: 24, top: 20, zIndex: 1, pointerEvents: 'none' }}>
             <h1 style={{ fontSize: 28, letterSpacing: '-0.025em', margin: 0, fontWeight: 600 }}>Memory</h1>
-            <p style={{ margin: '6px 0 0', color: 'var(--ink2)', fontSize: 14.5, maxWidth: 380 }}>
+            <p style={{ margin: '6px 0 0', color: 'var(--ink2)', fontSize: 14.5, maxWidth: 520 }}>
               Every email and reply, remembered. {nodes.filter(n => n.type === 'sponsor').length} sponsors, {data.touches.length} touches.
             </p>
             <div style={{ display: 'flex', gap: 14, marginTop: 10, color: 'var(--ink3)', fontSize: 12.5 }}>
@@ -242,7 +233,7 @@ export default function MemoryPage() {
           </svg>
         </div>
 
-        <aside style={{ height: 'calc(100vh - 57px)', overflow: 'auto', background: 'var(--bg)', display: 'flex', flexDirection: 'column' }}>
+        <aside style={{ height: '100vh', overflow: 'auto', background: 'var(--bg)', display: 'flex', flexDirection: 'column' }}>
           <Ask cognee={data.cognee} />
           <Timeline touches={data.touches} />
         </aside>

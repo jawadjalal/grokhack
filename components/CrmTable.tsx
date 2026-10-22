@@ -2,6 +2,7 @@
 
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { Icon, Mark } from '@/components/Mark'
+import { DitherBar } from '@/components/DitherBar'
 
 export type CrmBacking = { event: string; role: string; date: string | null; url: string }
 export type CrmRow = {
@@ -19,7 +20,7 @@ export type CrmRow = {
 type Kind = 'all' | 'sponsor' | 'venue'
 type SortKey = 'name' | 'events' | 'latest'
 
-const COLS = 'minmax(220px, 1.5fr) minmax(130px, 1fr) 86px 70px 110px minmax(180px, 1.4fr)'
+const COLS = 'minmax(190px, 1.3fr) minmax(120px, .9fr) 72px 118px minmax(200px, 1.5fr) minmax(140px, 1fr)'
 const TAB_W = 108
 const PAGE = 60
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -108,6 +109,8 @@ export default function CrmTable({ rows, eventCount, source }: { rows: CrmRow[];
   const nVenues = useCount(counts.venue)
   const nBackings = useCount(backingTotal)
   const nEvents = useCount(eventCount)
+  const top = useMemo(() => [...rows].filter(r => r.backings.length).sort((a, b) => b.backings.length - a.backings.length || a.name.localeCompare(b.name)).slice(0, 8), [rows])
+  const topMax = top[0]?.backings.length || 1
 
   const toggle = (key: SortKey) => setSort(s => (s.key === key ? { key, dir: (s.dir * -1) as 1 | -1 } : { key, dir: key === 'name' ? 1 : -1 }))
   const FILTERS: [Kind, string][] = [['all', 'All'], ['sponsor', 'Sponsors'], ['venue', 'Venues']]
@@ -116,24 +119,51 @@ export default function CrmTable({ rows, eventCount, source }: { rows: CrmRow[];
     <div style={{ minHeight: '100vh' }}>
       <style>{CSS}</style>
       <main style={{ width: '100%', maxWidth: 1120, margin: '0 auto', padding: '32px 24px 120px' }}>
-        <section className="crm-rise" style={{ display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: 32, flexWrap: 'wrap' }}>
-          <div>
-            <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
-              <Icon name="crm" size={15} /> CRM · {source === 'supabase' ? 'live from the map' : 'from the London map'}
-            </div>
-            <h1 style={{ fontSize: 32, lineHeight: 1.1, letterSpacing: '-0.03em', margin: '8px 0 0', fontWeight: 600 }}>Everyone who has backed a London event</h1>
+        <section className="crm-rise">
+          <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
+            <Icon name="crm" size={15} /> {source === 'supabase' ? 'Live from the map, merged with the London scrape' : 'From the London scrape'}
           </div>
-          <div style={{ display: 'flex', gap: 28 }}>
-            {([[nSponsors, 'sponsors'], [nVenues, 'venues'], [nBackings, 'backings'], [nEvents, 'events']] as const).map(([n, label], i) => (
-              <div key={label} className="crm-rise" style={{ animationDelay: `${120 + i * 60}ms` }}>
-                <div className="mono" style={{ fontSize: 24, fontWeight: 600, letterSpacing: '-0.03em', lineHeight: 1 }}>{n.toLocaleString()}</div>
-                <div style={{ color: 'var(--ink3)', fontSize: 12.5, marginTop: 5 }}>{label}</div>
-              </div>
-            ))}
-          </div>
+          <h1 style={{ fontSize: 32, lineHeight: 1.1, letterSpacing: '-0.03em', margin: '8px 0 0', fontWeight: 600 }}>Everyone who has backed a London event</h1>
         </section>
 
-        <div className="crm-rise" style={{ animationDelay: '160ms', marginTop: 24, background: 'var(--card)', borderRadius: 'var(--r-panel)', boxShadow: '0 0 0 1px var(--border)', overflow: 'hidden' }}>
+        <section aria-label="Totals" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', marginTop: 28, borderTop: '1px solid var(--divider)', borderBottom: '1px solid var(--divider)' }}>
+          {([[nSponsors, 'sponsors'], [nVenues, 'venues'], [nEvents, 'events mapped'], [nBackings, 'backings with a source']] as const).map(([n, label], i) => (
+            <div key={label} className="crm-rise" style={{ animationDelay: `${80 + i * 60}ms`, padding: '20px 24px 18px', paddingLeft: i ? 24 : 0, borderLeft: i ? '1px solid var(--divider)' : undefined }}>
+              <div className="mono" style={{ fontSize: 44, fontWeight: 600, letterSpacing: '-0.04em', lineHeight: 1 }}>{n.toLocaleString()}</div>
+              <div style={{ color: 'var(--ink3)', fontSize: 13, marginTop: 8 }}>{label}</div>
+            </div>
+          ))}
+        </section>
+
+        {top.length > 0 && (
+          <section aria-labelledby="crm-top" style={{ marginTop: 28 }}>
+            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', gap: 12 }}>
+              <h2 id="crm-top" style={{ fontSize: 15, fontWeight: 600, margin: 0 }}>Most active backers</h2>
+              <span style={{ color: 'var(--ink3)', fontSize: 12.5 }}>by events backed</span>
+            </div>
+            <div className="crm-top" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, minmax(0, 1fr))', marginTop: 10, borderTop: '1px solid var(--divider)' }}>
+              {top.map((r, i) => (
+                <button
+                  key={r.id}
+                  className="crm-top-item crm-rise"
+                  onClick={() => setOpenId(r.id)}
+                  style={{ animationDelay: `${140 + i * 40}ms`, display: 'flex', alignItems: 'center', gap: 12, padding: '14px 16px 14px 0', paddingLeft: i % 4 ? 16 : 0, border: 0, borderBottom: '1px solid var(--divider)', borderLeft: i % 4 ? '1px solid var(--divider)' : undefined, background: 'transparent', textAlign: 'left', minWidth: 0 }}
+                >
+                  <Mark domain={r.domain} size={32} />
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontWeight: 550, fontSize: 14, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.name}</div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginTop: 6 }}>
+                      <DitherBar value={Math.round((r.backings.length / topMax) * 100)} width={84} height={8} color="var(--ink)" />
+                      <span className="mono" style={{ fontSize: 12.5, color: 'var(--ink2)' }}>{r.backings.length}</span>
+                    </div>
+                  </div>
+                </button>
+              ))}
+            </div>
+          </section>
+        )}
+
+        <div className="crm-rise" style={{ animationDelay: '160ms', marginTop: 32, background: 'var(--card)', borderRadius: 'var(--r-panel)', boxShadow: '0 0 0 1px var(--border)', overflow: 'hidden' }}>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, padding: '10px 12px', borderBottom: '1px solid var(--divider)', flexWrap: 'wrap' }}>
             <div style={{ position: 'relative', display: 'flex', padding: 3, borderRadius: 9, background: 'var(--chip)', boxShadow: 'inset 0 1px 2px rgba(0,0,0,.07)' }}>
               <span aria-hidden style={{ position: 'absolute', top: 3, bottom: 3, left: 3, width: TAB_W, borderRadius: 7, background: 'var(--bg)', boxShadow: 'var(--shadow), 0 0 0 1px var(--border)', transform: `translateX(${FILTERS.findIndex(f => f[0] === kind) * TAB_W}px)`, transition: 'transform .35s var(--ease)' }} />
@@ -167,8 +197,8 @@ export default function CrmTable({ rows, eventCount, source }: { rows: CrmRow[];
                 <SortHead label="Backer" k="name" sort={sort} onSort={toggle} />
                 <span>Domain</span>
                 <span>Kind</span>
-                <SortHead label="Events" k="events" sort={sort} onSort={toggle} align="right" />
-                <SortHead label="Latest" k="latest" sort={sort} onSort={toggle} />
+                <SortHead label="Events backed" k="events" sort={sort} onSort={toggle} />
+                <SortHead label="Last event" k="latest" sort={sort} onSort={toggle} />
                 <span>Tags</span>
               </div>
 
@@ -180,7 +210,7 @@ export default function CrmTable({ rows, eventCount, source }: { rows: CrmRow[];
                   tabIndex={0}
                   onClick={() => setOpenId(r.id)}
                   onKeyDown={e => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), setOpenId(r.id))}
-                  style={{ animationDelay: `${Math.min(i % PAGE, 14) * 22}ms`, display: 'grid', gridTemplateColumns: COLS, gap: 16, alignItems: 'center', padding: '10px 20px', borderTop: '1px solid var(--divider)', background: openId === r.id ? 'var(--hover)' : undefined }}
+                  style={{ animationDelay: `${Math.min(i % PAGE, 14) * 22}ms`, display: 'grid', gridTemplateColumns: COLS, gap: 16, alignItems: 'center', padding: '9px 20px', minHeight: 52, borderTop: '1px solid var(--divider)', background: openId === r.id ? 'var(--hover)' : undefined }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: 11, minWidth: 0 }}>
                     <Mark domain={r.domain} size={24} />
@@ -188,11 +218,15 @@ export default function CrmTable({ rows, eventCount, source }: { rows: CrmRow[];
                   </div>
                   <span className="mono" style={{ fontSize: 12.5, color: 'var(--ink2)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.domain}</span>
                   <span><span className={`tag${r.kind === 'venue' ? ' tag-teal' : ''}`}>{r.kind === 'venue' ? 'Venue' : 'Sponsor'}</span></span>
-                  <span className="mono" style={{ textAlign: 'right', fontSize: 13.5 }}>{r.backings.length}</span>
-                  <span className="mono" style={{ fontSize: 12.5, color: r.latest ? 'var(--ink2)' : 'var(--ink3)' }} title={r.latestEvent ?? undefined}>{fmtDate(r.latest) ?? 'n/a'}</span>
-                  <div style={{ display: 'flex', gap: 5, minWidth: 0, overflow: 'hidden' }}>
-                    {r.tags.slice(0, 3).map(t => <span key={t} className="tag">{t}</span>)}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <span className="mono" style={{ width: 22, textAlign: 'right', fontSize: 13.5, fontWeight: 550 }}>{r.backings.length}</span>
+                    <DitherBar value={Math.round((r.backings.length / topMax) * 100)} width={72} height={8} color="var(--ink)" />
                   </div>
+                  <div style={{ minWidth: 0 }}>
+                    <div style={{ fontSize: 13, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', color: r.latestEvent ? 'var(--ink)' : 'var(--ink3)' }} title={r.latestEvent ?? undefined}>{r.latestEvent ?? 'No backing yet'}</div>
+                    {r.latest && <div className="mono" style={{ fontSize: 11.5, color: 'var(--ink3)', marginTop: 2 }}>{fmtDate(r.latest)}</div>}
+                  </div>
+                  <span style={{ fontSize: 12.5, color: 'var(--ink3)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{r.tags.slice(0, 3).join(', ')}</span>
                 </div>
               ))}
 
@@ -328,6 +362,9 @@ const CSS = `
 .crm-row { cursor: pointer; transition: background .15s cubic-bezier(.2,.8,.2,1); outline: none; }
 .crm-row:hover, .crm-row:focus-visible { background: var(--hover); }
 .crm-row:active { background: var(--chip); }
+.crm-top-item { cursor: pointer; transition: background .15s cubic-bezier(.2,.8,.2,1); }
+.crm-top-item:hover, .crm-top-item:focus-visible { background: var(--hover); outline: none; }
+@media (max-width: 760px) { .crm-top { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; } }
 .crm-search { transition: box-shadow .2s cubic-bezier(.2,.8,.2,1); }
 .crm-search:focus-within { box-shadow: inset 0 0 0 1px var(--ink3), 0 0 0 3px rgba(23,23,23,.06) !important; }
 @media (prefers-reduced-motion: reduce) { .crm-rise, .crm-fade { animation: none; } }
