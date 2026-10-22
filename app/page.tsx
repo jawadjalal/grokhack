@@ -437,6 +437,55 @@ function Composer({ value, onChange, onRun, busy, compact }: { value: string; on
   )
 }
 
+// Sends the pitch to an address a person types. Nothing goes out on its own.
+function SendBox({ subject, body }: { subject: string; body: string }) {
+  const [to, setTo] = useState('')
+  const [state, setState] = useState<{ kind: 'idle' | 'sending' | 'sent' | 'error'; note?: string }>({ kind: 'idle' })
+  async function send() {
+    setState({ kind: 'sending' })
+    try {
+      await post<{ id: string }>('/api/send', { to, subject, body })
+      setState({ kind: 'sent', note: `Sent to ${to}` })
+    } catch (e) {
+      setState({ kind: 'error', note: e instanceof Error ? e.message : String(e) })
+    }
+  }
+  return (
+    <form
+      onSubmit={e => {
+        e.preventDefault()
+        if (state.kind !== 'sending') send()
+      }}
+      style={{ marginTop: 10 }}
+    >
+      <div style={{ display: 'flex', gap: 6, alignItems: 'center', background: 'var(--subtle)', borderRadius: 9, padding: 4, boxShadow: 'inset 0 1px 2px rgba(0,0,0,.05), inset 0 0 0 1px var(--divider)' }}>
+        <span style={{ color: 'var(--ink3)', fontSize: 13.5, padding: '0 4px 0 8px' }}>To</span>
+        <input
+          type="email"
+          required
+          value={to}
+          onChange={e => {
+            setTo(e.target.value)
+            if (state.kind !== 'sending') setState({ kind: 'idle' })
+          }}
+          placeholder="partnerships@company.com"
+          style={{ flex: 1, minWidth: 0, border: 0, outline: 0, background: 'transparent', fontSize: 14, padding: '7px 0' }}
+        />
+        <button className={`btn btn-primary${state.kind === 'sending' ? ' pushing' : ''}`} type="submit" disabled={!to || state.kind === 'sending'} style={{ height: 32, padding: '0 12px', fontSize: 13.5, opacity: to ? 1 : 0.4 }}>
+          <Icon name={state.kind === 'sent' ? 'check' : 'send'} size={15} />
+          {state.kind === 'sending' ? 'Sending…' : state.kind === 'sent' ? 'Sent' : 'Send'}
+        </button>
+      </div>
+      {state.note && (
+        <div className={state.kind === 'sent' ? 'pop' : undefined} style={{ marginTop: 6, fontSize: 12.5, color: state.kind === 'sent' ? 'var(--go)' : 'var(--ink2)', display: 'flex', gap: 6, alignItems: 'center' }}>
+          {state.kind === 'error' && <span style={{ width: 6, height: 6, borderRadius: 1.5, background: '#c62f35', flex: 'none' }} />}
+          {state.note}
+        </div>
+      )}
+    </form>
+  )
+}
+
 function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
   const [copied, setCopied] = useState(false)
   return (
@@ -509,6 +558,7 @@ function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
               <div style={{ fontWeight: 600, marginBottom: 10, fontSize: 14.5 }}>{lead.pitch.subject}</div>
               <div style={{ whiteSpace: 'pre-wrap', color: 'var(--ink2)', fontSize: 14.5, lineHeight: 1.55 }}>{lead.pitch.body}</div>
             </div>
+            <SendBox subject={lead.pitch.subject} body={lead.pitch.body} />
           </section>
         )}
       </div>

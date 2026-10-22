@@ -1,0 +1,5794 @@
+{
+  "events": [
+    {
+      "id": "london-tech-week-2026",
+      "name": "London Tech Week 2026",
+      "url": "https://londontechweek.com/sponsors",
+      "date": null,
+      "city": "London",
+      "topic": "Meet exhibitors, sponsors, and media partners at London Tech Week! Explore cutting-edge tech solutions and make valuable industry connections.",
+      "audienceSize": null,
+      "organiser": "Informa",
+      "sourceUrl": "https://londontechweek.com/sponsors"
+    },
+    {
+      "id": "ic-hack-26",
+      "name": "IC Hack 26",
+      "url": "https://ichack.org/",
+      "date": "2026-01-31",
+      "city": "London",
+      "topic": "The largest student-run hackathon in the UK, at Imperial College London.",
+      "audienceSize": null,
+      "organiser": "DoCSoc",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "ic-hack-25",
+      "name": "IC Hack 25",
+      "url": "https://25.ichack.org/",
+      "date": null,
+      "city": "London",
+      "topic": "Europe's largest student-run hackathon at Imperial College London.",
+      "audienceSize": null,
+      "organiser": "DoCSoc",
+      "sourceUrl": "https://25.ichack.org/"
+    },
+    {
+      "id": "ic-hack-24",
+      "name": "IC Hack 24",
+      "url": "https://24.ichack.org/",
+      "date": "2024-02-03",
+      "city": "London",
+      "topic": "Student hackathon at Imperial College London.",
+      "audienceSize": null,
+      "organiser": "DoCSoc",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "iku-2026",
+      "name": "IKU Womxn in STEM Hackathon",
+      "url": "https://ikuwomxninstemhackathon.co.uk/",
+      "date": "2026-10-17",
+      "city": "London",
+      "topic": "Cross-university hackathon for women and non-binary students at King's College London, with Imperial and UCL.",
+      "audienceSize": null,
+      "organiser": "KCL, Imperial and UCL Womxn in STEM",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "luma-gkmdzbk9",
+      "name": "Agentic AI in Financial Services and Insurance: Pilot to Production",
+      "url": "https://luma.com/gkmdzbk9",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "AI. Blott, Walmer Group and IFX Payments invite you to the next chapter of Future Forward, returning to one of the most consequential shifts in technology today: the rise of agentic AI across financial services and insurance.This is not a generalist AI discussion. It is a focused, practitioner-led exploration of what agentic AI actually looks like in live financial services and insurance operation",
+      "audienceSize": 139,
+      "organiser": "Future Forward",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-Yz7RR89Zlv56tya"
+    },
+    {
+      "id": "luma-l1z4azjp",
+      "name": "Fuckup Nights London #12 x Acquisition Entrepreneurs",
+      "url": "https://luma.com/l1z4azjp",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Calling everyone interested in learning more about entrepreneurship through acquisition!🤝 Our event partner: Acquisition EntrepreneursAcquisition Entrepreneurs are the UK's open community for searchers, investors, and acquisition entrepreneurs. Directory, events, and curated research, all in one place.👋 Meet your host & speakersHosted by Saul Truman, a third-time founder who lost $2M in under a ye",
+      "audienceSize": 69,
+      "organiser": "Acquisition Entrepreneurs",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-BUz6a7CLYDbHMc4"
+    },
+    {
+      "id": "luma-k479y31u",
+      "name": "Funeral for the Annual Pentest by Intruder",
+      "url": "https://luma.com/k479y31u",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "AI. The Annual Pentest has passed on, after years of faithful service to compliance checkboxes everywhere.It did its best, annually. But once-a-year testing in a world of continuous deployment was never going to end well, and frankly, we think it deserves a send-off in style...Join us for a night of mourning, mischief, and mild schadenfreude as we celebrate and commiserate the end of annual pentes",
+      "audienceSize": 167,
+      "organiser": "Intruder",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-D8ObUirtnP2sDKQ"
+    },
+    {
+      "id": "luma-granola-raspberry-pi",
+      "name": "Internet Icons: Eben Upton, Raspberry Pi",
+      "url": "https://luma.com/granola-raspberry-pi",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Tech. How do you turn a tiny computer into a global phenomenon?Join us at Granola for a conversation with Eben Upton, co-founder and CEO of Raspberry Pi!Eben’s story with Raspberry Pi began at the University of Cambridge, where he became interested in finding a way to get more young people excited about computing. Having studied and taught Computer Science at Cambridge and worked as an engineer at",
+      "audienceSize": 124,
+      "organiser": "Granola",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-s88hUhrTG1scBnb"
+    },
+    {
+      "id": "luma-m8q7l68w",
+      "name": "Beyond Borders: London to Tokyo - SusHi Tech London",
+      "url": "https://luma.com/m8q7l68w",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Tech. Organized by Tokyo Metropolitan Government (TMG), in collaboration with London Venture Capital Network (LVCN)Attendees will hear firsthand perspectives from European startups and ecosystem leaders with experience engaging with the Japanese market and collaborating with Japanese organizations, sharing practical lessons and real-world experiences.The event will also introduce startup support i",
+      "audienceSize": 167,
+      "organiser": "Access to Tokyo - London Desk",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-TgHPexIRELx5Uxp"
+    },
+    {
+      "id": "luma-dl0m714h",
+      "name": "Life After Layoffs: The Reality of Finding a Job in Tech Today",
+      "url": "https://luma.com/dl0m714h",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Tech. Lessons from people who’ve been through it, and insights from the recruiter’s side.The tech job market has changed. Layoffs, tougher competition and longer hiring processes have made finding a new role more challenging than ever. But what actually happens after a redundancy? How do you rebuild your confidence, navigate the job search and figure out what comes next?Join London Tech Community ",
+      "audienceSize": 62,
+      "organiser": "Personal",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-npuskVBY8CAE8xL"
+    },
+    {
+      "id": "luma-a5yfh2ve",
+      "name": "Company Brain Buildathon",
+      "url": "https://luma.com/a5yfh2ve",
+      "date": "2026-10-24",
+      "city": "London",
+      "topic": "AI. 24 October 2026 - Company Brain Buildathon with LightfernReady for a new way to work?In an age of automated workflows, all anybody can talk about is company brains. Everybody knows what they want, but not where to begin.Get early access to Lightfern’s brand new Mac app to build plug-ins and solve real problems in just one day. This is a day for people of all levels of AI-fluency; build for you",
+      "audienceSize": 124,
+      "organiser": "Lightfern",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-002h4RDHfEYLEvM"
+    },
+    {
+      "id": "luma-qa1ds94p",
+      "name": "Noetic X Nebius One Day Hackathon",
+      "url": "https://luma.com/qa1ds94p",
+      "date": "2026-10-24",
+      "city": "London",
+      "topic": "AI. Put open models to work.What’s one task from your work, studies, or everyday life you’d love an AI model to handle?Join Noetic and Nebius at Imperial College London for a day of building, experimenting, and turning ideas into working demos with open models on Nebius Token Factory.Build something useful, try something unusual, or test where today’s models reach their limits. The challenge is op",
+      "audienceSize": 89,
+      "organiser": "Noetic",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-0pjZCb6fITa6cF9"
+    },
+    {
+      "id": "luma-ai4oct26",
+      "name": "The Agentic Web Explained",
+      "url": "https://luma.com/AI4Oct26",
+      "date": "2026-10-27",
+      "city": "London",
+      "topic": "AI. Shaping our future with AI. Creating opportunity through AI fluency, connection and community.No jargon. No hype. No confusing terminology.Join us for our next in-person meetup in London on Tuesday 27th October.The theme of this meetup is \"Building awesome agents\" and we're thrilled to have Tara Ojo Agyemang from Google joining us to explain the Agentic Web and the role of WebMCP.Where and Whe",
+      "audienceSize": 124,
+      "organiser": "AI for the rest of us",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-zqAHmwcW2yZfoPz"
+    },
+    {
+      "id": "luma-da0ioqx8",
+      "name": "Halloween Edition TRD: London Startups Operator RunClub & Social",
+      "url": "https://luma.com/da0ioqx8",
+      "date": "2026-10-27",
+      "city": "London",
+      "topic": "Fitness, Running, Tech. 🚀👟 LONDON STARTUP OPERATORS RUN CLUBNot here to chase PBs or pace. Here to meet the people building what’s next! 🚀A relaxed 5K bringing together founders, operators, investors and builders from across London’s startup scene, whether you’re running, jogging or walking.LONDON’S LARGEST STARTUP OPERATOR RUN COMMUNITYCome for the run. Stay for the people and the social afterwar",
+      "audienceSize": 78,
+      "organiser": "The Run Down: Operators Runclub",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-mpFjl5NyyznC1tQ"
+    },
+    {
+      "id": "luma-151r4ad1",
+      "name": "Lychee's Startup Games Night",
+      "url": "https://luma.com/151r4ad1",
+      "date": "2026-10-28",
+      "city": "London",
+      "topic": "Games, Tech. 🎲 Startup people, pub vibes and games nightWhat better way to spend a Wednesday evening?Join us for a Lychee Games Night, a relaxed after work social for founders, operators and people in the startup world!Come solo or bring a friend, grab a drink, join a table and get stuck into a mix of board games, card games and familiar classics.This is a bi-weekly social so if you can't make thi",
+      "audienceSize": 115,
+      "organiser": "Lychee",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-heCVuyrkvowPrIg"
+    },
+    {
+      "id": "luma-h43nt6jj",
+      "name": "Capital & Castling: Chess Night for the Startup Community (October edition)",
+      "url": "https://luma.com/h43nt6jj",
+      "date": "2026-10-28",
+      "city": "London",
+      "topic": "Games, Tech. Calling chess players across London’s startup ecosystem ♟️enki are partnering with SecondHome to host a laid back evening where people across the startup ecosystem can come together over a game of chess.📅 Wednesday, 28 October | 6:00 PM",
+      "audienceSize": 87,
+      "organiser": "enki events",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ijFEM7faBVCrJEp"
+    },
+    {
+      "id": "luma-novabook-0uce",
+      "name": "The Road to Growth | Lessons from Giant Ventures, Atomico & OMERS",
+      "url": "https://luma.com/novabook-0uce",
+      "date": "2026-10-28",
+      "city": "London",
+      "topic": "What does it take to turn early-stage promise into a company built for serious scale?Join Will Dufton, Partner at Giant Ventures, for a fireside chat exploring the road from early-stage startup to growth, and what investors expect to see along the way.With investing experience spanning Atomico, OMERS Ventures and now Giant Ventures, Will has backed companies from early stage through to Series B+ a",
+      "audienceSize": 60,
+      "organiser": "Novabook",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-iaaEH1PvoS1vEEz"
+    },
+    {
+      "id": "luma-revenueengine",
+      "name": "Building a $1bn Revenue Engine",
+      "url": "https://luma.com/revenueengine",
+      "date": "2026-10-28",
+      "city": "London",
+      "topic": "Going from $10m to $100m to $1bn in revenue.Reasoning Project, together with Revolut, Pylon and QuantumLight is bringing together a group of founders, GTM leaders and operators in London.From finding repeatable growth channels to scaling teams and entering new markets, we’ll discuss what changes at each stage, what breaks along the way, and which decisions make the biggest difference.Agenda18:30 D",
+      "audienceSize": 197,
+      "organiser": "Reasoning Project",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZoXjbNuMYGPSVI1"
+    },
+    {
+      "id": "luma-fwyhkq6w",
+      "name": "AI Movie Club x The Terminator (1984)",
+      "url": "https://luma.com/fwyhkq6w",
+      "date": "2026-10-29",
+      "city": "London",
+      "topic": "AI, Arts & Culture. Join us for a free screening of The Terminator (1984) & discussion, hosted by Intelligent Internet in partnership with Kensington Central Library.",
+      "audienceSize": 46,
+      "organiser": "II Calendar",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-rWKcLr25iPUrAAf"
+    },
+    {
+      "id": "luma-rek0kyyz",
+      "name": "Is AI making us less creative?: An Oxford-style debate",
+      "url": "https://luma.com/rek0kyyz",
+      "date": "2026-10-29",
+      "city": "London",
+      "topic": "This house believes AI is making us less creative.The machines may have made us faster. Whether they can create something truly novel is another question, one we are settling the old-fashioned way, with an Oxford-style debate.We'll take an audience vote on the motion when you arrive and again after closing arguments. The winner is the one that moves the most votes. So come with an opinion and be p",
+      "audienceSize": 126,
+      "organiser": "The Founder-writer Collective",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-TvVukFlc8ZXL9Zk"
+    },
+    {
+      "id": "luma-techsummit",
+      "name": "Tech Summit 2026",
+      "url": "https://luma.com/techsummit",
+      "date": "2026-10-31",
+      "city": "London",
+      "topic": "Tech. Join us for Tech Summit 2026, KCL Tech’s flagship annual event and the UK’s largest student-led technology conference and careers fair.Bringing together students, early-career talent, founders, engineers and some of the most exciting companies in tech, Tech Summit is a full day of talks, panels, workshops, networking and opportunities to meet the teams building the future of technology.Expec",
+      "audienceSize": 1187,
+      "organiser": "KCL Tech",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-296vMaEwHi6Ghxg"
+    },
+    {
+      "id": "luma-p41k1z3g",
+      "name": "Halloween At Imperial: Gemini Edition",
+      "url": "https://luma.com/p41k1z3g",
+      "date": "2026-10-31",
+      "city": "London",
+      "topic": "AI. 🎃 Google DeepMind: Halloween at Imperial – Gemini EditionBuild, experiment, and launch with Gemini at the UK’s spookiest technical hackathon.Join the us at Imperial College London for an exclusive, Halloween-themed Google Deepmind hackathon with talks in the morning about the latest Gemini developements.This isn't just about coding; it's about conjuring up new AI-powered solutions using Google",
+      "audienceSize": 99,
+      "organiser": "UK AI Agents Lab",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-cKrLsCOy4HDL2dX"
+    },
+    {
+      "id": "luma-4gsodxj4",
+      "name": "The Startup Stroll x FoundHers",
+      "url": "https://luma.com/4gsodxj4",
+      "date": "2026-10-31",
+      "city": "London",
+      "topic": "Tech. The Startup Stroll partners with FoundHers to organise a longer walk in Hampstead Heath! Find out more about FoundHers here ✨ and learn more about The Startup Stroll below 🤗Your Saturday morning reset. No agenda, no pitching, just good conversation ☕The Startup Stroll is a bi-monthly morning walk for founders and builders. Building something is hard and we rarely make room to just talk. Abou",
+      "audienceSize": 67,
+      "organiser": "The Startup Stroll",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-oPFX7v6j7WToqlA"
+    },
+    {
+      "id": "luma-london-hh-26",
+      "name": "Solana Hacker House - London",
+      "url": "https://luma.com/london-hh-26",
+      "date": "2026-11-01",
+      "city": "London",
+      "topic": "Back by popular demand, Solana Hacker House returns to London ahead of Breakpoint 2026 for a special edition!For thirteen days, this becomes more than an event - it’s a home for builders. A place where ideas move from concept to code, where conversations turn into companies, and where the energy of the global Solana ecosystem gathers under one roof in the lead-up to our flagship moment in London.E",
+      "audienceSize": 612,
+      "organiser": "Solana Hacker Houses",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-8dntupEO60aiWT5"
+    },
+    {
+      "id": "luma-phtg8nap",
+      "name": "Built By Few: The Summit by Connect",
+      "url": "https://luma.com/phtg8nap",
+      "date": "2026-11-03",
+      "city": "London",
+      "topic": "Tech. About the eventBuilt By Few is the summit by Connect Ventures bringing together the founders, makers and investors building and backing Europe’s defining companies.Over the past couple of years we’ve brought together the people building the future at our London flagship and at satellite events across Europe. They include the founders behind Aikido Security, ai-coustics, Arduino, Dust, Monume",
+      "audienceSize": 334,
+      "organiser": "Personal",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZDVdgqIyXbwKhW4"
+    },
+    {
+      "id": "luma-h8zer2ek",
+      "name": "HACKATHON - Agent Eval Harness",
+      "url": "https://luma.com/h8zer2ek",
+      "date": "2026-11-04",
+      "city": "London",
+      "topic": "AI. Hi new friends and old! The Friendly Data Meetup Hackathon is back by popular demand! 🎉After the brilliant turnout (and the even more brilliant demos) at our first hackathon in January, we simply had to do it again.👩‍💻 This evening is all about learning, building, and having fun with friendly faces. No pressure, no pitch decks, just inquisitive minds making cool things with data. With perhaps ",
+      "audienceSize": 72,
+      "organiser": "The Friendly Data Meetup London",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-6tmN87665vaD1pb"
+    },
+    {
+      "id": "luma-m3pbljlh",
+      "name": "House London #3 | Data Hackathon",
+      "url": "https://luma.com/m3pbljlh",
+      "date": "2026-11-07",
+      "city": "London",
+      "topic": "Tech. london has a housing crisis, the data to understand it, and argue for fixing it already existsHouse London is a one-day data sprint hosted at Newspeak House bringing together data scientists, urban planners, and policy thinkers to do one thing. take london's planning and housing data, and tell the most compelling and well-evidenced story you can with it,this is House London #3, the fourth in",
+      "audienceSize": 112,
+      "organiser": "House London!",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-KIv1V2DQBUh9JNj"
+    },
+    {
+      "id": "luma-g9q690i2",
+      "name": "React Foundation Meetup: London",
+      "url": "https://luma.com/g9q690i2",
+      "date": "2026-11-11",
+      "city": "London",
+      "topic": "Tech. Join the React Foundation in London for an evening with the React & React Native Community!Whether you’re building your first app or have been working with it for years, come meet fellow developers, exchange ideas, and share what you’re working on. It’s a chance to put faces to familiar names, make new connections, and talk about the things you’re excited to build.",
+      "audienceSize": 73,
+      "organiser": "Personal",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-zxjxdRejzk2dk1P"
+    },
+    {
+      "id": "luma-breakpoint2026",
+      "name": "Solana Breakpoint 2026",
+      "url": "https://luma.com/breakpoint2026",
+      "date": "2026-11-15",
+      "city": "London",
+      "topic": "Crypto. Breakpoint 2026 brings together the leaders, builders, investors, institutions, and creators shaping the future of the Solana ecosystem. Designed as a high-signal gathering, the event creates space for meaningful connections, new ideas, and the unveiling of products and technologies pushing the network forward. Attendees will experience a curated program of keynotes, lightning talks, debat",
+      "audienceSize": 1326,
+      "organiser": "Solana Breakpoint",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-KFDtoSxKwrXxRwQ"
+    },
+    {
+      "id": "luma-granola-gemini-hackathon",
+      "name": "GTM Hackathon by Granola x Gemini",
+      "url": "https://luma.com/granola-gemini-hackathon",
+      "date": "2026-11-17",
+      "city": "London",
+      "topic": "AI. What would you build if you had a dedicated evening to experiment with Gemini?Join us at Granola HQ for a hackathon for GTM and Marketing leaders!No technical background needed. We’re bringing together a curated group of GTM and Marketing leaders to use your Granola context with our MCP, build with Gemini, and explore how AI can change the way we work and build something useful along the way.Y",
+      "audienceSize": null,
+      "organiser": "Granola",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-CZgpfroA4Hny1a7"
+    },
+    {
+      "id": "luma-q3uykk0n",
+      "name": "She Bytes Back x Snyk: What Breaks When Agents Start Shipping Your Code?",
+      "url": "https://luma.com/q3uykk0n",
+      "date": "2026-11-18",
+      "city": "London",
+      "topic": "AI. 📅 Wednesday 18th November | 🕕 18:00 – 21:00 | 📍 London | 🍕 Food & drinks on us | 🚨 Approval-only for experienced women engineersAs agents take on more of the software development lifecycle, what happens when they produce code that passes every test but is fundamentally wrong, access something they shouldn't, or make a mistake that goes unnoticed until production? 👀She Bytes Back is teaming up ",
+      "audienceSize": 61,
+      "organiser": "Personal",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-JceIJoLx8I3HNxN"
+    },
+    {
+      "id": "luma-xjd0fs6x",
+      "name": "HACKCEPTION: A hack within a hack 🌀",
+      "url": "https://luma.com/xjd0fs6x",
+      "date": "2026-11-21",
+      "city": "London",
+      "topic": "Tech. What happens when you hack the hackathon? 🌀Welcome to the world's first hack within a hack.Hackception is a one-of-a-kind creative hack where your challenge is to come up with the most ridiculous, ambitious, crazy and brilliant hack concept you can think of. And pitch it.And the reward...your craziest hack dreams brought to life, by the help of our sponsors. 💭🎁🏆Limited to 100 spots - for the",
+      "audienceSize": 60,
+      "organiser": "Lovable London Community",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-p6TmzT9HhWLNeAJ"
+    },
+    {
+      "id": "grok-hack-2026",
+      "name": "Grok Bot Community Engineering London Hackathon",
+      "url": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Build open-source tools that London community leads will actually use. An evening hackathon for community engineers, DevRels, organisers and builders.",
+      "audienceSize": null,
+      "organiser": "SpaceXAI for London",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    }
+  ],
+  "sponsors": [
+    {
+      "id": "20tab.com",
+      "name": "20tab",
+      "domain": "20tab.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/20tab"
+    },
+    {
+      "id": "2iltd.com",
+      "name": "2i Limited",
+      "domain": "2iltd.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/2i-limited"
+    },
+    {
+      "id": "a2co.com",
+      "name": "A2CO Advisory Ltd",
+      "domain": "a2co.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/a2co-advisory"
+    },
+    {
+      "id": "aabi.info",
+      "name": "Global Entrepreneurship Connection (GEC)",
+      "domain": "aabi.info",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/global-entrepreneurship-connection-gec"
+    },
+    {
+      "id": "abnoy.de",
+      "name": "Abnoy Enterprises",
+      "domain": "abnoy.de",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/abnoy-enterprises"
+    },
+    {
+      "id": "accenture.com",
+      "name": "Accenture",
+      "domain": "accenture.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/accenture-1"
+    },
+    {
+      "id": "acquisition-entrepreneurs.com",
+      "name": "Acquisition Entrepreneurs",
+      "domain": "acquisition-entrepreneurs.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    },
+    {
+      "id": "afaqai.net",
+      "name": "AFAQ AI",
+      "domain": "afaqai.net",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/afaq-ai"
+    },
+    {
+      "id": "agemo.ai",
+      "name": "agemoai",
+      "domain": "agemo.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "agrovech.com",
+      "name": "Agrovech",
+      "domain": "agrovech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/agrovech"
+    },
+    {
+      "id": "alzheimers.org.uk",
+      "name": "Alzheimer's Society",
+      "domain": "alzheimers.org.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/altzheimers-society"
+    },
+    {
+      "id": "amazon.com",
+      "name": "Amazon Web Services",
+      "domain": "amazon.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/amazon-web-services-1"
+    },
+    {
+      "id": "amd.com",
+      "name": "AMD",
+      "domain": "amd.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/amd"
+    },
+    {
+      "id": "analyticsintelligence.com",
+      "name": "[AI] Analytics Intelligence",
+      "domain": "analyticsintelligence.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ai-analytics-intelligence"
+    },
+    {
+      "id": "anthropic.com",
+      "name": "Claude",
+      "domain": "anthropic.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "anythink.cloud",
+      "name": "Anythink",
+      "domain": "anythink.cloud",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/anythink"
+    },
+    {
+      "id": "arbittechnologyltd.com",
+      "name": "Arbit Technology Limited",
+      "domain": "arbittechnologyltd.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arbit-technology-limited"
+    },
+    {
+      "id": "archisphere.co.uk",
+      "name": "My Ai-Foundry",
+      "domain": "archisphere.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/archisphere"
+    },
+    {
+      "id": "aries-tm.ro",
+      "name": "Romania IT",
+      "domain": "aries-tm.ro",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/romania"
+    },
+    {
+      "id": "arritech.com",
+      "name": "ArriTech",
+      "domain": "arritech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arritech"
+    },
+    {
+      "id": "artech.om",
+      "name": "AR Technology®",
+      "domain": "artech.om",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ar-technology"
+    },
+    {
+      "id": "artifactfutures.com",
+      "name": "ARTIFACT Futures",
+      "domain": "artifactfutures.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/artifact-futures"
+    },
+    {
+      "id": "arts.ac.uk",
+      "name": "Creative Computing Institute, University of the Arts London",
+      "domain": "arts.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/creative-computing-institute-university-arts-london"
+    },
+    {
+      "id": "arup.com",
+      "name": "Arup",
+      "domain": "arup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arup"
+    },
+    {
+      "id": "aryaanalytics.com",
+      "name": "Idil Unverdi",
+      "domain": "aryaanalytics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/idil-unverdi"
+    },
+    {
+      "id": "ashlarglobal.com",
+      "name": "Ashlar",
+      "domain": "ashlarglobal.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ashlar"
+    },
+    {
+      "id": "askdataentry.com",
+      "name": "AskDataEntry",
+      "domain": "askdataentry.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/askdataentry"
+    },
+    {
+      "id": "askollo.com",
+      "name": "Ollo",
+      "domain": "askollo.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ollo"
+    },
+    {
+      "id": "astrazeneca.com",
+      "name": "AstraZeneca",
+      "domain": "astrazeneca.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/astrazeneca-1"
+    },
+    {
+      "id": "attifin.ai",
+      "name": "Attifin AI",
+      "domain": "attifin.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/attifin-ai"
+    },
+    {
+      "id": "aturiya.ai",
+      "name": "Aturiya AI",
+      "domain": "aturiya.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aturiya-ai"
+    },
+    {
+      "id": "autogenai.com",
+      "name": "AutogenAI",
+      "domain": "autogenai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/autogenai"
+    },
+    {
+      "id": "avanade.com",
+      "name": "Avanade & Equinix",
+      "domain": "avanade.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/avanade-equinix"
+    },
+    {
+      "id": "aveva.com",
+      "name": "AVEVA",
+      "domain": "aveva.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aveva"
+    },
+    {
+      "id": "ayobiomed.com",
+      "name": "Ayo Tech Corp",
+      "domain": "ayobiomed.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ayo-tech-corp"
+    },
+    {
+      "id": "ayven.ai",
+      "name": "Alknoma",
+      "domain": "ayven.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/alknoma"
+    },
+    {
+      "id": "bamfunds.com",
+      "name": "Balyasny Asset Management",
+      "domain": "bamfunds.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "barclays.co.uk",
+      "name": "Barclays",
+      "domain": "barclays.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/barclays-1"
+    },
+    {
+      "id": "batterycheck.com",
+      "name": "BatteryCheck",
+      "domain": "batterycheck.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/batterycheck"
+    },
+    {
+      "id": "bcg.com",
+      "name": "Boston Consulting Group (BCG)",
+      "domain": "bcg.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/boston-consulting-group-bcg"
+    },
+    {
+      "id": "bda.bm",
+      "name": "Bermuda Business Development Agency (BDA)",
+      "domain": "bda.bm",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bermuda-business-development-agency-bda"
+    },
+    {
+      "id": "beauna.co",
+      "name": "Beauna Care Cosmetics LLC",
+      "domain": "beauna.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/beauna-care-cosmetics-llc"
+    },
+    {
+      "id": "behive.consulting",
+      "name": "BeHive Consulting",
+      "domain": "behive.consulting",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/behive-consulting"
+    },
+    {
+      "id": "bendingspoons.com",
+      "name": "Bending Spoons",
+      "domain": "bendingspoons.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "biopicta.com",
+      "name": "BioPicta",
+      "domain": "biopicta.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/biopicta"
+    },
+    {
+      "id": "blackbox.ai",
+      "name": "BLACKBOX AI",
+      "domain": "blackbox.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/blackbox-ai"
+    },
+    {
+      "id": "blacklane.com",
+      "name": "Blacklane",
+      "domain": "blacklane.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/blacklane"
+    },
+    {
+      "id": "bluente.com",
+      "name": "Bluente",
+      "domain": "bluente.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bluente"
+    },
+    {
+      "id": "branchaustinmccormick.com",
+      "name": "Branch Austin McCormick",
+      "domain": "branchaustinmccormick.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/branch-austin-mccormick"
+    },
+    {
+      "id": "brasilitplus.com",
+      "name": "Brasil IT+",
+      "domain": "brasilitplus.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/brasil"
+    },
+    {
+      "id": "british-business-bank.co.uk",
+      "name": "British Business Bank",
+      "domain": "british-business-bank.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/british-business-bank"
+    },
+    {
+      "id": "broadangle.com",
+      "name": "broadAngle",
+      "domain": "broadangle.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/broadangle"
+    },
+    {
+      "id": "business.ruhr",
+      "name": "Business Metropole Ruhr",
+      "domain": "business.ruhr",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/business-metropole-ruhr"
+    },
+    {
+      "id": "byte-genie.com",
+      "name": "ByteGenie",
+      "domain": "byte-genie.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bytegenie"
+    },
+    {
+      "id": "caci.co.uk",
+      "name": "CACI",
+      "domain": "caci.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/caci"
+    },
+    {
+      "id": "callendoc.com",
+      "name": "Ali Olmez",
+      "domain": "callendoc.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ali-olmez"
+    },
+    {
+      "id": "camunda.com",
+      "name": "Camunda",
+      "domain": "camunda.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/camunda"
+    },
+    {
+      "id": "capgemini.com",
+      "name": "Capgemini",
+      "domain": "capgemini.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capgemini"
+    },
+    {
+      "id": "capitalccg.ac.uk",
+      "name": "Capital City College Group",
+      "domain": "capitalccg.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capital-city-college-group"
+    },
+    {
+      "id": "capitalnumbers.com",
+      "name": "Capital Numbers",
+      "domain": "capitalnumbers.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capital-numbers"
+    },
+    {
+      "id": "casa-space.tech",
+      "name": "CASA Space Technologies",
+      "domain": "casa-space.tech",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/casa-space-technologies"
+    },
+    {
+      "id": "celerity.chat",
+      "name": "BulkSMS",
+      "domain": "celerity.chat",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bulksms"
+    },
+    {
+      "id": "chkn.media",
+      "name": "chkn media",
+      "domain": "chkn.media",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "cipherx.tech",
+      "name": "CipherX",
+      "domain": "cipherx.tech",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cipherx"
+    },
+    {
+      "id": "cisco.com",
+      "name": "Cisco",
+      "domain": "cisco.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cisco-1"
+    },
+    {
+      "id": "citadel.com",
+      "name": "Citadel",
+      "domain": "citadel.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "clay.com",
+      "name": "Clay",
+      "domain": "clay.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/clay"
+    },
+    {
+      "id": "co.za",
+      "name": "Aflu Med Healthcare",
+      "domain": "co.za",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aflu-med-healthcare"
+    },
+    {
+      "id": "codeimo.com",
+      "name": "Codeimo Saas",
+      "domain": "codeimo.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/codeimo-saas"
+    },
+    {
+      "id": "cognee.ai",
+      "name": "Cognee",
+      "domain": "cognee.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "id": "com.cn",
+      "name": "Fofund",
+      "domain": "com.cn",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/fofund"
+    },
+    {
+      "id": "com.ph",
+      "name": "Po-Lite Technology",
+      "domain": "com.ph",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/po-lite-technology"
+    },
+    {
+      "id": "com.pk",
+      "name": "International Office Products",
+      "domain": "com.pk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/international-office-products"
+    },
+    {
+      "id": "com.tr",
+      "name": "AloTech İletişim Teknolojileri Tic. A.Ş.",
+      "domain": "com.tr",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/alotech-iletisim-teknolojileri-tic-s"
+    },
+    {
+      "id": "comply.land",
+      "name": "Comply.Land",
+      "domain": "comply.land",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/complyland"
+    },
+    {
+      "id": "conceptstadium.com",
+      "name": "The Concept Stadium",
+      "domain": "conceptstadium.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/concept-stadium"
+    },
+    {
+      "id": "confinaid.com",
+      "name": "Confinaid",
+      "domain": "confinaid.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/confinaid"
+    },
+    {
+      "id": "confiz.com",
+      "name": "Confiz",
+      "domain": "confiz.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/confiz"
+    },
+    {
+      "id": "copilotkit.ai",
+      "name": "CopilotKit",
+      "domain": "copilotkit.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/copilotkit"
+    },
+    {
+      "id": "corevitals.me",
+      "name": "CoreVitals",
+      "domain": "corevitals.me",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elevate-health"
+    },
+    {
+      "id": "coreweave.com",
+      "name": "CoreWeave",
+      "domain": "coreweave.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/coreweave"
+    },
+    {
+      "id": "crabnebula.dev",
+      "name": "CrabNebula Ltd",
+      "domain": "crabnebula.dev",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/crabnebula"
+    },
+    {
+      "id": "croftz.com",
+      "name": "Croftz Technologies",
+      "domain": "croftz.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/croftz"
+    },
+    {
+      "id": "csbgroup.com",
+      "name": "CSB Group",
+      "domain": "csbgroup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/csb-group"
+    },
+    {
+      "id": "cto2b.io",
+      "name": "CTO2B",
+      "domain": "cto2b.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cto2b"
+    },
+    {
+      "id": "curium.sg",
+      "name": "Curium",
+      "domain": "curium.sg",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/curium"
+    },
+    {
+      "id": "cursor.com",
+      "name": "Cursor",
+      "domain": "cursor.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "id": "cyberdexterity.com",
+      "name": "Cyber Dexterity",
+      "domain": "cyberdexterity.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cyber-dexterity"
+    },
+    {
+      "id": "cybersa.it",
+      "name": "CyberSA",
+      "domain": "cybersa.it",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cybersa"
+    },
+    {
+      "id": "databutton.com",
+      "name": "Databutton",
+      "domain": "databutton.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/databutton"
+    },
+    {
+      "id": "datafy.io",
+      "name": "Datafy",
+      "domain": "datafy.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datafy"
+    },
+    {
+      "id": "datakrew.com",
+      "name": "Datakrew",
+      "domain": "datakrew.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datakrew"
+    },
+    {
+      "id": "datamellon.com",
+      "name": "Datamellon",
+      "domain": "datamellon.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datamellon"
+    },
+    {
+      "id": "datox.ai",
+      "name": "Datox",
+      "domain": "datox.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datox"
+    },
+    {
+      "id": "db.com",
+      "name": "Deutsche Bank",
+      "domain": "db.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "dcm-inc.com",
+      "name": "Digital Conversions Media",
+      "domain": "dcm-inc.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digital-conversions-media"
+    },
+    {
+      "id": "dedicatedva.com",
+      "name": "DedicatedVA",
+      "domain": "dedicatedva.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dedicatedva"
+    },
+    {
+      "id": "deepidv.com",
+      "name": "deepidv",
+      "domain": "deepidv.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deepidv"
+    },
+    {
+      "id": "deeprobotics.cn",
+      "name": "DEEP Robotics",
+      "domain": "deeprobotics.cn",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deep-robotics"
+    },
+    {
+      "id": "deliverance.ai",
+      "name": "Deliverance AI",
+      "domain": "deliverance.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deliverance-ai"
+    },
+    {
+      "id": "deloitte.com",
+      "name": "Deloitte",
+      "domain": "deloitte.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deloitte"
+    },
+    {
+      "id": "delta-3.io",
+      "name": "Emir BURSA",
+      "domain": "delta-3.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/emir-bursa"
+    },
+    {
+      "id": "devfied.com",
+      "name": "Devfied",
+      "domain": "devfied.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/devfied"
+    },
+    {
+      "id": "digitalbrew.com",
+      "name": "Digital Brew",
+      "domain": "digitalbrew.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digital-brew"
+    },
+    {
+      "id": "digitalocean.com",
+      "name": "DigitalOcean",
+      "domain": "digitalocean.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digitalocean"
+    },
+    {
+      "id": "docsoc.co.uk",
+      "name": "DoCSoc",
+      "domain": "docsoc.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "dotsquares.com",
+      "name": "Dotsquares",
+      "domain": "dotsquares.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dotsquares"
+    },
+    {
+      "id": "drw.com",
+      "name": "drw",
+      "domain": "drw.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "dust.tt",
+      "name": "Dust",
+      "domain": "dust.tt",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dust"
+    },
+    {
+      "id": "economicdevelopment.online",
+      "name": "Economic Development Lab",
+      "domain": "economicdevelopment.online",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/economic-development-lab"
+    },
+    {
+      "id": "ed.ac.uk",
+      "name": "University of Edinburgh",
+      "domain": "ed.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/university-edinburgh"
+    },
+    {
+      "id": "edu.hk",
+      "name": "The Hong Kong Polytechnic University",
+      "domain": "edu.hk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hong-kong-polytechnic-university-1"
+    },
+    {
+      "id": "egnpower.com",
+      "name": "Mehmet Ali SENEL",
+      "domain": "egnpower.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mehmet-ali-senel"
+    },
+    {
+      "id": "elastic.co",
+      "name": "Elastic",
+      "domain": "elastic.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elastic"
+    },
+    {
+      "id": "elaves.com",
+      "name": "Ayşegül Erdemir",
+      "domain": "elaves.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aysegul-erdemir"
+    },
+    {
+      "id": "elevenlabs.io",
+      "name": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elevenlabs"
+    },
+    {
+      "id": "engagerocket.co",
+      "name": "EngageRocket",
+      "domain": "engagerocket.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/engagerocket"
+    },
+    {
+      "id": "ensono.com",
+      "name": "Ensono",
+      "domain": "ensono.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ensono"
+    },
+    {
+      "id": "entrepreneur.com",
+      "name": "Entrepreneur UK",
+      "domain": "entrepreneur.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/entrepreneur-uk"
+    },
+    {
+      "id": "equinix.com",
+      "name": "Equinix",
+      "domain": "equinix.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/equinix"
+    },
+    {
+      "id": "era4.com",
+      "name": "Era4",
+      "domain": "era4.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/era4"
+    },
+    {
+      "id": "esriuk.com",
+      "name": "Esri UK",
+      "domain": "esriuk.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/esri"
+    },
+    {
+      "id": "estonia.ee",
+      "name": "Estonian Embassy in London",
+      "domain": "estonia.ee",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/estonian-embassy-london-dxoz"
+    },
+    {
+      "id": "eternalsoftsolutions.com",
+      "name": "Eternal Web",
+      "domain": "eternalsoftsolutions.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/eternal-web"
+    },
+    {
+      "id": "eventscloud.com",
+      "name": "Department for Business and Trade",
+      "domain": "eventscloud.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/department-business-trade-1"
+    },
+    {
+      "id": "everbestconsulting.com",
+      "name": "EverBest Consulting",
+      "domain": "everbestconsulting.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/everbest-consulting"
+    },
+    {
+      "id": "everforthquinnox.com",
+      "name": "Everforth Quinnox",
+      "domain": "everforthquinnox.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/everforth-quinnox"
+    },
+    {
+      "id": "ewg.de",
+      "name": "Essen Business",
+      "domain": "ewg.de",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/essen-business"
+    },
+    {
+      "id": "excury.com",
+      "name": "EXCURY",
+      "domain": "excury.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/excury"
+    },
+    {
+      "id": "exigy.com",
+      "name": "Exigy",
+      "domain": "exigy.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/exigy"
+    },
+    {
+      "id": "expaend.com",
+      "name": "Baden-Wurttemberg - The LAND",
+      "domain": "expaend.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/baden-werttemberg-start-up-lnd"
+    },
+    {
+      "id": "fdx.com",
+      "name": "fdx Powered by FedEx",
+      "domain": "fdx.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/fdx-powered-fedex"
+    },
+    {
+      "id": "feha.io",
+      "name": "FEHA",
+      "domain": "feha.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/feha"
+    },
+    {
+      "id": "finsurge.ai",
+      "name": "Finsurge",
+      "domain": "finsurge.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/finsurge"
+    },
+    {
+      "id": "firstofficehub.com",
+      "name": "First Office Hub",
+      "domain": "firstofficehub.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/first-office-hub"
+    },
+    {
+      "id": "fiverings.com",
+      "name": "Five Rings",
+      "domain": "fiverings.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "flower.ai",
+      "name": "Flower Labs",
+      "domain": "flower.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/flower-labs"
+    },
+    {
+      "id": "freedompay.com",
+      "name": "FreedomPay",
+      "domain": "freedompay.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/freedompay"
+    },
+    {
+      "id": "frm-united.com",
+      "name": "FrankfurtRheinMain GmbH",
+      "domain": "frm-united.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/frankfurtrheinmain-gmbh"
+    },
+    {
+      "id": "fuckupnights.london",
+      "name": "Fuck Up Nights London",
+      "domain": "fuckupnights.london",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    },
+    {
+      "id": "generalassemb.ly",
+      "name": "General Assembly",
+      "domain": "generalassemb.ly",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/general-assembly"
+    },
+    {
+      "id": "geniusee.com",
+      "name": "Geniusee",
+      "domain": "geniusee.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/geniusee"
+    },
+    {
+      "id": "geraldedelman.com",
+      "name": "Carl Lundberg",
+      "domain": "geraldedelman.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    },
+    {
+      "id": "gett.com",
+      "name": "Gett by Lyft",
+      "domain": "gett.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gett-lyft"
+    },
+    {
+      "id": "glean.com",
+      "name": "Glean",
+      "domain": "glean.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/glean-1"
+    },
+    {
+      "id": "glianetalliance.org",
+      "name": "GliaNet Alliance",
+      "domain": "glianetalliance.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/glianet-alliance"
+    },
+    {
+      "id": "go.id",
+      "name": "Indonesian Embassy",
+      "domain": "go.id",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indonesian-embassy"
+    },
+    {
+      "id": "go.jp",
+      "name": "Japan External Trade Organization (JETRO)",
+      "domain": "go.jp",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetro-japan"
+    },
+    {
+      "id": "godolly.ai",
+      "name": "Dolly AI",
+      "domain": "godolly.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dolly-ai"
+    },
+    {
+      "id": "goodnotes.com",
+      "name": "Goodnotes",
+      "domain": "goodnotes.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "google.com",
+      "name": "Google Cloud",
+      "domain": "google.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/google-cloud"
+    },
+    {
+      "id": "gov.br",
+      "name": "Invest São Paulo",
+      "domain": "gov.br",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/invest-sao-paulo"
+    },
+    {
+      "id": "gov.ee",
+      "name": "e-Residency of Estonia",
+      "domain": "gov.ee",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/e-residency-estonia"
+    },
+    {
+      "id": "gov.hk",
+      "name": "Invest Hong Kong",
+      "domain": "gov.hk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/investhk-hong-kong-economic-trade-office"
+    },
+    {
+      "id": "gov.lv",
+      "name": "Startup Latvia",
+      "domain": "gov.lv",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/investment-development-agency-latvia"
+    },
+    {
+      "id": "gov.mt",
+      "name": "Malta Digital Innovation Authority",
+      "domain": "gov.mt",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-digital-innovation-authority"
+    },
+    {
+      "id": "gov.om",
+      "name": "Oman",
+      "domain": "gov.om",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/oman"
+    },
+    {
+      "id": "gov.ph",
+      "name": "Department of Science and Technology - Philippines",
+      "domain": "gov.ph",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/department-science-technology-philippines"
+    },
+    {
+      "id": "gov.pl",
+      "name": "Polish Investment and Trade Agency",
+      "domain": "gov.pl",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/polish-investment-trade-agency"
+    },
+    {
+      "id": "gowlingwlg.com",
+      "name": "Gowling WLG",
+      "domain": "gowlingwlg.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gowling-wlg"
+    },
+    {
+      "id": "gresearch.co.uk",
+      "name": "G-Research",
+      "domain": "gresearch.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "gsk.com",
+      "name": "GSK",
+      "domain": "gsk.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gsk"
+    },
+    {
+      "id": "hackathons.org.uk",
+      "name": "Hackathons UK",
+      "domain": "hackathons.org.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "hacktron.ai",
+      "name": "Hacktron",
+      "domain": "hacktron.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "hadean.com",
+      "name": "Hadean",
+      "domain": "hadean.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "healthinnovationnetwork.com",
+      "name": "Health Innovation Network South London",
+      "domain": "healthinnovationnetwork.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/health-innovation-network-south-london"
+    },
+    {
+      "id": "hitachi-solutions.com",
+      "name": "Hitachi Solutions",
+      "domain": "hitachi-solutions.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hitachi-solutions"
+    },
+    {
+      "id": "homewards.org.uk",
+      "name": "Homewards",
+      "domain": "homewards.org.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/homewards"
+    },
+    {
+      "id": "hpe.com",
+      "name": "HPE",
+      "domain": "hpe.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hpe"
+    },
+    {
+      "id": "hsbcinnovationbanking.com",
+      "name": "HSBC Innovation Banking",
+      "domain": "hsbcinnovationbanking.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hsbc-innovation-banking"
+    },
+    {
+      "id": "hubpy.ai",
+      "name": "HUBPY",
+      "domain": "hubpy.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hubpy"
+    },
+    {
+      "id": "hubspot.com",
+      "name": "HubSpot",
+      "domain": "hubspot.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hubspot"
+    },
+    {
+      "id": "hudsonrivertrading.com",
+      "name": "Hudson River Trading",
+      "domain": "hudsonrivertrading.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "hunbun.co",
+      "name": "Hunbun",
+      "domain": "hunbun.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hunbun"
+    },
+    {
+      "id": "i-migrator.com",
+      "name": "I-Migrator",
+      "domain": "i-migrator.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/migrator"
+    },
+    {
+      "id": "icex.es",
+      "name": "Spain Trade & Investment",
+      "domain": "icex.es",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/icex-espana-exportacion-e-inversiones"
+    },
+    {
+      "id": "ifs.com",
+      "name": "IFS",
+      "domain": "ifs.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ifs"
+    },
+    {
+      "id": "imc.com",
+      "name": "IMC Trading",
+      "domain": "imc.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "imperial.ac.uk",
+      "name": "Imperial College London",
+      "domain": "imperial.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/imperial-college-london-i6qd"
+    },
+    {
+      "id": "imperialcollegeunion.org",
+      "name": "City and Guilds College Union (CGCU)",
+      "domain": "imperialcollegeunion.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "imperialwset.co.uk",
+      "name": "Imperial Women in SET",
+      "domain": "imperialwset.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "incident.io",
+      "name": "incident",
+      "domain": "incident.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "infleqtion.com",
+      "name": "Infleqtition",
+      "domain": "infleqtion.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/infleqtition"
+    },
+    {
+      "id": "innovationsask.ca",
+      "name": "Innovation Saskatchewan",
+      "domain": "innovationsask.ca",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovation-saskatchewan"
+    },
+    {
+      "id": "innovatorinternational.com",
+      "name": "Innovator International",
+      "domain": "innovatorinternational.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovator-international"
+    },
+    {
+      "id": "instruct.ai",
+      "name": "Instruct AI",
+      "domain": "instruct.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/instruct-ai"
+    },
+    {
+      "id": "integrella.com",
+      "name": "Integrella",
+      "domain": "integrella.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/integrella"
+    },
+    {
+      "id": "intglobal.com",
+      "name": "Indus Net Technologies (INT.)",
+      "domain": "intglobal.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indus-net-technologies-int"
+    },
+    {
+      "id": "io.",
+      "name": "Gong",
+      "domain": "io.",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gong"
+    },
+    {
+      "id": "iris.ai",
+      "name": "Iris.ai",
+      "domain": "iris.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/irisai"
+    },
+    {
+      "id": "jade-pk.com",
+      "name": "Jade",
+      "domain": "jade-pk.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jade"
+    },
+    {
+      "id": "janestreet.com",
+      "name": "jane_street",
+      "domain": "janestreet.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "jetbrains.com",
+      "name": "JetBrains",
+      "domain": "jetbrains.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetbrains"
+    },
+    {
+      "id": "jetmapper.co.uk",
+      "name": "Jetmapper",
+      "domain": "jetmapper.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetmapper"
+    },
+    {
+      "id": "jigsaw24.com",
+      "name": "Jigsaw24",
+      "domain": "jigsaw24.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jigsaw24"
+    },
+    {
+      "id": "join-thebridge.com",
+      "name": "The Bridge",
+      "domain": "join-thebridge.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "jptechcommunication.com",
+      "name": "JP Tech Communication",
+      "domain": "jptechcommunication.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jp-tech-communication"
+    },
+    {
+      "id": "jumptrading.com",
+      "name": "Jump Trading",
+      "domain": "jumptrading.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "karisani.com",
+      "name": "Karisani Pty Ltd",
+      "domain": "karisani.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/karisani-pty"
+    },
+    {
+      "id": "kbcommunicationbpo.com",
+      "name": "KB communication",
+      "domain": "kbcommunicationbpo.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kb-communication"
+    },
+    {
+      "id": "kcl.ac.uk",
+      "name": "King's College London",
+      "domain": "kcl.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kings-college-london-sg2v"
+    },
+    {
+      "id": "kclwomeninstem.co.uk",
+      "name": "KCL Womxn in STEM",
+      "domain": "kclwomeninstem.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "keoo.ai",
+      "name": "Keoo AI",
+      "domain": "keoo.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/keoo-ai"
+    },
+    {
+      "id": "kioko.io",
+      "name": "Kioko",
+      "domain": "kioko.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kioko"
+    },
+    {
+      "id": "kloudleads.com",
+      "name": "Kloudleads",
+      "domain": "kloudleads.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kloudleads"
+    },
+    {
+      "id": "koderlabs.com",
+      "name": "KoderLabs",
+      "domain": "koderlabs.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/koderlabs"
+    },
+    {
+      "id": "krefeld-business.de",
+      "name": "KREFELD BUSINESS",
+      "domain": "krefeld-business.de",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/krefeld-business"
+    },
+    {
+      "id": "kristal.ai",
+      "name": "Kristal.ai",
+      "domain": "kristal.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kristalai"
+    },
+    {
+      "id": "kruncher.ai",
+      "name": "Kruncher",
+      "domain": "kruncher.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kruncher"
+    },
+    {
+      "id": "kubekanvas.io",
+      "name": "Indus Valle Labs (pvt) Limited",
+      "domain": "kubekanvas.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indus-valle-labs-pvt-limited"
+    },
+    {
+      "id": "law365.co",
+      "name": "Law 365",
+      "domain": "law365.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cloud-contracts-365"
+    },
+    {
+      "id": "lawyeredapp.com",
+      "name": "Lawyered Up",
+      "domain": "lawyeredapp.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lawyered-up"
+    },
+    {
+      "id": "lbhf.gov.uk",
+      "name": "Hammersmith & Fulham",
+      "domain": "lbhf.gov.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hammersmith-fulham"
+    },
+    {
+      "id": "leadforensics.com",
+      "name": "Lead Forensics",
+      "domain": "leadforensics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lead-forensics"
+    },
+    {
+      "id": "lemonworx.com",
+      "name": "LemonWorx",
+      "domain": "lemonworx.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lemonworx"
+    },
+    {
+      "id": "levelupemea.com",
+      "name": "Level Up",
+      "domain": "levelupemea.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/level-up"
+    },
+    {
+      "id": "lightfern.com",
+      "name": "Lightfern",
+      "domain": "lightfern.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lightfern"
+    },
+    {
+      "id": "linkterarobotics.com",
+      "name": "Linktera Robotics",
+      "domain": "linkterarobotics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/linktera-robotics"
+    },
+    {
+      "id": "llamaindex.ai",
+      "name": "LlamaIndex",
+      "domain": "llamaindex.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/llamaindex"
+    },
+    {
+      "id": "locai.co.uk",
+      "name": "Loc.ai",
+      "domain": "locai.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/locai"
+    },
+    {
+      "id": "loncagirisim.com",
+      "name": "Lonca Entrepreneurship Center",
+      "domain": "loncagirisim.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lonca-entrepreneurship-center"
+    },
+    {
+      "id": "londonandpartners.com",
+      "name": "London & Partners",
+      "domain": "londonandpartners.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/london-partners"
+    },
+    {
+      "id": "loyale.io",
+      "name": "Loyale",
+      "domain": "loyale.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/loyale"
+    },
+    {
+      "id": "lumico.io",
+      "name": "Lumico Digital",
+      "domain": "lumico.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lumico-digital"
+    },
+    {
+      "id": "lumix.co",
+      "name": "Lumix",
+      "domain": "lumix.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lumix"
+    },
+    {
+      "id": "maanz-ai.com",
+      "name": "Maanz AI / PRAID AI",
+      "domain": "maanz-ai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/maanz-ai"
+    },
+    {
+      "id": "maltaenterprise.com",
+      "name": "Malta Enterprise",
+      "domain": "maltaenterprise.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-enterprise"
+    },
+    {
+      "id": "manila-healthtek.com",
+      "name": "The Manila HealthTek Inc.",
+      "domain": "manila-healthtek.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/manila-healthtek-inc"
+    },
+    {
+      "id": "marqby.us",
+      "name": "Marqby",
+      "domain": "marqby.us",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/marqby"
+    },
+    {
+      "id": "marsh.com",
+      "name": "Marsh",
+      "domain": "marsh.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/marsh-mclennan"
+    },
+    {
+      "id": "matalytics.com",
+      "name": "MatAlytics",
+      "domain": "matalytics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/matalytics"
+    },
+    {
+      "id": "mbr.mt",
+      "name": "Malta Business Registry",
+      "domain": "mbr.mt",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-business-registry"
+    },
+    {
+      "id": "mdpgroup.com",
+      "name": "MDP Group",
+      "domain": "mdpgroup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mdp-group"
+    },
+    {
+      "id": "mediaplanet.co.uk",
+      "name": "Media Planet",
+      "domain": "mediaplanet.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/media-planet"
+    },
+    {
+      "id": "medicubex.com",
+      "name": "MedicubeX",
+      "domain": "medicubex.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/medicubex"
+    },
+    {
+      "id": "medisense-ai.com",
+      "name": "Yasin Cotur",
+      "domain": "medisense-ai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yasin-cotur"
+    },
+    {
+      "id": "meta-loop.co.uk",
+      "name": "META LOOP DESIGN LTD",
+      "domain": "meta-loop.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/meta-loop-design"
+    },
+    {
+      "id": "metrifox.com",
+      "name": "MetriFox",
+      "domain": "metrifox.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yala"
+    },
+    {
+      "id": "microsoft.com",
+      "name": "Microsoft UK",
+      "domain": "microsoft.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/microsoft"
+    },
+    {
+      "id": "mindmapdigital.ai",
+      "name": "Mindmap Digital Private Limited",
+      "domain": "mindmapdigital.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mindmap-digital-private-limited"
+    },
+    {
+      "id": "minotoro.de",
+      "name": "Minotoro",
+      "domain": "minotoro.de",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/minotoro"
+    },
+    {
+      "id": "miro.com",
+      "name": "Miro",
+      "domain": "miro.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/miro"
+    },
+    {
+      "id": "mlh.com",
+      "name": "MLH",
+      "domain": "mlh.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "momen.app",
+      "name": "Momen",
+      "domain": "momen.app",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/momen"
+    },
+    {
+      "id": "monk.com",
+      "name": "Monk",
+      "domain": "monk.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/monk"
+    },
+    {
+      "id": "mottovest.com",
+      "name": "Motto Vest",
+      "domain": "mottovest.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/motto-vest-3"
+    },
+    {
+      "id": "mwam.com",
+      "name": "Marshall Wace",
+      "domain": "mwam.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "narwhallabs.io",
+      "name": "Narwhal Labs",
+      "domain": "narwhallabs.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/narwhal-labs"
+    },
+    {
+      "id": "nativeteams.com",
+      "name": "Native Teams",
+      "domain": "nativeteams.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/native-teams"
+    },
+    {
+      "id": "nduo.co.uk",
+      "name": "nDuo",
+      "domain": "nduo.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nduo"
+    },
+    {
+      "id": "nearswipe.com",
+      "name": "NearSwipe",
+      "domain": "nearswipe.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nearswipe"
+    },
+    {
+      "id": "nebius.com",
+      "name": "Nebius",
+      "domain": "nebius.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nebius"
+    },
+    {
+      "id": "neosofttech.com",
+      "name": "NeoSOFT",
+      "domain": "neosofttech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neosoft"
+    },
+    {
+      "id": "netherlandsandyou.nl",
+      "name": "The Netherlands",
+      "domain": "netherlandsandyou.nl",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/netherlands"
+    },
+    {
+      "id": "neuralcoders.com",
+      "name": "Neural Coders",
+      "domain": "neuralcoders.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neural-coders"
+    },
+    {
+      "id": "neuraldeep.net",
+      "name": "Neural Deep Network Ltd.",
+      "domain": "neuraldeep.net",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neural-deep-network-"
+    },
+    {
+      "id": "neuroscent.com",
+      "name": "NeuroScent Limited",
+      "domain": "neuroscent.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neuroscent-limited"
+    },
+    {
+      "id": "neusix.com",
+      "name": "NeuSix",
+      "domain": "neusix.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neusix"
+    },
+    {
+      "id": "newformfoods.com",
+      "name": "Newform Foods",
+      "domain": "newformfoods.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/newform-foods"
+    },
+    {
+      "id": "nexvistech.com",
+      "name": "NexVisTech",
+      "domain": "nexvistech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nexvistech"
+    },
+    {
+      "id": "nice.com",
+      "name": "NiCE",
+      "domain": "nice.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nice"
+    },
+    {
+      "id": "niu.hu",
+      "name": "Hungarian Innovation Agency",
+      "domain": "niu.hu",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hungarian-innovation-agency"
+    },
+    {
+      "id": "northern-gritstone.com",
+      "name": "Northern Gritstone",
+      "domain": "northern-gritstone.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/northern-gritstone"
+    },
+    {
+      "id": "notchup.com",
+      "name": "Notchup",
+      "domain": "notchup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/notchup"
+    },
+    {
+      "id": "notion.com",
+      "name": "Notion",
+      "domain": "notion.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/notion"
+    },
+    {
+      "id": "noustelo.com",
+      "name": "Noustelo",
+      "domain": "noustelo.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/noustelo"
+    },
+    {
+      "id": "nrich.io",
+      "name": "N.Rich",
+      "domain": "nrich.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nrich"
+    },
+    {
+      "id": "nrwglobalbusiness.com",
+      "name": "NRW.Global Business",
+      "domain": "nrwglobalbusiness.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/north-rhine-westphalia"
+    },
+    {
+      "id": "nscale.com",
+      "name": "Nscale",
+      "domain": "nscale.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nscale"
+    },
+    {
+      "id": "nugitech.co.uk",
+      "name": "Nugi Technologies",
+      "domain": "nugitech.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nugi-technologies-6yv2"
+    },
+    {
+      "id": "oceanscode.com",
+      "name": "Oceans Code",
+      "domain": "oceanscode.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/oceans-code"
+    },
+    {
+      "id": "odito.mobi",
+      "name": "Odito Mobil Saha Çözümleri A.Ş.",
+      "domain": "odito.mobi",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/odito-mobil-saha-cozumleri-s"
+    },
+    {
+      "id": "ogpay.co.uk",
+      "name": "OG Pay - One Gram - Gold Guard",
+      "domain": "ogpay.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/og-pay-one-gram-gold-guard"
+    },
+    {
+      "id": "okulyo.com",
+      "name": "Okulyo",
+      "domain": "okulyo.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/okulyo"
+    },
+    {
+      "id": "optiver.com",
+      "name": "Optiver",
+      "domain": "optiver.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "org.cy",
+      "name": "Invest Cyprus",
+      "domain": "org.cy",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/invest-cyprus"
+    },
+    {
+      "id": "org.tn",
+      "name": "CES Tunisian Innovation Club",
+      "domain": "org.tn",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ces-tunisian-innovation-club"
+    },
+    {
+      "id": "org.tr",
+      "name": "TÜRKİYE National Pavilion",
+      "domain": "org.tr",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/turkiye-national-pavilion"
+    },
+    {
+      "id": "org.za",
+      "name": "Small Enterprise Development and Finance Agency (SEDFA)",
+      "domain": "org.za",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/small-enterprise-development-finance-agency"
+    },
+    {
+      "id": "outsystems.com",
+      "name": "Outsystems",
+      "domain": "outsystems.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/outsystems"
+    },
+    {
+      "id": "overleaf.com",
+      "name": "Overleaf",
+      "domain": "overleaf.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/overleaf"
+    },
+    {
+      "id": "ovyhealth.com",
+      "name": "Ovy Health",
+      "domain": "ovyhealth.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ovy-health"
+    },
+    {
+      "id": "ox.ac.uk",
+      "name": "Saïd Business School, University of Oxford",
+      "domain": "ox.ac.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/business-school"
+    },
+    {
+      "id": "palmify.ai",
+      "name": "Palmify",
+      "domain": "palmify.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "pathbuilderedu.com",
+      "name": "PathBuilder (Makarius Smart Learning)",
+      "domain": "pathbuilderedu.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pathbuilder-makarius-smart-learning"
+    },
+    {
+      "id": "pete-ai.com",
+      "name": "PETE Technologies GmbH",
+      "domain": "pete-ai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pete-technologies-gmbh"
+    },
+    {
+      "id": "philippinezeolite.com",
+      "name": "LITHOS Manufacturing",
+      "domain": "philippinezeolite.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lithos-manufacturing"
+    },
+    {
+      "id": "pitangent.com",
+      "name": "Pitangent Analytics And Technology Solutions",
+      "domain": "pitangent.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pitangent-analytics-technology-solutions-pvt"
+    },
+    {
+      "id": "planckly.com",
+      "name": "Planckly",
+      "domain": "planckly.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/planckly"
+    },
+    {
+      "id": "pmi.org",
+      "name": "Project Management Institute (PMI)",
+      "domain": "pmi.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/project-management-institute-pmi"
+    },
+    {
+      "id": "portugalglobal.pt",
+      "name": "AICEP - Portugal Trade & Invest",
+      "domain": "portugalglobal.pt",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aicep-portugal-trade-invest"
+    },
+    {
+      "id": "priviasecurity.com",
+      "name": "Privia Security",
+      "domain": "priviasecurity.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/privia-security"
+    },
+    {
+      "id": "procomer.com",
+      "name": "Essential Costa Rica",
+      "domain": "procomer.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/procomer-costa-rica"
+    },
+    {
+      "id": "prolific.com",
+      "name": "Prolific",
+      "domain": "prolific.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/prolific"
+    },
+    {
+      "id": "prolifics.com",
+      "name": "Prolifics",
+      "domain": "prolifics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/prolifics"
+    },
+    {
+      "id": "qube-rt.com",
+      "name": "Qube Research Technologies",
+      "domain": "qube-rt.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "quench.ai",
+      "name": "Quench.ai",
+      "domain": "quench.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/quenchai"
+    },
+    {
+      "id": "quetech.eu",
+      "name": "Quality of Experience Technology",
+      "domain": "quetech.eu",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/quality-experience-technology"
+    },
+    {
+      "id": "rapidconsol.com",
+      "name": "Rapid Concept Solutions",
+      "domain": "rapidconsol.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rapid-concept-solutions"
+    },
+    {
+      "id": "recru.pro",
+      "name": "Recru",
+      "domain": "recru.pro",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/recru"
+    },
+    {
+      "id": "regask.com",
+      "name": "Regask",
+      "domain": "regask.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/regask"
+    },
+    {
+      "id": "relevanceai.com",
+      "name": "Relevance AI",
+      "domain": "relevanceai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/relevance-ai"
+    },
+    {
+      "id": "remote.com",
+      "name": "Remote",
+      "domain": "remote.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/remote"
+    },
+    {
+      "id": "revo.pm",
+      "name": "Revo",
+      "domain": "revo.pm",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/revo"
+    },
+    {
+      "id": "revolution.movie",
+      "name": "Dark Matter and HPE",
+      "domain": "revolution.movie",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hpe-nvidia-1"
+    },
+    {
+      "id": "ridenuff.com",
+      "name": "efkan altinok",
+      "domain": "ridenuff.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/efkan-altinok"
+    },
+    {
+      "id": "ringcentral.com",
+      "name": "RingCentral",
+      "domain": "ringcentral.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ringcentral"
+    },
+    {
+      "id": "riotinto.com",
+      "name": "Rio Tinto",
+      "domain": "riotinto.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rio-tinto"
+    },
+    {
+      "id": "rootcause.ai",
+      "name": "RootCause.ai",
+      "domain": "rootcause.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rootcauseai"
+    },
+    {
+      "id": "rozetta.ai",
+      "name": "Rozetta AI",
+      "domain": "rozetta.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rozetta-ai"
+    },
+    {
+      "id": "runo.ai",
+      "name": "Runo",
+      "domain": "runo.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/runo"
+    },
+    {
+      "id": "rws.com",
+      "name": "RWS",
+      "domain": "rws.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rws"
+    },
+    {
+      "id": "salesforce.com",
+      "name": "Salesforce",
+      "domain": "salesforce.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/salesforce"
+    },
+    {
+      "id": "scrapin.io",
+      "name": "Scrapin.io",
+      "domain": "scrapin.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/scrapinio"
+    },
+    {
+      "id": "scrut.io",
+      "name": "Scrut Automation",
+      "domain": "scrut.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/scrut-automation"
+    },
+    {
+      "id": "sentisum.com",
+      "name": "SentiSum",
+      "domain": "sentisum.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sentisum"
+    },
+    {
+      "id": "servefirst.co.uk",
+      "name": "Serve First",
+      "domain": "servefirst.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/serve-first"
+    },
+    {
+      "id": "servicenow.com",
+      "name": "ServiceNow",
+      "domain": "servicenow.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/servicenow"
+    },
+    {
+      "id": "shorturl.at",
+      "name": "Dell Technologies",
+      "domain": "shorturl.at",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dell-technologies-1"
+    },
+    {
+      "id": "siemens.com",
+      "name": "Siemens",
+      "domain": "siemens.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/siemens"
+    },
+    {
+      "id": "sinapsis.tech",
+      "name": "Sinapsis AI",
+      "domain": "sinapsis.tech",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sinapsis-ai"
+    },
+    {
+      "id": "snap-compliance.com",
+      "name": "Snap Compliance",
+      "domain": "snap-compliance.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/snap-compliance"
+    },
+    {
+      "id": "snapshot.reviews",
+      "name": "Snapshot AI",
+      "domain": "snapshot.reviews",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/snapshot-ai"
+    },
+    {
+      "id": "softechbusinessservices.com",
+      "name": "Softech Business Services Pvt. Ltd",
+      "domain": "softechbusinessservices.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/softech-business-services-pvt"
+    },
+    {
+      "id": "sparky.science",
+      "name": "Sparky*",
+      "domain": "sparky.science",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sparky"
+    },
+    {
+      "id": "spendbase.co",
+      "name": "Spendbase",
+      "domain": "spendbase.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/spendbase"
+    },
+    {
+      "id": "speslab.com",
+      "name": "Speslab",
+      "domain": "speslab.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/speslab"
+    },
+    {
+      "id": "spinor.co.uk",
+      "name": "SpinOr",
+      "domain": "spinor.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/spinor"
+    },
+    {
+      "id": "sprintlaw.co.uk",
+      "name": "Sprintlaw",
+      "domain": "sprintlaw.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sprintlaw"
+    },
+    {
+      "id": "stackoverflow.co",
+      "name": "Stack Overflow",
+      "domain": "stackoverflow.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/stack-overflow"
+    },
+    {
+      "id": "startitup.global",
+      "name": "Startitup Global",
+      "domain": "startitup.global",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startitup-global"
+    },
+    {
+      "id": "startupqatar.qa",
+      "name": "Startup Qatar | An Initiative by Invest Qatar",
+      "domain": "startupqatar.qa",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startup-qatar-initiative-invest-qatar"
+    },
+    {
+      "id": "startupsmagazine.co.uk",
+      "name": "Startups Magazine",
+      "domain": "startupsmagazine.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startups-magazine"
+    },
+    {
+      "id": "statista.com",
+      "name": "Statista",
+      "domain": "statista.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/statista"
+    },
+    {
+      "id": "stickermule.com",
+      "name": "sticker_mule",
+      "domain": "stickermule.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "streamlogic.com",
+      "name": "Streamlogic",
+      "domain": "streamlogic.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/streamlogic"
+    },
+    {
+      "id": "streamly.video",
+      "name": "Streamly",
+      "domain": "streamly.video",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/streamly"
+    },
+    {
+      "id": "studentsunionucl.org",
+      "name": "UCL Women in STEM",
+      "domain": "studentsunionucl.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "sugarmobility.com",
+      "name": "Sugar Mobility",
+      "domain": "sugarmobility.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sugar-mobility"
+    },
+    {
+      "id": "sumup.com",
+      "name": "SumUp",
+      "domain": "sumup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sumup"
+    },
+    {
+      "id": "supabase.com",
+      "name": "Supabase",
+      "domain": "supabase.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "id": "swiftcentre.org",
+      "name": "Swift Centre",
+      "domain": "swiftcentre.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/swift-centre"
+    },
+    {
+      "id": "synapsai.ai",
+      "name": "Tanju Öztürk",
+      "domain": "synapsai.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tanju-ozturk"
+    },
+    {
+      "id": "synaptyx.ai",
+      "name": "SynaptyX",
+      "domain": "synaptyx.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/synaptyx"
+    },
+    {
+      "id": "systemsltd.com",
+      "name": "Systems Limited",
+      "domain": "systemsltd.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/systems-limited"
+    },
+    {
+      "id": "talexio.com",
+      "name": "Talexio",
+      "domain": "talexio.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/talexio"
+    },
+    {
+      "id": "teamo.io",
+      "name": "Teamo",
+      "domain": "teamo.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teamo"
+    },
+    {
+      "id": "teamviewer.com",
+      "name": "TeamViewer",
+      "domain": "teamviewer.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teamviewer"
+    },
+    {
+      "id": "tech.mt",
+      "name": "Tech.mt",
+      "domain": "tech.mt",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visit-malta"
+    },
+    {
+      "id": "techdestination.com",
+      "name": "Tech Destination Pakistan",
+      "domain": "techdestination.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-destination-pakistan"
+    },
+    {
+      "id": "techimplement.com",
+      "name": "Tech Implement",
+      "domain": "techimplement.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-implement"
+    },
+    {
+      "id": "technation.io",
+      "name": "Tech Nation",
+      "domain": "technation.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-nation-1"
+    },
+    {
+      "id": "techscaler.co.uk",
+      "name": "Techscaler",
+      "domain": "techscaler.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/techscaler"
+    },
+    {
+      "id": "techuk.org",
+      "name": "techUK",
+      "domain": "techuk.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/techuk"
+    },
+    {
+      "id": "tele2iot.com",
+      "name": "Tele2 IoT",
+      "domain": "tele2iot.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tele2-iot"
+    },
+    {
+      "id": "telnyx.com",
+      "name": "Telnyx",
+      "domain": "telnyx.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/telnyx"
+    },
+    {
+      "id": "telusdigital.com",
+      "name": "TELUS Digital",
+      "domain": "telusdigital.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/telus-digital"
+    },
+    {
+      "id": "teresol.com",
+      "name": "TeReSol",
+      "domain": "teresol.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teresol"
+    },
+    {
+      "id": "tesco.com",
+      "name": "Tesco",
+      "domain": "tesco.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tesco"
+    },
+    {
+      "id": "tesseracted.com",
+      "name": "Tesseracted Labs GmbH",
+      "domain": "tesseracted.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tesseracted-labs-gmbh"
+    },
+    {
+      "id": "thdr.ai",
+      "name": "THDR Group",
+      "domain": "thdr.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/thdr-group"
+    },
+    {
+      "id": "thedotcollective.co.uk",
+      "name": "The Dot Collective",
+      "domain": "thedotcollective.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dot-collective"
+    },
+    {
+      "id": "thehouseofai.ai",
+      "name": "The House of AI",
+      "domain": "thehouseofai.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/house-ai"
+    },
+    {
+      "id": "thepointofit.com",
+      "name": "PointOfIt",
+      "domain": "thepointofit.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pointofit"
+    },
+    {
+      "id": "thesjbgroup.com",
+      "name": "The SJB Group",
+      "domain": "thesjbgroup.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sjb-group"
+    },
+    {
+      "id": "thetradedesk.com",
+      "name": "The Trade Desk",
+      "domain": "thetradedesk.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "tkxel.com",
+      "name": "Tkxel",
+      "domain": "tkxel.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tkxel"
+    },
+    {
+      "id": "tmcltd.com",
+      "name": "TMC",
+      "domain": "tmcltd.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tmc"
+    },
+    {
+      "id": "toursys.net",
+      "name": "Toursys International Inc.",
+      "domain": "toursys.net",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/toursys-international-inc"
+    },
+    {
+      "id": "tr7.com",
+      "name": "A. Bulent Guneri",
+      "domain": "tr7.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/-bulent-guneri"
+    },
+    {
+      "id": "trustifytechnology.com",
+      "name": "Trustify Technology",
+      "domain": "trustifytechnology.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/trustify-technology"
+    },
+    {
+      "id": "trustpilot.com",
+      "name": "Trustpilot",
+      "domain": "trustpilot.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/trustpilot"
+    },
+    {
+      "id": "truvoinsure.com",
+      "name": "Truvo",
+      "domain": "truvoinsure.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "tryterra.co",
+      "name": "terra",
+      "domain": "tryterra.co",
+      "kind": "sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "id": "turbosoft.uk",
+      "name": "Turbosoft",
+      "domain": "turbosoft.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/turbosoft"
+    },
+    {
+      "id": "uber.com",
+      "name": "Uber | Wayve",
+      "domain": "uber.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uber-wayve"
+    },
+    {
+      "id": "ues.io",
+      "name": "ues.io",
+      "domain": "ues.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uesio"
+    },
+    {
+      "id": "ukri.org",
+      "name": "Innovate UK",
+      "domain": "ukri.org",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovate-uk-1"
+    },
+    {
+      "id": "uptitude.co.uk",
+      "name": "Uptitude",
+      "domain": "uptitude.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uptitude"
+    },
+    {
+      "id": "usemultiplier.com",
+      "name": "Multiplier",
+      "domain": "usemultiplier.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/multiplier"
+    },
+    {
+      "id": "vanessaganguin.com",
+      "name": "Vanessa Ganguin Immigration Law",
+      "domain": "vanessaganguin.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vanessa-ganguin-immigration-law"
+    },
+    {
+      "id": "vanta.com",
+      "name": "Vanta",
+      "domain": "vanta.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vanta-1"
+    },
+    {
+      "id": "veevotech.com",
+      "name": "Veevo Tech",
+      "domain": "veevotech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/veevo-tech"
+    },
+    {
+      "id": "vendorside.com",
+      "name": "Vendorside",
+      "domain": "vendorside.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vendorside"
+    },
+    {
+      "id": "visio-consultancy.com",
+      "name": "Visio Consultancy Limited",
+      "domain": "visio-consultancy.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visio-consultancy-limited"
+    },
+    {
+      "id": "visiomex.com",
+      "name": "Hüseyin Alemdar",
+      "domain": "visiomex.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/huseyin-alemdar"
+    },
+    {
+      "id": "visualise.com",
+      "name": "Visualise",
+      "domain": "visualise.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visualise"
+    },
+    {
+      "id": "vodafone.co.uk",
+      "name": "Vodafone Business",
+      "domain": "vodafone.co.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vodafone-business"
+    },
+    {
+      "id": "vrinsofts.com",
+      "name": "Vrinsoft Technology Inc",
+      "domain": "vrinsofts.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vrinsoft-technology-inc"
+    },
+    {
+      "id": "vsourz.com",
+      "name": "Vsourz",
+      "domain": "vsourz.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vsourz"
+    },
+    {
+      "id": "wayve.ai",
+      "name": "Wayve",
+      "domain": "wayve.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wayve"
+    },
+    {
+      "id": "wdrbe.com",
+      "name": "Wdrbe",
+      "domain": "wdrbe.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wdrbe"
+    },
+    {
+      "id": "weaccess.ai",
+      "name": "WeAccess Ai",
+      "domain": "weaccess.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/weaccess-ai"
+    },
+    {
+      "id": "webai.com",
+      "name": "webAI",
+      "domain": "webai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/webai"
+    },
+    {
+      "id": "webuild-ai.com",
+      "name": "WeBuild-AI",
+      "domain": "webuild-ai.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/webuild-ai"
+    },
+    {
+      "id": "wintermute.com",
+      "name": "Wintermute",
+      "domain": "wintermute.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "id": "wirtschaftsfoerderung-dortmund.de",
+      "name": "Economic Development Agency Dortmund",
+      "domain": "wirtschaftsfoerderung-dortmund.de",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/economic-development-agency-dortmund"
+    },
+    {
+      "id": "wise.com",
+      "name": "Wise",
+      "domain": "wise.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "id": "wixsite.com",
+      "name": "Booi Industries (Pty) Ltd",
+      "domain": "wixsite.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/booi-industries-pty"
+    },
+    {
+      "id": "wiya.ai",
+      "name": "Wiya AI",
+      "domain": "wiya.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wiya-ai"
+    },
+    {
+      "id": "wwf.org.uk",
+      "name": "WWF",
+      "domain": "wwf.org.uk",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wwf"
+    },
+    {
+      "id": "x.ai",
+      "name": "SpaceXAI (Grok Bot)",
+      "domain": "x.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "id": "xutang.group",
+      "name": "Beijing Xutang Biotech (BXB）",
+      "domain": "xutang.group",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/beijing-xutang-biotech-bxb"
+    },
+    {
+      "id": "yanhak.com",
+      "name": "Yanhak",
+      "domain": "yanhak.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yanhak"
+    },
+    {
+      "id": "yuztech.com",
+      "name": "Yuztech",
+      "domain": "yuztech.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yuztech"
+    },
+    {
+      "id": "zencoder.ai",
+      "name": "Zencoder",
+      "domain": "zencoder.ai",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/zencoder-1"
+    },
+    {
+      "id": "zero.inc",
+      "name": "Zero",
+      "domain": "zero.inc",
+      "kind": "sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "id": "zeromatics.com",
+      "name": "Zeromatics",
+      "domain": "zeromatics.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/zeromatics"
+    }
+  ],
+  "backings": [
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "cognee.ai",
+      "role": "Sponsor",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "cursor.com",
+      "role": "Tech partner",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "notion.com",
+      "role": "Tech partner",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "supabase.com",
+      "role": "Tech partner",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "x.ai",
+      "role": "Tech partner",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "grok-hack-2026",
+      "sponsorId": "zero.inc",
+      "role": "Tech partner",
+      "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "agemo.ai",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "chkn.media",
+      "role": "Partner",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "citadel.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "docsoc.co.uk",
+      "role": "Partner",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "drw.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "gresearch.co.uk",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "hudsonrivertrading.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "imc.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "imperial.ac.uk",
+      "role": "Partner",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "imperialcollegeunion.org",
+      "role": "Partner",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "incident.io",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "janestreet.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "jetbrains.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "mwam.com",
+      "role": "Title sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "optiver.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "stickermule.com",
+      "role": "Partner",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "thetradedesk.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-24",
+      "sponsorId": "tryterra.co",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://24.ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "anthropic.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "bamfunds.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "bendingspoons.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "chkn.media",
+      "role": "Partner",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "citadel.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "docsoc.co.uk",
+      "role": "Partner",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "elevenlabs.io",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "fiverings.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "goodnotes.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "google.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "gresearch.co.uk",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "hacktron.ai",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "hadean.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "hudsonrivertrading.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "imc.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "imperial.ac.uk",
+      "role": "Partner",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "imperialcollegeunion.org",
+      "role": "Partner",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "jetbrains.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "join-thebridge.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "jumptrading.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "mwam.com",
+      "role": "Sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "optiver.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "palmify.ai",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "qube-rt.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "thetradedesk.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "truvoinsure.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "ic-hack-26",
+      "sponsorId": "wintermute.com",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ichack.org/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "db.com",
+      "role": "Bronze sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "hackathons.org.uk",
+      "role": "Partner",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "imperialwset.co.uk",
+      "role": "Partner",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "incident.io",
+      "role": "Silver sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "kclwomeninstem.co.uk",
+      "role": "Partner",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "mlh.com",
+      "role": "Partner",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "studentsunionucl.org",
+      "role": "Partner",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "iku-2026",
+      "sponsorId": "wise.com",
+      "role": "Gold sponsor",
+      "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "20tab.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/20tab"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "2iltd.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/2i-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "a2co.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/a2co-advisory"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "aabi.info",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/global-entrepreneurship-connection-gec"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "abnoy.de",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/abnoy-enterprises"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "accenture.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/accenture-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "afaqai.net",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/afaq-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "agrovech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/agrovech"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "alzheimers.org.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/altzheimers-society"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "amazon.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/amazon-web-services-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "amd.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/amd"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "analyticsintelligence.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ai-analytics-intelligence"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "anythink.cloud",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/anythink"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "arbittechnologyltd.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arbit-technology-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "archisphere.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/archisphere"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "aries-tm.ro",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/romania"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "arritech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arritech"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "artech.om",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ar-technology"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "artifactfutures.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/artifact-futures"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "arts.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/creative-computing-institute-university-arts-london"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "arup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/arup"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "aryaanalytics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/idil-unverdi"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ashlarglobal.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ashlar"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "askdataentry.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/askdataentry"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "askollo.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ollo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "astrazeneca.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/astrazeneca-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "attifin.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/attifin-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "aturiya.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aturiya-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "autogenai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/autogenai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "avanade.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/avanade-equinix"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "aveva.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aveva"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ayobiomed.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ayo-tech-corp"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ayven.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/alknoma"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "barclays.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/barclays-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "batterycheck.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/batterycheck"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "bcg.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/boston-consulting-group-bcg"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "bda.bm",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bermuda-business-development-agency-bda"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "beauna.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/beauna-care-cosmetics-llc"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "behive.consulting",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/behive-consulting"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "biopicta.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/biopicta"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "blackbox.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/blackbox-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "blacklane.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/blacklane"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "bluente.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bluente"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "branchaustinmccormick.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/branch-austin-mccormick"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "brasilitplus.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/brasil"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "british-business-bank.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/british-business-bank"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "broadangle.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/broadangle"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "business.ruhr",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/business-metropole-ruhr"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "byte-genie.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bytegenie"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "caci.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/caci"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "callendoc.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ali-olmez"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "camunda.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/camunda"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "capgemini.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capgemini"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "capitalccg.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capital-city-college-group"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "capitalnumbers.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/capital-numbers"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "casa-space.tech",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/casa-space-technologies"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "celerity.chat",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/bulksms"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "cipherx.tech",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cipherx"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "cisco.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cisco-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "clay.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/clay"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "co.za",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aflu-med-healthcare"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "codeimo.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/codeimo-saas"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "com.cn",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/fofund"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "com.ph",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/po-lite-technology"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "com.pk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/international-office-products"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "com.tr",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/alotech-iletisim-teknolojileri-tic-s"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "comply.land",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/complyland"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "conceptstadium.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/concept-stadium"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "confinaid.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/confinaid"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "confiz.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/confiz"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "copilotkit.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/copilotkit"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "corevitals.me",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elevate-health"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "coreweave.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/coreweave"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "crabnebula.dev",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/crabnebula"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "croftz.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/croftz"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "csbgroup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/csb-group"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "cto2b.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cto2b"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "curium.sg",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/curium"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "cyberdexterity.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cyber-dexterity"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "cybersa.it",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cybersa"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "databutton.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/databutton"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "datafy.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datafy"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "datakrew.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datakrew"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "datamellon.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datamellon"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "datox.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/datox"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "dcm-inc.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digital-conversions-media"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "dedicatedva.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dedicatedva"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "deepidv.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deepidv"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "deeprobotics.cn",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deep-robotics"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "deliverance.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deliverance-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "deloitte.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/deloitte"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "delta-3.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/emir-bursa"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "devfied.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/devfied"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "digitalbrew.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digital-brew"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "digitalocean.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/digitalocean"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "dotsquares.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dotsquares"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "dust.tt",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dust"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "economicdevelopment.online",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/economic-development-lab"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ed.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/university-edinburgh"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "edu.hk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hong-kong-polytechnic-university-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "egnpower.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mehmet-ali-senel"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "elastic.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elastic"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "elaves.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aysegul-erdemir"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "elevenlabs.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/elevenlabs"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "engagerocket.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/engagerocket"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ensono.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ensono"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "entrepreneur.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/entrepreneur-uk"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "equinix.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/equinix"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "era4.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/era4"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "esriuk.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/esri"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "estonia.ee",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/estonian-embassy-london-dxoz"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "eternalsoftsolutions.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/eternal-web"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "eventscloud.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/department-business-trade-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "everbestconsulting.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/everbest-consulting"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "everforthquinnox.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/everforth-quinnox"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ewg.de",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/essen-business"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "excury.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/excury"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "exigy.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/exigy"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "expaend.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/baden-werttemberg-start-up-lnd"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "fdx.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/fdx-powered-fedex"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "feha.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/feha"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "finsurge.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/finsurge"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "firstofficehub.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/first-office-hub"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "flower.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/flower-labs"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "freedompay.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/freedompay"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "frm-united.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/frankfurtrheinmain-gmbh"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "generalassemb.ly",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/general-assembly"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "geniusee.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/geniusee"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gett.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gett-lyft"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "glean.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/glean-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "glianetalliance.org",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/glianet-alliance"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "go.id",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indonesian-embassy"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "go.jp",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetro-japan"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "godolly.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dolly-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "google.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/google-cloud"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.br",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/invest-sao-paulo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.ee",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/e-residency-estonia"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.hk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/investhk-hong-kong-economic-trade-office"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.lv",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/investment-development-agency-latvia"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.mt",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-digital-innovation-authority"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.om",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/oman"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.ph",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/department-science-technology-philippines"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gov.pl",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/polish-investment-trade-agency"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gowlingwlg.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gowling-wlg"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "gsk.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gsk"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "healthinnovationnetwork.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/health-innovation-network-south-london"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hitachi-solutions.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hitachi-solutions"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "homewards.org.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/homewards"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hpe.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hpe"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hsbcinnovationbanking.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hsbc-innovation-banking"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hubpy.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hubpy"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hubspot.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hubspot"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "hunbun.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hunbun"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "i-migrator.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/migrator"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "icex.es",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/icex-espana-exportacion-e-inversiones"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ifs.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ifs"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "imperial.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/imperial-college-london-i6qd"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "infleqtion.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/infleqtition"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "innovationsask.ca",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovation-saskatchewan"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "innovatorinternational.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovator-international"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "instruct.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/instruct-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "integrella.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/integrella"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "intglobal.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indus-net-technologies-int"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "io.",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/gong"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "iris.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/irisai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "jade-pk.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jade"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "jetbrains.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetbrains"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "jetmapper.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jetmapper"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "jigsaw24.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jigsaw24"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "jptechcommunication.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/jp-tech-communication"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "karisani.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/karisani-pty"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kbcommunicationbpo.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kb-communication"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kcl.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kings-college-london-sg2v"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "keoo.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/keoo-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kioko.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kioko"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kloudleads.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kloudleads"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "koderlabs.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/koderlabs"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "krefeld-business.de",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/krefeld-business"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kristal.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kristalai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kruncher.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/kruncher"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "kubekanvas.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/indus-valle-labs-pvt-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "law365.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/cloud-contracts-365"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lawyeredapp.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lawyered-up"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lbhf.gov.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hammersmith-fulham"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "leadforensics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lead-forensics"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lemonworx.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lemonworx"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "levelupemea.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/level-up"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lightfern.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lightfern"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "linkterarobotics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/linktera-robotics"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "llamaindex.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/llamaindex"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "locai.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/locai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "loncagirisim.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lonca-entrepreneurship-center"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "londonandpartners.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/london-partners"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "loyale.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/loyale"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lumico.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lumico-digital"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "lumix.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lumix"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "maanz-ai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/maanz-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "maltaenterprise.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-enterprise"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "manila-healthtek.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/manila-healthtek-inc"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "marqby.us",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/marqby"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "marsh.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/marsh-mclennan"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "matalytics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/matalytics"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "mbr.mt",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/malta-business-registry"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "mdpgroup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mdp-group"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "mediaplanet.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/media-planet"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "medicubex.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/medicubex"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "medisense-ai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yasin-cotur"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "meta-loop.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/meta-loop-design"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "metrifox.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yala"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "microsoft.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/microsoft"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "mindmapdigital.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/mindmap-digital-private-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "minotoro.de",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/minotoro"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "miro.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/miro"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "momen.app",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/momen"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "monk.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/monk"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "mottovest.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/motto-vest-3"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "narwhallabs.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/narwhal-labs"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nativeteams.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/native-teams"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nduo.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nduo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nearswipe.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nearswipe"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nebius.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nebius"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "neosofttech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neosoft"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "netherlandsandyou.nl",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/netherlands"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "neuralcoders.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neural-coders"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "neuraldeep.net",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neural-deep-network-"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "neuroscent.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neuroscent-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "neusix.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/neusix"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "newformfoods.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/newform-foods"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nexvistech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nexvistech"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nice.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nice"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "niu.hu",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hungarian-innovation-agency"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "northern-gritstone.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/northern-gritstone"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "notchup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/notchup"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "notion.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/notion"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "noustelo.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/noustelo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nrich.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nrich"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nrwglobalbusiness.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/north-rhine-westphalia"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nscale.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nscale"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "nugitech.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/nugi-technologies-6yv2"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "oceanscode.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/oceans-code"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "odito.mobi",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/odito-mobil-saha-cozumleri-s"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ogpay.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/og-pay-one-gram-gold-guard"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "okulyo.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/okulyo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "org.cy",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/invest-cyprus"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "org.tn",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ces-tunisian-innovation-club"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "org.tr",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/turkiye-national-pavilion"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "org.za",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/small-enterprise-development-finance-agency"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "outsystems.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/outsystems"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "overleaf.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/overleaf"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ovyhealth.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ovy-health"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ox.ac.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/business-school"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "pathbuilderedu.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pathbuilder-makarius-smart-learning"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "pete-ai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pete-technologies-gmbh"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "philippinezeolite.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/lithos-manufacturing"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "pitangent.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pitangent-analytics-technology-solutions-pvt"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "planckly.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/planckly"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "pmi.org",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/project-management-institute-pmi"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "portugalglobal.pt",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/aicep-portugal-trade-invest"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "priviasecurity.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/privia-security"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "procomer.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/procomer-costa-rica"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "prolific.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/prolific"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "prolifics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/prolifics"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "quench.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/quenchai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "quetech.eu",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/quality-experience-technology"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "rapidconsol.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rapid-concept-solutions"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "recru.pro",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/recru"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "regask.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/regask"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "relevanceai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/relevance-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "remote.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/remote"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "revo.pm",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/revo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "revolution.movie",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/hpe-nvidia-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ridenuff.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/efkan-altinok"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ringcentral.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/ringcentral"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "riotinto.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rio-tinto"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "rootcause.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rootcauseai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "rozetta.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rozetta-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "runo.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/runo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "rws.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/rws"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "salesforce.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/salesforce"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "scrapin.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/scrapinio"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "scrut.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/scrut-automation"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sentisum.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sentisum"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "servefirst.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/serve-first"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "servicenow.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/servicenow"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "shorturl.at",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dell-technologies-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "siemens.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/siemens"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sinapsis.tech",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sinapsis-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "snap-compliance.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/snap-compliance"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "snapshot.reviews",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/snapshot-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "softechbusinessservices.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/softech-business-services-pvt"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sparky.science",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sparky"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "spendbase.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/spendbase"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "speslab.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/speslab"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "spinor.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/spinor"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sprintlaw.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sprintlaw"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "stackoverflow.co",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/stack-overflow"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "startitup.global",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startitup-global"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "startupqatar.qa",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startup-qatar-initiative-invest-qatar"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "startupsmagazine.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/startups-magazine"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "statista.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/statista"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "streamlogic.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/streamlogic"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "streamly.video",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/streamly"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sugarmobility.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sugar-mobility"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "sumup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sumup"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "swiftcentre.org",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/swift-centre"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "synapsai.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tanju-ozturk"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "synaptyx.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/synaptyx"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "systemsltd.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/systems-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "talexio.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/talexio"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "teamo.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teamo"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "teamviewer.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teamviewer"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tech.mt",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visit-malta"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "techdestination.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-destination-pakistan"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "techimplement.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-implement"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "technation.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-nation-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "techscaler.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/techscaler"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "techuk.org",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/techuk"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tele2iot.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tele2-iot"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "telnyx.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/telnyx"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "telusdigital.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/telus-digital"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "teresol.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/teresol"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tesco.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tesco"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tesseracted.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tesseracted-labs-gmbh"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "thdr.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/thdr-group"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "thedotcollective.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/dot-collective"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "thehouseofai.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/house-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "thepointofit.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/pointofit"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "thesjbgroup.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/sjb-group"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tkxel.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tkxel"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tmcltd.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/tmc"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "toursys.net",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/toursys-international-inc"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "tr7.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/-bulent-guneri"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "trustifytechnology.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/trustify-technology"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "trustpilot.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/trustpilot"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "turbosoft.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/turbosoft"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "uber.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uber-wayve"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ues.io",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uesio"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "ukri.org",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/innovate-uk-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "uptitude.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/uptitude"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "usemultiplier.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/multiplier"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vanessaganguin.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vanessa-ganguin-immigration-law"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vanta.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vanta-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "veevotech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/veevo-tech"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vendorside.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vendorside"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "visio-consultancy.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visio-consultancy-limited"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "visiomex.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/huseyin-alemdar"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "visualise.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/visualise"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vodafone.co.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vodafone-business"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vrinsofts.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vrinsoft-technology-inc"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "vsourz.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/vsourz"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wayve.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wayve"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wdrbe.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wdrbe"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "weaccess.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/weaccess-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "webai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/webai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "webuild-ai.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/webuild-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wirtschaftsfoerderung-dortmund.de",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/economic-development-agency-dortmund"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wixsite.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/booi-industries-pty"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wiya.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wiya-ai"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "wwf.org.uk",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/wwf"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "xutang.group",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/beijing-xutang-biotech-bxb"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "yanhak.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yanhak"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "yuztech.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/yuztech"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "zencoder.ai",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/zencoder-1"
+    },
+    {
+      "eventId": "london-tech-week-2026",
+      "sponsorId": "zeromatics.com",
+      "role": "Exhibitor",
+      "sourceUrl": "https://londontechweek.com/exhibitor-list/zeromatics"
+    },
+    {
+      "eventId": "luma-l1z4azjp",
+      "sponsorId": "acquisition-entrepreneurs.com",
+      "role": "Partner",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    },
+    {
+      "eventId": "luma-l1z4azjp",
+      "sponsorId": "fuckupnights.london",
+      "role": "Partner",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    },
+    {
+      "eventId": "luma-l1z4azjp",
+      "sponsorId": "geraldedelman.com",
+      "role": "Partner",
+      "sourceUrl": "https://luma.com/l1z4azjp"
+    }
+  ]
+}
