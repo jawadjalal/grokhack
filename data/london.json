@@ -522,7 +522,8 @@
       "lng": -0.106343,
       "venue": "Halkin - 1-2 Paris Garden",
       "address": "Halkin - 1-2 Paris Garden, 1-2 Paris Garden, London SE1 8ND, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/o4/26184e91-252b-4fc0-9a0a-863bdf2b50ce.jpg"
     },
     {
       "id": "luma-td7vzqr1",
@@ -535,7 +536,8 @@
       "organiser": "GirlsWhoML",
       "sourceUrl": "https://luma.com/td7vzqr1",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/o3/b580094b-afdb-4740-a598-be9976502d34.png"
     },
     {
       "id": "luma-0a5yynw5",
@@ -548,7 +550,8 @@
       "organiser": "UK Startup Events",
       "sourceUrl": "https://luma.com/0a5yynw5",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/tq/47efec30-851f-45ec-867c-695d26ce67d9.png"
     },
     {
       "id": "luma-agentcon-london",
@@ -565,7 +568,8 @@
       "lng": -0.102086,
       "venue": "LSBU Hub entrance",
       "address": "LSBU Hub entrance, 116, 100 London Rd, Elephant and Castle, London SE1 6NJ, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/t8/33ab6d28-11e7-4cc6-918a-c6fe1c06bc28.png"
     },
     {
       "id": "luma-ai-builders-london-02",
@@ -578,7 +582,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/ai-builders-london-02",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/us/1336601e-9337-4726-8a2d-288235854431.png"
     },
     {
       "id": "luma-ob71jnfv",
@@ -591,7 +596,8 @@
       "organiser": "Gradient Descending",
       "sourceUrl": "https://luma.com/ob71jnfv",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/wf/1061e7da-d3fa-4176-a848-7e64357f019c.png"
     },
     {
       "id": "luma-vlo3p4fu",
@@ -604,7 +610,8 @@
       "organiser": "SeedLegals Events Calendar",
       "sourceUrl": "https://luma.com/vlo3p4fu",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/fx/a2803a75-aa51-44b4-a2c4-27280323adce.png"
     },
     {
       "id": "luma-850wzld0",
@@ -621,7 +628,8 @@
       "lng": -0.07485,
       "venue": "Ramen Space",
       "address": "Ramen Space, Unit 6, Sledge Tower, Dalston Square, London E8 3GP, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/i6/869e6848-b7d2-4f5f-a6a7-fa1f3dda3d5c.png"
     },
     {
       "id": "luma-9ec1h3qv",
@@ -634,7 +642,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/9ec1h3qv",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/tz/d3306c03-696c-4760-8612-265d20a35068.jpg"
     },
     {
       "id": "luma-a12150b2",
@@ -651,7 +660,8 @@
       "lng": -0.142047,
       "venue": "Magnite Ltd",
       "address": "Magnite Ltd, 5th floor, Walmar House, 296 Regent St., London W1B 3AP, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/5z/917d6a0d-2928-4a2a-8b87-bbcbb924d5a7.png"
     },
     {
       "id": "luma-novabook-lyef",
@@ -664,7 +674,8 @@
       "organiser": "Novabook",
       "sourceUrl": "https://luma.com/novabook-lyef",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/bb/060a3e7b-abc0-4704-a2c7-13b48aca9e04.png"
     },
     {
       "id": "luma-8rcrfsii",
@@ -677,7 +688,8 @@
       "organiser": "enki events",
       "sourceUrl": "https://luma.com/8rcrfsii",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/zg/021a614f-cf09-43a7-892b-cde41803ccda.jpg"
     },
     {
       "id": "devpost-worlds",
@@ -703,7 +715,8 @@
       "organiser": "Anima Events",
       "sourceUrl": "https://luma.com/animaxopenai",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ya/519edc12-d6b7-4d18-bb21-8e07068030b5.png"
     },
     {
       "id": "luma-vpro1xsy",
@@ -716,7 +729,8 @@
       "organiser": "Generalist World - Events",
       "sourceUrl": "https://luma.com/vpro1xsy",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/q0/552d478c-0366-452c-9974-e21196b35402.png"
     },
     {
       "id": "luma-spacexai-hnzl",
@@ -729,7 +743,8 @@
       "organiser": "SpaceXAI for London, England",
       "sourceUrl": "https://luma.com/spacexai-hnzl",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/kl/061833f7-ced5-4ffa-b0c6-33ccab7e5ac3.png"
     },
     {
       "id": "luma-bbh-london",
@@ -742,7 +757,8 @@
       "organiser": "Builders & Brews",
       "sourceUrl": "https://luma.com/bbh-london",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/5k/0ca866d3-b5c2-496f-9795-dd6f3a7afcea.jpg"
     },
     {
       "id": "luma-cc-lnd-sept",
@@ -755,7 +771,8 @@
       "organiser": "SpaceX Super Intelligence",
       "sourceUrl": "https://luma.com/CC-LND-SEPT",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/gl/e2075702-0a94-41b9-8e72-ab282f26adbe.png"
     },
     {
       "id": "luma-cvpxxlpq",
@@ -768,7 +785,8 @@
       "organiser": "GirlsWhoML",
       "sourceUrl": "https://luma.com/cvpxxlpq",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/11/702afa10-7d58-4cfa-8b12-7bb3d4047e2d.jpg"
     },
     {
       "id": "luma-nmo47ipz",
@@ -781,7 +799,8 @@
       "organiser": "London x AI Builder Network",
       "sourceUrl": "https://luma.com/nmo47ipz",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/9q/34f017c4-c233-41f1-9772-63b73960e45b.png"
     },
     {
       "id": "luma-nos2k74s",
@@ -798,7 +817,8 @@
       "lng": -0.200947,
       "venue": "10th Fulham Scouts",
       "address": "10th Fulham Scouts, 1a Aisgill Ave, London W14 9NF, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/7r/4fdad64a-0f48-41aa-94ae-0939712c41c6"
     },
     {
       "id": "meetup-316413777",
@@ -832,7 +852,8 @@
       "lng": -0.099269,
       "venue": "London AI Hub",
       "address": "London AI Hub, 140 Goswell Rd., London EC1V 7DY, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/8m/f8f8951f-c20b-4a41-97bd-e1f0bdd8fd1c.png"
     },
     {
       "id": "luma-grok-bot-london",
@@ -845,7 +866,8 @@
       "organiser": "SpaceXAI for London, England",
       "sourceUrl": "https://luma.com/grok-bot-london",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/to/7c8216bd-f7fe-46f0-a07f-1b920fa8bd20.png"
     },
     {
       "id": "luma-xzukd92a",
@@ -858,7 +880,8 @@
       "organiser": "Syrena Network",
       "sourceUrl": "https://luma.com/xzukd92a",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/xs/68128111-a1f6-46ec-a235-65571eb20ea9.png"
     },
     {
       "id": "meetup-315325978",
@@ -905,7 +928,8 @@
       "lng": -0.082487,
       "venue": "Corgi Cafe",
       "address": "Corgi Cafe, 74 Great Eastern St, London EC2A 3JL, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/rn/0a3a28e4-002c-4c25-be03-20bded944214.png"
     },
     {
       "id": "luma-erbvl34f",
@@ -918,7 +942,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/erbvl34f",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ht/2281cf80-76e5-4364-a3b0-2c3012a46c80.png"
     },
     {
       "id": "luma-qh88ds0x",
@@ -935,7 +960,8 @@
       "lng": -0.115997,
       "venue": "King's College London",
       "address": "King's College London, Strand, London WC2R 2LS, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ku/f2acd9e2-8266-4a11-9c55-7e842af8c691.png"
     },
     {
       "id": "luma-gvwtqtk0",
@@ -948,7 +974,8 @@
       "organiser": "Adeline Events",
       "sourceUrl": "https://luma.com/gvwtqtk0",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/c4/583d4313-51bb-4b59-afb5-15b725945e06.png"
     },
     {
       "id": "luma-ldn-hack",
@@ -961,7 +988,8 @@
       "organiser": "{Tech: Europe}",
       "sourceUrl": "https://luma.com/ldn-hack",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/87/1aaf584e-6d94-43cc-8484-025ec845d8b1.png"
     },
     {
       "id": "luma-agent-night-london",
@@ -978,7 +1006,8 @@
       "lng": -0.089412,
       "venue": "incident.io",
       "address": "incident.io, Fl 5, The Bower, The Tower, 207-211 Old St, London EC1V 9NR, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ls/6a350186-0eda-413a-8117-bc4bd203d019.png"
     },
     {
       "id": "luma-codex-ldn-4",
@@ -991,7 +1020,8 @@
       "organiser": "London AI",
       "sourceUrl": "https://luma.com/codex-ldn-4",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/4z/69491bec-6e33-468b-879e-565d5876aa17.png"
     },
     {
       "id": "luma-modal-72s8",
@@ -1004,7 +1034,8 @@
       "organiser": "Modal",
       "sourceUrl": "https://luma.com/modal-72s8",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/p8/1e82426e-9b0c-49c6-820e-e3e195ee0866.png"
     },
     {
       "id": "luma-455ti5r5",
@@ -1017,7 +1048,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/455ti5r5",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/6s/bc71d9da-1a51-45fe-a2bf-ffca3bf412ea.png"
     },
     {
       "id": "luma-arizeai-state-of-harness-engineering",
@@ -1030,7 +1062,8 @@
       "organiser": "Arize AI",
       "sourceUrl": "https://luma.com/arizeai-state-of-harness-engineering",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/60/2da285f7-ef09-47f0-9786-3d0e9cff6927.png"
     },
     {
       "id": "luma-umxadhfx",
@@ -1043,7 +1076,8 @@
       "organiser": "London CTOs",
       "sourceUrl": "https://luma.com/umxadhfx",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/4f/3959bf9a-e51b-4843-9c28-e96e62fe51ff.png"
     },
     {
       "id": "meetup-316165116",
@@ -1103,7 +1137,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/5p0m7tz9",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/of/bc9d0ac5-d81a-40f8-bc38-98c6774457bf.png"
     },
     {
       "id": "luma-pf7pb5u7",
@@ -1116,7 +1151,8 @@
       "organiser": "AI Pilled",
       "sourceUrl": "https://luma.com/pf7pb5u7",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/dl/dc28a20f-2002-48cc-aa58-20847781b0bd.png"
     },
     {
       "id": "luma-bgggte5w",
@@ -1133,7 +1169,8 @@
       "lng": -0.117352,
       "venue": "Bush House",
       "address": "Bush House, 30 Aldwych, London WC2B 4BG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/xq/d8cca1d5-0a1d-435d-ae28-da7fb8421495.png"
     },
     {
       "id": "luma-build-night-ship-happens-softr",
@@ -1146,7 +1183,8 @@
       "organiser": "Softr",
       "sourceUrl": "https://luma.com/build-night-ship-happens-softr",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/9m/368b04b9-0ae9-4f6a-9a4a-b20a69cfa53e.png"
     },
     {
       "id": "luma-cursor-td9f",
@@ -1163,7 +1201,8 @@
       "lng": -0.072255,
       "venue": "20-22 Commercial St",
       "address": "20-22 Commercial St, London E1 6LP, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/8o/fa7046df-7fbc-409d-9195-b255b63cdd7f.png"
     },
     {
       "id": "luma-gh3531qm",
@@ -1180,7 +1219,8 @@
       "lng": -0.1248,
       "venue": "House of Lords",
       "address": "House of Lords, Houses of Parliament, Parliament Sq, London SW1A 0PW, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/mp/1ad3667d-bc8e-49a8-a639-519b0f783887.png"
     },
     {
       "id": "luma-ai4sept26",
@@ -1197,7 +1237,8 @@
       "lng": -0.113123,
       "venue": "AutogenAI",
       "address": "AutogenAI, 123 Pentonville Rd, London N1 9LG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/wt/e37dfbac-d0d5-431c-9fcd-2b63ff353f02.png"
     },
     {
       "id": "luma-novabook-ynlu",
@@ -1210,7 +1251,8 @@
       "organiser": "Novabook",
       "sourceUrl": "https://luma.com/novabook-ynlu",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/48/1013cfe7-685b-4e30-a9eb-a5711ed092d6.png"
     },
     {
       "id": "meetup-313055736",
@@ -1268,7 +1310,8 @@
       "organiser": "Lychee",
       "sourceUrl": "https://luma.com/3hr38vz4",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/8679462e-4860-46ba-8aa4-955a1b8d6d92.png"
     },
     {
       "id": "luma-rs92x0u9",
@@ -1281,7 +1324,8 @@
       "organiser": "AAIF Community London",
       "sourceUrl": "https://luma.com/rs92x0u9",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/n7/6ea0be8b-5908-4cb3-804d-6e22fc1d6f3a.png"
     },
     {
       "id": "meetup-316496627",
@@ -1311,7 +1355,8 @@
       "organiser": "Cognition Events - London, UK",
       "sourceUrl": "https://luma.com/wn0h6ffm",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/vc/f8b43ac3-9d2f-4c5a-b1b3-70e6875ff945.png"
     },
     {
       "id": "meetup-316497042",
@@ -1341,7 +1386,8 @@
       "organiser": "JetBrains UK",
       "sourceUrl": "https://luma.com/mea50sv4",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/b8/a0d7f786-1395-41c5-aa30-5398215c9bb0.png"
     },
     {
       "id": "confstech-jaxlondon-com",
@@ -1369,7 +1415,8 @@
       "organiser": "Novabook",
       "sourceUrl": "https://luma.com/novabook-fogf",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/f4/40218fec-c329-4501-b79f-2e60d967b937.png"
     },
     {
       "id": "meetup-316770322",
@@ -1403,7 +1450,8 @@
       "lng": -0.116184,
       "venue": "King's College London",
       "address": "King's College London Strand Campus, Strand, London WC2R 2LS, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/3s/44cdb6af-c754-48eb-8fc2-0f7e73893f3a.png"
     },
     {
       "id": "luma-notioncls-ssy",
@@ -1420,7 +1468,8 @@
       "lng": -0.117352,
       "venue": "Bush House",
       "address": "Bush House, 30 Aldwych, London WC2B 4BG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/pw/d0cc02d6-998a-4c54-bd6a-c2c33177e8ce.png"
     },
     {
       "id": "meetup-314662668",
@@ -1450,7 +1499,8 @@
       "organiser": "KCL Tech",
       "sourceUrl": "https://luma.com/qmyaoict",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/7s/e7d96e6f-827d-4ab6-8691-bb5bf145553d.png"
     },
     {
       "id": "luma-vdpcr73a",
@@ -1463,7 +1513,8 @@
       "organiser": "JetBrains UK",
       "sourceUrl": "https://luma.com/vdpcr73a",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/0y/a22e36f4-f6a5-4f73-9799-5674d1e6d7e7.jpg"
     },
     {
       "id": "devpost-qmul-ai-hackathon",
@@ -1510,7 +1561,8 @@
       "lng": -0.116184,
       "venue": "King's College London",
       "address": "King's College London Strand Campus, Strand, London WC2R 2LS, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/nu/eab65c49-4814-47fc-9dee-4888a43a3702.jpg"
     },
     {
       "id": "confstech-fastflowconf-com",
@@ -1540,7 +1592,8 @@
       "lng": -0.084819,
       "venue": "IDEALondon",
       "address": "IDEALondon, 69 Wilson St, London EC2A 2BB, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/sa/cc6c3d4d-b76b-4753-b46e-5c08937f7c43.png"
     },
     {
       "id": "luma-1nkbsuwx",
@@ -1553,7 +1606,8 @@
       "organiser": "Lychee",
       "sourceUrl": "https://luma.com/1nkbsuwx",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/8679462e-4860-46ba-8aa4-955a1b8d6d92.png"
     },
     {
       "id": "luma-a1x9zk8u",
@@ -1570,7 +1624,8 @@
       "lng": -0.117352,
       "venue": "Bush House",
       "address": "Bush House, 30 Aldwych, London WC2B 4BG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/7s/d60bab3a-8b57-497e-882a-2697525b6f73.png"
     },
     {
       "id": "luma-copilo-r4ki",
@@ -1583,7 +1638,8 @@
       "organiser": "CopilotKit",
       "sourceUrl": "https://luma.com/copilo-r4ki",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/0q/ac36c39b-eb3e-49ff-8fd9-0fad1f6f8a0d.png"
     },
     {
       "id": "builderbase-accel-ai-innovate-london",
@@ -1626,7 +1682,8 @@
       "organiser": "Briefcase",
       "sourceUrl": "https://luma.com/3k1pazop",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/dy/e5b3092b-b1eb-4174-9dad-4272000990ad.png"
     },
     {
       "id": "luma-eqat748u",
@@ -1639,7 +1696,8 @@
       "organiser": "KCL Tech",
       "sourceUrl": "https://luma.com/eqat748u",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/bu/c37cc357-0325-478a-8ad9-c36961d6da76.png"
     },
     {
       "id": "luma-granola-den-10",
@@ -1652,7 +1710,8 @@
       "organiser": "Granola",
       "sourceUrl": "https://luma.com/granola-den-10",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/z2/72bcda89-20d0-4bfd-8bd8-9954c1155b4b.png"
     },
     {
       "id": "meetup-316371214",
@@ -1686,7 +1745,8 @@
       "lng": -0.179433,
       "venue": "Blackett Laboratory",
       "address": "Blackett Laboratory, Imperial College, South Kensington, London SW7 2AZ, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ao/34a93557-38bd-415b-89d2-475932689259.png"
     },
     {
       "id": "iku-2026",
@@ -1716,7 +1776,8 @@
       "lng": -0.115997,
       "venue": "King's College London",
       "address": "King's College London, Strand, London WC2R 2LS, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/b8/38458d1f-9fbd-46b5-9b1b-e14f5d3816b6.png"
     },
     {
       "id": "luma-vastlondon",
@@ -1729,7 +1790,8 @@
       "organiser": "tokens&",
       "sourceUrl": "https://luma.com/vastlondon",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/o8/389e9f54-e4e3-4cd9-9b3d-53ab5a95f972.png"
     },
     {
       "id": "luma-72n0cytd",
@@ -1742,7 +1804,8 @@
       "organiser": "AI Pilled",
       "sourceUrl": "https://luma.com/72n0cytd",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/sj/e2b9d561-5f28-4647-af1b-b83e0ed49fc0.png"
     },
     {
       "id": "confstech-conversations-ctocraft-com",
@@ -1772,7 +1835,8 @@
       "lng": -0.117352,
       "venue": "Bush House",
       "address": "Bush House, 30 Aldwych, London WC2B 4BG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/g9/8f78391e-0df4-454e-a754-fea8795f3aa5.png"
     },
     {
       "id": "meetup-316662568",
@@ -1877,7 +1941,8 @@
       "lng": -0.086532,
       "venue": "Harvey Nash London",
       "address": "Harvey Nash London, 10 Throgmorton Ave, London EC2N 2DL, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/l7/34c29667-b90c-4459-8a0b-bbbea35f9813.png"
     },
     {
       "id": "luma-gkmdzbk9",
@@ -1893,7 +1958,8 @@
       "lng": -0.102748,
       "venue": "IFX Payments",
       "address": "IFX Payments, 2nd Floor, The Carter, 11 Pilgrim St, London EC4V 6RN, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/09/8c368783-b993-49e5-be8e-30e3fc95f1de.png"
     },
     {
       "id": "luma-granola-raspberry-pi",
@@ -1905,7 +1971,8 @@
       "audienceSize": 124,
       "organiser": "Granola",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-s88hUhrTG1scBnb",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ys/c36fe72f-ff04-4367-9b66-58fa792cf219.png"
     },
     {
       "id": "luma-k479y31u",
@@ -1921,7 +1988,8 @@
       "lng": -0.088436,
       "venue": "Amazing Grace London Bridge",
       "address": "Amazing Grace London Bridge, 9a St Thomas St, London SE1 9RY, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ei/bd9121dd-dea4-40b2-a764-7c52abf36901.jpg"
     },
     {
       "id": "luma-l1z4azjp",
@@ -1932,7 +2000,8 @@
       "topic": "Calling everyone interested in learning more about entrepreneurship through acquisition!🤝 Our event partner: Acquisition EntrepreneursAcquisition Entrepreneurs are the UK's open community for searchers, investors, and acquisition entrepreneurs. Directory, events, and curated research, all in one place.👋 Meet your host & speakersHosted by Saul Truman, a third-time founder who lost $2M in under a ye",
       "audienceSize": 69,
       "organiser": "Acquisition Entrepreneurs",
-      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-BUz6a7CLYDbHMc4"
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-BUz6a7CLYDbHMc4",
+      "image": "https://images.lumacdn.com/uploads/6d/960c40c2-2608-4810-b6af-9e0e1f113b07.png"
     },
     {
       "id": "luma-m8q7l68w",
@@ -1944,7 +2013,8 @@
       "audienceSize": 167,
       "organiser": "Access to Tokyo - London Desk",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-TgHPexIRELx5Uxp",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ig/b15e5e1c-0d73-431c-8f64-86f8a29a09e3.jpg"
     },
     {
       "id": "luma-vqeh286s",
@@ -1957,7 +2027,8 @@
       "organiser": "KCL Tech",
       "sourceUrl": "https://luma.com/vqeh286s",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/1q/de179812-9ac5-4077-b94f-2b9c954f1cd1.png"
     },
     {
       "id": "meetup-315666129",
@@ -2229,7 +2300,8 @@
       "organiser": "Robot Learning Collective",
       "sourceUrl": "https://luma.com/0iux35ra",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/gallery-images/4p/23e6b8bd-968e-40be-8ba4-7b723aee77b9"
     },
     {
       "id": "luma-encode-london-2026",
@@ -2246,7 +2318,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/di/2d95d3de-d3be-4e65-92c9-6d083ddf2810.jpg"
     },
     {
       "id": "luma-nightshift-london",
@@ -2259,7 +2332,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/nightshift-london",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/9j/4fcb83df-bd70-4c07-b5dd-6d69280c87e2.png"
     },
     {
       "id": "luma-ru7czruo",
@@ -2276,7 +2350,8 @@
       "lng": -0.22521,
       "venue": "Imperial College Advanced Hackspace",
       "address": "Imperial College Advanced Hackspace, Door A, Stadium House, 68 Wood Ln, London W12 7TA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/gallery-images/vd/e2da9014-0ab2-40ad-84ca-594823ed8995.png"
     },
     {
       "id": "meetup-313831120",
@@ -2412,7 +2487,8 @@
       "lng": -0.084819,
       "venue": "IDEALondon",
       "address": "IDEALondon, 69 Wilson St, London EC2A 2BB, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/pk/8150f438-fc04-4e84-b3c4-0095e1796e1a.png"
     },
     {
       "id": "luma-a5yfh2ve",
@@ -2428,7 +2504,8 @@
       "lng": -0.131515,
       "venue": "The Building Centre",
       "address": "The Building Centre, 26 Store St, London WC1E 7BT, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/jw/41acebde-bd4c-4959-84cc-35485cfaaedb.png"
     },
     {
       "id": "luma-i80uoluz",
@@ -2445,7 +2522,8 @@
       "lng": -0.075379,
       "venue": "Entrepreneurs First",
       "address": "Entrepreneurs First, Shoreditch Exchange, Senna Building, Gorsuch Pl, London E2 8JF, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/m7/ea84881a-bbfe-4bf4-92ac-0c23411eede2.png"
     },
     {
       "id": "luma-qa1ds94p",
@@ -2461,7 +2539,8 @@
       "lng": -0.174873,
       "venue": "Imperial College London",
       "address": "Imperial College London, Exhibition Rd, South Kensington, London SW7 2AZ, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/rt/9a59288a-90c9-4c0b-a4df-f46cbce4734a.png"
     },
     {
       "id": "luma-vzp35rp7",
@@ -2474,7 +2553,8 @@
       "organiser": "Typelevel",
       "sourceUrl": "https://luma.com/vzp35rp7",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.unsplash.com/photo-1609766408840-d8227e06137f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHwyfHxjaGFuY2VyeSUyMGxhbmV8ZW58MHx8fHwxNzgxNzY4ODc2fDI&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       "id": "luma-xwo20ivp",
@@ -2491,7 +2571,8 @@
       "lng": -0.119771,
       "venue": "London Institute for Healthcare Engineering - LIHE",
       "address": "London Institute for Healthcare Engineering - LIHE, 100 Lambeth Palace Rd, London SE1 7AR, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/hy/7b07ea79-5c54-4070-b082-cdba1d818c76.png"
     },
     {
       "id": "luma-zkjafnlt",
@@ -2504,7 +2585,8 @@
       "organiser": "Bright Creative",
       "sourceUrl": "https://luma.com/zkjafnlt",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/lu/fb4c61e3-9640-4c2f-bd61-951774979a67.jpg"
     },
     {
       "id": "meetup-315196780",
@@ -2538,7 +2620,8 @@
       "lng": -0.189932,
       "venue": "3 Imperial Rd",
       "address": "3 Imperial Rd, London SW6 2AG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/nz/f67fd91f-1ee0-48be-adc5-e85e078f7b33.png"
     },
     {
       "id": "eventbrite-1999676837250",
@@ -2704,7 +2787,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/extreme-weather",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/xz/eb5f5b56-bc08-42a5-8099-9fab93db9c36.png"
     },
     {
       "id": "meetup-316595113",
@@ -2839,7 +2923,8 @@
       "lng": -0.113123,
       "venue": "AutogenAI",
       "address": "AutogenAI, 123 Pentonville Rd, London N1 9LG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/wt/e37dfbac-d0d5-431c-9fcd-2b63ff353f02.png"
     },
     {
       "id": "luma-da0ioqx8",
@@ -2850,7 +2935,8 @@
       "topic": "Fitness, Running, Tech. 🚀👟 LONDON STARTUP OPERATORS RUN CLUBNot here to chase PBs or pace. Here to meet the people building what’s next! 🚀A relaxed 5K bringing together founders, operators, investors and builders from across London’s startup scene, whether you’re running, jogging or walking.LONDON’S LARGEST STARTUP OPERATOR RUN COMMUNITYCome for the run. Stay for the people and the social afterwar",
       "audienceSize": 78,
       "organiser": "The Run Down: Operators Runclub",
-      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-mpFjl5NyyznC1tQ"
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-mpFjl5NyyznC1tQ",
+      "image": "https://images.lumacdn.com/uploads/yi/9ba8f13b-d5d5-4457-b6f3-65d0395cc55a.png"
     },
     {
       "id": "meetup-316752051",
@@ -3032,7 +3118,8 @@
       "audienceSize": 115,
       "organiser": "Lychee",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-heCVuyrkvowPrIg",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/8679462e-4860-46ba-8aa4-955a1b8d6d92.png"
     },
     {
       "id": "luma-df2ti4z8",
@@ -3049,7 +3136,8 @@
       "lng": -0.103061,
       "venue": "Just Eat",
       "address": "Just Eat, 2 Fleet Pl, London EC4M 7RF, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/gallery-images/iz/715dd128-cc88-40e7-bf7d-6fb8f7242007"
     },
     {
       "id": "luma-fncgfgwq",
@@ -3062,7 +3150,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/fncgfgwq",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/xq/415c1848-7630-4654-be2e-907d5028bf57.png"
     },
     {
       "id": "luma-h43nt6jj",
@@ -3074,7 +3163,8 @@
       "audienceSize": 87,
       "organiser": "enki events",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ijFEM7faBVCrJEp",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/fn/44eba691-dc7c-4bf9-bead-793ded46dec0.png"
     },
     {
       "id": "luma-novabook-0uce",
@@ -3086,7 +3176,8 @@
       "audienceSize": 60,
       "organiser": "Novabook",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-iaaEH1PvoS1vEEz",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/cx/58c80ae5-7b06-461b-8484-ade355288a50.png"
     },
     {
       "id": "luma-revenueengine",
@@ -3097,7 +3188,8 @@
       "topic": "Going from $10m to $100m to $1bn in revenue.Reasoning Project, together with Revolut, Pylon and QuantumLight is bringing together a group of founders, GTM leaders and operators in London.From finding repeatable growth channels to scaling teams and entering new markets, we’ll discuss what changes at each stage, what breaks along the way, and which decisions make the biggest difference.Agenda18:30 D",
       "audienceSize": 197,
       "organiser": "Reasoning Project",
-      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZoXjbNuMYGPSVI1"
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZoXjbNuMYGPSVI1",
+      "image": "https://images.lumacdn.com/uploads/im/722bbe40-6303-4ecb-b30c-14003ff3ed25.png"
     },
     {
       "id": "meetup-316267481",
@@ -3297,7 +3389,8 @@
       "organiser": "London AI Events",
       "sourceUrl": "https://luma.com/CPO",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/9j/b967f1a0-8519-4640-bac8-a263e8c0e7b3.png"
     },
     {
       "id": "luma-fwyhkq6w",
@@ -3313,7 +3406,8 @@
       "lng": -0.194138,
       "venue": "Kensington Central Library",
       "address": "Kensington Central Library, 12 Phillimore Walk, London W8 7RX, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/3o/94b76152-3cfe-47ab-844b-da2e09092787.png"
     },
     {
       "id": "luma-hack-for-humanity-london-aic",
@@ -3330,7 +3424,8 @@
       "lng": -0.082487,
       "venue": "Corgi Cafe",
       "address": "Corgi Cafe, 74 Great Eastern St, London EC2A 3JL, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/hj/d8200274-02ad-4858-b14b-5882b27c2b85.png"
     },
     {
       "id": "luma-hu5g66sc",
@@ -3343,7 +3438,8 @@
       "organiser": "KCL Tech",
       "sourceUrl": "https://luma.com/hu5g66sc",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/7x/9f5a84b5-6cf8-4b37-8cd5-38cb575313e9.png"
     },
     {
       "id": "luma-rek0kyyz",
@@ -3359,7 +3455,8 @@
       "lng": -0.080955,
       "venue": "Granola",
       "address": "Granola, 346 Old St, London EC1V 9NQ, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.unsplash.com/photo-1547656834-630c4efa3c19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjQyMjF8MHwxfHNlYXJjaHw1fHxkZWJhdGV8ZW58MHx8fHwxNzg4MjYxNDM4fDA&ixlib=rb-4.1.0&q=80&w=1080"
     },
     {
       "id": "luma-startuphalloween",
@@ -3376,7 +3473,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/yj/9f6bbbc6-e345-41c0-b713-cd93074784a5.png"
     },
     {
       "id": "meetup-316580711",
@@ -3439,7 +3537,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/sv/25c70de8-643b-4fa3-8e4b-e6156079cdf6.png"
     },
     {
       "id": "meetup-316501841",
@@ -3501,7 +3600,8 @@
       "topic": "Tech. The Startup Stroll partners with FoundHers to organise a longer walk in Hampstead Heath! Find out more about FoundHers here ✨ and learn more about The Startup Stroll below 🤗Your Saturday morning reset. No agenda, no pitching, just good conversation ☕The Startup Stroll is a bi-monthly morning walk for founders and builders. Building something is hard and we rarely make room to just talk. Abou",
       "audienceSize": 67,
       "organiser": "The Startup Stroll",
-      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-oPFX7v6j7WToqlA"
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-oPFX7v6j7WToqlA",
+      "image": "https://images.lumacdn.com/uploads/9y/2d5692ec-d6e6-4b54-8a52-43bf17c8c975.png"
     },
     {
       "id": "luma-mczagntt",
@@ -3514,7 +3614,8 @@
       "organiser": "Kickstart",
       "sourceUrl": "https://luma.com/mczagntt",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/gallery-images/d0/1f415e7c-a575-45ac-a36b-246bcb9babe4.png"
     },
     {
       "id": "luma-p41k1z3g",
@@ -3526,7 +3627,8 @@
       "audienceSize": 99,
       "organiser": "UK AI Agents Lab",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-cKrLsCOy4HDL2dX",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/lv/c355b108-b386-4264-a1ac-76c637eec096.jpg"
     },
     {
       "id": "luma-techsummit",
@@ -3538,7 +3640,8 @@
       "audienceSize": 1187,
       "organiser": "KCL Tech",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-296vMaEwHi6Ghxg",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/10/05b3f508-e64e-4983-ae39-ec0700c1e70e.png"
     },
     {
       "id": "meetup-316868269",
@@ -3568,7 +3671,8 @@
       "organiser": "London AI",
       "sourceUrl": "https://luma.com/dde-ldn-hack",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/s1/e5ab2b9b-81ab-4d31-87bc-6f7f07cf3b06.png"
     },
     {
       "id": "luma-london-hh-26",
@@ -3582,7 +3686,8 @@
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-8dntupEO60aiWT5",
       "lat": 51.512124,
       "lng": -0.114974,
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/us/872fe78e-c0aa-4f08-b842-21d764285064.jpg"
     },
     {
       "id": "confstech-conference-ctocraft-com",
@@ -3625,7 +3730,8 @@
       "lng": -0.086241,
       "venue": "CodeNode",
       "address": "CodeNode, 10 South Pl, London EC2M 7EB, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/wv/9ac22cf9-9a36-4ac2-9f07-43e7b246d258.png"
     },
     {
       "id": "luma-encode-ai-demo",
@@ -3642,7 +3748,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/os/40d8e430-df55-49ae-921e-9eb6100f7649.png"
     },
     {
       "id": "luma-phtg8nap",
@@ -3653,7 +3760,8 @@
       "topic": "Tech. About the eventBuilt By Few is the summit by Connect Ventures bringing together the founders, makers and investors building and backing Europe’s defining companies.Over the past couple of years we’ve brought together the people building the future at our London flagship and at satellite events across Europe. They include the founders behind Aikido Security, ai-coustics, Arduino, Dust, Monume",
       "audienceSize": 334,
       "organiser": "Personal",
-      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZDVdgqIyXbwKhW4"
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ZDVdgqIyXbwKhW4",
+      "image": "https://images.lumacdn.com/uploads/id/833d60d9-fe4f-4050-9c7f-ad5a2aa82942.png"
     },
     {
       "id": "meetup-316628568",
@@ -3737,7 +3845,8 @@
       "lng": -0.104151,
       "venue": "230 Blackfriars Rd",
       "address": "230 Blackfriars Rd, London SE1 8NW, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/dc/f0a16d21-d977-4b25-9d28-4a7dbec915bf.png"
     },
     {
       "id": "luma-violbdh1",
@@ -3750,7 +3859,8 @@
       "organiser": "UCL CSRI",
       "sourceUrl": "https://luma.com/violbdh1",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/tm/6f44d23b-f4d6-4091-ada9-c23f7b152d4e.png"
     },
     {
       "id": "meetup-311801842",
@@ -3846,7 +3956,8 @@
       "organiser": "enki events",
       "sourceUrl": "https://luma.com/3435d86s",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/25654c08-4ef2-49cc-952e-15e659cf4390.png"
     },
     {
       "id": "meetup-312536046",
@@ -3957,7 +4068,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/k6/afee706c-683b-4e68-bdb0-711d92760f97.jpg"
     },
     {
       "id": "luma-m3pbljlh",
@@ -3973,7 +4085,8 @@
       "lng": -0.071346,
       "venue": "Newspeak House",
       "address": "Newspeak House, 133 Bethnal Grn Rd, London E2 7DG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/1bbe08b9-d5d0-4e5f-8757-5b3cfc78ab40.png"
     },
     {
       "id": "devevents-themartechsummit-com-london",
@@ -4003,7 +4116,8 @@
       "lng": -0.178598,
       "venue": "Zendesk",
       "address": "Zendesk, 30 Eastbourne Terrace, London W2 6LA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ax/e41a1c63-d060-4eb3-a5a7-d0ae2ffeb7a1.png"
     },
     {
       "id": "luma-lon-nov10",
@@ -4020,7 +4134,8 @@
       "lng": -0.085896,
       "venue": "Civo Tech Junction",
       "address": "Civo Tech Junction, First Floor, 32-37 Cowper St, London EC2A 4AW, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/wf/707fa2e3-4af8-44d8-bcea-1cf09fedc205.png"
     },
     {
       "id": "meetup-316296032",
@@ -4065,7 +4180,8 @@
       "organiser": "Lychee",
       "sourceUrl": "https://luma.com/74zbkghu",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ay/8679462e-4860-46ba-8aa4-955a1b8d6d92.png"
     },
     {
       "id": "luma-encode-q82s",
@@ -4082,7 +4198,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/0s/714cc001-fa0f-42d0-b5a8-d9a41072c28f.jpg"
     },
     {
       "id": "luma-g9q690i2",
@@ -4098,7 +4215,8 @@
       "lng": -0.127772,
       "venue": "Meta Kings Cross",
       "address": "Meta Kings Cross, 11-22 Canal Reach, London N1C 4DB, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/jh/2d001fa7-9329-446c-830e-f04277fdba00.png"
     },
     {
       "id": "devevents-events-salesforceben-com-sf-ben-con-2026",
@@ -4141,7 +4259,8 @@
       "organiser": "Jito Events",
       "sourceUrl": "https://luma.com/6xip72je",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/g4/3649135a-e803-4f4f-b02d-fe74e5b7255b.png"
     },
     {
       "id": "luma-intelligence-summit",
@@ -4158,7 +4277,8 @@
       "lng": -0.117148,
       "venue": "Somerset House",
       "address": "Somerset House, Strand, London WC2R 1LA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/eo/c3df31b2-c96d-4223-aff3-e7983c012476.jpg"
     },
     {
       "id": "luma-ddm9u7np",
@@ -4175,7 +4295,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/gd/44cfcab4-1b15-4d51-9bb5-21f741988cc4.jpg"
     },
     {
       "id": "luma-scale-or-die-26",
@@ -4188,7 +4309,8 @@
       "organiser": "Solana Accelerate",
       "sourceUrl": "https://luma.com/scale-or-die-26",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/ya/55315312-4b26-4b79-be90-7c38556ac574.jpg"
     },
     {
       "id": "luma-breakpoint2026",
@@ -4204,7 +4326,8 @@
       "lng": -0.210764,
       "venue": "Olympia",
       "address": "Olympia, Hammersmith Rd, London W14 8UX, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/event-covers/rp/f80e679e-441f-4cd0-9f62-ffb131cf68bb.png"
     },
     {
       "id": "meetup-316882869",
@@ -4296,7 +4419,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/yb/949cfdf2-ef56-4a03-8598-0099fda2c9b5.jpg"
     },
     {
       "id": "devevents-boc-uk-com-reinventing-hr-summit",
@@ -4321,7 +4445,8 @@
       "audienceSize": null,
       "organiser": "Granola",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-CZgpfroA4Hny1a7",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/5h/beee8238-22e8-420b-8c21-54307cc9e1c4.png"
     },
     {
       "id": "devevents-boc-uk-com-sponsors-and-partners",
@@ -4347,7 +4472,8 @@
       "organiser": "enki events",
       "sourceUrl": "https://luma.com/6mec8rsz",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/fn/44eba691-dc7c-4bf9-bead-793ded46dec0.png"
     },
     {
       "id": "luma-encode-j9zc",
@@ -4364,7 +4490,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/s5/1c1ad9e1-1f6c-4b54-a57a-681a67c41544.jpg"
     },
     {
       "id": "luma-q3uykk0n",
@@ -4376,7 +4503,8 @@
       "audienceSize": 61,
       "organiser": "Personal",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-JceIJoLx8I3HNxN",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/1n/eaf0c7a4-6c21-4b3b-b6ef-c1c5ed51b0d6.jpg"
     },
     {
       "id": "luma-rmyy6bgl",
@@ -4393,7 +4521,8 @@
       "lng": -0.079444,
       "venue": "20 Primrose St",
       "address": "20 Primrose St, London EC2A 2EW, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/es/cb5a4b08-8b17-4042-a46d-75032ca063cd.jpg"
     },
     {
       "id": "luma-shurirhv",
@@ -4410,7 +4539,8 @@
       "lng": -0.07485,
       "venue": "Ramen Space",
       "address": "Ramen Space, Unit 6, Sledge Tower, Dalston Square, London E8 3GP, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/3f/42c784cd-1b74-4bad-bfce-70a67bef28c0.png"
     },
     {
       "id": "devevents-saasiestlondon-com",
@@ -4438,7 +4568,8 @@
       "organiser": "Novabook",
       "sourceUrl": "https://luma.com/novabook-2gcn",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/1j/c38ab38f-f372-4be4-8112-e93cd7912b6f.png"
     },
     {
       "id": "meetup-316893854",
@@ -4472,7 +4603,8 @@
       "lng": -0.085436,
       "venue": "Bayes Business School - Finsbury Square Building",
       "address": "Bayes Business School - Finsbury Square Building, 33 Finsbury Square, London EC2A 1AG, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/3a/af1b37f4-4cb5-4a94-bcc7-095bceef3979.png"
     },
     {
       "id": "luma-scientific-parallelism",
@@ -4485,7 +4617,8 @@
       "organiser": null,
       "sourceUrl": "https://luma.com/scientific-parallelism",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/n3/da21ae0a-d9d0-4f53-acc4-144f38dc887d.jpg"
     },
     {
       "id": "luma-xjd0fs6x",
@@ -4497,7 +4630,8 @@
       "audienceSize": 60,
       "organiser": "Lovable London Community",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-p6TmzT9HhWLNeAJ",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/c5/6cfbbc28-0452-4643-8c53-f236da0fd9bb.png"
     },
     {
       "id": "meetup-316655882",
@@ -4527,7 +4661,8 @@
       "organiser": "Rare Founders Calendar",
       "sourceUrl": "https://luma.com/cuahpc5n",
       "source": "luma",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/r2/94be307c-e52c-4d53-b151-65cf35c26a73.png"
     },
     {
       "id": "confstech-aiconference-london",
@@ -4591,7 +4726,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/1l/cdddd789-d228-4375-942f-5c215555ef25.jpg"
     },
     {
       "id": "meetup-316172181",
@@ -4642,7 +4778,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/80/538ef0d9-c7db-4b40-90c2-7ad344bf6cd7.jpg"
     },
     {
       "id": "meetup-317070814",
@@ -4689,7 +4826,8 @@
       "lng": -0.008875,
       "venue": "Greenwich University Stockwell Street Building",
       "address": "Greenwich University Stockwell Street Building, 10 Stockwell St, London SE10 9BD, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/uploads/vd/0910999c-0396-4996-89ae-8b7875659e21.jpg"
     },
     {
       "id": "luma-encode-husb",
@@ -4706,7 +4844,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/x9/6fd59939-2063-4afb-ac9e-791608d25b0e.jpg"
     },
     {
       "id": "luma-encode-1uso",
@@ -4723,7 +4862,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/a3/597cb997-3155-4512-bd4b-3b7ccc4a3a41.jpg"
     },
     {
       "id": "devevents-world-aiacceleratorinstitute-com-caiolondon",
@@ -4755,7 +4895,8 @@
       "lng": -0.08377,
       "venue": "Encode Hub",
       "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
-      "country": "GB"
+      "country": "GB",
+      "image": "https://images.lumacdn.com/api-uploads/km/04f8d7a2-3406-4d45-bc94-4c404e7dbe90.jpg"
     },
     {
       "id": "devevents-world-productledalliance-com-london",

@@ -52,7 +52,7 @@ export function useMapStats(): MapStats | null {
 
 const SHOW = 6
 const FETCH = 50
-const COLS = '64px minmax(0, 1fr) auto 72px'
+const COLS = '64px 104px minmax(0, 1fr) auto 72px'
 const ROW_H = 72
 
 const wd = new Intl.DateTimeFormat('en-GB', { weekday: 'short', timeZone: 'Europe/London' })
@@ -82,6 +82,8 @@ const css = `
 .ne-row:hover { transform: translateY(-2px); background: var(--card) !important; box-shadow: var(--lift), 0 0 0 1px var(--border); }
 .ne-row:active { transform: translateY(0); box-shadow: 0 0 0 1px var(--border); }
 .ne-row:hover .ne-go { opacity: 1; transform: none; }
+.ne-img img { transition: transform .5s var(--ease); }
+.ne-row:hover .ne-img img { transform: scale(1.06); }
 @media (prefers-reduced-motion: reduce) { .ne-row, .ne-row:hover, .ne-row:active { transform: none; transition: background .15s; } }
 `
 
@@ -142,6 +144,7 @@ export function NearbyEvents({ near, ready = true, onPick }: { near: SavedLocati
             <li key={i} aria-hidden className="ne-li" style={{ opacity: 1 - i * 0.12 }}>
               <div style={{ display: 'grid', gridTemplateColumns: COLS, gap: 18, alignItems: 'center', minHeight: ROW_H, padding: '0 16px', borderTop: '1px solid var(--divider)' }}>
                 {bar(40, 30)}
+                {bar(104, 58)}
                 <span style={{ display: 'grid', gap: 7 }}>
                   {bar('70%', 13)}
                   {bar('35%', 11)}
@@ -179,6 +182,14 @@ export function NearbyEvents({ near, ready = true, onPick }: { near: SavedLocati
                       ) : (
                         <span style={{ fontSize: 12, color: 'var(--ink3)', padding: '9px 0' }}>—</span>
                       )}
+                    </span>
+                    <span aria-hidden className="ne-img" style={{ display: 'block', width: 104, height: 58, borderRadius: 'var(--r-button)', overflow: 'hidden', background: 'var(--chip)', boxShadow: 'inset 0 0 0 1px var(--divider)' }}>
+                      {e.image ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={e.image} alt="" loading="lazy" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                      ) : backers[0] ? (
+                        <span style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%' }}><Mark domain={backers[0]} size={26} /></span>
+                      ) : null}
                     </span>
                     <span style={{ minWidth: 0 }}>
                       <span style={{ display: 'block', fontWeight: 550, fontSize: 15.5, letterSpacing: '-0.01em', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{e.name}</span>

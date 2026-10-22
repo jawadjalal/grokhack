@@ -18,6 +18,7 @@ export type MapEventGeo = {
   lng: number
   approx: boolean
   venue?: string
+  image?: string // Luma cover image, when the scraper saw one
   backers: number // backings of this event in data/london.json
 }
 
@@ -31,6 +32,7 @@ type RawEvent = {
   organiser?: string | null
   audienceSize?: number | null
   sourceUrl?: string | null
+  image?: string | null
   lat?: unknown
   lng?: unknown
   venue?: string | null
@@ -95,6 +97,7 @@ function build(): MapEventGeo[] {
       backers: backers.get(e.id) ?? 0,
     }
     if (e.venue) out.venue = e.venue
+    if (e.image) out.image = e.image
     return [out]
   })
 }
