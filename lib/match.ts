@@ -115,12 +115,14 @@ function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
 // Grok pass: better reasons for the top 15, citing only backings in the data.
 // No key, a timeout or a bad reply keeps the rule-based reasons.
 const GROK_TOP = 15
+const GROK_BATCH = 3 // parallel calls of 3: ~2.5s for all 15, vs 6-10s in one call
 const GROK_TIMEOUT_MS = 8000
 const GROK_URL = `${process.env.XAI_BASE_URL ?? 'https://api.x.ai/v1'}/chat/completions`
-const MODEL = process.env.MODEL ?? 'grok-4-fast-non-reasoning'
+// grok-4.7 takes 15s+ even on low effort, too slow for a live demo.
+const MODEL = process.env.MODEL ?? 'grok-4.20-0309-non-reasoning'
 
 // A reason that claims a backing must cite one by tag, e.g. "Backed [B1]".
-const CLAIM = /\b(backed|backs|sponsor(ed|s)?|partner(ed)?|hosted|supported|funded)\b/i
+const CLAIM = /\b(backed|backs|sponsor(ed|s)?|partner(ed)?|hosted|supported|funded|track record)\b/i
 
 const written = new Map<string, Map<string, string[]>>()
 
@@ -139,21 +141,32 @@ async function withGrokReasons(event: EventInput, leads: Lead[], sponsors: Spons
   }
 }
 
-// Swap [B1] tags for real event names. Drop any reason that claims a backing
-// without a tag, or cites a tag that doesn't exist.
+// Swap [B1] tags for the real event and role (whatever the model wrote after
+// the tag, up to the end of that clause, is replaced). Drop any reason that claims a backing without a tag,
+// or cites a tag that doesn't exist.
 export function cite(reason: string, past: Lead['pastBackings']): string | null {
   let bad = false
   const tagged = /\[B\d+\]/.test(reason)
-  const out = reason.replace(/\[B(\d+)\]/g, (_, n: string) => {
+  const out = reason.replace(/\[B(\d+)\][^,;·.]*/g, (_, n: string) => {
     const b = past[Number(n) - 1]
     if (!b) bad = true
-    return b ? b.event.replace(/ London Hackathon$/, '') : ''
+    return b ? `${b.event.replace(/ London Hackathon$/, '')} as ${b.role[0].toLowerCase()}${b.role.slice(1)}` : ''
   })
   if (bad || (CLAIM.test(reason) && !tagged)) return null
-  return out.replace(/\s+/g, ' ').trim().slice(0, 90) || null
+  const text = out.replace(/\s+/g, ' ').trim()
+  return (text.length > 90 ? text.slice(0, text.lastIndexOf(' ', 90)) : text) || null
 }
 
 async function grokReasons(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors']): Promise<Map<string, string[]>> {
+  const groups: Lead[][] = []
+  for (let i = 0; i < top.length; i += GROK_BATCH) groups.push(top.slice(i, i + GROK_BATCH))
+  const settled = await Promise.allSettled(groups.map(g => grokBatch(key, event, g, sponsors)))
+  const done = settled.flatMap(r => (r.status === 'fulfilled' ? [r.value] : []))
+  if (!done.length) throw (settled[0] as PromiseRejectedResult).reason
+  return new Map(done.flatMap(m => [...m]))
+}
+
+async function grokBatch(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors']): Promise<Map<string, string[]>> {
   const candidates = top.map(l => {
     const s = sponsors.find(s => s.id === l.sponsorId)
     return {
@@ -169,8 +182,8 @@ async function grokReasons(key: string, event: EventInput, top: Lead[], sponsors
   })
   const system = [
     'You help London community organisers find sponsors and venues. For one event you get candidates with a rule-based fit breakdown.',
-    'For each candidate write 1 to 3 reasons, under 60 characters each, why they would back this exact event. Specific to this event and audience, plain words, no hype. Lead with the strongest.',
-    'Only mention a past backing by its tag, e.g. "Backed [B1] as venue partner". Never claim a backing, sponsorship or partnership that is not in that candidate\'s backings list. With no backings, argue from fit alone.',
+    'For each candidate write 1 to 3 reasons, under 60 characters each, why they would back this exact event. Specific to this event and audience, plain words, no hype. Lead with the strongest. If the fit is weak, say plainly what is missing instead of stretching.',
+    'Only mention a past backing by its tag, e.g. "Backed [B1]". The role is added for you. Never claim a backing, sponsorship or partnership that is not in that candidate\'s backings list. With no backings, argue from fit alone. For how often they back events, only restate the Habit line.',
     'Reply with JSON only: {"leads":[{"id":"...","reasons":["..."]}]}, one entry per candidate.',
   ].join('\n')
 
