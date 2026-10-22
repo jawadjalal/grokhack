@@ -1,10 +1,10 @@
 import { generateText, Output, type LanguageModel } from 'ai'
 import { xai } from '@ai-sdk/xai'
 import { z } from 'zod'
-import type { Backing, EventInput, Lead } from '../types'
-import { price } from './pricing'
+import type { Backing, EventInput, Lead } from './types'
+import { price } from './pitch/pricing'
 
-export { price } from './pricing'
+export { price } from './pitch/pricing'
 
 export const PITCH_TIMEOUT_MS = 3500
 export const wordCount = (value: string) => value.trim().split(/\s+/).filter(Boolean).length
