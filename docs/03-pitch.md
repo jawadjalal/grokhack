@@ -53,6 +53,8 @@ Scale by `max(0.5, audienceSize / 80)`, rounded to the nearest £50. Missing aud
 
 ### Verification and integration
 
-- `npm run test:pitch`: five seed sponsor drafts, venues, missing/self-referential backing history, size rules, word budget, model success/failure/timeout and API validation. Model paths use the AI SDK's mock provider; a real xAI smoke test requires team credentials.
+- `npm run test:pitch`: five seed sponsor drafts, venues, missing/self-referential backing history, size rules, word budget, model success/failure/timeout and API validation. Also checks that backing-history reasons are withheld from the model's fit-sentence input. Automated model paths use the AI SDK's mock provider.
 - `npm run typecheck` and `npm run build`.
 - UI owner: the current UI eagerly calls the pitch route for every match in parallel. Each request falls back independently on provider failure; agree on lazy generation or concurrency limits if the team's model quota is low. Shared `Lead` and `EventInput` contracts are unchanged.
+
+Live verification on 22 Oct 2026: `grok-4.20-0309-non-reasoning` returned accepted model-written fit sentences for five sponsor drafts and one venue draft in 0.78–1.27 seconds each. The completed emails contained 64–71 words across subject and body. The current account's Grok 4.7 exceeded the timeout in the initial check; use the measured non-reasoning model for this demo. These timings are observations, not a service guarantee. Keep the API key only in local/deployment environment configuration.

@@ -111,6 +111,14 @@ test('empty history and unknown attendance do not become invented facts', async 
   assert.equal(result.suggestedPriceGbp, 300)
 })
 
+test('AI receives fit signals without backing-history reasons', async () => {
+  const model = modelReturning(JSON.stringify({ fit: 'Your team could meet developers exploring practical AI tools.' }))
+  await pitch(event, { ...lead, reasons: ['Backed Example Historical Conference', 'Cares about AI', 'Wants developers in the room'] }, { model })
+  const prompt = JSON.stringify(model.doGenerateCalls[0].prompt)
+  assert.doesNotMatch(prompt, /Example Historical Conference/)
+  assert.match(prompt, /Cares about AI/)
+})
+
 test('current event and duplicate history are excluded from past sponsorship references', async () => {
   const result = await pitch(event, {
     ...lead, pastBackings: [
