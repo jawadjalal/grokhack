@@ -4,9 +4,13 @@
 
 Turn the map into a ranked list for one event. This is what the judges look at first.
 
+## Paste this into your AI
+
+> Read AGENTS.md and docs/02-matching.md. Improve lib/match.ts only: keep the four-part fit score and its drawer breakdown, tune the weights, and add an optional LLM pass that rewrites reasons for the top 15 using only the backings in the data. Fall back to the current scoring if the LLM call fails.
+
 ## Build
 
-1. `lib/match/index.ts`: `match(event: EventInput): Promise<Lead[]>`
+1. `lib/match.ts`: `match(event: EventInput): Promise<Lead[]>`
    - Pull candidate sponsors and their past backings from Supabase.
    - Cheap first pass: score on topic overlap with events they backed, how often and how recently they back London events, audience size fit.
    - Then an LLM pass on the top ~30 to set the final `score` (0-100) and write 1-3 short `reasons` a human would believe.

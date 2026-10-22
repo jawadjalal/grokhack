@@ -1,4 +1,4 @@
-import { push } from '@/lib/notion'
+import { push } from '@/lib/notion/index'
 import type { EventInput, Lead } from '@/lib/types'
 
 function isRecord(value: unknown): value is Record<string, unknown> {

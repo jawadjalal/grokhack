@@ -3,8 +3,8 @@
 import type { EventInput, Lead } from './types'
 
 const TIERS = [
-  { min: 85, tier: 'Headline', base: 1500 },
-  { min: 70, tier: 'Partner', base: 750 },
+  { min: 80, tier: 'Headline', base: 1500 },
+  { min: 62, tier: 'Partner', base: 750 },
   { min: 0, tier: 'Supporter', base: 300 },
 ] as const
 
