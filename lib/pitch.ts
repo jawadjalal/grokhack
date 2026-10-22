@@ -38,7 +38,8 @@ function compose(event: EventInput, lead: Lead, fit: string): Lead {
     ? `Would you host the event at your space as an in-kind venue partner?`
     : `Would ${sponsor} join as a ${tierLabel} for £${pricing.suggestedPriceGbp.toLocaleString('en-GB')}?`
   const topic = short(event.topic.replace(/[.!?]+$/, ''), 12, 140)
-  const intro = `I'm organising ${eventName}${event.date ? ` on ${short(event.date, 4, 40)}` : ''}${event.audienceSize ? ` for ${event.audienceSize.toLocaleString('en-GB')} people` : ''}, focused on ${topic}.`
+  const focus = topic && event.topic.trim().toLowerCase() !== event.name.trim().toLowerCase() ? `, focused on ${topic}` : ''
+  const intro = `I'm organising ${eventName}${event.date ? ` on ${short(event.date, 4, 40)}` : ''}${event.audienceSize ? ` for ${event.audienceSize.toLocaleString('en-GB')} people` : ''}${focus}.`
   const reference = (count: number) => history.slice(0, count).map(backing =>
     `I saw you listed as ${short(backing.role, 5, 60)} for ${short(backing.event, 16, 140)}.`
   ).join(' ')
@@ -55,7 +56,7 @@ function compose(event: EventInput, lead: Lead, fit: string): Lead {
 function fallbackFit(lead: Lead) {
   if (lead.kind === 'venue') return 'Your space could give the community a place to meet and share what they are building.'
   const overlap = lead.reasons.find(reason => /^(Shares your focus: |Cares about )/i.test(reason))?.replace(/^(Shares your focus: |Cares about )/i, '')
-  if (overlap) return `The shared focus on ${short(overlap.replace(/[.!?]+$/, ''), 5, 70)} could make this a useful room for your team.`
+  if (overlap) return `The shared focus on ${short(overlap.replace(/[.!?]+$/, '').replace(/\bai\b/gi, 'AI'), 5, 70)} could make this a useful room for your team.`
   return 'This could be a chance for your team to meet people working on the topic and hear their ideas.'
 }
 
