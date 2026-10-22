@@ -1,6 +1,6 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
 import type { EventInput, Lead } from '@/lib/types'
@@ -29,6 +29,40 @@ function tierTag(tier?: Lead['suggestedTier']) {
 }
 
 type Filter = 'all' | 'sponsor' | 'venue'
+const FILTERS: [Filter, string][] = [
+  ['all', 'All'],
+  ['sponsor', 'Sponsors'],
+  ['venue', 'Venues'],
+]
+const TAB_W = 104
+
+function exportCsv(event: EventInput, leads: Lead[]) {
+  const q = (v: unknown) => `"${String(v ?? '').replace(/"/g, '""')}"`
+  const rows = [['Rank', 'Name', 'Domain', 'Kind', 'Fit', 'Tier', 'Price GBP', 'Why', 'Subject', 'Email']]
+  leads.forEach((l, i) => rows.push([String(i + 1), l.name, l.domain, l.kind, String(l.score), l.suggestedTier ?? '', String(l.suggestedPriceGbp ?? ''), l.reasons.join(' · '), l.pitch?.subject ?? '', l.pitch?.body ?? '']))
+  const blob = new Blob([rows.map(r => r.map(q).join(',')).join('\n')], { type: 'text/csv' })
+  const a = document.createElement('a')
+  a.href = URL.createObjectURL(blob)
+  a.download = `backer-${event.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').slice(0, 40)}.csv`
+  a.click()
+}
+
+// Counts up to the score when a row appears.
+function CountUp({ to, delay = 0 }: { to: number; delay?: number }) {
+  const [n, setN] = useState(0)
+  useEffect(() => {
+    let raf = 0
+    const t0 = performance.now() + delay
+    const tick = (t: number) => {
+      const p = Math.min(1, Math.max(0, (t - t0) / 700))
+      setN(Math.round(to * (1 - Math.pow(1 - p, 3))))
+      if (p < 1) raf = requestAnimationFrame(tick)
+    }
+    raf = requestAnimationFrame(tick)
+    return () => cancelAnimationFrame(raf)
+  }, [to, delay])
+  return <>{n}</>
+}
 
 export default function Home() {
   const [input, setInput] = useState('')
@@ -128,40 +162,40 @@ export default function Home() {
               </div>
               <div style={{ textAlign: 'right', flex: 'none' }}>
                 <div className="mono" style={{ fontSize: 34, fontWeight: 600, letterSpacing: '-0.03em', lineHeight: 1 }}>
-                  £{total.toLocaleString()}
+                  {filter === 'venue' ? shown.length : `£${total.toLocaleString()}`}
                 </div>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, marginTop: 6 }}>
-                  from the {strong.filter(l => l.kind === 'sponsor').length} strongest fits
+                  {filter === 'venue' ? 'London venues to ask for space' : `from the ${strong.filter(l => l.kind === 'sponsor').length} strongest fits`}
                 </div>
               </div>
             </div>
 
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 22, marginBottom: 10 }}>
-              <div style={{ display: 'flex', gap: 2 }}>
-                {(
-                  [
-                    ['all', 'All', leads.length],
-                    ['sponsor', 'Sponsors', leads.filter(l => l.kind === 'sponsor').length],
-                    ['venue', 'Venues', leads.filter(l => l.kind === 'venue').length],
-                  ] as const
-                ).map(([key, label, n]) => (
-                  <button key={key} className="btn" onClick={() => setFilter(key)} style={{ height: 32, padding: '0 11px', fontSize: 14, color: filter === key ? 'var(--ink)' : 'var(--ink3)', background: filter === key ? 'var(--bg)' : 'transparent', boxShadow: filter === key ? 'var(--shadow), 0 0 0 1px var(--border)' : 'none' }}>
-                    {label}
-                    <span className="mono" style={{ fontSize: 12, color: 'var(--ink3)' }}>
-                      {n}
-                    </span>
+            <div style={{ marginTop: 22, background: 'var(--card)', borderRadius: 'var(--r-panel)', boxShadow: 'var(--lift), 0 0 0 1px var(--border)', overflow: 'hidden' }}>
+              {/* Toolbar lives inside the table: filter on the left, actions on the right. */}
+              <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 12, padding: '10px 12px 10px 12px', borderBottom: '1px solid var(--divider)' }}>
+                <div style={{ position: 'relative', display: 'flex', padding: 3, borderRadius: 9, background: 'var(--chip)', boxShadow: 'inset 0 1px 2px rgba(0,0,0,.07)' }}>
+                  <span aria-hidden style={{ position: 'absolute', top: 3, bottom: 3, left: 3, width: TAB_W, borderRadius: 7, background: 'var(--bg)', boxShadow: 'var(--shadow), 0 0 0 1px var(--border)', transform: `translateX(${FILTERS.findIndex(f => f[0] === filter) * TAB_W}px)`, transition: 'transform .35s var(--ease)' }} />
+                  {FILTERS.map(([key, label]) => (
+                    <button key={key} onClick={() => setFilter(key)} style={{ position: 'relative', width: TAB_W, height: 30, border: 0, background: 'transparent', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6, fontSize: 13.5, color: filter === key ? 'var(--ink)' : 'var(--ink3)', fontWeight: filter === key ? 550 : 400, transition: 'color .2s' }}>
+                      {label}
+                      <span className="mono" style={{ fontSize: 11.5, color: 'var(--ink3)' }}>
+                        {key === 'all' ? leads.length : leads.filter(l => l.kind === key).length}
+                      </span>
+                    </button>
+                  ))}
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  {error && <span style={{ color: 'var(--danger, #c62f35)', fontSize: 13, marginRight: 8, maxWidth: 320, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }} title={error}>{error}</span>}
+                  <button className="btn" onClick={() => exportCsv(event, shown)} style={{ height: 34, fontSize: 13.5 }}>
+                    <Icon name="doc" size={16} /> Export CSV
                   </button>
-                ))}
+                  <button className={`btn btn-primary${pushing ? ' pushing' : ''}`} onClick={push} disabled={pushing || allPushed} style={{ height: 34, fontSize: 13.5, minWidth: 196, justifyContent: 'center' }}>
+                    <Icon name={allPushed ? 'check' : 'notion'} size={16} />
+                    {allPushed ? `${top.length} in Notion` : pushing ? 'Pushing to Notion…' : `Push top ${top.length} to Notion`}
+                  </button>
+                </div>
               </div>
-              <button className="btn btn-primary" onClick={push} disabled={pushing || allPushed} style={{ height: 34, fontSize: 14 }}>
-                <Icon name="notion" size={16} />
-                {allPushed ? `Top ${top.length} in Notion` : pushing ? 'Pushing…' : `Push top ${top.length} to Notion`}
-              </button>
-            </div>
-            {error && <p style={{ color: 'var(--danger, #c62f35)', margin: '0 0 10px', fontSize: 14 }}>{error}</p>}
-
-            <div style={{ background: 'var(--card)', borderRadius: 'var(--r-panel)', boxShadow: 'var(--shadow), 0 0 0 1px var(--border)', overflow: 'hidden' }}>
-              <div style={{ display: 'grid', gridTemplateColumns: COLS, gap: 16, padding: '11px 20px', color: 'var(--ink3)', fontSize: 13, background: 'var(--subtle)', borderBottom: '1px solid var(--divider)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: COLS, gap: 16, padding: '10px 20px', color: 'var(--ink3)', fontSize: 12.5, background: 'var(--subtle)', borderBottom: '1px solid var(--divider)' }}>
                 <span className="mono">#</span>
                 <span>Backer</span>
                 <span>Fit</span>
@@ -170,7 +204,7 @@ export default function Home() {
                 <span />
               </div>
               {shown.map((l, i) => (
-                <Row key={l.sponsorId} lead={l} rank={i + 1} active={open?.sponsorId === l.sponsorId} onOpen={() => setOpen(l)} />
+                <Row key={`${filter}-${l.sponsorId}`} lead={l} rank={i + 1} active={open?.sponsorId === l.sponsorId} onOpen={() => setOpen(l)} />
               ))}
             </div>
           </section>
@@ -224,9 +258,11 @@ function Row({ lead: l, rank, active, onOpen }: { lead: Lead; rank: number; acti
       </span>
       <span style={{ display: 'flex', gap: 10, alignItems: 'center' }}>
         <span className="mono" style={{ fontSize: 19, fontWeight: 600, width: 26, color: l.score >= 55 ? 'var(--ink)' : 'var(--ink3)' }}>
-          {l.score}
+          <CountUp to={l.score} delay={Math.min(rank, 12) * 35 + 120} />
         </span>
-        <DitherBar value={l.score} color={fitColor(l.score)} width={104} height={10} />
+        <span className="reveal" style={{ animationDelay: `${Math.min(rank, 12) * 35 + 120}ms` }}>
+          <DitherBar value={l.score} color={fitColor(l.score)} width={104} height={10} />
+        </span>
       </span>
       <span style={{ minWidth: 0 }}>
         <span style={{ display: 'block', color: 'var(--ink)', fontSize: 14 }}>{l.reasons[0]}</span>
@@ -238,7 +274,13 @@ function Row({ lead: l, rank, active, onOpen }: { lead: Lead; rank: number; acti
           {l.kind === 'venue' ? 'Space, in kind' : `£${(l.suggestedPriceGbp ?? 0).toLocaleString()}`}
         </span>
       </span>
-      <span style={{ color: 'var(--ink3)', display: 'flex', justifyContent: 'flex-end' }}>{l.notionUrl ? <Icon name="check" size={16} /> : '›'}</span>
+      <span style={{ color: 'var(--ink3)', display: 'flex', justifyContent: 'flex-end' }}>{l.notionUrl ? (
+          <span className="pop" style={{ animationDelay: `${rank * 40}ms` }}>
+            <Icon name="check" size={16} />
+          </span>
+        ) : (
+          <span className="chev">›</span>
+        )}</span>
     </button>
   )
 }
@@ -355,7 +397,7 @@ function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
             {lead.fit?.map(f => (
               <div key={f.label} style={{ display: 'grid', gridTemplateColumns: '96px 1fr 44px', alignItems: 'center', gap: 12 }}>
                 <span style={{ fontSize: 13.5 }}>{f.label}</span>
-                <span style={{ minWidth: 0 }}>
+                <span className="reveal" style={{ minWidth: 0, animationDelay: '150ms' }}>
                   <DitherBar value={(f.points / f.max) * 100} color={fitColor((f.points / f.max) * 100)} width={200} height={8} />
                   <span style={{ display: 'block', fontSize: 12.5, color: 'var(--ink3)', marginTop: 3, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{f.note}</span>
                 </span>
