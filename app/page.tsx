@@ -3,8 +3,11 @@
 import { useEffect, useMemo, useState } from 'react'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
+import { LocationPicker } from '@/components/LocationPicker'
+import { NearbyEvents } from '@/components/NearbyEvents'
 import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
+import { shortLabel, useLocation, type LocationApi } from '@/lib/useLocation'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
 const PUSH_LIMIT = 15
@@ -194,23 +197,29 @@ export default function Home() {
   const [open, setOpen] = useState<Lead | null>(null)
   const [pushing, setPushing] = useState(false)
   const [error, setError] = useState('')
+  const loc = useLocation()
+  const [place, setPlace] = useState('London') // where the shown results were ranked for
 
-  async function run() {
-    if (!input.trim() || step >= 0) return
+  // text: a picked event link; anything else (a click event) means the composer input.
+  async function run(text?: string) {
+    const q = typeof text === 'string' ? text : input
+    if (!q.trim() || step >= 0) return
     const t0 = performance.now()
     setError('')
     setOpen(null)
     try {
       setStep(0)
-      const isUrl = /^https?:\/\//.test(input.trim())
-      const ev = await post<EventInput>('/api/event', isUrl ? { url: input.trim() } : { text: input })
+      const isUrl = /^https?:\/\//.test(q.trim())
+      const ev = await post<EventInput>('/api/event', isUrl ? { url: q.trim() } : { text: q })
       setStep(1)
-      const matched = await post<Lead[]>('/api/match', ev)
+      const { lat, lng, radiusKm, label } = loc.location
+      const matched = await post<Lead[]>('/api/match', { ...ev, near: { lat, lng, radiusKm, label } })
       setStep(2)
       // Pitch the top of the list; a lead whose pitch fails still shows, without one.
       const head = matched.slice(0, SHOW)
       const priced = await Promise.all(head.map(l => post<Lead>('/api/pitch', { event: ev, lead: l }).catch(() => l)))
       setRanked(matched.length)
+      setPlace(shortLabel(label))
       setEvent(ev)
       setLeads(priced)
       setFilter('all')
@@ -278,6 +287,14 @@ export default function Home() {
               Backer knows who paid for London&apos;s tech events. Paste yours and get the sponsors and venues most likely to say yes, what to ask for, and the email.
             </p>
             {error && !busy && <ErrorLine message={error} onRetry={run} />}
+            <NearbyEvents
+              near={loc.location}
+              ready={loc.ready}
+              onPick={url => {
+                setInput(url)
+                run(url)
+              }}
+            />
           </section>
         )}
 
@@ -286,7 +303,7 @@ export default function Home() {
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 32 }}>
               <div style={{ minWidth: 0 }}>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
-                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} London backers ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
+                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} {place === 'London' ? 'London backers' : `backers near ${place}`} ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
                 </div>
                 <h2 style={{ fontSize: 28, lineHeight: 1.12, letterSpacing: '-0.028em', margin: '8px 0 0', fontWeight: 600, maxWidth: 640, textWrap: 'balance' }}>{event.name}</h2>
                 <Finding leads={shown} onOpen={setOpen} />
@@ -343,7 +360,7 @@ export default function Home() {
         )}
       </main>
 
-      <Composer value={input} onChange={setInput} onRun={run} busy={busy} compact={!!leads.length} />
+      <Composer value={input} onChange={setInput} onRun={run} busy={busy} compact={!!leads.length} loc={loc} />
       {open && event && <Drawer lead={open} event={event} onClose={() => setOpen(null)} />}
     </div>
   )
@@ -425,7 +442,7 @@ function Squiggle({ flip }: { flip?: boolean }) {
   )
 }
 
-function Composer({ value, onChange, onRun, busy, compact }: { value: string; onChange: (v: string) => void; onRun: () => void; busy: boolean; compact: boolean }) {
+function Composer({ value, onChange, onRun, busy, compact, loc }: { value: string; onChange: (v: string) => void; onRun: () => void; busy: boolean; compact: boolean; loc: LocationApi }) {
   return (
     <div style={{ position: 'fixed', left: 0, right: 0, bottom: 0, padding: '28px 24px 22px', background: 'linear-gradient(to top, var(--canvas) 62%, transparent)', zIndex: 4, pointerEvents: 'none' }}>
       <div style={{ maxWidth: 720, margin: '0 auto', position: 'relative', pointerEvents: 'auto' }}>
@@ -464,9 +481,7 @@ function Composer({ value, onChange, onRun, busy, compact }: { value: string; on
           </div>
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '7px 10px 3px', color: 'var(--ink3)', fontSize: 12.5 }}>
             <span style={{ display: 'flex', gap: 14 }}>
-              <span style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
-                <Icon name="globe" size={14} /> London
-              </span>
+              <LocationPicker loc={loc} />
               <span style={{ display: 'flex', gap: 5, alignItems: 'center' }}>
                 <Icon name="building" size={14} /> Sponsors and venues
               </span>

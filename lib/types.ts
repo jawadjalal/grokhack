@@ -20,6 +20,7 @@ export type Lead = {
   reasons: string[]
   fit?: { label: string; points: number; max: number; note: string }[] // how the score was built
   pastBackings: Backing[]
+  distanceKm?: number // nearest backed event (or the venue itself) to the user's location
   pitch?: { subject: string; body: string }
   suggestedTier?: 'Headline' | 'Partner' | 'Supporter' | 'Venue'
   suggestedPriceGbp?: number

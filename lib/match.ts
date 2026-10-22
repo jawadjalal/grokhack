@@ -1,11 +1,14 @@
 // Fit score, out of 100, from four parts you can see in the drawer:
 //   Track record  40  have they backed events like this one, in London
+//                     (with a location, backings near the user count more)
 //   Focus         35  does what they care about match the event's topic
 //   Audience      15  do they want the people this event brings
 //   Habit         10  do they back hackathons and community events at all
 // Then, if XAI_API_KEY is set, Grok rewrites the reasons for the top 15.
 // Scores stay rule-based either way.
 import type { BackerMap } from './data'
+import { urlKey } from './events'
+import { formatKm, haversineKm, nearWeight, type GeoPoint } from './geo'
 import { type Audience, backings as seedBackings, sponsors as seedSponsors } from './seed'
 import type { EventInput, Lead } from './types'
 
@@ -46,11 +49,33 @@ const AUDIENCE_HINTS: Record<Audience, string> = {
 
 type SponsorMap = Pick<BackerMap, 'sponsors' | 'backings'>
 
-export async function match(event: EventInput, map: SponsorMap = { sponsors: seedSponsors, backings: seedBackings }): Promise<Lead[]> {
-  return withGrokReasons(event, fit(event, map), map.sponsors)
+// The user's location. geoByUrl (lib/events.ts) says where each backed event was.
+export type Near = { point: GeoPoint; radiusKm: number; label?: string; geoByUrl: Map<string, GeoPoint & { approx: boolean }> }
+export type MatchOpts = { near?: Near }
+
+// Per lead, with a location: how many backings sit inside the radius, and the
+// rule-based locality reason (kept first even when Grok rewrites the others).
+type Locality = Map<string, { inside: number; reason?: string }>
+
+const UNKNOWN_WEIGHT = 0.6 // a backing whose event we can't place
+const APPROX_SLACK_KM = 25 // how far a city-centre point can be from the real venue
+
+export async function match(event: EventInput, map: SponsorMap = { sponsors: seedSponsors, backings: seedBackings }, opts: MatchOpts = {}): Promise<Lead[]> {
+  const locality: Locality = new Map()
+  return withGrokReasons(event, fit(event, map, opts.near, locality), map.sponsors, opts.near, locality)
 }
 
-function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
+// '5 km', '2.5 km', '500 m'
+const kmText = (km: number) => (km < 1 ? formatKm(km) : `${(Math.round(km * 10) / 10).toLocaleString('en-GB')} km`)
+
+// Round down to 2 significant figures, whole km: 262 -> 260, 47.3 -> 47, 3.7 -> 3.
+function floor2(x: number): number {
+  if (!(x > 0)) return 0
+  const p = Math.max(1, 10 ** (Math.floor(Math.log10(x)) - 1))
+  return Math.floor(x / p) * p
+}
+
+function fit(event: EventInput, { sponsors, backings }: SponsorMap, near?: Near, locality?: Locality): Lead[] {
   const want = concepts(`${event.name} ${event.topic} ${event.description ?? ''}`)
   const audience = (Object.keys(AUDIENCE_HINTS) as Audience[]).filter(a => want.has(a))
   if (!audience.length) audience.push('developers')
@@ -67,7 +92,41 @@ function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
         const shared = [...want].filter(w => t.has(w)).length
         return Math.min(1, shared / 4)
       })
-      const track = Math.round(Math.min(40, sims.reduce((a, x) => a + 6 + 24 * x, 0)))
+      // With a location, each backing also counts by how near its event was to the user.
+      // A city-centre point (approx) could be anywhere within APPROX_SLACK_KM of it, so it
+      // counts by the nearest it could be and is only 'inside' when it must be.
+      const at = near
+        ? pastAll.map(b => {
+            const p = near.geoByUrl.get(urlKey(b.url))
+            if (!p) return null
+            const km = haversineKm(near.point, p)
+            return { key: urlKey(b.url), km, approx: p.approx, min: p.approx ? Math.max(0, km - APPROX_SLACK_KM) : km }
+          })
+        : []
+      const w = pastAll.map((_, i) => (!near ? 1 : at[i] ? nearWeight(at[i].min, near.radiusKm) : UNKNOWN_WEIGHT))
+      const track = Math.round(Math.min(40, sims.reduce((a, x, i) => a + 6 * w[i] + 24 * x * w[i], 0)))
+
+      const placed = at.filter(d => d !== null)
+      const exact = placed.filter(d => !d.approx)
+      const nearestExact = exact.length ? exact.reduce((a, d) => (d.km < a.km ? d : a)) : null
+      const nearestMin = placed.length ? Math.min(...placed.map(d => d.min)) : null
+      const inside = near ? placed.filter(d => (d.approx ? d.km + APPROX_SLACK_KM : d.km) <= near.radiusKm) : []
+      const insideEvents = new Set(inside.map(d => d.key)).size
+      // Nearest we can stand behind: an exact point, or a city centre that is clearly outside the radius.
+      const approxFar = near && !nearestExact && nearestMin !== null && nearestMin > near.radiusKm
+      const nearestKm = nearestExact ? nearestExact.km : approxFar ? Math.min(...placed.map(d => d.km)) : null
+      let local = ''
+      // The pinned reason needs at least one exactly placed backing inside the radius.
+      if (near && insideEvents && inside.some(d => !d.approx))
+        local = `${s.kind === 'venue' ? 'Hosted' : 'Backed'} ${insideEvents} event${insideEvents > 1 ? 's' : ''} within ${kmText(near.radiusKm)} of you`
+      else if (near && !insideEvents && s.kind === 'venue' && nearestMin !== null && nearestMin > 3 * near.radiusKm)
+        local = `Over ${kmText(Math.max(3 * near.radiusKm, floor2(nearestMin)))} from you`
+      let trackNear = ''
+      if (near && insideEvents) trackNear = `, ${insideEvents} within ${kmText(near.radiusKm)}`
+      else if (near && nearestExact && nearestMin !== null && nearestMin < nearestExact.km) trackNear = `, nearest mapped one ${formatKm(nearestExact.km)} away`
+      else if (near && nearestExact) trackNear = `, nearest ${formatKm(nearestExact.km)} away`
+      else if (near && approxFar && nearestKm !== null) trackNear = `, nearest about ${formatKm(nearestKm)} away`
+      else if (near && placed.length) trackNear = ', exact places unknown'
 
       // Focus: share of their interests that this event hits, plus a bonus for the strongest overlaps.
       const theirs = s.tags.flatMap(t => [...concepts(t)])
@@ -83,7 +142,7 @@ function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
 
       const score = Math.max(12, Math.min(98, track + focus + audPts + habit))
       const fit = [
-        { label: 'Track record', points: track, max: 40, note: pastAll.length ? `${pastAll.length} London event${pastAll.length > 1 ? 's' : ''} on record` : 'None on record yet' },
+        { label: 'Track record', points: track, max: 40, note: pastAll.length ? `${pastAll.length} London event${pastAll.length > 1 ? 's' : ''} on record${trackNear}` : 'None on record yet' },
         { label: 'Focus', points: focus, max: 35, note: hits.length ? hits.slice(0, 4).join(', ') : 'Little overlap' },
         { label: 'Audience', points: audPts, max: 15, note: aud.length ? aud.join(', ') : `Wants ${s.audience.join(', ')}` },
         { label: 'Habit', points: habit, max: 10, note: s.hackathons ? 'Backs community events' : 'Rarely backs events' },
@@ -97,6 +156,8 @@ function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
       if (backed && !reasons.includes(backed)) reasons.push(backed)
       if (aud.length) reasons.push(`Wants ${aud.join(' and ')} in the room`)
       if (!reasons.length) reasons.push('Adjacent audience')
+      if (local) reasons.unshift(local)
+      if (near) locality?.set(s.id, { inside: insideEvents, reason: local || undefined })
 
       return {
         sponsorId: s.id,
@@ -107,9 +168,11 @@ function fit(event: EventInput, { sponsors, backings }: SponsorMap): Lead[] {
         reasons,
         fit,
         pastBackings: (past.length ? past : pastAll).map(b => ({ event: b.event, role: b.role, url: b.url })),
+        ...(near && nearestKm !== null ? { distanceKm: Math.round(nearestKm * 100) / 100 } : {}),
       } satisfies Lead
     })
-    .sort((a, b) => b.score - a.score)
+    // With a location, equal scores go nearest first.
+    .sort((a, b) => b.score - a.score || (near ? (a.distanceKm ?? 1e9) - (b.distanceKm ?? 1e9) : 0))
 }
 
 // Grok pass: better reasons for the top 15, citing only backings in the data.
@@ -126,15 +189,24 @@ const CLAIM = /\b(backed|backs|backing|backers?|sponsor\w*|partner\w*|hosted|sup
 
 const written = new Map<string, Map<string, string[]>>()
 
-async function withGrokReasons(event: EventInput, leads: Lead[], sponsors: SponsorMap['sponsors']): Promise<Lead[]> {
+// A Grok line about distance, dropped when the rule-based locality reason is kept first.
+const DISTANCE = /\d\s?(km|m)\b|\bnear(by| you)\b/i
+
+async function withGrokReasons(event: EventInput, leads: Lead[], sponsors: SponsorMap['sponsors'], near?: Near, locality?: Locality): Promise<Lead[]> {
   const key = process.env.XAI_API_KEY
   if (!key) return leads
-  const cacheKey = JSON.stringify([event.name, event.topic, event.description, event.audienceSize, event.url])
+  const base = [event.name, event.topic, event.description, event.audienceSize, event.url]
+  const cacheKey = JSON.stringify(near ? [...base, near.point.lat, near.point.lng, near.radiusKm, near.label ?? null] : base)
   try {
-    const reasons = written.get(cacheKey) ?? (await grokReasons(key, event, leads.slice(0, GROK_TOP), sponsors))
+    const reasons = written.get(cacheKey) ?? (await grokReasons(key, event, leads.slice(0, GROK_TOP), sponsors, near, locality))
     if (written.size > 50) written.clear()
     written.set(cacheKey, reasons)
-    return leads.map(l => (reasons.get(l.sponsorId)?.length ? { ...l, reasons: reasons.get(l.sponsorId)! } : l))
+    return leads.map(l => {
+      const got = reasons.get(l.sponsorId)
+      if (!got?.length) return l
+      const pin = locality?.get(l.sponsorId)?.reason
+      return { ...l, reasons: pin ? [pin, ...got.filter(r => !DISTANCE.test(r))].slice(0, 3) : got }
+    })
   } catch (e) {
     console.warn('[match] Grok reasons skipped:', e instanceof Error ? e.message : e)
     return leads
@@ -157,16 +229,16 @@ export function cite(reason: string, past: Lead['pastBackings']): string | null 
   return (text.length > 90 ? text.slice(0, text.lastIndexOf(' ', 90)) : text) || null
 }
 
-async function grokReasons(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors']): Promise<Map<string, string[]>> {
+async function grokReasons(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors'], near?: Near, locality?: Locality): Promise<Map<string, string[]>> {
   const groups: Lead[][] = []
   for (let i = 0; i < top.length; i += GROK_BATCH) groups.push(top.slice(i, i + GROK_BATCH))
-  const settled = await Promise.allSettled(groups.map(g => grokBatch(key, event, g, sponsors)))
+  const settled = await Promise.allSettled(groups.map(g => grokBatch(key, event, g, sponsors, near, locality)))
   const done = settled.flatMap(r => (r.status === 'fulfilled' ? [r.value] : []))
   if (!done.length) throw (settled[0] as PromiseRejectedResult).reason
   return new Map(done.flatMap(m => [...m]))
 }
 
-async function grokBatch(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors']): Promise<Map<string, string[]>> {
+async function grokBatch(key: string, event: EventInput, top: Lead[], sponsors: SponsorMap['sponsors'], near?: Near, locality?: Locality): Promise<Map<string, string[]>> {
   const candidates = top.map(l => {
     const s = sponsors.find(s => s.id === l.sponsorId)
     return {
@@ -178,12 +250,18 @@ async function grokBatch(key: string, event: EventInput, top: Lead[], sponsors: 
       wantsInTheRoom: s?.audience,
       fit: l.fit?.map(f => `${f.label} ${f.points}/${f.max}: ${f.note}`),
       backings: l.pastBackings.map((b, i) => `[B${i + 1}] ${b.event} (${b.role})`),
+      ...(near ? { backingsNearby: locality?.get(l.sponsorId)?.inside ?? 0 } : {}),
     }
   })
+  // Only an area name and a radius go to the model, never coordinates.
+  const area = near ? { area: near.label || 'the organiser\'s area', radius: kmText(near.radiusKm) } : null
   const system = [
     'You help London community organisers find sponsors and venues. For one event you get candidates with a rule-based fit breakdown.',
     'For each candidate write 1 to 3 reasons, under 60 characters each, why they would back this exact event. Specific to this event and audience, plain words, no hype. Lead with the strongest. If the fit is weak, say plainly what is missing instead of stretching.',
     'Only mention a past backing by its tag, e.g. "Backed [B1]". The role is added for you. Never claim a backing, sponsorship or partnership that is not in that candidate\'s backings list. With no backings, argue from fit alone. For how often they back events, only restate the Habit line.',
+    ...(area
+      ? [`The organiser is in ${area.area}. backingsNearby is how many of a candidate's past events were within ${area.radius} of there. You may mention locality only from those numbers (e.g. "2 past events within ${area.radius}"); never guess where a company is.`]
+      : []),
     'Reply with JSON only: {"leads":[{"id":"...","reasons":["..."]}]}, one entry per candidate.',
   ].join('\n')
 
@@ -195,7 +273,7 @@ async function grokBatch(key: string, event: EventInput, top: Lead[], sponsors: 
       response_format: { type: 'json_object' },
       messages: [
         { role: 'system', content: system },
-        { role: 'user', content: JSON.stringify({ event, candidates }) },
+        { role: 'user', content: JSON.stringify(area ? { event, near: area, candidates } : { event, candidates }) },
       ],
     }),
     signal: AbortSignal.timeout(GROK_TIMEOUT_MS),
