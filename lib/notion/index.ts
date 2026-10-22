@@ -107,8 +107,9 @@ function domainUrl(domain: string): string {
   const value = domain.trim().toLowerCase()
   if (!value) throw new Error('A lead is missing its domain.')
   const url = new URL(/^https?:\/\//.test(value) ? value : `https://${value}`)
-  if (!url.hostname.includes('.')) throw new Error(`Invalid lead domain: ${domain}`)
-  return `https://${url.hostname.replace(/^www\./, '')}`
+  const hostname = url.hostname.replace(/^www\./, '').replace(/\.$/, '')
+  if (!hostname.includes('.')) throw new Error(`Invalid lead domain: ${domain}`)
+  return `https://${hostname}`
 }
 
 function domainKey(domain: string): string {
@@ -116,10 +117,9 @@ function domainKey(domain: string): string {
 }
 
 function blocks(lead: Lead): unknown[] {
-  if (!lead.pitch) return []
   const paragraphs = [
-    `Subject: ${lead.pitch.subject}`,
-    ...lead.pitch.body.split(/\n\s*\n/).filter(Boolean),
+    ...(lead.pitch ? [`Subject: ${lead.pitch.subject}`, ...lead.pitch.body.split(/\n\s*\n/).filter(Boolean)] : []),
+    ...lead.pastBackings.map((backing) => `${backing.event} (${backing.role}): ${backing.url}`),
   ]
   return paragraphs.flatMap((paragraph) => {
     const chunks = paragraph.match(/[\s\S]{1,2000}/g) || ['']
@@ -143,7 +143,7 @@ function pageBody(dataSourceId: string, event: EventInput, lead: Lead): unknown 
       ...(lead.suggestedTier ? { Tier: { select: { name: lead.suggestedTier } } } : {}),
       ...(price !== undefined ? { 'Price GBP': { number: price } } : {}),
       Event: { rich_text: richText(event.name) },
-      Reasons: { rich_text: richText(lead.reasons.join('; ')) },
+      Reasons: { rich_text: richText(lead.reasons.join('\n')) },
     },
     children: blocks(lead),
   }
@@ -176,14 +176,18 @@ async function pushNow(event: EventInput, leads: Lead[]): Promise<Lead[]> {
   const found = await existingPages(event, token, dataSourceId)
   const output: Lead[] = []
   for (const lead of leads) {
-    const key = domainKey(lead.domain)
-    let url = found.get(key)
-    if (!url) {
-      const page = await notion<NotionPage>('/pages', pageBody(dataSourceId, event, lead), token)
-      url = page.url
-      found.set(key, url)
+    try {
+      const key = domainKey(lead.domain)
+      let url = found.get(key)
+      if (!url) {
+        const page = await notion<NotionPage>('/pages', pageBody(dataSourceId, event, lead), token)
+        url = page.url
+        found.set(key, url)
+      }
+      output.push({ ...lead, notionUrl: url })
+    } catch (error) {
+      throw new Error(`Could not push ${lead.name} (${lead.domain}): ${error instanceof Error ? error.message : String(error)}`)
     }
-    output.push({ ...lead, notionUrl: url })
   }
   return output
 }

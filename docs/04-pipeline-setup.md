@@ -1,6 +1,6 @@
 # Backer pipeline: setup and demo check
 
-This is the operator checklist for Joel's Notion push. The current `main` route (`app/api/push/route.ts`) only echoes leads; completing these steps does not by itself enable Notion writes. The contract is `POST /api/push` with `{ event: EventInput, leads: Lead[] }`, returning the leads with `notionUrl` after a successful push. See [04-pipeline.md](04-pipeline.md) for the implementation owner and acceptance goal.
+This is the operator checklist for Joel's Notion push. The integrated branch writes through `POST /api/push` with `{ event: EventInput, leads: Lead[] }` and returns leads with `notionUrl` after a successful push. See [04-pipeline.md](04-pipeline.md) for the owner and acceptance goal.
 
 ## Create the Notion pipeline
 
@@ -22,10 +22,14 @@ This is the operator checklist for Joel's Notion push. The current `main` route 
 
 Put the pitch subject and body in the page body, with labels, and include source links from `pastBackings` when present. Do not put email addresses or contact names into these fields unless the shared `Lead` contract is updated with the team. Keep exact option spelling: Notion select options can be created implicitly on write, and spelling drift creates extra columns/options.
 
-4. Add a **Board** view named `Pipeline`, then set **Group** → `Status`. Show `Score`, `Kind`, `Tier`, `Price GBP`, and `Event` on each card; sort by `Score` descending. Put the six groups in the order above and keep `To contact` visible. For the demo, filter `Event` to the specific event used in the app so older tests do not crowd the screen.
+4. Add a **Board** view named `Pipeline`, then set **Group** → `Status`. Show `Score`, `Kind`, `Tier`, `Price GBP`, and `Event` on each card; sort by `Score` descending. Hide empty groups and sort groups descending so `To contact` appears first. For the demo, filter `Event` to the specific event used in the app so older tests do not crowd the screen.
 5. Copy the **data source ID** from the database's data source settings or retrieve the database through the API and read its `data_sources[0].id`. Current Notion API versions create and query pages under a data source ID. A database ID and data source ID are different values.
 
 Official references: [internal connections](https://developers.notion.com/guides/get-started/internal-connections), [working with databases](https://developers.notion.com/guides/data-apis/working-with-databases), [share a connection with a page](https://www.notion.com/help/add-and-manage-connections-with-the-api), [board views](https://www.notion.com/help/boards).
+
+## Verified private setup
+
+The private [Backer pipeline board](https://app.notion.com/p/40190f1b6491806f9a71ccb5bd1bcb38?v=40190f1b6491814cb40a000cb3b358a8) has the schema above and a dedicated connection with access to that database only. On 22 Oct 2026, the integrated route created 20 fictional leads for `Backer pipeline smoke 2026-10-22`. Querying the data source returned 20 pages; 19 were `To contact`, and one manually changed page stayed `Contacted` after a repeat push. These records are test fixtures and should not be presented as real sponsors.
 
 ## Configuration handoff
 
@@ -76,7 +80,7 @@ curl -fsS -X POST http://localhost:3000/api/push \
   --data-binary @/tmp/backer-pipeline-smoke.json
 ```
 
-Inspect the response: exactly 20 leads, each with a distinct Notion page URL. In the board filtered to `Backer pipeline smoke 2026-10-22`, count 20 cards in `To contact`; open a card and verify its pitch. Move one card to `Contacted`, run the same `curl` again, then confirm there are still 20 cards and the moved card remains `Contacted`. This check currently **fails** on `main` because the route echoes without writing to Notion.
+Inspect the response: exactly 20 leads, each with a distinct Notion page URL. In the board filtered to `Backer pipeline smoke 2026-10-22`, count 20 cards in `To contact`; open a card and verify its pitch. Move one card to `Contacted`, run the same `curl` again, then confirm there are still 20 cards and the moved card remains `Contacted`. Run this on `joel/pipeline-integration` until merged; the original `main` route only echoes leads.
 
 For the live demo, replace the smoke input with the app's actual `EventInput` and 20 ranked, sourced `Lead` records after matching and pitch generation are ready. The current seed contains six sourced leads; do not present the synthetic smoke records as real prospects.
 
