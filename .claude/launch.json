@@ -1,0 +1,6 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "backer", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev", "--", "-p", "3477"], "port": 3477 }
+  ]
+}

@@ -1,6 +1,6 @@
 # 01 · Scraper: the map
 
-**Owner:** Niketh
+**Owner:** Jawad
 
 The whole product depends on this data. Without "who backed which London event", Backer is just another CRM.
 

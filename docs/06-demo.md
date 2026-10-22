@@ -4,7 +4,7 @@
 
 ## Build
 
-1. By 18:30: Next.js skeleton, `lib/types.ts`, Supabase project and schema, `.env.example`, Vercel project. Share env values in the group chat.
+1. Skeleton is done. Own the scraper too ([01-scraper.md](01-scraper.md)): the data is the product. Supabase project and Vercel deploy next.
 2. Review and merge PRs, unblock people, keep `main` building.
 3. 20:30: first end-to-end run. Fix whatever breaks between the pieces.
 4. Pick the demo event: a real upcoming London event that isn't tonight's, so the judges see it work on something new.

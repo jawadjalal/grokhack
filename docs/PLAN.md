@@ -6,8 +6,8 @@ Code freeze is **21:50**. Top 5 demo live at 22:20, 3 minutes each. Everything b
 
 | Time | Goal |
 |---|---|
-| 18:30 | Everyone has read their doc and the contracts below. Jawad pushes the Next.js skeleton and the Supabase schema. |
-| 19:30 | Each piece works on its own with fake data. |
+| 19:30 | Skeleton is on `main` and runs end to end on seed data (done). Everyone pulls, reads their doc, branches. |
+| 20:15 | Each piece works on its own and replaces its baseline file. |
 | 20:30 | End to end works once: paste an event, see ranked sponsors, push to Notion. |
 | 21:15 | Feature freeze. Only fixes and demo polish after this. |
 | 21:40 | Deployed, demo rehearsed twice, README has a screenshot. |
@@ -24,7 +24,7 @@ Code freeze is **21:50**. Top 5 demo live at 22:20, 3 minutes each. Everything b
 ## Rules so we don't collide
 
 - Each person owns their folder. Don't edit someone else's files; message them.
-- Branch per person (`niketh/scraper`, etc.), PR into `main`, merge your own once it builds. Pull `main` often.
+- Branch per person (`avi/matching`, etc.), PR into `main`, merge your own once it builds. Pull `main` often.
 - Secrets go in `.env.local`, never in git. Jawad shares the values in the group chat.
 - Fake it before you make it: build against the sample data in the contracts first, swap in real data later.
 
@@ -96,21 +96,23 @@ export type Lead = {
 
 | Route | Owner | In | Out |
 |---|---|---|---|
-| `POST /api/event` | Niketh | `{ url }` | `EventInput` scraped from a Luma or event page |
+| `POST /api/event` | Jawad | `{ url }` | `EventInput` scraped from a Luma or event page |
 | `POST /api/match` | Avi | `EventInput` | `Lead[]` sorted by score, no pitch yet |
 | `POST /api/pitch` | Vidit | `{ event: EventInput, lead: Lead }` | `Lead` with `pitch`, `suggestedTier`, `suggestedPriceGbp` |
 | `POST /api/push` | Joel | `{ event: EventInput, leads: Lead[] }` | `Lead[]` with `notionUrl` |
 
-### Folders
+### Files (already on `main`, each one works on seed data)
 
 ```
-app/            Dhrishiv (pages), each owner's app/api/<route>
-lib/scrape/     Niketh
-lib/match/      Avi
-lib/pitch/      Vidit
-lib/notion/     Joel
-lib/types.ts    shared, ask before changing
-scripts/seed.ts Niketh
+app/page.tsx            Dhrishiv   the whole UI
+app/globals.css         Dhrishiv   design tokens from the Ignaru kit
+components/             Dhrishiv   DitherBar, Mark (logos), Icon
+app/api/event/route.ts  Jawad      scrape the input event
+lib/seed.ts             Jawad      who backed what (move to Supabase)
+lib/match.ts            Avi        baseline scoring, replace it
+lib/pitch.ts            Vidit      template pitch + price table, replace it
+app/api/push/route.ts   Joel       echoes today, make it write Notion
+lib/types.ts            shared     ask before changing
 ```
 
 ## Demo story (3 minutes)

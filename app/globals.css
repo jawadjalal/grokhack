@@ -1,0 +1,87 @@
+/* Backer design system, from the Ignaru v5.1 kit (tokens.json).
+   Square system: tag 4, button 7, card 10, panel 12. No pills.
+   Geist everywhere, Geist Mono only for numbers, money and domains. */
+
+:root {
+  --bg: #ffffff;
+  --canvas: #f7f8fa;
+  --card: #ffffff;
+  --subtle: #fafafa;
+  --ink: #171717;
+  --ink2: #525252;
+  --ink3: #6f6f76;
+  --ink-on: #ffffff;
+  --border: #e5e5e7;
+  --border-strong: #cfcfd4;
+  --divider: #ededef;
+  --chip: #f1f1f3;
+  --hover: #f4f4f5;
+  --go: #15803d;
+  --go-soft: #e3f5e9;
+  --reach: #2563eb;
+  --reach-soft: #e6eefe;
+  --gate: #ea580c;
+  --iggy: #7c3aed;
+  --iggy-soft: #f1ebfe;
+  --teal: #0f766e;
+  --teal-soft: #e0f4f1;
+
+  --r-tag: 4px;
+  --r-button: 7px;
+  --r-card: 10px;
+  --r-panel: 12px;
+
+  --shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --lift: 0 16px 32px -16px rgba(0, 0, 0, 0.26), 0 2px 4px rgba(0, 0, 0, 0.05);
+  --pop: 0 24px 48px -20px rgba(0, 0, 0, 0.28), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --drawer: -30px 0 60px -30px rgba(0, 0, 0, 0.22);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+button { font: inherit; color: inherit; cursor: pointer; }
+input, textarea { font: inherit; color: inherit; }
+a { color: inherit; }
+.mono { font-family: var(--font-geist-mono), ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+/* Buttons: one filled primary, everything else ghost. */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 36px; padding: 0 14px;
+  border: 0; border-radius: var(--r-button); text-decoration: none;
+  background: transparent; color: var(--ink2);
+  transition: background 0.15s var(--ease), color 0.15s var(--ease), transform 0.15s var(--ease);
+}
+.btn:hover { background: var(--hover); color: var(--ink); }
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: var(--ink); color: var(--ink-on); }
+.btn-primary:hover { background: #000; color: var(--ink-on); }
+.btn img { width: 18px; height: 18px; }
+.btn-primary img { filter: invert(1); }
+
+/* Tags: square, tinted, never pills. */
+.tag {
+  display: inline-flex; align-items: center; gap: 5px;
+  padding: 2px 7px; border-radius: var(--r-tag);
+  font-size: 12.5px; white-space: nowrap;
+  background: var(--chip); color: var(--ink2);
+}
+.tag-go { background: var(--go-soft); color: var(--go); box-shadow: inset 0 0 0 1px rgba(21,128,61,.18); }
+.tag-reach { background: var(--reach-soft); color: var(--reach); box-shadow: inset 0 0 0 1px rgba(37,99,235,.18); }
+.tag-iggy { background: var(--iggy-soft); color: var(--iggy); box-shadow: inset 0 0 0 1px rgba(124,58,237,.18); }
+.tag-teal { background: var(--teal-soft); color: var(--teal); box-shadow: inset 0 0 0 1px rgba(15,118,110,.18); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes slide { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes blink { 50% { opacity: 0.35; } }
+.rise { animation: rise 0.45s var(--ease) both; }

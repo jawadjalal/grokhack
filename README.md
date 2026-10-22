@@ -11,13 +11,21 @@ Built at the Grok Bot Community Engineering London Hackathon, 22 Oct 2026. Track
 3. **Pitch:** draft a personal email per sponsor that names the events they backed, plus a suggested tier and price.
 4. **Track:** push leads to a Notion database (contacted, replied, call, signed).
 
+## Run it
+
+```bash
+npm install && npm run dev
+```
+
+The app works end to end today on seed data in `lib/seed.ts`. Each owner swaps their baseline for the real thing.
+
 ## Team docs
 
 Start with [docs/PLAN.md](docs/PLAN.md), then your own doc:
 
 | Area | Owner | Doc |
 |---|---|---|
-| Scraper (the map) | Niketh | [docs/01-scraper.md](docs/01-scraper.md) |
+| Scraper (the map) | Jawad | [docs/01-scraper.md](docs/01-scraper.md) |
 | Matching and scoring | Avi | [docs/02-matching.md](docs/02-matching.md) |
 | Pitch drafts and pricing | Vidit | [docs/03-pitch.md](docs/03-pitch.md) |
 | Notion pipeline and Zero | Joel | [docs/04-pipeline.md](docs/04-pipeline.md) |
