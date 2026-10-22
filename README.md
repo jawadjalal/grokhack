@@ -17,7 +17,22 @@ Built at the Grok Bot Community Engineering London Hackathon, 22 Oct 2026. Track
 npm install && npm run dev
 ```
 
-The app works end to end today on seed data in `lib/seed.ts`. Each owner swaps their baseline for the real thing.
+The matching and pitch flow currently uses seed data in `lib/seed.ts`. A real Notion push needs a private server token and the Backer data source ID.
+
+## Notion pipeline
+
+Create the **Backer pipeline** database and the properties listed in [the setup guide](docs/04-pipeline-setup.md). Share only that database with a dedicated Notion connection. Put the credentials in `.env.local` (which Git ignores):
+
+```dotenv
+NOTION_TOKEN=your_notion_connection_token
+NOTION_DATA_SOURCE_ID=your_backer_data_source_id
+```
+
+`POST /api/push` accepts `{ event, leads }` and returns the same leads with `notionUrl`. It reuses an existing page for the same event and domain, so repeated pushes preserve a human-updated pipeline status. The setup guide includes a 20-lead smoke check. Zero enrichment is optional and does not block the Notion pipeline.
+
+## Hackathon checkpoints
+
+Run `bash scripts/checkpoint.sh` to typecheck, test the Notion adapter, and commit only Joel's pipeline files when they have changed. During the build, a Codex scheduled task runs this every five minutes on the `joel/pipeline-integration` branch. It stops at the 21:50 code freeze; review and push the branch before merging. The helper never stages `.env.local` or other teammates' files.
 
 ## Team docs
 

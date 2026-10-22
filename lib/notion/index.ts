@@ -1,9 +1,7 @@
 import type { EventInput, Lead } from '../types'
 
 const NOTION_API = 'https://api.notion.com/v1'
-// A database ID is enough for the existing hackathon database. Pinning this
-// version keeps its database query endpoint and page parent compatible.
-const NOTION_VERSION = '2022-06-28'
+const NOTION_VERSION = '2026-03-11'
 const REQUEST_INTERVAL_MS = 350
 const MAX_RETRIES = 3
 
@@ -36,15 +34,15 @@ function queueRequest<T>(work: () => Promise<T>): Promise<T> {
   return run
 }
 
-function env(): { token: string; databaseId: string } {
-  const token = process.env.NOTION_API_KEY?.trim()
-  const databaseId = process.env.NOTION_DATABASE_ID?.trim()
-  if (!token) throw new Error('Notion is not configured: set NOTION_API_KEY on the server.')
-  if (!databaseId) throw new Error('Notion is not configured: set NOTION_DATABASE_ID on the server.')
-  if (!/^[0-9a-f]{32}$|^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(databaseId)) {
-    throw new Error('NOTION_DATABASE_ID must be a Notion database ID.')
+function env(): { token: string; dataSourceId: string } {
+  const token = process.env.NOTION_TOKEN?.trim()
+  const dataSourceId = process.env.NOTION_DATA_SOURCE_ID?.trim()
+  if (!token) throw new Error('Notion is not configured: set NOTION_TOKEN on the server.')
+  if (!dataSourceId) throw new Error('Notion is not configured: set NOTION_DATA_SOURCE_ID on the server.')
+  if (!/^[0-9a-f]{32}$|^[0-9a-f]{8}(?:-[0-9a-f]{4}){3}-[0-9a-f]{12}$/i.test(dataSourceId)) {
+    throw new Error('NOTION_DATA_SOURCE_ID must be a Notion data source ID.')
   }
-  return { token, databaseId }
+  return { token, dataSourceId }
 }
 
 async function notion<T>(path: string, body: unknown, token: string): Promise<T> {
@@ -90,9 +88,9 @@ async function readResponse<T>(response: Response): Promise<T> {
   const payload = await response.json().catch(() => ({})) as { message?: string; code?: string }
   if (!response.ok) {
     const hint = response.status === 404
-      ? ' Check NOTION_DATABASE_ID and share that database with the Notion integration.'
+      ? ' Check NOTION_DATA_SOURCE_ID and share its database with the Notion integration.'
       : response.status === 401
-        ? ' Check NOTION_API_KEY.'
+        ? ' Check NOTION_TOKEN.'
         : ''
     throw new Error(`Notion API ${response.status}${payload.code ? ` (${payload.code})` : ''}: ${payload.message || response.statusText}.${hint}`)
   }
@@ -132,10 +130,10 @@ function blocks(lead: Lead): unknown[] {
   })
 }
 
-function pageBody(databaseId: string, event: EventInput, lead: Lead): unknown {
+function pageBody(dataSourceId: string, event: EventInput, lead: Lead): unknown {
   const price = lead.suggestedPriceGbp
   return {
-    parent: { database_id: databaseId },
+    parent: { type: 'data_source_id', data_source_id: dataSourceId },
     properties: {
       Name: { title: richText(lead.name) },
       Domain: { url: domainUrl(lead.domain) },
@@ -151,11 +149,11 @@ function pageBody(databaseId: string, event: EventInput, lead: Lead): unknown {
   }
 }
 
-async function existingPages(event: EventInput, token: string, databaseId: string): Promise<Map<string, string>> {
+async function existingPages(event: EventInput, token: string, dataSourceId: string): Promise<Map<string, string>> {
   const found = new Map<string, string>()
   let cursor: string | null = null
   do {
-    const result: QueryResult = await notion<QueryResult>(`/databases/${databaseId}/query`, {
+    const result: QueryResult = await notion<QueryResult>(`/data_sources/${dataSourceId}/query`, {
       filter: { property: 'Event', rich_text: { equals: event.name } },
       page_size: 100,
       ...(cursor ? { start_cursor: cursor } : {}),
@@ -174,14 +172,14 @@ async function pushNow(event: EventInput, leads: Lead[]): Promise<Lead[]> {
   if (!Array.isArray(leads)) throw new Error('Leads must be an array.')
   if (leads.length === 0) return []
 
-  const { token, databaseId } = env()
-  const found = await existingPages(event, token, databaseId)
+  const { token, dataSourceId } = env()
+  const found = await existingPages(event, token, dataSourceId)
   const output: Lead[] = []
   for (const lead of leads) {
     const key = domainKey(lead.domain)
     let url = found.get(key)
     if (!url) {
-      const page = await notion<NotionPage>('/pages', pageBody(databaseId, event, lead), token)
+      const page = await notion<NotionPage>('/pages', pageBody(dataSourceId, event, lead), token)
       url = page.url
       found.set(key, url)
     }

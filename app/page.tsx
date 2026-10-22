@@ -9,7 +9,10 @@ const STEPS = ['Reading your event', 'Finding who backed similar London events',
 
 async function post<T>(path: string, body: unknown): Promise<T> {
   const res = await fetch(path, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) })
-  if (!res.ok) throw new Error(`${path} failed: ${res.status}`)
+  if (!res.ok) {
+    const payload = await res.json().catch(() => ({})) as { error?: string }
+    throw new Error(payload.error || `${path} failed: ${res.status}`)
+  }
   return res.json()
 }
 
@@ -34,6 +37,7 @@ export default function Home() {
   const [leads, setLeads] = useState<Lead[]>([])
   const [open, setOpen] = useState<Lead | null>(null)
   const [pushed, setPushed] = useState(false)
+  const [pushing, setPushing] = useState(false)
   const [error, setError] = useState('')
 
   async function run() {
@@ -63,8 +67,16 @@ export default function Home() {
 
   async function push() {
     if (!event) return
-    setLeads(await post<Lead[]>('/api/push', { event, leads }))
-    setPushed(true)
+    setError('')
+    setPushing(true)
+    try {
+      setLeads(await post<Lead[]>('/api/push', { event, leads }))
+      setPushed(true)
+    } catch (e) {
+      setError(e instanceof Error ? e.message : String(e))
+    } finally {
+      setPushing(false)
+    }
   }
 
   const busy = step >= 0
@@ -82,9 +94,9 @@ export default function Home() {
           <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer">
             Open source
           </a>
-          <button className="btn btn-primary" disabled={!leads.length || pushed} onClick={push} style={{ opacity: leads.length ? 1 : 0.4 }}>
+          <button className="btn btn-primary" disabled={!leads.length || pushed || pushing} onClick={push} style={{ opacity: leads.length ? 1 : 0.4 }}>
             <Icon name="notion" />
-            {pushed ? 'In Notion' : 'Push to Notion'}
+            {pushed ? 'In Notion' : pushing ? 'Pushing…' : 'Push to Notion'}
           </button>
         </div>
       </header>
