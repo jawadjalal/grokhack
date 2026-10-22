@@ -122,7 +122,7 @@ const GROK_URL = `${process.env.XAI_BASE_URL ?? 'https://api.x.ai/v1'}/chat/comp
 const MODEL = process.env.MODEL ?? 'grok-4.20-0309-non-reasoning'
 
 // A reason that claims a backing must cite one by tag, e.g. "Backed [B1]".
-const CLAIM = /\b(backed|backs|sponsor(ed|s)?|partner(ed)?|hosted|supported|funded|track record)\b/i
+const CLAIM = /\b(backed|backs|backing|backers?|sponsor\w*|partner\w*|hosted|supported|supporters?|funded|exhibit\w*|track record)\b/i
 
 const written = new Map<string, Map<string, string[]>>()
 
