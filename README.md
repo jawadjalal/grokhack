@@ -31,3 +31,12 @@ Start with [docs/PLAN.md](docs/PLAN.md), then your own doc:
 | Notion pipeline and Zero | Joel | [docs/04-pipeline.md](docs/04-pipeline.md) |
 | UI | Dhrishiv | [docs/05-ui.md](docs/05-ui.md) |
 | Glue, deploy, demo | Jawad | [docs/06-demo.md](docs/06-demo.md) |
+
+## Memory, powered by Cognee
+
+Every lead you push, email or hear back from becomes a memory. Open **Memory** in the header to see them as a live network graph (events, sponsors, people; past backings in grey, outreach in ink, replies in green) with a 24 hour timeline and an "Ask memory" box.
+
+- Touches are stored in Supabase (`db/memory.sql`, table `touches`) and written as plain sentences to a [Cognee](https://cognee.ai) dataset called `backer`, then cognified so Cognee builds a knowledge graph.
+- "Ask memory" runs a Cognee `GRAPH_COMPLETION` search. Without Cognee keys it answers from the touch log and says "from your log".
+- Set `COGNEE_BASE_URL`, `COGNEE_API_KEY`, `COGNEE_TENANT_ID` (see `.env.example`). With them unset the Cognee calls are skipped quietly.
+- In the drawer, "Log a reply" records what a sponsor said.

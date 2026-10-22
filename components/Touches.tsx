@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { EventInput, Lead } from '@/lib/types'
 
-export type ClientTouch = { id?: string; created_at?: string; kind: string; sponsor_id?: string | null; note?: string | null; to_email?: string | null; event_name?: string }
+export type ClientTouch = { id?: string; sponsor_name?: string | null; created_at?: string; kind: string; sponsor_id?: string | null; note?: string | null; to_email?: string | null; event_name?: string }
 
 // Fire and forget: logging a touch must never get in the way.
 export function track(event: EventInput, leads: Lead[], kind: string, extra?: { to_email?: string; subject?: string; body?: string; note?: string }) {
@@ -32,7 +32,7 @@ export function LeadMemory({ lead, event }: { lead: Lead; event: EventInput }) {
   const load = useCallback(() => {
     fetch('/api/memory', { cache: 'no-store' })
       .then(r => r.json())
-      .then(d => setRows(((d.touches ?? []) as ClientTouch[]).filter(t => t.sponsor_id === lead.sponsorId && t.event_name === event.name)))
+      .then(d => setRows(((d.touches ?? []) as ClientTouch[]).filter(t => (t.sponsor_id === lead.sponsorId || t.sponsor_name === lead.name) &&t.event_name === event.name)))
       .catch(() => {})
   }, [lead.sponsorId, event.name])
   useEffect(() => {
