@@ -20,5 +20,5 @@ Turn the map into a ranked list for one event. This is what the judges look at f
 
 ## Watch out
 
-- Until Niketh's data lands, use a hardcoded list of 10 fake sponsors in the same shape.
+- `lib/seed.ts` already has real rows. Until Jawad's scraper adds more, test against those.
 - Reasons must cite real backings, not invented ones. Pass the backings into the prompt and tell the model to only use those.
