@@ -1,7 +1,8 @@
-// Who could back a London tech event, and who already has.
-// `sponsors` is the candidate pool: real companies, described by what they
-// care about. `backings` are real, sourced sponsorships only. Every backing
-// needs a URL you can open. The scraper adds to both.
+// Real London events and the companies that backed them.
+// Every backing URL is a page we fetched. Tags and audience are words from
+// those pages, so matching can rank fit. `size` is unknown, so it stays a
+// placeholder matching does not read.
+import map from '../data/london.json'
 
 export type Audience = 'developers' | 'founders' | 'students' | 'designers' | 'community'
 
@@ -10,9 +11,9 @@ export type SeedSponsor = {
   name: string
   domain: string
   kind: 'sponsor' | 'venue'
-  tags: string[] // what they care about
-  audience: Audience[] // who they want in the room
-  hackathons?: boolean // known to back hackathons and community events
+  tags: string[]
+  audience: Audience[]
+  hackathons?: boolean
   size: 'giant' | 'scaleup' | 'startup'
 }
 
@@ -24,94 +25,78 @@ export type SeedBacking = {
   url: string
 }
 
-const S = (id: string, name: string, domain: string, tags: string, audience: Audience[], size: SeedSponsor['size'], hackathons = true): SeedSponsor => ({
-  id,
-  name,
-  domain,
-  kind: 'sponsor',
-  tags: tags.split(' '),
-  audience,
-  size,
-  hackathons,
-})
+type MapEvent = { id: string; name: string; topic: string; url: string }
+type MapSponsor = { id: string; name: string; domain: string; kind: 'sponsor' | 'venue' }
+type MapBacking = { eventId: string; sponsorId: string; role: string; sourceUrl: string }
 
-const V = (id: string, name: string, domain: string, tags: string, audience: Audience[]): SeedSponsor => ({
-  id,
-  name,
-  domain,
-  kind: 'venue',
-  tags: tags.split(' '),
-  audience,
-  size: 'startup',
-  hackathons: true,
-})
+const events = new Map((map.events as MapEvent[]).map(e => [e.id, e]))
+const rows = map.backings as MapBacking[]
 
-export const sponsors: SeedSponsor[] = [
-  // Partners at tonight's hackathon
-  S('cursor', 'Cursor', 'cursor.com', 'ai coding agents developers editor hackathon', ['developers', 'students'], 'scaleup'),
-  S('supabase', 'Supabase', 'supabase.com', 'database postgres auth backend developers open-source hackathon', ['developers', 'founders'], 'scaleup'),
-  S('notion', 'Notion', 'notion.com', 'productivity docs community students ai workspace', ['students', 'community', 'founders'], 'giant'),
-  S('cognee', 'Cognee', 'cognee.ai', 'ai agents memory knowledge-graph open-source developers', ['developers'], 'startup'),
-  S('zero', 'Zero', 'zero.inc', 'gtm sales crm outbound agents founders', ['founders'], 'startup'),
+const STOP = new Set(['with', 'from', 'that', 'this', 'your', 'have', 'been', 'will', 'they', 'their', 'about', 'into', 'which', 'where', 'what', 'when', 'more', 'than', 'also', 'just', 'over', 'such', 'each', 'other', 'some', 'only', 'both', 'most', 'meet', 'make'])
 
-  // AI labs and model platforms
-  S('anthropic', 'Anthropic', 'anthropic.com', 'ai llm agents safety developers claude', ['developers', 'founders'], 'giant'),
-  S('openai', 'OpenAI', 'openai.com', 'ai llm agents developers gpt', ['developers', 'founders'], 'giant'),
-  S('xai', 'xAI', 'x.ai', 'ai llm grok agents developers', ['developers'], 'giant'),
-  S('mistral', 'Mistral AI', 'mistral.ai', 'ai llm open-source europe developers', ['developers'], 'scaleup'),
-  S('elevenlabs', 'ElevenLabs', 'elevenlabs.io', 'ai voice audio agents london developers creators', ['developers', 'founders'], 'scaleup'),
-  S('groq', 'Groq', 'groq.com', 'ai inference fast llm developers', ['developers'], 'scaleup'),
-  S('huggingface', 'Hugging Face', 'huggingface.co', 'ai open-source models ml community', ['developers', 'community', 'students'], 'scaleup'),
-  S('perplexity', 'Perplexity', 'perplexity.ai', 'ai search research students', ['students', 'developers'], 'scaleup'),
-
-  // Developer platforms
-  S('vercel', 'Vercel', 'vercel.com', 'frontend nextjs ai deploy developers hackathon', ['developers', 'founders'], 'scaleup'),
-  S('github', 'GitHub', 'github.com', 'open-source developers students code community', ['developers', 'students', 'community'], 'giant'),
-  S('cloudflare', 'Cloudflare', 'cloudflare.com', 'edge workers developers security ai', ['developers'], 'giant'),
-  S('replit', 'Replit', 'replit.com', 'ai coding agents students beginners', ['students', 'developers'], 'scaleup'),
-  S('lovable', 'Lovable', 'lovable.dev', 'ai app-builder europe founders no-code', ['founders', 'students'], 'scaleup'),
-  S('modal', 'Modal', 'modal.com', 'ai gpu serverless python ml developers', ['developers'], 'startup'),
-  S('neon', 'Neon', 'neon.tech', 'database postgres serverless developers', ['developers'], 'startup'),
-  S('convex', 'Convex', 'convex.dev', 'backend realtime database developers', ['developers'], 'startup'),
-  S('clerk', 'Clerk', 'clerk.com', 'auth users developers', ['developers', 'founders'], 'startup'),
-  S('resend', 'Resend', 'resend.com', 'email developers api', ['developers'], 'startup'),
-  S('posthog', 'PostHog', 'posthog.com', 'analytics product open-source developers founders', ['developers', 'founders'], 'scaleup'),
-  S('e2b', 'E2B', 'e2b.dev', 'ai agents sandbox open-source developers', ['developers'], 'startup'),
-  S('browserbase', 'Browserbase', 'browserbase.com', 'ai agents browser automation scraping developers', ['developers'], 'startup'),
-  S('exa', 'Exa', 'exa.ai', 'ai search agents research scraping developers', ['developers'], 'startup'),
-  S('fal', 'fal', 'fal.ai', 'ai image video generative media developers', ['developers', 'designers'], 'startup'),
-  S('langchain', 'LangChain', 'langchain.com', 'ai agents llm open-source developers', ['developers'], 'scaleup'),
-  S('weaviate', 'Weaviate', 'weaviate.io', 'ai vector database memory open-source developers', ['developers'], 'startup'),
-  S('mongodb', 'MongoDB', 'mongodb.com', 'database ai vector developers students', ['developers', 'students'], 'giant'),
-
-  // Business tools that back founder and community events
-  S('stripe', 'Stripe', 'stripe.com', 'payments revenue founders developers fintech', ['founders', 'developers'], 'giant'),
-  S('linear', 'Linear', 'linear.app', 'product engineering issues founders', ['founders', 'developers'], 'scaleup', false),
-  S('figma', 'Figma', 'figma.com', 'design prototyping designers community', ['designers', 'students'], 'giant'),
-  S('luma', 'Luma', 'lu.ma', 'events community organisers ticketing', ['community'], 'startup'),
-  S('monzo', 'Monzo', 'monzo.com', 'fintech london banking founders', ['founders', 'community'], 'scaleup', false),
-  S('revolut', 'Revolut', 'revolut.com', 'fintech london payments developers', ['developers', 'founders'], 'giant', false),
-
-  // London venues
-  V('expedite', 'Expedite', 'expedite.london', 'venue london hackathon evening tech', ['developers', 'founders']),
-  V('newspeak', 'Newspeak House', 'newspeak.house', 'venue london community civic tech hackathon', ['community', 'developers']),
-  V('huckletree', 'Huckletree', 'huckletree.com', 'venue london startups founders events', ['founders']),
-  V('plexal', 'Plexal', 'plexal.com', 'venue london innovation startups hackathon', ['founders', 'developers']),
-  V('secondhome', 'Second Home', 'secondhome.io', 'venue london creative community events', ['community', 'designers']),
-]
-
-const GROK_HACK = {
-  event: 'Grok Bot Community Engineering London Hackathon',
-  eventTopic: 'community tools hackathon ai agents open-source developers london',
-  url: 'https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon',
+function words(text: string): string[] {
+  const seen = new Set<string>()
+  for (const w of text.toLowerCase().split(/[^a-z0-9-]+/)) {
+    if (w.length < 4 || STOP.has(w) || seen.has(w)) continue
+    seen.add(w)
+  }
+  return [...seen]
 }
 
-export const backings: SeedBacking[] = [
-  { sponsorId: 'cursor', role: 'Host and tech partner', ...GROK_HACK },
-  { sponsorId: 'supabase', role: 'Tech partner', ...GROK_HACK },
-  { sponsorId: 'cognee', role: 'Tech partner', ...GROK_HACK },
-  { sponsorId: 'zero', role: 'Tech partner', ...GROK_HACK },
-  { sponsorId: 'notion', role: 'Tech partner', ...GROK_HACK },
-  { sponsorId: 'xai', role: 'Tech partner (Grok Bot)', ...GROK_HACK },
-  { sponsorId: 'expedite', role: 'Venue partner', ...GROK_HACK },
-]
+function audiences(text: string): Audience[] {
+  const t = text.toLowerCase()
+  const out: Audience[] = []
+  if (/developer|engineer|hack|software|builder|coding/.test(t)) out.push('developers')
+  if (/student|universit|college|imperial|hackathon/.test(t)) out.push('students')
+  if (/founder|startup|venture|investor/.test(t)) out.push('founders')
+  if (/community|meetup|organiser|organizer/.test(t)) out.push('community')
+  if (/design/.test(t)) out.push('designers')
+  return out.length ? out : ['developers']
+}
+
+function displayName(name: string): string {
+  if (name.includes('_')) {
+    return name
+      .split('_')
+      .filter(Boolean)
+      .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ')
+  }
+  if (/^[a-z0-9]+$/.test(name) && name.length <= 4) return name.toUpperCase()
+  if (/^[a-z][a-z0-9]+$/.test(name)) return name.charAt(0).toUpperCase() + name.slice(1)
+  return name
+}
+
+const bySponsor = new Map<string, MapBacking[]>()
+for (const row of rows) {
+  const list = bySponsor.get(row.sponsorId) ?? []
+  list.push(row)
+  bySponsor.set(row.sponsorId, list)
+}
+
+export const sponsors: SeedSponsor[] = (map.sponsors as MapSponsor[]).map(s => {
+  const backed = bySponsor.get(s.id) ?? []
+  const topic = backed
+    .map(b => {
+      const event = events.get(b.eventId)
+      return event ? `${event.name} ${event.topic}` : ''
+    })
+    .join(' ')
+  const hackathons = /hackathon|buildathon|\bhack\b|hacker/i.test(topic)
+  return {
+    id: s.id,
+    name: displayName(s.name),
+    domain: s.domain,
+    kind: s.kind,
+    tags: words(topic).slice(0, 16),
+    audience: audiences(topic),
+    hackathons,
+    size: 'startup',
+  }
+})
+
+export const backings: SeedBacking[] = rows.flatMap(b => {
+  const event = events.get(b.eventId)
+  if (!event) return []
+  return [{ sponsorId: b.sponsorId, event: event.name, eventTopic: event.topic, role: b.role, url: event.url }]
+})
