@@ -13,7 +13,7 @@ fi
 npm run typecheck >/dev/null
 node --experimental-strip-types --test lib/notion/index.test.mjs >/dev/null
 
-git add -- README.md app/page.tsx app/api/push/route.ts docs/04-pipeline-setup.md lib/notion/index.ts lib/notion/index.test.mjs scripts/checkpoint.sh
+git add -- .env.example README.md app/api/push/route.ts docs/04-pipeline.md docs/04-pipeline-setup.md lib/notion/index.ts lib/notion/index.test.mjs scripts/checkpoint.sh
 if git diff --cached --quiet; then
   echo 'No Joel pipeline changes to commit.'
   exit 0
