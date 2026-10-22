@@ -112,9 +112,12 @@ function listUrl(status: string, page: number): string {
 
 async function toEvent(h: Hackathon, date: string, state: PageState): Promise<RawEvent | undefined> {
   const location = h.displayed_location?.location?.trim()
-  const listedInLondon = isLondon(location) || isLondon(h.title)
+  const listedInLondon = isLondon(location) || isLondon(h.title) || LONDON_VENUE.test(location ?? '')
   const page = await readPage(h.url!, state)
-  if (!listedInLondon && !isLondon(page?.place)) return
+  // Every candidate came from search=london. With the page blocked, a bare venue or
+  // company name ('Tessl AI Limited') that names no other place is taken as London.
+  const bare = !page && !!location && !location.includes(',') && !ELSEWHERE.test(location)
+  if (!listedInLondon && !isLondon(page?.place) && !bare) return
 
   const tiles = page?.tiles ?? []
   const partners: ScrapedPartner[] = tiles.map(t => ({ name: t.name, domain: t.domain, role: t.role, kind: t.kind, sourceUrl: h.url! }))
@@ -251,6 +254,11 @@ function inPerson(h: Hackathon): boolean {
   if (loc?.icon === 'globe') return false
   return !!loc?.location && !/^\s*online\s*$/i.test(loc.location)
 }
+
+// London universities and venues that Devpost locations name without the city.
+const LONDON_VENUE = /\b(?:qmul|queen mary|ucl|imperial college|king'?s college|kcl|bush house|lse|london school of economics|encode hub|shoreditch|makerversity|somerset house|canary wharf|king'?s cross|here east|plexal|level39|google deepmind)\b/i
+// Another city or country named in a location.
+const ELSEWHERE = /\b(?:usa|united states|canada|india|germany|france|spain|italy|netherlands|ireland|scotland|wales|nigeria|kenya|singapore|australia|new york|nyc|san francisco|sf|boston|toronto|berlin|paris|madrid|amsterdam|dublin|edinburgh|glasgow|manchester|birmingham|bristol|cambridge|oxford|leeds|lagos|bangalore|bengaluru|mumbai|delhi|online|virtual)\b/i
 
 function inCanada(h: Hackathon): boolean {
   return /\bCAD\b/.test(h.prize_amount ?? '') || isCanadian(h.displayed_location?.location)

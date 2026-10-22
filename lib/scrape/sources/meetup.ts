@@ -190,9 +190,21 @@ function sponsorsOf(state: Apollo, group: Group | undefined, sourceUrl: string):
     const name = sponsor?.name?.trim()
     const domain = domainOf(sponsor?.url)
     if (!name || !domain || out.some(p => p.domain === domain)) continue
+    if (PROMO_NAME.test(name) || LISTING_URL.test(sponsor?.url ?? '') || ownSite(domain, group)) continue
     out.push({ name, domain, role: 'Group sponsor', kind: 'sponsor', sourceUrl })
   }
   return out.length ? out : undefined
+}
+
+// Group "sponsor" slots also hold promos: a book on amazon.com/dp/..., 'Free Hands-on Online Training'.
+const PROMO_NAME = /\b(?:free|training|course|webinar|e-?book|book|discount|coupon|tutorial|learn|download|buy|get started|sign up)\b/i
+const LISTING_URL = /^https?:\/\/(?:[\w-]+\.)*amazon\.[a-z.]+\/|\/(?:dp|gp\/product|products?|books?|ebooks?|forums?|courses?|training)(?:\/|$)/i
+
+// The group's own site (or a subdomain of it) is the organiser, not a sponsor.
+function ownSite(domain: string, group: Group | undefined): boolean {
+  const key = (group?.urlname ?? '').toLowerCase().replace(/[^a-z0-9]/g, '')
+  const label = domain.split('.').slice(-2)[0] ?? ''
+  return label.length >= 3 && key.includes(label)
 }
 
 function domainOf(href: string | undefined): string | undefined {

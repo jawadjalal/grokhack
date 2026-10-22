@@ -53,6 +53,19 @@
       "country": "GB"
     },
     {
+      "id": "devpost-multiagents-hackathon",
+      "name": "Multiagents Hackathon",
+      "url": "https://multiagents-hackathon.devpost.com/",
+      "date": "2026-06-26",
+      "city": "London",
+      "topic": "Machine Learning/AI, Open Ended, Web",
+      "audienceSize": 82,
+      "organiser": "tokens&",
+      "sourceUrl": "https://multiagents-hackathon.devpost.com/",
+      "source": "devpost",
+      "venue": "Tessl AI Limited"
+    },
+    {
       "id": "meetup-315316994",
       "name": "Databricks London Post-DAIS Special @ Sigma",
       "url": "https://www.meetup.com/databricks-london/events/315316994/",
@@ -222,23 +235,6 @@
       "lng": -0.0811,
       "venue": "The Bricklayers Arms",
       "address": "63 Charlotte Road",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-315787858",
-      "name": "Informal gathering with Steve Becht-Buss",
-      "url": "https://www.meetup.com/london-futurists/events/315787858/",
-      "date": "2026-07-23",
-      "city": "London",
-      "topic": "New Technology, Risk Management, Futurology, Psychology, Abundance And Prosperity. How can we assess the evidence for and against the different treatments and medical interventions that are claimed to significantly extend healthspan and lifespan?",
-      "audienceSize": 7,
-      "organiser": "London Futurists",
-      "sourceUrl": "https://www.meetup.com/london-futurists/events/315787858/",
-      "source": "meetup",
-      "lat": 51.513752,
-      "lng": -0.110487,
-      "venue": "Ye Olde Cock Taverne (Holborn)",
-      "address": "22 Fleet Street, EC4Y 1AA",
       "country": "GB"
     },
     {
@@ -414,6 +410,23 @@
       "country": "GB"
     },
     {
+      "id": "meetup-315326969",
+      "name": "TICKETS VIA EVENTBRITE - SHIP IT, DON'T SINK IT! Boat Party with London DevOps",
+      "url": "https://www.meetup.com/devsecops-london-gathering/events/315326969/",
+      "date": "2026-08-19",
+      "city": "London",
+      "topic": "Network Security, Cloud Computing, System Administration, Open Source, Kubernetes. TICKETS VIA EVENTBRITE: SHIP IT, DON'T SINK IT!",
+      "audienceSize": 48,
+      "organiser": "DevSecOps - London Gathering",
+      "sourceUrl": "https://www.meetup.com/devsecops-london-gathering/events/315326969/",
+      "source": "meetup",
+      "lat": 51.50998,
+      "lng": -0.117816,
+      "venue": "TEMPLE PIER",
+      "address": "Victoria Embarkment ,",
+      "country": "GB"
+    },
+    {
       "id": "meetup-315944643",
       "name": "IndieBeers // London Meetup #77 (Supported by Novabook)",
       "url": "https://www.meetup.com/indiebeers-london/events/315944643/",
@@ -428,23 +441,6 @@
       "lng": -0.0811,
       "venue": "The Bricklayers Arms",
       "address": "63 Charlotte Road",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-316140083",
-      "name": "Anticipating a technoprogressive future: hopes and fears",
-      "url": "https://www.meetup.com/london-futurists/events/316140083/",
-      "date": "2026-08-27",
-      "city": "London",
-      "topic": "New Technology, Risk Management, Social Issues, Futurology, Abundance And Prosperity. This London Futurists in the Pub gathering will be exploring the strengths and weaknesses of the technoprogressive worldview.",
-      "audienceSize": 21,
-      "organiser": "London Futurists",
-      "sourceUrl": "https://www.meetup.com/london-futurists/events/316140083/",
-      "source": "meetup",
-      "lat": 51.513752,
-      "lng": -0.110487,
-      "venue": "Ye Olde Cock Taverne (Holborn)",
-      "address": "22 Fleet Street, EC4Y 1AA",
       "country": "GB"
     },
     {
@@ -539,23 +535,6 @@
       "organiser": "GirlsWhoML",
       "sourceUrl": "https://luma.com/td7vzqr1",
       "source": "luma",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-1996099946674",
-      "name": "Data & Spreadsheet Skills for Office Roles",
-      "url": "https://www.eventbrite.co.uk/e/data-spreadsheet-skills-for-office-roles-tickets-1996099946674",
-      "date": "2026-09-07",
-      "city": "London",
-      "topic": "Spreadsheet and reporting skills for admin, finance support, and data-entry roles — from formulas to employer-ready summaries.",
-      "audienceSize": null,
-      "organiser": "National Laptop Computer Repair Centre",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/data-spreadsheet-skills-for-office-roles-tickets-1996099946674",
-      "source": "eventbrite",
-      "lat": 51.520385,
-      "lng": -0.333162,
-      "venue": "Hanwell Community Centre",
-      "address": "Westcott Crescent, London, W7 1PD",
       "country": "GB"
     },
     {
@@ -822,23 +801,6 @@
       "country": "GB"
     },
     {
-      "id": "luma-ntl-rbta",
-      "name": "Digital Marketing & Business Growth Networking for Startups & Professionals",
-      "url": "https://luma.com/ntl-rbta",
-      "date": "2026-09-15",
-      "city": "London",
-      "topic": "Welcome to Networx London!",
-      "audienceSize": 15,
-      "organiser": "Networx London - Connect & Grow",
-      "sourceUrl": "https://luma.com/ntl-rbta",
-      "source": "luma",
-      "lat": 51.515977,
-      "lng": -0.120055,
-      "venue": "Sycamore Covent Garden",
-      "address": "Sycamore Covent Garden, 66 Great Queen St, London WC2B 5BX, UK",
-      "country": "GB"
-    },
-    {
       "id": "meetup-316413777",
       "name": "Visual Calculations in Power BI with Erik Svensen",
       "url": "https://www.meetup.com/london-fabug/events/316413777/",
@@ -882,19 +844,6 @@
       "audienceSize": null,
       "organiser": "SpaceXAI for London, England",
       "sourceUrl": "https://luma.com/grok-bot-london",
-      "source": "luma",
-      "country": "GB"
-    },
-    {
-      "id": "luma-qc8myxik",
-      "name": "Caribbean Tech Collective: The Island Social",
-      "url": "https://luma.com/qc8myxik",
-      "date": "2026-09-16",
-      "city": "London",
-      "topic": "Tech. Summer’s coming to an end, so we’re bringing the community together one more time, in partnership with Barbados Tourism Marketing Inc.",
-      "audienceSize": null,
-      "organiser": "Caribbean Tech Collective UK",
-      "sourceUrl": "https://luma.com/qc8myxik",
       "source": "luma",
       "country": "GB"
     },
@@ -1012,23 +961,6 @@
       "organiser": "{Tech: Europe}",
       "sourceUrl": "https://luma.com/ldn-hack",
       "source": "luma",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-314148857",
-      "name": "The Technoprogressive Opportunity",
-      "url": "https://www.meetup.com/london-futurists/events/314148857/",
-      "date": "2026-09-19",
-      "city": "London",
-      "topic": "Emerging Technology, Philosophy & Ethics, Political Activism, Futurology, Abundance And Prosperity. The Technoprogressive Opportunity is a two-day in-person conference in Central London (SE1), organised by the IEET and London Futurists, on the subject of \"The future of ethics and emerging…",
-      "audienceSize": 56,
-      "organiser": "London Futurists",
-      "sourceUrl": "https://www.meetup.com/london-futurists/events/314148857/",
-      "source": "meetup",
-      "lat": 51.497166,
-      "lng": -0.102633,
-      "venue": "LSBU Hub",
-      "address": "116, 100 London Rd, Elephant and Castle, London SE1 6NJ",
       "country": "GB"
     },
     {
@@ -1184,23 +1116,6 @@
       "organiser": "AI Pilled",
       "sourceUrl": "https://luma.com/pf7pb5u7",
       "source": "luma",
-      "country": "GB"
-    },
-    {
-      "id": "luma-1gpsvrbw",
-      "name": "AI Movie Club x The Matrix (1999)",
-      "url": "https://luma.com/1gpsvrbw",
-      "date": "2026-09-24",
-      "city": "London",
-      "topic": "AI, Arts & Culture. Join us for a free screening of  The Matrix (1999) [The first one] & discussion, hosted by Intelligent Internet in partnership with Kensington Central Library.",
-      "audienceSize": null,
-      "organiser": "II Calendar",
-      "sourceUrl": "https://luma.com/1gpsvrbw",
-      "source": "luma",
-      "lat": 51.501509,
-      "lng": -0.194138,
-      "venue": "Kensington Central Library",
-      "address": "Kensington Central Library, 12 Phillimore Walk, London W8 7RX, UK",
       "country": "GB"
     },
     {
@@ -1551,6 +1466,19 @@
       "country": "GB"
     },
     {
+      "id": "devpost-qmul-ai-hackathon",
+      "name": "QMUL AI Hackathon",
+      "url": "https://qmul-ai-hackathon.devpost.com/",
+      "date": "2026-10-10",
+      "city": "London",
+      "topic": "Beginner Friendly, Open Ended",
+      "audienceSize": 129,
+      "organiser": "Queen Mary AI Soc, Queen Mary CS Soc",
+      "sourceUrl": "https://qmul-ai-hackathon.devpost.com/",
+      "source": "devpost",
+      "venue": "QMUL - Bancroft Building 1.13"
+    },
+    {
       "id": "gdg-google-gdg-on-campus-university-college-london-london-united-kingdom-presents-ma",
       "name": "Maven Securities - Careers Q&A Session",
       "url": "https://gdg.community.dev/events/details/google-gdg-on-campus-university-college-london-london-united-kingdom-presents-maven-securities-careers-qampa-session/",
@@ -1770,7 +1698,6 @@
       "audienceSize": 136,
       "organiser": "KCL, Imperial and UCL Womxn in STEM",
       "sourceUrl": "https://ikuwomxninstemhackathon.co.uk/",
-      "source": "devpost",
       "venue": "King's College London - Bush House",
       "country": "GB"
     },
@@ -1818,6 +1745,19 @@
       "country": "GB"
     },
     {
+      "id": "confstech-conversations-ctocraft-com",
+      "name": "Conversations Roadshow: London by CTO Craft",
+      "url": "https://conversations.ctocraft.com/london",
+      "date": "2026-10-20",
+      "city": "London",
+      "topic": "General. Join CTO Craft in London for the Conversations Roadshow with peer led roundtables, senior facilitators, networking, and insights you’ll use straight away.",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://conversations.ctocraft.com/london",
+      "source": "confstech",
+      "country": "GB"
+    },
+    {
       "id": "luma-dxddbjlp",
       "name": "Java Workshops Week 4: Loops and Repetition",
       "url": "https://luma.com/dxddbjlp",
@@ -1852,6 +1792,32 @@
       "country": "GB"
     },
     {
+      "id": "devevents-futurepmo-com",
+      "name": "FuturePMO 2026",
+      "url": "https://www.futurepmo.com",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "FuturePMO is the must-attend PMO conference for professionals.",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://www.futurepmo.com",
+      "source": "devevents",
+      "country": "GB"
+    },
+    {
+      "id": "devevents-thetesttribe-com-london",
+      "name": "QonfX London 2026",
+      "url": "https://www.thetesttribe.com/qonfx/london",
+      "date": "2026-10-22",
+      "city": "London",
+      "topic": "Testing / QA conference in London, United Kingdom",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://www.thetesttribe.com/qonfx/london",
+      "source": "devevents",
+      "country": "GB"
+    },
+    {
       "id": "eventbrite-1990380269967",
       "name": "Hybrid: Transforming UX for AI in Practice",
       "url": "https://www.eventbrite.co.uk/e/hybrid-transforming-ux-for-ai-in-practice-registration-1990380269967",
@@ -1866,40 +1832,6 @@
       "lng": -0.087716,
       "venue": "BCS, The Chartered Institute for IT",
       "address": "25 Copthall Ave, London, EC2R 7BP",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2000576030762",
-      "name": "AI Means Business: Practical AI & Beyond the Prompt Book Launch",
-      "url": "https://www.eventbrite.co.uk/e/ai-means-business-practical-ai-beyond-the-prompt-book-launch-tickets-2000576030762",
-      "date": "2026-10-22",
-      "city": "London",
-      "topic": "Startups & Small Business, Business & Professional, Conference. A free evening for local businesses: practical AI ideas, honest talks, relaxed networking, drinks, nibbles and a signed book.",
-      "audienceSize": null,
-      "organiser": "David Roth",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/ai-means-business-practical-ai-beyond-the-prompt-book-launch-tickets-2000576030762",
-      "source": "eventbrite",
-      "lat": 51.590628,
-      "lng": -0.155392,
-      "venue": "The Clissold Arms",
-      "address": "105 Fortis Green, London, N2 9HR",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2002306914883",
-      "name": "Beauty x AI: Build Smarter, Brand Faster",
-      "url": "https://www.eventbrite.co.uk/e/beauty-x-ai-build-smarter-brand-faster-tickets-2002306914883",
-      "date": "2026-10-22",
-      "city": "London",
-      "topic": "Beauty, Fashion & Beauty, Class, Training, or Workshop, Marketing, Ai, Masterclass, Womeninbusiness, London_networking, women_entrepreneurs, networking_for_women, beauty_event, beauty_business, entrepreneurship_training. The Future Is Now — How Start-Up Beauty Brands Can Use AI to Launch, Grow &…",
-      "audienceSize": null,
-      "organiser": "Hair Care Revolution UK",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/beauty-x-ai-build-smarter-brand-faster-tickets-2002306914883",
-      "source": "eventbrite",
-      "lat": 51.521966,
-      "lng": -0.084819,
-      "venue": "IDEALondon",
-      "address": "69 Wilson Street, London, EC2A 2BB",
       "country": "GB"
     },
     {
@@ -1920,23 +1852,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2002554121284",
-      "name": "Investor Connect: Pitch & Networking — London",
-      "url": "https://www.eventbrite.co.uk/e/investor-connect-pitch-networking-london-tickets-2002554121284",
-      "date": "2026-10-22",
-      "city": "London",
-      "topic": "Startups & Small Business, Business & Professional, Meeting or Networking Event, Business, Networking, Investment, Technology, Entrepreneurship, Startup, Ai, London, Pitch, business_networking. Evening designed specifically for investors, scouts, enture-ready founders and Tech enthusiasts in London",
-      "audienceSize": null,
-      "organiser": "Nomad Global Hub",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/investor-connect-pitch-networking-london-tickets-2002554121284",
-      "source": "eventbrite",
-      "lat": 51.503247,
-      "lng": -0.223936,
-      "venue": "Sindercombe Social",
-      "address": "2 Goldhawk Road, London, W12 8QD",
-      "country": "GB"
-    },
-    {
       "id": "grok-hack-2026",
       "name": "Grok Bot Community Engineering London Hackathon",
       "url": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon",
@@ -1946,7 +1861,6 @@
       "audienceSize": null,
       "organiser": "SpaceXAI for London",
       "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -1959,7 +1873,6 @@
       "audienceSize": 62,
       "organiser": "Personal",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-npuskVBY8CAE8xL",
-      "source": "luma",
       "lat": 51.516242,
       "lng": -0.086532,
       "venue": "Harvey Nash London",
@@ -1976,7 +1889,6 @@
       "audienceSize": 139,
       "organiser": "Future Forward",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-Yz7RR89Zlv56tya",
-      "source": "luma",
       "lat": 51.513413,
       "lng": -0.102748,
       "venue": "IFX Payments",
@@ -1993,7 +1905,6 @@
       "audienceSize": 124,
       "organiser": "Granola",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-s88hUhrTG1scBnb",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -2006,7 +1917,6 @@
       "audienceSize": 167,
       "organiser": "Intruder",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-D8ObUirtnP2sDKQ",
-      "source": "luma",
       "lat": 51.504999,
       "lng": -0.088436,
       "venue": "Amazing Grace London Bridge",
@@ -2034,7 +1944,6 @@
       "audienceSize": 167,
       "organiser": "Access to Tokyo - London Desk",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-TgHPexIRELx5Uxp",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -2111,23 +2020,6 @@
       "lng": -0.225335,
       "venue": "10 Hammersmith Grove",
       "address": "10 Hammersmith Grove, London W6 7AP, UK",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-316694616",
-      "name": "Strengthening the spiral of technoprogressive trust",
-      "url": "https://www.meetup.com/london-futurists/events/316694616/",
-      "date": "2026-10-22",
-      "city": "London",
-      "topic": "New Technology, Risk Management, Social Issues, Futurology, Abundance And Prosperity. Which aspects of the technoprogressive programme are the most distinctive and urgent?",
-      "audienceSize": 16,
-      "organiser": "London Futurists",
-      "sourceUrl": "https://www.meetup.com/london-futurists/events/316694616/",
-      "source": "meetup",
-      "lat": 51.513752,
-      "lng": -0.110487,
-      "venue": "Ye Olde Cock Taverne (Holborn)",
-      "address": "22 Fleet Street, EC4Y 1AA",
       "country": "GB"
     },
     {
@@ -2239,57 +2131,6 @@
       "lng": -0.078185,
       "venue": "Devonshire Terrace",
       "address": "Devonshire Square, London, EC2M 4WY",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2000172821753",
-      "name": "Tea & Tech",
-      "url": "https://www.eventbrite.co.uk/e/tea-tech-tickets-2000172821753",
-      "date": "2026-10-23",
-      "city": "London",
-      "topic": "Mobile, Science & Technology, Class, Training, or Workshop, Newham, Getonlineweek, tea_and_tech, digitalbrew, techsip. Tea & Tech is a relaxed drop‑in session for digital assistance and a warm brew",
-      "audienceSize": null,
-      "organiser": "East Ham Community Neighbourbood",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/tea-tech-tickets-2000172821753",
-      "source": "eventbrite",
-      "lat": 51.533141,
-      "lng": 0.057168,
-      "venue": "East Ham Library",
-      "address": "328 Barking Road, London, E6 2RT",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2000247988579",
-      "name": "Global Industrial Innovation and Development Forum",
-      "url": "https://www.eventbrite.co.uk/e/global-industrial-innovation-and-development-forum-tickets-2000247988579",
-      "date": "2026-10-23",
-      "city": "London",
-      "topic": "Business, Other, Conference. 10.23: IET London: Savoy Place The forum will be held at IET London: Savoy Place — the global flagship conference centre of the Institution of Engineering and Technology (IET).",
-      "audienceSize": null,
-      "organiser": "World Federation for Future Technology Development",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/global-industrial-innovation-and-development-forum-tickets-2000247988579",
-      "source": "eventbrite",
-      "lat": 51.50995,
-      "lng": -0.119235,
-      "venue": "IET London: Savoy Place",
-      "address": "2 Savoy Place, London, WC2R 0BL",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2001014207360",
-      "name": "Lekwa Ntutu (Look at That Hair): UK Book Launch, Merch Drop & Tech Expo",
-      "url": "https://www.eventbrite.co.uk/e/lekwa-ntutu-look-at-that-hair-uk-book-launch-merch-drop-tech-expo-tickets-2001014207360",
-      "date": "2026-10-23",
-      "city": "London",
-      "topic": "Beauty, Fashion & Beauty, Meeting or Networking Event, Naturalhair, Merchandise, Growthclub, Naturalhaircare, Hairgrowth, scalpcare, haircaretips, hairhealth, knowyourhair, naturaltendrils. An interactive experience where textured hair education meets beauty technology via Lekwa NTÙTÙ the book and…",
-      "audienceSize": null,
-      "organiser": null,
-      "sourceUrl": "https://www.eventbrite.co.uk/e/lekwa-ntutu-look-at-that-hair-uk-book-launch-merch-drop-tech-expo-tickets-2001014207360",
-      "source": "eventbrite",
-      "lat": 51.523483,
-      "lng": -0.170538,
-      "venue": "Church Street Market",
-      "address": "Church Street, London, NW8 8DT",
       "country": "GB"
     },
     {
@@ -2583,7 +2424,6 @@
       "audienceSize": 124,
       "organiser": "Lightfern",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-002h4RDHfEYLEvM",
-      "source": "luma",
       "lat": 51.519499,
       "lng": -0.131515,
       "venue": "The Building Centre",
@@ -2617,7 +2457,6 @@
       "audienceSize": 89,
       "organiser": "Noetic",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-0pjZCb6fITa6cF9",
-      "source": "luma",
       "lat": 51.498822,
       "lng": -0.174873,
       "venue": "Imperial College London",
@@ -2838,57 +2677,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2002342438134",
-      "name": "The AI Data Centres Fight: organisers social, book launch, panel & podcast",
-      "url": "https://www.eventbrite.co.uk/e/the-ai-data-centres-fight-organisers-social-book-launch-panel-podcast-tickets-2002342438134",
-      "date": "2026-10-26",
-      "city": "London",
-      "topic": "Who pays for the AI boom?",
-      "audienceSize": null,
-      "organiser": "Foxglove",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/the-ai-data-centres-fight-organisers-social-book-launch-panel-podcast-tickets-2002342438134",
-      "source": "eventbrite",
-      "lat": 51.533051,
-      "lng": -0.061674,
-      "venue": "The Art House by Acrylicize",
-      "address": "30-36 Pritchard's Road, London, E2 9AP",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2002691053853",
-      "name": "London Investors & Founders Networking | Wealth Connector® Mayfair",
-      "url": "https://www.eventbrite.co.uk/e/london-investors-founders-networking-wealth-connector-mayfair-tickets-2002691053853",
-      "date": "2026-10-26",
-      "city": "London",
-      "topic": "Startups & Small Business, Business & Professional, Meeting or Networking Event, Business, Wealth, Investment, Networkingevent, Businessgrowth, Businessnetworking, Networkingmeeting, money_management, business_professional, londonconnector. Join Wealth Connector® Mayfair to meet investors, wealth…",
-      "audienceSize": null,
-      "organiser": "London Connector",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/london-investors-founders-networking-wealth-connector-mayfair-tickets-2002691053853",
-      "source": "eventbrite",
-      "lat": 51.509212,
-      "lng": -0.143832,
-      "venue": "12 Hay Hill",
-      "address": "12 Hay Hill, London, W1J 8NR",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2003146989569",
-      "name": "How the brain shapes behaviour: why we think, feel and react the way we do",
-      "url": "https://www.eventbrite.co.uk/e/how-the-brain-shapes-behaviour-why-we-think-feel-and-react-the-way-we-do-tickets-2003146989569",
-      "date": "2026-10-26",
-      "city": "London",
-      "topic": "Science, Science & Technology, Seminar or Talk, Books, Neuroscience, Brain, Chelsea, self_awareness, emotional_intelligence, human_behaviour, sloane_square, meeting_event, psychologytalk. Welcome to The Shift - from Human Doings to Human Beings.",
-      "audienceSize": null,
-      "organiser": "Bruna De Palo",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/how-the-brain-shapes-behaviour-why-we-think-feel-and-react-the-way-we-do-tickets-2003146989569",
-      "source": "eventbrite",
-      "lat": 51.487863,
-      "lng": -0.168164,
-      "venue": "The Trafalgar Public House",
-      "address": "224-226 King's Road, London, SW3 5UA",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-2003147851146",
       "name": "Future Tech: AI, Tech & Innovation Networking Night",
       "url": "https://www.eventbrite.co.uk/e/future-tech-ai-tech-innovation-networking-night-tickets-2003147851146",
@@ -2936,57 +2724,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-1980845220377",
-      "name": "Smart Tech for Seniors",
-      "url": "https://www.eventbrite.co.uk/e/smart-tech-for-seniors-tickets-1980845220377",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Mobile, Science & Technology, Class, Training, or Workshop, Innovation, Seniors, digital_skills, age_friendly, smart_tech. Smart Tech for Seniors is a user friendly digital skills education programme, that helps older adults feel confident using technology.",
-      "audienceSize": null,
-      "organiser": "DreamCatchers WorldWide",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/smart-tech-for-seniors-tickets-1980845220377",
-      "source": "eventbrite",
-      "lat": 51.460793,
-      "lng": -0.012593,
-      "venue": "Lewisham Community Space",
-      "address": "Molesworth Street, London, SE13 7HB",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-1986447488913",
-      "name": "Smart Tech for Seniors (Lewisham)",
-      "url": "https://www.eventbrite.co.uk/e/smart-tech-for-seniors-lewisham-tickets-1986447488913",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Senior Citizen, Family & Education, Class, Training, or Workshop, Free, Technology, Ai, Seniors, Digitalliteracy, techforelders, smarttechseniors, lewishamtech, seniorstechhelp, digital4seniors. Smart Tech for Seniors is a friendly, easy-to-understand digital skills education programme that helps…",
-      "audienceSize": null,
-      "organiser": "DCWUK",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/smart-tech-for-seniors-lewisham-tickets-1986447488913",
-      "source": "eventbrite",
-      "lat": 51.460793,
-      "lng": -0.012593,
-      "venue": "Lewisham Community Space",
-      "address": "Molesworth Street, London, SE13 7HB",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-1991374236949",
-      "name": "Create your MS Access Database, 1-Day, 1-to-1,  Enhanced with Generative AI",
-      "url": "https://www.eventbrite.co.uk/e/create-your-ms-access-database-1-day-1-to-1-enhanced-with-generative-ai-tickets-1991374236949",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "High Tech, Science & Technology, Class, Training, or Workshop, Science, Access, Database, Ms access, Access training, Data_analytics, Access database, Access database course, Access intermediate cours, Access online course, Ms access course. MS Access Database Setup and Queries.",
-      "audienceSize": null,
-      "organiser": "PCWorkshops",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/create-your-ms-access-database-1-day-1-to-1-enhanced-with-generative-ai-tickets-1991374236949",
-      "source": "eventbrite",
-      "lat": 51.508287,
-      "lng": -0.126692,
-      "venue": "PCWorkshops at Regus",
-      "address": "Golden Cross House 8 Duncannon Street, London, WC2N 4jf",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-1999413737311",
       "name": "Croydon AI Summit 2026: Innovation, Inclusion, Impact",
       "url": "https://www.eventbrite.co.uk/e/croydon-ai-summit-2026-innovation-inclusion-impact-tickets-1999413737311",
@@ -3018,23 +2755,6 @@
       "lng": -0.130914,
       "venue": "Bar Soho",
       "address": "23-25 Old Compton Street, London, W1D 5JL",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2000424225709",
-      "name": "Speed Networking | Women in Tech London Business | 27 October",
-      "url": "https://www.eventbrite.co.uk/e/speed-networking-women-in-tech-london-business-27-october-tickets-2000424225709",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "High Tech, Science & Technology, Meeting or Networking Event, Networkingevent, Womenintech, Womenwhocode, Speednetworking, Techlondon. Connect with other women working across the tech industry in London to talk careers, build real connections, and share opportunities.",
-      "audienceSize": null,
-      "organiser": "SpeedNetworkNow",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/speed-networking-women-in-tech-london-business-27-october-tickets-2000424225709",
-      "source": "eventbrite",
-      "lat": 51.500848,
-      "lng": -0.108009,
-      "venue": "Hampton by Hilton London Waterloo",
-      "address": "157 Waterloo Road, London, SE1 8XA",
       "country": "GB"
     },
     {
@@ -3072,23 +2792,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2001888848435",
-      "name": "London Area Research Data - Autumn 2026 meeting",
-      "url": "https://www.eventbrite.co.uk/e/london-area-research-data-autumn-2026-meeting-tickets-2001888848435",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Meeting for university library staff involved in research data management and open research support.",
-      "audienceSize": null,
-      "organiser": "Gareth Knight",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/london-area-research-data-autumn-2026-meeting-tickets-2001888848435",
-      "source": "eventbrite",
-      "lat": 51.524559,
-      "lng": -0.13404,
-      "venue": "University College London",
-      "address": "Gower Street, London, WC1E 6BT",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-2001893649796",
       "name": "Startup Funding & Networking: VCs, Angels & Founders",
       "url": "https://www.eventbrite.co.uk/e/startup-funding-networking-vcs-angels-founders-tickets-2001893649796",
@@ -3103,91 +2806,6 @@
       "lng": -0.086841,
       "venue": "Singer Tavern",
       "address": "1 City Road, London, EC2A 2BH",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2002150514084",
-      "name": "London SME Networking Event | Business Owners, Founders & Professionals",
-      "url": "https://www.eventbrite.co.uk/e/london-sme-networking-event-business-owners-founders-professionals-tickets-2002150514084",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Startups & Small Business, Business & Professional, Meeting or Networking Event, Networking, Community, Startups, Founders, Businessnetworking, Londonnetworking, business_networking, networking_event, networking_events. The ultimate networking night in central London.",
-      "audienceSize": null,
-      "organiser": "Networx London",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/london-sme-networking-event-business-owners-founders-professionals-tickets-2002150514084",
-      "source": "eventbrite",
-      "lat": 51.522313,
-      "lng": -0.086841,
-      "venue": "Singer Tavern",
-      "address": "1 City Road, London, EC2A 2BH",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2002210244740",
-      "name": "Field: Founders, Entreprenuers & Start Ups Networking",
-      "url": "https://www.eventbrite.co.uk/e/field-founders-entreprenuers-start-ups-networking-tickets-2002210244740",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Startups & Small Business, Business & Professional, Meeting or Networking Event, Business, Networking, Drinks, Entrepreneurship, Startup, Investors, London, Westminster, Founders, Connector. Building something is beautiful...",
-      "audienceSize": null,
-      "organiser": "Field",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/field-founders-entreprenuers-start-ups-networking-tickets-2002210244740",
-      "source": "eventbrite",
-      "lat": 51.502311,
-      "lng": -0.119499,
-      "venue": "Peacock London",
-      "address": "The Queen's Walk, London, SE1 7PB",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2003020831226",
-      "name": "YCW LDN | Can China’s Tech Innovation Turn Around Its Slowing Economy?",
-      "url": "https://www.eventbrite.co.uk/e/ycw-ldn-can-chinas-tech-innovation-turn-around-its-slowing-economy-tickets-2003020831226",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "High Tech, Science & Technology, Seminar or Talk, Technology, Economy, China, London, tech_economy, economic_reform, china_tech, innovation_growth, ycwldn. Join YCW London for a discussion on whether China’s technological progress can deliver a broader economic recovery.",
-      "audienceSize": null,
-      "organiser": "Young China Watchers",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/ycw-ldn-can-chinas-tech-innovation-turn-around-its-slowing-economy-tickets-2003020831226",
-      "source": "eventbrite",
-      "lat": 51.513924,
-      "lng": -0.115325,
-      "venue": "Room FAW 9.04, LSE (PAN) Pankhurst House and (FAW) Fawcett House",
-      "address": "Clement's Inn, London, WC2A 2AZ",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2003193703291",
-      "name": "AI: What Does It Mean for Women?",
-      "url": "https://www.eventbrite.co.uk/e/ai-what-does-it-mean-for-women-tickets-2003193703291",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "Other, Community & Culture, Seminar or Talk, Feminism, women_in_tech, london_events, future_of_women, ai_empowerment, ai_for_women, gender_and_ai. AI is shaping our future.",
-      "audienceSize": null,
-      "organiser": "The Fawcett Society",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/ai-what-does-it-mean-for-women-tickets-2003193703291",
-      "source": "eventbrite",
-      "lat": 51.538871,
-      "lng": -0.000413,
-      "venue": "The Orange Room",
-      "address": "375 High Street, London, E15 4QZ",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2003262368671",
-      "name": "Phoenix Green NetZero Tech",
-      "url": "https://www.eventbrite.co.uk/e/phoenix-green-netzero-tech-tickets-2003262368671",
-      "date": "2026-10-27",
-      "city": "London",
-      "topic": "From AI capability to national productive capacity.",
-      "audienceSize": null,
-      "organiser": "CROYDON BUSINESS ASSOCIATION cic",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/phoenix-green-netzero-tech-tickets-2003262368671",
-      "source": "eventbrite",
-      "lat": 51.362497,
-      "lng": -0.118048,
-      "venue": "Hilton Croydon",
-      "address": "Purley Way, CR9 4HH Town/City: Croydon State/Province: England Country: United Kingdom Purley Way, CR9 4HH Town/City: Croydon State/Province: England Country: United Kingdom, CROYDON, CR9 4HH",
       "country": "GB"
     },
     {
@@ -3217,12 +2835,22 @@
       "audienceSize": 124,
       "organiser": "AI for the rest of us",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-zqAHmwcW2yZfoPz",
-      "source": "luma",
       "lat": 51.531238,
       "lng": -0.113123,
       "venue": "AutogenAI",
       "address": "AutogenAI, 123 Pentonville Rd, London N1 9LG, UK",
       "country": "GB"
+    },
+    {
+      "id": "luma-da0ioqx8",
+      "name": "Halloween Edition TRD: London Startups Operator RunClub & Social",
+      "url": "https://luma.com/da0ioqx8",
+      "date": "2026-10-27",
+      "city": "London",
+      "topic": "Fitness, Running, Tech. 🚀👟 LONDON STARTUP OPERATORS RUN CLUBNot here to chase PBs or pace. Here to meet the people building what’s next! 🚀A relaxed 5K bringing together founders, operators, investors and builders from across London’s startup scene, whether you’re running, jogging or walking.LONDON’S LARGEST STARTUP OPERATOR RUN COMMUNITYCome for the run. Stay for the people and the social afterwar",
+      "audienceSize": 78,
+      "organiser": "The Run Down: Operators Runclub",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-mpFjl5NyyznC1tQ"
     },
     {
       "id": "meetup-316752051",
@@ -3310,23 +2938,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2002425513615",
-      "name": "Freedom of Information and Prevent: Improving data access",
-      "url": "https://www.eventbrite.co.uk/e/freedom-of-information-and-prevent-improving-data-access-tickets-2002425513615",
-      "date": "2026-10-28",
-      "city": "London",
-      "topic": "Federal Government, Government & Politics, Conference, Informationsecurity, Dataprivacy, freedomofinformation, dataaccess, preventstrategy. Learn to make stronger FOI requests that improve transparency and accountability in counterterrorism.",
-      "audienceSize": null,
-      "organiser": "University of West London",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/freedom-of-information-and-prevent-improving-data-access-tickets-2002425513615",
-      "source": "eventbrite",
-      "lat": 51.506533,
-      "lng": -0.303929,
-      "venue": "University of West London",
-      "address": "Saint Mary's Road, London, W5 5RF",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-2002621759592",
       "name": "Automated Discrimination: Unpacking the Digital Hostile Environment",
       "url": "https://www.eventbrite.co.uk/e/automated-discrimination-unpacking-the-digital-hostile-environment-tickets-2002621759592",
@@ -3395,23 +3006,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2003398136757",
-      "name": "Black Girls In Tech x SOHO House London - \"THE CREATIVE SHIFT \"",
-      "url": "https://www.eventbrite.co.uk/e/black-girls-in-tech-x-soho-house-london-the-creative-shift-tickets-2003398136757",
-      "date": "2026-10-28",
-      "city": "London",
-      "topic": "High Tech, Science & Technology, Seminar or Talk, Womenintech, Blackgirlsintech, sohohouselondon, thecreativeshift, techcreatives. The lines between technology, creativity and culture are disappearing , This event discusses what happens next ...",
-      "audienceSize": null,
-      "organiser": "Black Girls in Tech",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/black-girls-in-tech-x-soho-house-london-the-creative-shift-tickets-2003398136757",
-      "source": "eventbrite",
-      "lat": 51.512408,
-      "lng": -0.114985,
-      "venue": "180 House",
-      "address": "180 Strand, London, WC2R 1EA",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-2003596289437",
       "name": "From Chat GPT to Agentic AI: Practical AI for startups & small businesses",
       "url": "https://www.eventbrite.co.uk/e/from-chat-gpt-to-agentic-ai-practical-ai-for-startups-small-businesses-tickets-2003596289437",
@@ -3429,40 +3023,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2003609201056",
-      "name": "Book talk: Hyperscale, Big Tech’s Data Empires",
-      "url": "https://www.eventbrite.co.uk/e/book-talk-hyperscale-big-techs-data-empires-tickets-2003609201056",
-      "date": "2026-10-28",
-      "city": "London",
-      "topic": "High Tech, Science & Technology, Seminar or Talk, Cloudcomputing, Booktalk, Datacentres, Bigtech, datasystems. Award-winning tech critic Paris Marx traces the devastating physical footprints of our digital world.",
-      "audienceSize": null,
-      "organiser": "Frontline Club",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/book-talk-hyperscale-big-techs-data-empires-tickets-2003609201056",
-      "source": "eventbrite",
-      "lat": 51.516955,
-      "lng": -0.172445,
-      "venue": "Frontline Club",
-      "address": "13 Norfolk Place, London, W2 1QJ",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2003673427158",
-      "name": "AI Trading Masterclass & Networking Evening",
-      "url": "https://www.eventbrite.co.uk/e/ai-trading-masterclass-networking-evening-tickets-2003673427158",
-      "date": "2026-10-28",
-      "city": "London",
-      "topic": "Finance, Business & Professional, Meeting or Networking Event, networkingevening, tradingstrategies, aiinvestmenttips, financialautomation, aitradingmasterclass. Discover the world of AI-powered trading and investing connect with like-minded people and enjoy an evening of learning, innovation and…",
-      "audienceSize": null,
-      "organiser": "Made for Millions Events",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/ai-trading-masterclass-networking-evening-tickets-2003673427158",
-      "source": "eventbrite",
-      "lat": 51.470354,
-      "lng": -0.177978,
-      "venue": "Banyan on the Thames",
-      "address": "34 Lombard Road, London, SW11 3RF",
-      "country": "GB"
-    },
-    {
       "id": "luma-151r4ad1",
       "name": "Lychee's Startup Games Night",
       "url": "https://luma.com/151r4ad1",
@@ -3472,7 +3032,6 @@
       "audienceSize": 115,
       "organiser": "Lychee",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-heCVuyrkvowPrIg",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -3515,7 +3074,6 @@
       "audienceSize": 87,
       "organiser": "enki events",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-ijFEM7faBVCrJEp",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -3528,7 +3086,6 @@
       "audienceSize": 60,
       "organiser": "Novabook",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-iaaEH1PvoS1vEEz",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -3662,23 +3219,6 @@
       "country": "GB"
     },
     {
-      "id": "eventbrite-2001525904861",
-      "name": "Holiday workshops: Data, Sensors and the Sky (Year 7- 9)",
-      "url": "https://www.eventbrite.co.uk/e/holiday-workshops-data-sensors-and-the-sky-year-7-9-tickets-2001525904861",
-      "date": "2026-10-29",
-      "city": "London",
-      "topic": "Education, Family & Education, Class, Training, or Workshop, Workshop, kids_activities, science_education, childrens_activities, holiday_activities, holiday_workshop. Explore engineering, coding and climate science by building a Micro:bit weather station.",
-      "audienceSize": null,
-      "organiser": "The Royal Institution",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/holiday-workshops-data-sensors-and-the-sky-year-7-9-tickets-2001525904861",
-      "source": "eventbrite",
-      "lat": 51.50972,
-      "lng": -0.142526,
-      "venue": "The Royal Institution of Great Britain",
-      "address": "21 Albemarle Street, London, W1S 4BS",
-      "country": "GB"
-    },
-    {
       "id": "eventbrite-2002056290258",
       "name": "Messy Jobs: The Work That AI Cannot Reach",
       "url": "https://www.eventbrite.co.uk/e/messy-jobs-the-work-that-ai-cannot-reach-tickets-2002056290258",
@@ -3693,23 +3233,6 @@
       "lng": -0.116701,
       "venue": "MAR.2.04, London School of Economics and Political Science",
       "address": "Houghton Street, London, WC2A 2AE",
-      "country": "GB"
-    },
-    {
-      "id": "eventbrite-2002239281590",
-      "name": "Neuroscience and Neurotech Networking Event",
-      "url": "https://www.eventbrite.co.uk/e/neuroscience-and-neurotech-networking-event-tickets-2002239281590",
-      "date": "2026-10-29",
-      "city": "London",
-      "topic": "Biotech, Science & Technology, Meeting or Networking Event, Business, Networking, Event, Psychology, Neuroscience, London, business_networking, networking_event, professional_connections, networking_opportunity. Do you work in the field of neuroscience or are you developing neurotech?",
-      "audienceSize": null,
-      "organiser": "PEL Network",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/neuroscience-and-neurotech-networking-event-tickets-2002239281590",
-      "source": "eventbrite",
-      "lat": 51.517902,
-      "lng": -0.118562,
-      "venue": "Citadines Holborn-Covent Garden London",
-      "address": "94-99 High Holborn, London, WC1V 6LF",
       "country": "GB"
     },
     {
@@ -3786,7 +3309,6 @@
       "audienceSize": 46,
       "organiser": "II Calendar",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-rWKcLr25iPUrAAf",
-      "source": "luma",
       "lat": 51.501509,
       "lng": -0.194138,
       "venue": "Kensington Central Library",
@@ -3833,11 +3355,27 @@
       "audienceSize": 126,
       "organiser": "The Founder-writer Collective",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-TvVukFlc8ZXL9Zk",
-      "source": "luma",
       "lat": 51.52673,
       "lng": -0.080955,
       "venue": "Granola",
       "address": "Granola, 346 Old St, London EC1V 9NQ, UK",
+      "country": "GB"
+    },
+    {
+      "id": "luma-startuphalloween",
+      "name": "London Startup Halloween Party",
+      "url": "https://luma.com/startuphalloween",
+      "date": "2026-10-29",
+      "city": "London",
+      "topic": "Tech. There's something stirring at Encode Hub.",
+      "audienceSize": null,
+      "organiser": "Encode Club",
+      "sourceUrl": "https://luma.com/startuphalloween",
+      "source": "luma",
+      "lat": 51.527587,
+      "lng": -0.08377,
+      "venue": "Encode Hub",
+      "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
       "country": "GB"
     },
     {
@@ -3885,40 +3423,6 @@
       "organiser": "JavaScript Monthly London Meetup (JSMonthly)",
       "sourceUrl": "https://www.meetup.com/javascript-monthly-london/events/316952547/",
       "source": "meetup"
-    },
-    {
-      "id": "meetup-316964499",
-      "name": "Imperial College Late: Robots!",
-      "url": "https://www.meetup.com/lscmeetups/events/316964499/",
-      "date": "2026-10-29",
-      "city": "London",
-      "topic": "Robots, Meet and Chat, Exploring, Make New Friends, Social. Sounds absolutely fascinating, a late evening about robotics at Imperial College:",
-      "audienceSize": 8,
-      "organiser": "London Social & Cultural Meetups",
-      "sourceUrl": "https://www.meetup.com/lscmeetups/events/316964499/",
-      "source": "meetup",
-      "lat": 51.498822,
-      "lng": -0.174874,
-      "venue": "Imperial College London",
-      "address": "Exhibition Rd, South Kensington, London SW7 2AZ, UK",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-317091104",
-      "name": "The Model is the Message - a talk on ML and AI: inference, ethics and the arts",
-      "url": "https://www.meetup.com/hqi-cultural-artist-studio/events/317091104/",
-      "date": "2026-10-29",
-      "city": "London",
-      "topic": "Artificial Intelligence, Machine Learning, Creativity, Privacy, AI Ethics. A free 1-hour talk by Marcel Top and Tessa Edwards on creativity and exploration in Machine Learning and AI as both the instrument and subject of societal critique and reflective self-evaluation.",
-      "audienceSize": 2,
-      "organiser": "HQI - Cultural & Artist Studio",
-      "sourceUrl": "https://www.meetup.com/hqi-cultural-artist-studio/events/317091104/",
-      "source": "meetup",
-      "lat": 51.513935,
-      "lng": -0.227323,
-      "venue": "White City Place",
-      "address": "201 Wood Ln, London W12 7FQ, UK",
-      "country": "GB"
     },
     {
       "id": "luma-nz0l3h2p",
@@ -3989,6 +3493,17 @@
       "country": "GB"
     },
     {
+      "id": "luma-4gsodxj4",
+      "name": "The Startup Stroll x FoundHers",
+      "url": "https://luma.com/4gsodxj4",
+      "date": "2026-10-31",
+      "city": "London",
+      "topic": "Tech. The Startup Stroll partners with FoundHers to organise a longer walk in Hampstead Heath! Find out more about FoundHers here ✨ and learn more about The Startup Stroll below 🤗Your Saturday morning reset. No agenda, no pitching, just good conversation ☕The Startup Stroll is a bi-monthly morning walk for founders and builders. Building something is hard and we rarely make room to just talk. Abou",
+      "audienceSize": 67,
+      "organiser": "The Startup Stroll",
+      "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-oPFX7v6j7WToqlA"
+    },
+    {
       "id": "luma-mczagntt",
       "name": "the PROBLEM day",
       "url": "https://luma.com/mczagntt",
@@ -4011,7 +3526,6 @@
       "audienceSize": 99,
       "organiser": "UK AI Agents Lab",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-cKrLsCOy4HDL2dX",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -4024,7 +3538,6 @@
       "audienceSize": 1187,
       "organiser": "KCL Tech",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-296vMaEwHi6Ghxg",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -4067,11 +3580,8 @@
       "audienceSize": 612,
       "organiser": "Solana Hacker Houses",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-8dntupEO60aiWT5",
-      "source": "devevents",
       "lat": 51.512124,
       "lng": -0.114974,
-      "venue": "London, United Kingdom",
-      "address": "London",
       "country": "GB"
     },
     {
@@ -4223,7 +3733,6 @@
       "audienceSize": 72,
       "organiser": "The Friendly Data Meetup London",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-6tmN87665vaD1pb",
-      "source": "luma",
       "lat": 51.505959,
       "lng": -0.104151,
       "venue": "230 Blackfriars Rd",
@@ -4295,23 +3804,6 @@
       "country": "GB"
     },
     {
-      "id": "meetup-316824928",
-      "name": "AI Work Walks London: What Has AI Actually Changed About Your Job This Year?",
-      "url": "https://www.meetup.com/ai-work-walks-london/events/316824928/",
-      "date": "2026-11-04",
-      "city": "London",
-      "topic": "The question for this walk: What Has AI Actually Changed About Your Job This Year?",
-      "audienceSize": 7,
-      "organiser": "AI Work Walks, London",
-      "sourceUrl": "https://www.meetup.com/ai-work-walks-london/events/316824928/",
-      "source": "meetup",
-      "lat": 51.50312,
-      "lng": -0.112949,
-      "venue": "Waterloo Station",
-      "address": "Waterloo Station, London SE1 7ND, UK",
-      "country": "GB"
-    },
-    {
       "id": "meetup-316927507",
       "name": "HACKATHON - Agent Eval Harness (by the Friendly Data Meetup)",
       "url": "https://www.meetup.com/the-friendly-data-meetup/events/316927507/",
@@ -4341,8 +3833,6 @@
       "source": "meetup",
       "lat": 51.515694,
       "lng": -0.075466,
-      "venue": "London",
-      "address": "London, UK",
       "country": "GB"
     },
     {
@@ -4427,6 +3917,19 @@
       "country": "GB"
     },
     {
+      "id": "devpost-arr-hackathon-co-creation",
+      "name": "Asymmetric Reframed Reality Hackathon & Co-Creation Workshop",
+      "url": "https://arr-hackathon-co-creation.devpost.com/",
+      "date": "2026-11-06",
+      "city": "London",
+      "topic": "AR/VR, Health, Music/Art",
+      "audienceSize": 3,
+      "organiser": "Goldsmiths, University of London",
+      "sourceUrl": "https://arr-hackathon-co-creation.devpost.com/",
+      "source": "devpost",
+      "venue": "Caroline Graveson Building"
+    },
+    {
       "id": "builderbase-agentverse",
       "name": "AgentVerse",
       "url": "https://builderbase.com/event/agentverse",
@@ -4466,7 +3969,6 @@
       "audienceSize": 112,
       "organiser": "House London!",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-KIv1V2DQBUh9JNj",
-      "source": "luma",
       "lat": 51.525166,
       "lng": -0.071346,
       "venue": "Newspeak House",
@@ -4538,6 +4040,21 @@
       "country": "GB"
     },
     {
+      "id": "devevents-leadingdesign-com-sponsors",
+      "name": "Leading Design London",
+      "url": "https://leadingdesign.com/conferences/london-2026/sponsors",
+      "date": "2026-11-11",
+      "city": "London",
+      "topic": "A two day gathering of design leaders from around the globe",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors",
+      "source": "devevents",
+      "venue": "Barbican Centre",
+      "address": "Barbican Centre, Silk Street, Temple, EC2Y 8DS",
+      "country": "GB"
+    },
+    {
       "id": "luma-74zbkghu",
       "name": "Lychee's Startup Games Night",
       "url": "https://luma.com/74zbkghu",
@@ -4577,7 +4094,6 @@
       "audienceSize": 73,
       "organiser": "Personal",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-zxjxdRejzk2dk1P",
-      "source": "luma",
       "lat": 51.538453,
       "lng": -0.127772,
       "venue": "Meta Kings Cross",
@@ -4612,6 +4128,36 @@
       "lng": -0.078235,
       "venue": "EPAM Systems",
       "address": "9 Devonshire Square, EC2M 4YF",
+      "country": "GB"
+    },
+    {
+      "id": "luma-6xip72je",
+      "name": "200ms",
+      "url": "https://luma.com/6xip72je",
+      "date": "2026-11-13",
+      "city": "London",
+      "topic": "Crypto. This event will focus on the Solana's microstructure and DeFi landscape: what's happening, how it impacts DeFi projects and what traders should know.",
+      "audienceSize": null,
+      "organiser": "Jito Events",
+      "sourceUrl": "https://luma.com/6xip72je",
+      "source": "luma",
+      "country": "GB"
+    },
+    {
+      "id": "luma-intelligence-summit",
+      "name": "Solana Intelligence Summit",
+      "url": "https://luma.com/intelligence-summit",
+      "date": "2026-11-13",
+      "city": "London",
+      "topic": "AI, Crypto. Join us for an intimate, invite-only Solana AI event at Somerset House in London on November 13th.",
+      "audienceSize": null,
+      "organiser": "Solana Foundation",
+      "sourceUrl": "https://luma.com/intelligence-summit",
+      "source": "luma",
+      "lat": 51.511059,
+      "lng": -0.117148,
+      "venue": "Somerset House",
+      "address": "Somerset House, Strand, London WC2R 1LA, UK",
       "country": "GB"
     },
     {
@@ -4654,7 +4200,6 @@
       "audienceSize": 1326,
       "organiser": "Solana Breakpoint",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-KFDtoSxKwrXxRwQ",
-      "source": "luma",
       "lat": 51.496357,
       "lng": -0.210764,
       "venue": "Olympia",
@@ -4754,6 +4299,19 @@
       "country": "GB"
     },
     {
+      "id": "devevents-boc-uk-com-reinventing-hr-summit",
+      "name": "Reinventing HR Summit",
+      "url": "https://www.boc-uk.com/conferences/reinventing-hr-summit",
+      "date": "2026-11-17",
+      "city": "London",
+      "topic": "Reinventing HR and IC Summit 2024, London",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit",
+      "source": "devevents",
+      "country": "GB"
+    },
+    {
       "id": "luma-granola-gemini-hackathon",
       "name": "GTM Hackathon by Granola x Gemini",
       "url": "https://luma.com/granola-gemini-hackathon",
@@ -4763,24 +4321,19 @@
       "audienceSize": null,
       "organiser": "Granola",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-CZgpfroA4Hny1a7",
-      "source": "luma",
       "country": "GB"
     },
     {
-      "id": "meetup-316909771",
-      "name": "Nobody Asked for the Cookie Banner: The Mistake We Can’t Afford with AI",
-      "url": "https://www.meetup.com/ux-for-change-london/events/316909771/",
-      "date": "2026-11-17",
+      "id": "devevents-boc-uk-com-sponsors-and-partners",
+      "name": "FutuHRistIC 2026: Festival of People and Engagement",
+      "url": "https://www.boc-uk.com/conferences/internal-communications-conference/sponsors-and-partners/",
+      "date": "2026-11-18",
       "city": "London",
-      "topic": "AI and Society, Service Design, User Research, UX Design, Social Impact & Responsibility. Last month our founder, Sandra Gonzalez, delivered a thought-provoking keynote at The Barbican for The Flux Convergence conference.",
-      "audienceSize": 7,
-      "organiser": "UX for Change | London",
-      "sourceUrl": "https://www.meetup.com/ux-for-change-london/events/316909771/",
-      "source": "meetup",
-      "lat": 51.526446,
-      "lng": -0.079397,
-      "venue": "Rivington Place",
-      "address": "Rivington Place, 1 Rivington Pl, London EC2A 3BA, UK",
+      "topic": "The 8th Annual Internal Communications Conference 2020 is set to redefine what it is possible for IC professional to achieve.",
+      "audienceSize": null,
+      "organiser": null,
+      "sourceUrl": "https://www.boc-uk.com/conferences/internal-communications-conference/sponsors-and-partners/",
+      "source": "devevents",
       "country": "GB"
     },
     {
@@ -4823,7 +4376,6 @@
       "audienceSize": 61,
       "organiser": "Personal",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-JceIJoLx8I3HNxN",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -4945,7 +4497,6 @@
       "audienceSize": 60,
       "organiser": "Lovable London Community",
       "sourceUrl": "https://api.lu.ma/event/get?event_api_id=evt-p6TmzT9HhWLNeAJ",
-      "source": "luma",
       "country": "GB"
     },
     {
@@ -5094,19 +4645,6 @@
       "country": "GB"
     },
     {
-      "id": "luma-ramen-5gl5",
-      "name": "AGI IRL: Are we there yet?",
-      "url": "https://luma.com/ramen-5gl5",
-      "date": "2026-11-26",
-      "city": "London",
-      "topic": "AI. Everyone's talking about AGI.",
-      "audienceSize": null,
-      "organiser": "Ramen Space – Public Events",
-      "sourceUrl": "https://luma.com/ramen-5gl5",
-      "source": "luma",
-      "country": "GB"
-    },
-    {
       "id": "meetup-317070814",
       "name": "Databricks London - Nov 2026",
       "url": "https://www.meetup.com/databricks-london/events/317070814/",
@@ -5203,6 +4741,23 @@
       "country": "GB"
     },
     {
+      "id": "luma-encode-sl60",
+      "name": "Beyond ChatGPT & Copilot: How Small Businesses Win with AI",
+      "url": "https://luma.com/encode-sl60",
+      "date": "2026-12-01",
+      "city": "London",
+      "topic": "AI. You don't need an AI strategy.",
+      "audienceSize": null,
+      "organiser": "Encode Club",
+      "sourceUrl": "https://luma.com/encode-sl60",
+      "source": "luma",
+      "lat": 51.527587,
+      "lng": -0.08377,
+      "venue": "Encode Hub",
+      "address": "Encode Hub, 41 Pitfield St, London N1 6DA, UK",
+      "country": "GB"
+    },
+    {
       "id": "devevents-world-productledalliance-com-london",
       "name": "Product-Led Summit London",
       "url": "https://world.productledalliance.com/location/london",
@@ -5215,23 +4770,6 @@
       "source": "devevents",
       "venue": "InterContinental London - The O2",
       "address": "1 Waterview Drive, SE10 0TW",
-      "country": "GB"
-    },
-    {
-      "id": "meetup-310429777",
-      "name": "London (All Day) D365PPUG - December 2026",
-      "url": "https://www.meetup.com/d365ppug/events/310429777/",
-      "date": "2026-12-07",
-      "city": "London",
-      "topic": "Microsoft, Microsoft Dynamics, Microsoft Power Platform, Microsoft PowerApps, Dynamics 365. PLEASE NOTE CHANGE OF DATE Delighted to announce that we are back at Leonardo Royal Hotel, St.",
-      "audienceSize": 182,
-      "organiser": "Dynamics 365 & Power Platform UK User Groups",
-      "sourceUrl": "https://www.meetup.com/d365ppug/events/310429777/",
-      "source": "meetup",
-      "lat": 51.512756,
-      "lng": -0.099708,
-      "venue": "Leonardo Royal London St Paul's",
-      "address": "10 Godliman St",
       "country": "GB"
     },
     {
@@ -5290,13 +4828,6 @@
       "domain": "20tab.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/20tab"
-    },
-    {
-      "id": "24creative.co",
-      "name": "24creative",
-      "domain": "24creative.co",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "2iltd.com",
@@ -5383,53 +4914,11 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/agrovech"
     },
     {
-      "id": "aiafter5.com",
-      "name": "AI After 5",
-      "domain": "aiafter5.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/shurirhv"
-    },
-    {
-      "id": "aipressroom.com",
-      "name": "AIPressRoom",
-      "domain": "aipressroom.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "air.inc",
       "name": "Air",
       "domain": "air.inc",
       "kind": "sponsor",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "id": "aistaffingninja.com",
-      "name": "AI Staffing Ninja",
-      "domain": "aistaffingninja.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "id": "aisummitbarcelona.com",
-      "name": "AI Summit Barcelona",
-      "domain": "aisummitbarcelona.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://techleadconf.com"
-    },
-    {
-      "id": "allconferencealert.net",
-      "name": "All Conference Alert",
-      "domain": "allconferencealert.net",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "id": "alldayai.com",
-      "name": "All Day AI",
-      "domain": "alldayai.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "alzheimers.org.uk",
@@ -5446,6 +4935,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/amazon-web-services-1"
     },
     {
+      "id": "amazon.design",
+      "name": "Amazon Design",
+      "domain": "amazon.design",
+      "kind": "sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
+    },
+    {
       "id": "amd.com",
       "name": "AMD",
       "domain": "amd.com",
@@ -5453,18 +4949,18 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/amd"
     },
     {
+      "id": "americanceomag.com",
+      "name": "American CEO Magazine",
+      "domain": "americanceomag.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
       "id": "analyticsintelligence.com",
       "name": "[AI] Analytics Intelligence",
       "domain": "analyticsintelligence.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/ai-analytics-intelligence"
-    },
-    {
-      "id": "angular.love",
-      "name": "Angular. Love",
-      "domain": "angular.love",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "anthropic.com",
@@ -5479,6 +4975,13 @@
       "domain": "anythink.cloud",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/anythink"
+    },
+    {
+      "id": "anza.xyz",
+      "name": "Anza",
+      "domain": "anza.xyz",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/6xip72je"
     },
     {
       "id": "aprimo.com",
@@ -5593,13 +5096,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/astrazeneca-1"
     },
     {
-      "id": "atldevcon.com",
-      "name": "Atlanta Developers' Conference",
-      "domain": "atldevcon.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "attifin.ai",
       "name": "Attifin AI",
       "domain": "attifin.ai",
@@ -5612,13 +5108,6 @@
       "domain": "aturiya.ai",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/aturiya-ai"
-    },
-    {
-      "id": "auth0.com",
-      "name": "Auth0 by Okta",
-      "domain": "auth0.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "autogenai.com",
@@ -5663,6 +5152,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/alknoma"
     },
     {
+      "id": "badgy.app",
+      "name": "Badgy",
+      "domain": "badgy.app",
+      "kind": "sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
+    },
+    {
       "id": "bamfunds.com",
       "name": "Balyasny Asset Management",
       "domain": "bamfunds.com",
@@ -5689,13 +5185,6 @@
       "domain": "bcg.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/boston-consulting-group-bcg"
-    },
-    {
-      "id": "bcs.org",
-      "name": "Agile Methods SG",
-      "domain": "bcs.org",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/hybrid-transforming-ux-for-ai-in-practice-registration-1990380269967"
     },
     {
       "id": "bda.bm",
@@ -5733,13 +5222,6 @@
       "sourceUrl": "https://ichack.org/"
     },
     {
-      "id": "bilt.me",
-      "name": "Bilt.me",
-      "domain": "bilt.me",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/850wzld0"
-    },
-    {
       "id": "biopicta.com",
       "name": "BioPicta",
       "domain": "biopicta.com",
@@ -5768,20 +5250,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/blacklane"
     },
     {
-      "id": "blitzy.com",
-      "name": "Blitzy",
-      "domain": "blitzy.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "id": "blott.com",
-      "name": "Blott",
-      "domain": "blott.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/gkmdzbk9"
-    },
-    {
       "id": "bluebirdrecruitment.com",
       "name": "Bluebird",
       "domain": "bluebirdrecruitment.com",
@@ -5801,20 +5269,6 @@
       "domain": "bluente.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/bluente"
-    },
-    {
-      "id": "boomi.com",
-      "name": "boomi.com",
-      "domain": "boomi.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.apidays.global/london"
-    },
-    {
-      "id": "braintrust.dev",
-      "name": "Braintrust",
-      "domain": "braintrust.dev",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "branchaustinmccormick.com",
@@ -5894,13 +5348,6 @@
       "sourceUrl": "https://luma.com/scientific-parallelism"
     },
     {
-      "id": "callstack.com",
-      "name": "Callstack",
-      "domain": "callstack.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "campfire.ai",
       "name": "Campfire",
       "domain": "campfire.ai",
@@ -5920,13 +5367,6 @@
       "domain": "capgemini.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/capgemini"
-    },
-    {
-      "id": "capitalbay.news",
-      "name": "CapitalBay.News",
-      "domain": "capitalbay.news",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "capitalccg.ac.uk",
@@ -5978,13 +5418,6 @@
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
     },
     {
-      "id": "cineeye.co.uk",
-      "name": "CineEye",
-      "domain": "cineeye.co.uk",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/the-london-network-event-startup-founders-tech-entrepreneurs-investors-tickets-1999912270437"
-    },
-    {
       "id": "cipherx.tech",
       "name": "CipherX",
       "domain": "cipherx.tech",
@@ -6018,6 +5451,13 @@
       "domain": "clay.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/clay"
+    },
+    {
+      "id": "clocate.com",
+      "name": "Conference Locate",
+      "domain": "clocate.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
     },
     {
       "id": "cloud.google.com",
@@ -6216,13 +5656,6 @@
       "sourceUrl": "https://www.meetup.com/london-networking-for-startups-professionals/events/316628568/"
     },
     {
-      "id": "databricks.com",
-      "name": "Databricks",
-      "domain": "databricks.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.meetup.com/databricks-london/events/315472655/"
-    },
-    {
       "id": "databutton.com",
       "name": "Databutton",
       "domain": "databutton.com",
@@ -6343,7 +5776,7 @@
     },
     {
       "id": "dev.neo4j.com",
-      "name": "Free Hands-on Online Training",
+      "name": "Neo4j Community Forum",
       "domain": "dev.neo4j.com",
       "kind": "sponsor",
       "sourceUrl": "https://www.meetup.com/graphdb-uk/events/316296032/"
@@ -6354,20 +5787,6 @@
       "domain": "devfied.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/devfied"
-    },
-    {
-      "id": "devitjobs.com",
-      "name": "DevIT Jobs US",
-      "domain": "devitjobs.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "id": "devitjobs.uk",
-      "name": "DevIT Jobs",
-      "domain": "devitjobs.uk",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
     },
     {
       "id": "digital-expert.online",
@@ -6382,13 +5801,6 @@
       "domain": "digital-herd.com",
       "kind": "sponsor",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "id": "digitalassetsassociation.org",
-      "name": "Digital Assets Association",
-      "domain": "digitalassetsassociation.org",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/455ti5r5"
     },
     {
       "id": "digitalbrew.com",
@@ -6494,13 +5906,6 @@
       "domain": "engineering.lonelyplanet.com",
       "kind": "sponsor",
       "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/316183895/"
-    },
-    {
-      "id": "enki.work",
-      "name": "enki",
-      "domain": "enki.work",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/8rcrfsii"
     },
     {
       "id": "ensono.com",
@@ -6627,13 +6032,6 @@
       "domain": "experian.co.uk",
       "kind": "sponsor",
       "sourceUrl": "https://www.meetup.com/london-fabug/events/316957735/"
-    },
-    {
-      "id": "expo.dev",
-      "name": "Expo",
-      "domain": "expo.dev",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/g9q690i2"
     },
     {
       "id": "fdx.com",
@@ -6979,6 +6377,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/health-innovation-network-south-london"
     },
     {
+      "id": "helius.dev",
+      "name": "Helius",
+      "domain": "helius.dev",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/6xip72je"
+    },
+    {
       "id": "hitachi-solutions.com",
       "name": "Hitachi Solutions",
       "domain": "hitachi-solutions.com",
@@ -7005,6 +6410,13 @@
       "domain": "hpe.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/hpe"
+    },
+    {
+      "id": "hrzone.com",
+      "name": "HR Zone",
+      "domain": "hrzone.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
     },
     {
       "id": "hsbcinnovationbanking.com",
@@ -7182,13 +6594,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/innovator-international"
     },
     {
-      "id": "innovators.london",
-      "name": "​Innovators Guild",
-      "domain": "innovators.london",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/bbh-london"
-    },
-    {
       "id": "instruct.ai",
       "name": "Instruct AI",
       "domain": "instruct.ai",
@@ -7210,6 +6615,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/indus-net-technologies-int"
     },
     {
+      "id": "intruder.io",
+      "name": "Intruder Security",
+      "domain": "intruder.io",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.meetup.com/devsecops-london-gathering/events/315326969/"
+    },
+    {
       "id": "io.",
       "name": "Gong",
       "domain": "io.",
@@ -7222,13 +6634,6 @@
       "domain": "iris.ai",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/irisai"
-    },
-    {
-      "id": "iterate.inc",
-      "name": "Iterate",
-      "domain": "iterate.inc",
-      "kind": "sponsor",
-      "sourceUrl": "https://builderbase.com/event/accel-ai-innovate-london"
     },
     {
       "id": "jade-pk.com",
@@ -7357,13 +6762,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/kioko"
     },
     {
-      "id": "kiro.dev",
-      "name": "AWS (Kiro)",
-      "domain": "kiro.dev",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "kloudleads.com",
       "name": "Kloudleads",
       "domain": "kloudleads.com",
@@ -7376,13 +6774,6 @@
       "domain": "koderlabs.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/koderlabs"
-    },
-    {
-      "id": "komainu.com",
-      "name": "Komainu",
-      "domain": "komainu.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/455ti5r5"
     },
     {
       "id": "krefeld-business.de",
@@ -7404,13 +6795,6 @@
       "domain": "kruncher.ai",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/kruncher"
-    },
-    {
-      "id": "kube.events",
-      "name": "Kube Events",
-      "domain": "kube.events",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "kubekanvas.io",
@@ -7565,6 +6949,13 @@
       "domain": "maanz-ai.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/maanz-ai"
+    },
+    {
+      "id": "makeitfable.com",
+      "name": "Fable",
+      "domain": "makeitfable.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
     },
     {
       "id": "maltaenterprise.com",
@@ -7749,6 +7140,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/motto-vest-3"
     },
     {
+      "id": "multicoin.capital",
+      "name": "Multicoin Capital",
+      "domain": "multicoin.capital",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/6xip72je"
+    },
+    {
       "id": "mwam.com",
       "name": "Marshall Wace",
       "domain": "mwam.com",
@@ -7854,13 +7252,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/newform-foods"
     },
     {
-      "id": "newyorkcoworkingfriends.com",
-      "name": "New York Coworking Friends",
-      "domain": "newyorkcoworkingfriends.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "nexvistech.com",
       "name": "NexVisTech",
       "domain": "nexvistech.com",
@@ -7887,6 +7278,13 @@
       "domain": "niu.hu",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/hungarian-innovation-agency"
+    },
+    {
+      "id": "nomadz.xyz",
+      "name": "Nomadz",
+      "domain": "nomadz.xyz",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/london-hh-26"
     },
     {
       "id": "northern-gritstone.com",
@@ -7971,13 +7369,6 @@
       "domain": "nvidia.com",
       "kind": "sponsor",
       "sourceUrl": "https://luma.com/bbh-london"
-    },
-    {
-      "id": "nycaifromscratch.com",
-      "name": "NYC AI from Scratch",
-      "domain": "nycaifromscratch.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "oceanscode.com",
@@ -8169,13 +7560,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/aicep-portugal-trade-invest"
     },
     {
-      "id": "posthog.com",
-      "name": "posthog.com",
-      "domain": "posthog.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://conference.ctocraft.com/fintech/sponsors/"
-    },
-    {
       "id": "priviasecurity.com",
       "name": "Privia Security",
       "domain": "priviasecurity.com",
@@ -8188,20 +7572,6 @@
       "domain": "procomer.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/procomer-costa-rica"
-    },
-    {
-      "id": "productnetwork.eu",
-      "name": "Product Network Europe",
-      "domain": "productnetwork.eu",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/CPO"
-    },
-    {
-      "id": "progress.com",
-      "name": "Progress",
-      "domain": "progress.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
     },
     {
       "id": "prolific.com",
@@ -8260,13 +7630,6 @@
       "sourceUrl": "https://www.meetup.com/london-data-intelligence-network/events/312536046/"
     },
     {
-      "id": "ramenclub.com",
-      "name": "Ramen Space",
-      "domain": "ramenclub.com",
-      "kind": "venue",
-      "sourceUrl": "https://luma.com/850wzld0"
-    },
-    {
       "id": "ramenclub.so",
       "name": "Ramen Club",
       "domain": "ramenclub.so",
@@ -8288,13 +7651,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/rapid-concept-solutions"
     },
     {
-      "id": "react.foundation",
-      "name": "React Foundation",
-      "domain": "react.foundation",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/g9q690i2"
-    },
-    {
       "id": "realstorygroup.com",
       "name": "Real Story Group",
       "domain": "realstorygroup.com",
@@ -8314,13 +7670,6 @@
       "domain": "red-badger.com",
       "kind": "venue",
       "sourceUrl": "https://www.meetup.com/openuk/events/316662568/"
-    },
-    {
-      "id": "redis.io",
-      "name": "Redis",
-      "domain": "redis.io",
-      "kind": "venue",
-      "sourceUrl": "https://www.meetup.com/redis-london/events/317058303/"
     },
     {
       "id": "regask.com",
@@ -8449,25 +7798,11 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/scrapinio"
     },
     {
-      "id": "screendragon.com",
-      "name": "screendragon.com",
-      "domain": "screendragon.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
       "id": "scrut.io",
       "name": "Scrut Automation",
       "domain": "scrut.io",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/scrut-automation"
-    },
-    {
-      "id": "seedlegals.com",
-      "name": "SeedLegals",
-      "domain": "seedlegals.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/vlo3p4fu"
     },
     {
       "id": "sentisum.com",
@@ -8496,6 +7831,13 @@
       "domain": "sharedien.com",
       "kind": "sponsor",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
+    },
+    {
+      "id": "shootsta.com",
+      "name": "Media Partner-Shootsta",
+      "domain": "shootsta.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.boc-uk.com/conferences/internal-communications-conference/sponsors-and-partners/"
     },
     {
       "id": "shorturl.at",
@@ -8701,13 +8043,6 @@
       "sourceUrl": "https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon"
     },
     {
-      "id": "supernovas.eitcommunity.eu",
-      "name": "EIT Community Supernovas",
-      "domain": "supernovas.eitcommunity.eu",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/9ec1h3qv"
-    },
-    {
       "id": "superplane.com",
       "name": "SuperPlane",
       "domain": "superplane.com",
@@ -8741,13 +8076,6 @@
       "domain": "synaptyx.ai",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/synaptyx"
-    },
-    {
-      "id": "syrena.co.uk",
-      "name": "Ren",
-      "domain": "syrena.co.uk",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/xzukd92a"
     },
     {
       "id": "systemsltd.com",
@@ -8813,13 +8141,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/tech-nation-1"
     },
     {
-      "id": "technologymagazine.com",
-      "name": "Technology Magazine",
-      "domain": "technologymagazine.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "techscaler.co.uk",
       "name": "Techscaler",
       "domain": "techscaler.co.uk",
@@ -8853,6 +8174,13 @@
       "domain": "telusdigital.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/telus-digital"
+    },
+    {
+      "id": "temporal.xyz",
+      "name": "Temporal",
+      "domain": "temporal.xyz",
+      "kind": "sponsor",
+      "sourceUrl": "https://luma.com/6xip72je"
     },
     {
       "id": "tenovos.com",
@@ -8904,6 +8232,13 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/house-ai"
     },
     {
+      "id": "thehrdirector.com",
+      "name": "The HRDirector",
+      "domain": "thehrdirector.com",
+      "kind": "sponsor",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
       "id": "theministry.com",
       "name": "The Ministry",
       "domain": "theministry.com",
@@ -8953,13 +8288,6 @@
       "sourceUrl": "https://luma.com/CPO"
     },
     {
-      "id": "timesofai.com",
-      "name": "TimesofAI",
-      "domain": "timesofai.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "tkxel.com",
       "name": "Tkxel",
       "domain": "tkxel.com",
@@ -8972,13 +8300,6 @@
       "domain": "tmcltd.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/tmc"
-    },
-    {
-      "id": "tokensandai.beehiiv.com",
-      "name": "Newsletter",
-      "domain": "tokensandai.beehiiv.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/vastlondon"
     },
     {
       "id": "toursys.net",
@@ -9058,20 +8379,6 @@
       "sourceUrl": "https://londontechweek.com/exhibitor-list/innovate-uk-1"
     },
     {
-      "id": "uktv.workvivo.com",
-      "name": "UKTV",
-      "domain": "uktv.workvivo.com",
-      "kind": "venue",
-      "sourceUrl": "https://www.meetup.com/bbc-tech-meetup/events/316679005/"
-    },
-    {
-      "id": "unite.ai",
-      "name": "Unite AI",
-      "domain": "unite.ai",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "uptimelabs.io",
       "name": "Uptime Labs",
       "domain": "uptimelabs.io",
@@ -9091,13 +8398,6 @@
       "domain": "usemultiplier.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/multiplier"
-    },
-    {
-      "id": "usergroups.databricks.com",
-      "name": "Databricks",
-      "domain": "usergroups.databricks.com",
-      "kind": "venue",
-      "sourceUrl": "https://www.meetup.com/databricks-london/events/317070814/"
     },
     {
       "id": "vanessaganguin.com",
@@ -9156,13 +8456,6 @@
       "sourceUrl": "https://www.saasiestlondon.com"
     },
     {
-      "id": "vihattechnologies.com",
-      "name": "Vihattechnologies",
-      "domain": "vihattechnologies.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
       "id": "visio-consultancy.com",
       "name": "Visio Consultancy Limited",
       "domain": "visio-consultancy.com",
@@ -9210,13 +8503,6 @@
       "domain": "vsourz.com",
       "kind": "sponsor",
       "sourceUrl": "https://londontechweek.com/exhibitor-list/vsourz"
-    },
-    {
-      "id": "walmergroup.com",
-      "name": "Walmer Group",
-      "domain": "walmergroup.com",
-      "kind": "sponsor",
-      "sourceUrl": "https://luma.com/gkmdzbk9"
     },
     {
       "id": "wandb.ai",
@@ -9387,12 +8673,6 @@
     },
     {
       "eventId": "builderbase-accel-ai-innovate-london",
-      "sponsorId": "iterate.inc",
-      "role": "Sponsor",
-      "sourceUrl": "https://builderbase.com/event/accel-ai-innovate-london"
-    },
-    {
-      "eventId": "builderbase-accel-ai-innovate-london",
       "sponsorId": "lovable.dev",
       "role": "Prize sponsor",
       "sourceUrl": "https://builderbase.com/event/accel-ai-innovate-london"
@@ -9432,162 +8712,6 @@
       "sponsorId": "vercel.com",
       "role": "Prize sponsor",
       "sourceUrl": "https://builderbase.com/event/accel-ai-innovate-london"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "24creative.co",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "aipressroom.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "aistaffingninja.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "allconferencealert.net",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "alldayai.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "angular.love",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "atldevcon.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "auth0.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "blitzy.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "braintrust.dev",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "callstack.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "capitalbay.news",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "devitjobs.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "focusreactive.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "hygraph.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "kiro.dev",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "kube.events",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "newyorkcoworkingfriends.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "nycaifromscratch.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "progress.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "technologymagazine.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "timesofai.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "unite.ai",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-aicodingsummit-com",
-      "sponsorId": "vihattechnologies.com",
-      "role": "sponsor",
-      "sourceUrl": "https://aicodingsummit.com"
-    },
-    {
-      "eventId": "confstech-apidays-global",
-      "sponsorId": "boomi.com",
-      "role": "Gold sponsor",
-      "sourceUrl": "https://www.apidays.global/london"
-    },
-    {
-      "eventId": "confstech-conference-ctocraft-com",
-      "sponsorId": "posthog.com",
-      "role": "2026 sponsor",
-      "sourceUrl": "https://conference.ctocraft.com/fintech/sponsors/"
     },
     {
       "eventId": "confstech-fastflowconf-com",
@@ -9645,12 +8769,6 @@
     },
     {
       "eventId": "confstech-henrystewartconferences-com",
-      "sponsorId": "devitjobs.uk",
-      "role": "Sponsors, Exhibitors & partner",
-      "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "eventId": "confstech-henrystewartconferences-com",
       "sponsorId": "digital-herd.com",
       "role": "Sponsors, Exhibitors & partner",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
@@ -9670,12 +8788,6 @@
     {
       "eventId": "confstech-henrystewartconferences-com",
       "sponsorId": "icpnet.com",
-      "role": "Sponsors, Exhibitors & partner",
-      "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "eventId": "confstech-henrystewartconferences-com",
-      "sponsorId": "kcl.ac.uk",
       "role": "Sponsors, Exhibitors & partner",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
     },
@@ -9711,12 +8823,6 @@
     },
     {
       "eventId": "confstech-henrystewartconferences-com",
-      "sponsorId": "screendragon.com",
-      "role": "Sponsors, Exhibitors & partner",
-      "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "eventId": "confstech-henrystewartconferences-com",
       "sponsorId": "sharedien.com",
       "role": "Sponsors, Exhibitors & partner",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
@@ -9726,18 +8832,6 @@
       "sponsorId": "tenovos.com",
       "role": "Sponsors, Exhibitors & partner",
       "sourceUrl": "https://www.henrystewartconferences.com/events/dam-europe-2026/sponsors"
-    },
-    {
-      "eventId": "confstech-techleadconf-com",
-      "sponsorId": "aisummitbarcelona.com",
-      "role": "sponsor",
-      "sourceUrl": "https://techleadconf.com"
-    },
-    {
-      "eventId": "confstech-techleadconf-com",
-      "sponsorId": "allconferencealert.net",
-      "role": "sponsor",
-      "sourceUrl": "https://techleadconf.com"
     },
     {
       "eventId": "confstech-techleadconf-com",
@@ -9777,15 +8871,57 @@
     },
     {
       "eventId": "confstech-techleadconf-com",
-      "sponsorId": "remote.com",
+      "sponsorId": "runpod.io",
       "role": "sponsor",
       "sourceUrl": "https://techleadconf.com"
     },
     {
-      "eventId": "confstech-techleadconf-com",
-      "sponsorId": "runpod.io",
-      "role": "sponsor",
-      "sourceUrl": "https://techleadconf.com"
+      "eventId": "devevents-boc-uk-com-reinventing-hr-summit",
+      "sponsorId": "americanceomag.com",
+      "role": "Reinventing HR Summit Sponsors and partner",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
+      "eventId": "devevents-boc-uk-com-reinventing-hr-summit",
+      "sponsorId": "clocate.com",
+      "role": "Reinventing HR Summit Sponsors and partner",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
+      "eventId": "devevents-boc-uk-com-reinventing-hr-summit",
+      "sponsorId": "hrzone.com",
+      "role": "Reinventing HR Summit Sponsors and partner",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
+      "eventId": "devevents-boc-uk-com-reinventing-hr-summit",
+      "sponsorId": "thehrdirector.com",
+      "role": "Reinventing HR Summit Sponsors and partner",
+      "sourceUrl": "https://www.boc-uk.com/conferences/reinventing-hr-summit"
+    },
+    {
+      "eventId": "devevents-boc-uk-com-sponsors-and-partners",
+      "sponsorId": "shootsta.com",
+      "role": "IC CONFERENCE - SUPPORTING partner",
+      "sourceUrl": "https://www.boc-uk.com/conferences/internal-communications-conference/sponsors-and-partners/"
+    },
+    {
+      "eventId": "devevents-leadingdesign-com-sponsors",
+      "sponsorId": "amazon.design",
+      "role": "Premier sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
+    },
+    {
+      "eventId": "devevents-leadingdesign-com-sponsors",
+      "sponsorId": "badgy.app",
+      "role": "Associate sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
+    },
+    {
+      "eventId": "devevents-leadingdesign-com-sponsors",
+      "sponsorId": "makeitfable.com",
+      "role": "Executive sponsor",
+      "sourceUrl": "https://leadingdesign.com/conferences/london-2026/sponsors"
     },
     {
       "eventId": "devevents-saasiestlondon-com",
@@ -9840,18 +8976,6 @@
       "sponsorId": "younium.com",
       "role": "partner",
       "sourceUrl": "https://www.saasiestlondon.com"
-    },
-    {
-      "eventId": "eventbrite-1990380269967",
-      "sponsorId": "bcs.org",
-      "role": "Sponsor",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/hybrid-transforming-ux-for-ai-in-practice-registration-1990380269967"
-    },
-    {
-      "eventId": "eventbrite-1999912270437",
-      "sponsorId": "cineeye.co.uk",
-      "role": "Sponsor",
-      "sourceUrl": "https://www.eventbrite.co.uk/e/the-london-network-event-startup-founders-tech-entrepreneurs-investors-tickets-1999912270437"
     },
     {
       "eventId": "eventbrite-2002621759592",
@@ -12464,21 +11588,9 @@
       "sourceUrl": "https://luma.com/0a5yynw5"
     },
     {
-      "eventId": "luma-0a5yynw5",
-      "sponsorId": "novabook.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/0a5yynw5"
-    },
-    {
       "eventId": "luma-3435d86s",
       "sponsorId": "askdragonfly.com",
       "role": "Sponsor",
-      "sourceUrl": "https://luma.com/3435d86s"
-    },
-    {
-      "eventId": "luma-3435d86s",
-      "sponsorId": "enki.work",
-      "role": "Community partner",
       "sourceUrl": "https://luma.com/3435d86s"
     },
     {
@@ -12494,22 +11606,28 @@
       "sourceUrl": "https://luma.com/3k1pazop"
     },
     {
-      "eventId": "luma-455ti5r5",
-      "sponsorId": "digitalassetsassociation.org",
+      "eventId": "luma-6xip72je",
+      "sponsorId": "anza.xyz",
       "role": "Sponsor",
-      "sourceUrl": "https://luma.com/455ti5r5"
+      "sourceUrl": "https://luma.com/6xip72je"
     },
     {
-      "eventId": "luma-455ti5r5",
-      "sponsorId": "komainu.com",
+      "eventId": "luma-6xip72je",
+      "sponsorId": "helius.dev",
       "role": "Sponsor",
-      "sourceUrl": "https://luma.com/455ti5r5"
+      "sourceUrl": "https://luma.com/6xip72je"
     },
     {
-      "eventId": "luma-6mec8rsz",
-      "sponsorId": "enki.work",
+      "eventId": "luma-6xip72je",
+      "sponsorId": "multicoin.capital",
       "role": "Sponsor",
-      "sourceUrl": "https://luma.com/6mec8rsz"
+      "sourceUrl": "https://luma.com/6xip72je"
+    },
+    {
+      "eventId": "luma-6xip72je",
+      "sponsorId": "temporal.xyz",
+      "role": "Sponsor",
+      "sourceUrl": "https://luma.com/6xip72je"
     },
     {
       "eventId": "luma-71nckopa",
@@ -12524,32 +11642,8 @@
       "sourceUrl": "https://luma.com/72n0cytd"
     },
     {
-      "eventId": "luma-850wzld0",
-      "sponsorId": "bilt.me",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/850wzld0"
-    },
-    {
-      "eventId": "luma-850wzld0",
-      "sponsorId": "elevenlabs.io",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/850wzld0"
-    },
-    {
-      "eventId": "luma-850wzld0",
-      "sponsorId": "ramenclub.com",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/850wzld0"
-    },
-    {
       "eventId": "luma-8rcrfsii",
       "sponsorId": "campfire.ai",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/8rcrfsii"
-    },
-    {
-      "eventId": "luma-8rcrfsii",
-      "sponsorId": "enki.work",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/8rcrfsii"
     },
@@ -12584,12 +11678,6 @@
       "sourceUrl": "https://luma.com/9ec1h3qv"
     },
     {
-      "eventId": "luma-9ec1h3qv",
-      "sponsorId": "supernovas.eitcommunity.eu",
-      "role": "Community partner",
-      "sourceUrl": "https://luma.com/9ec1h3qv"
-    },
-    {
       "eventId": "luma-a5yfh2ve",
       "sponsorId": "openai.com",
       "role": "Tech partner",
@@ -12600,12 +11688,6 @@
       "sponsorId": "roundtreasury.com",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/a5yfh2ve"
-    },
-    {
-      "eventId": "luma-agent-night-london",
-      "sponsorId": "incident.io",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/agent-night-london"
     },
     {
       "eventId": "luma-ai-builders-london-02",
@@ -12639,12 +11721,6 @@
     },
     {
       "eventId": "luma-bbh-london",
-      "sponsorId": "innovators.london",
-      "role": "Delivery partner - Innovators Guild",
-      "sourceUrl": "https://luma.com/bbh-london"
-    },
-    {
-      "eventId": "luma-bbh-london",
       "sponsorId": "nebius.com",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/bbh-london"
@@ -12674,22 +11750,10 @@
       "sourceUrl": "https://luma.com/BuildingManagedAgentsAtTheHubWithDeepmind"
     },
     {
-      "eventId": "luma-buildingmanagedagentsatthehubwithdeepmind",
-      "sponsorId": "technation.io",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/BuildingManagedAgentsAtTheHubWithDeepmind"
-    },
-    {
       "eventId": "luma-cityve-tsod",
       "sponsorId": "lovable.dev",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/cityve-tsod"
-    },
-    {
-      "eventId": "luma-cpo",
-      "sponsorId": "productnetwork.eu",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/CPO"
     },
     {
       "eventId": "luma-cpo",
@@ -12764,82 +11828,16 @@
       "sourceUrl": "https://luma.com/dde-ldn-hack"
     },
     {
-      "eventId": "luma-encode-1uso",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-1uso"
-    },
-    {
-      "eventId": "luma-encode-8amm",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-8amm"
-    },
-    {
-      "eventId": "luma-encode-ai-demo",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-ai-demo"
-    },
-    {
-      "eventId": "luma-encode-ezmq",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-ezmq"
-    },
-    {
-      "eventId": "luma-encode-husb",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-husb"
-    },
-    {
-      "eventId": "luma-encode-j9zc",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-j9zc"
-    },
-    {
       "eventId": "luma-encode-london-2026",
       "sponsorId": "deepmind.google",
       "role": "Prize sponsor",
       "sourceUrl": "https://luma.com/encode-london-2026"
     },
     {
-      "eventId": "luma-encode-london-2026",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-london-2026"
-    },
-    {
-      "eventId": "luma-encode-q82s",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-q82s"
-    },
-    {
-      "eventId": "luma-encode-r77e",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-r77e"
-    },
-    {
-      "eventId": "luma-encode-t73d",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/encode-t73d"
-    },
-    {
       "eventId": "luma-eqat748u",
       "sponsorId": "jetbrains.com",
       "role": "Tech partner",
       "sourceUrl": "https://luma.com/eqat748u"
-    },
-    {
-      "eventId": "luma-erbvl34f",
-      "sponsorId": "elevenlabs.io",
-      "role": "Prize sponsor",
-      "sourceUrl": "https://luma.com/erbvl34f"
     },
     {
       "eventId": "luma-extreme-weather",
@@ -12856,18 +11854,6 @@
     {
       "eventId": "luma-g9q690i2",
       "sponsorId": "amazon.com",
-      "role": "Tech partner",
-      "sourceUrl": "https://luma.com/g9q690i2"
-    },
-    {
-      "eventId": "luma-g9q690i2",
-      "sponsorId": "callstack.com",
-      "role": "Tech partner",
-      "sourceUrl": "https://luma.com/g9q690i2"
-    },
-    {
-      "eventId": "luma-g9q690i2",
-      "sponsorId": "expo.dev",
       "role": "Tech partner",
       "sourceUrl": "https://luma.com/g9q690i2"
     },
@@ -12891,12 +11877,6 @@
     },
     {
       "eventId": "luma-g9q690i2",
-      "sponsorId": "react.foundation",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/g9q690i2"
-    },
-    {
-      "eventId": "luma-g9q690i2",
       "sponsorId": "swmansion.com",
       "role": "Tech partner",
       "sourceUrl": "https://luma.com/g9q690i2"
@@ -12909,20 +11889,8 @@
     },
     {
       "eventId": "luma-gkmdzbk9",
-      "sponsorId": "blott.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/gkmdzbk9"
-    },
-    {
-      "eventId": "luma-gkmdzbk9",
       "sponsorId": "ifxpayments.com",
       "role": "Venue partner",
-      "sourceUrl": "https://luma.com/gkmdzbk9"
-    },
-    {
-      "eventId": "luma-gkmdzbk9",
-      "sponsorId": "walmergroup.com",
-      "role": "Sponsor",
       "sourceUrl": "https://luma.com/gkmdzbk9"
     },
     {
@@ -12944,12 +11912,6 @@
       "sourceUrl": "https://luma.com/gvwtqtk0"
     },
     {
-      "eventId": "luma-h43nt6jj",
-      "sponsorId": "enki.work",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/h43nt6jj"
-    },
-    {
       "eventId": "luma-hu5g66sc",
       "sponsorId": "jetbrains.com",
       "role": "Tech partner",
@@ -12966,12 +11928,6 @@
       "sponsorId": "lovable.dev",
       "role": "Tech partner",
       "sourceUrl": "https://luma.com/i80uoluz"
-    },
-    {
-      "eventId": "luma-i8ohjqiw",
-      "sponsorId": "enki.work",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/i8ohjqiw"
     },
     {
       "eventId": "luma-l1z4azjp",
@@ -13016,6 +11972,12 @@
       "sourceUrl": "https://luma.com/ldn-hack"
     },
     {
+      "eventId": "luma-london-hh-26",
+      "sponsorId": "nomadz.xyz",
+      "role": "Sponsor",
+      "sourceUrl": "https://luma.com/london-hh-26"
+    },
+    {
       "eventId": "luma-mea50sv4",
       "sponsorId": "kcl.ac.uk",
       "role": "Venue partner",
@@ -13028,46 +11990,16 @@
       "sourceUrl": "https://luma.com/nightshift-london"
     },
     {
-      "eventId": "luma-novabook-2gcn",
-      "sponsorId": "ramenclub.com",
-      "role": "Community partner",
-      "sourceUrl": "https://luma.com/novabook-2gcn"
-    },
-    {
-      "eventId": "luma-novabook-9pis",
-      "sponsorId": "idealondon.co.uk",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/novabook-9pis"
-    },
-    {
       "eventId": "luma-novabook-9pis",
       "sponsorId": "wilbelab.com",
       "role": "Venue partner",
       "sourceUrl": "https://luma.com/novabook-9pis"
-    },
-    {
-      "eventId": "luma-novabook-lyef",
-      "sponsorId": "lightbringer.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/novabook-lyef"
-    },
-    {
-      "eventId": "luma-novabook-lyef",
-      "sponsorId": "wilbelab.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/novabook-lyef"
     },
     {
       "eventId": "luma-novabook-ynlu",
       "sponsorId": "natwest.com",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/novabook-ynlu"
-    },
-    {
-      "eventId": "luma-nz0l3h2p",
-      "sponsorId": "hub.encode.club",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/nz0l3h2p"
     },
     {
       "eventId": "luma-p41k1z3g",
@@ -13112,12 +12044,6 @@
       "sourceUrl": "https://luma.com/qmyaoict"
     },
     {
-      "eventId": "luma-ramen-5gl5",
-      "sponsorId": "ramenspace.com",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/ramen-5gl5"
-    },
-    {
       "eventId": "luma-rek0kyyz",
       "sponsorId": "granola.ai",
       "role": "Venue partner",
@@ -13152,24 +12078,6 @@
       "sponsorId": "inherentlabs.ai",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/scientific-parallelism"
-    },
-    {
-      "eventId": "luma-shurirhv",
-      "sponsorId": "aiafter5.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/shurirhv"
-    },
-    {
-      "eventId": "luma-shurirhv",
-      "sponsorId": "bilt.me",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/shurirhv"
-    },
-    {
-      "eventId": "luma-shurirhv",
-      "sponsorId": "ramenclub.com",
-      "role": "Venue partner",
-      "sourceUrl": "https://luma.com/shurirhv"
     },
     {
       "eventId": "luma-spacexai-hnzl",
@@ -13209,20 +12117,8 @@
     },
     {
       "eventId": "luma-vastlondon",
-      "sponsorId": "cursor.com",
-      "role": "sponsor",
-      "sourceUrl": "https://luma.com/vastlondon"
-    },
-    {
-      "eventId": "luma-vastlondon",
       "sponsorId": "nvidia.com",
       "role": "sponsor",
-      "sourceUrl": "https://luma.com/vastlondon"
-    },
-    {
-      "eventId": "luma-vastlondon",
-      "sponsorId": "tokensandai.beehiiv.com",
-      "role": "Sponsor",
       "sourceUrl": "https://luma.com/vastlondon"
     },
     {
@@ -13247,12 +12143,6 @@
       "eventId": "luma-vlo3p4fu",
       "sponsorId": "labs.uk.barclays",
       "role": "Venue partner",
-      "sourceUrl": "https://luma.com/vlo3p4fu"
-    },
-    {
-      "eventId": "luma-vlo3p4fu",
-      "sponsorId": "seedlegals.com",
-      "role": "Sponsor",
       "sourceUrl": "https://luma.com/vlo3p4fu"
     },
     {
@@ -13293,32 +12183,14 @@
     },
     {
       "eventId": "luma-xjd0fs6x",
-      "sponsorId": "lovable.dev",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/xjd0fs6x"
-    },
-    {
-      "eventId": "luma-xjd0fs6x",
       "sponsorId": "veed.io",
       "role": "Sponsor",
       "sourceUrl": "https://luma.com/xjd0fs6x"
     },
     {
-      "eventId": "luma-xwo20ivp",
-      "sponsorId": "nvidia.com",
-      "role": "Sponsor",
-      "sourceUrl": "https://luma.com/xwo20ivp"
-    },
-    {
       "eventId": "luma-xzukd92a",
       "sponsorId": "google.com",
       "role": "Venue partner",
-      "sourceUrl": "https://luma.com/xzukd92a"
-    },
-    {
-      "eventId": "luma-xzukd92a",
-      "sponsorId": "syrena.co.uk",
-      "role": "Sponsor",
       "sourceUrl": "https://luma.com/xzukd92a"
     },
     {
@@ -13346,14 +12218,14 @@
       "sourceUrl": "https://www.meetup.com/london-data-intelligence-network/events/312536046/"
     },
     {
-      "eventId": "meetup-315472655",
-      "sponsorId": "advancinganalytics.co.uk",
-      "role": "Group sponsor",
-      "sourceUrl": "https://www.meetup.com/databricks-london/events/315472655/"
+      "eventId": "meetup-315326969",
+      "sponsorId": "intruder.io",
+      "role": "Sponsor",
+      "sourceUrl": "https://www.meetup.com/devsecops-london-gathering/events/315326969/"
     },
     {
       "eventId": "meetup-315472655",
-      "sponsorId": "databricks.com",
+      "sponsorId": "advancinganalytics.co.uk",
       "role": "Group sponsor",
       "sourceUrl": "https://www.meetup.com/databricks-london/events/315472655/"
     },
@@ -13383,12 +12255,6 @@
     },
     {
       "eventId": "meetup-315958924",
-      "sponsorId": "elastic.co",
-      "role": "Sponsor",
-      "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/315958924/"
-    },
-    {
-      "eventId": "meetup-315958924",
       "sponsorId": "superplane.com",
       "role": "Sponsor",
       "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/315958924/"
@@ -13396,12 +12262,6 @@
     {
       "eventId": "meetup-316183895",
       "sponsorId": "affiliatewindow.com",
-      "role": "Group sponsor",
-      "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/316183895/"
-    },
-    {
-      "eventId": "meetup-316183895",
-      "sponsorId": "elastic.co",
       "role": "Group sponsor",
       "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/316183895/"
     },
@@ -13425,21 +12285,9 @@
     },
     {
       "eventId": "meetup-316296032",
-      "sponsorId": "amazon.com",
-      "role": "Group sponsor",
-      "sourceUrl": "https://www.meetup.com/graphdb-uk/events/316296032/"
-    },
-    {
-      "eventId": "meetup-316296032",
       "sponsorId": "dev.neo4j.com",
       "role": "Group sponsor",
       "sourceUrl": "https://www.meetup.com/graphdb-uk/events/316296032/"
-    },
-    {
-      "eventId": "meetup-316371214",
-      "sponsorId": "elastic.co",
-      "role": "Venue partner",
-      "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/316371214/"
     },
     {
       "eventId": "meetup-316496627",
@@ -13452,12 +12300,6 @@
       "sponsorId": "ramenspace.com",
       "role": "Community partner",
       "sourceUrl": "https://www.meetup.com/indiebeers-london/events/316496627/"
-    },
-    {
-      "eventId": "meetup-316497042",
-      "sponsorId": "elastic.co",
-      "role": "Sponsor",
-      "sourceUrl": "https://www.meetup.com/london-elastic-fantastics/events/316497042/"
     },
     {
       "eventId": "meetup-316497042",
@@ -13524,12 +12366,6 @@
       "sponsorId": "red-badger.com",
       "role": "Venue partner",
       "sourceUrl": "https://www.meetup.com/openuk/events/316662568/"
-    },
-    {
-      "eventId": "meetup-316679005",
-      "sponsorId": "uktv.workvivo.com",
-      "role": "Venue partner",
-      "sourceUrl": "https://www.meetup.com/bbc-tech-meetup/events/316679005/"
     },
     {
       "eventId": "meetup-316770322",
@@ -13626,18 +12462,6 @@
       "sponsorId": "cloud.google.com",
       "role": "Sponsor",
       "sourceUrl": "https://www.meetup.com/london-ai-tech-talk/events/317057152/"
-    },
-    {
-      "eventId": "meetup-317058303",
-      "sponsorId": "redis.io",
-      "role": "Venue partner",
-      "sourceUrl": "https://www.meetup.com/redis-london/events/317058303/"
-    },
-    {
-      "eventId": "meetup-317070814",
-      "sponsorId": "usergroups.databricks.com",
-      "role": "Venue partner",
-      "sourceUrl": "https://www.meetup.com/databricks-london/events/317070814/"
     }
   ]
 }

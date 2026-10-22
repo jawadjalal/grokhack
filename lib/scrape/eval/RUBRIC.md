@@ -15,7 +15,8 @@ for, not by who might turn up.
 - Startup, founder and investor events: pitch nights, demo days, founder
   meetups, accelerator events, startup socials where the point is startups.
 - Applied tech for a sector, aimed at practitioners: AI in finance, fintech,
-  healthtech, legaltech, climate tech, edtech.
+  healthtech, legaltech, climate tech, edtech or school data systems.
+  Judge the sector from the agenda and description, not from tags.
 - Crypto/web3 events with a builder or industry angle (developer meetups,
   protocol conferences, hacker houses).
 - University tech societies and tech community events (DoCSoc, KCL Tech,
@@ -27,10 +28,15 @@ for, not by who might turn up.
 - Science or academic lectures that are not about building technology
   (biology, ecology, history, astronomy talks), unless the topic is computing,
   AI or engineering practice.
+- AI talks, debates or book launches whose angle is ethics, society, equity,
+  creativity or art. They are in only when the talk is about how the
+  technology works or is built.
+- Clinical or professional conferences for doctors, nurses or lawyers, even
+  when tagged healthtech or innovation.
 - Arts, theatre, music, comedy, film, book clubs, exhibitions.
-- Fitness, wellness, run clubs, sports and outdoor activities, even when the
-  attendees work in tech ("Operators Runclub" is out: the activity is running).
-- Food and drink, parties, dating, language exchange, faith, general
+- Fitness, wellness, run clubs, walks and strolls, sports and outdoor
+  activities, even when the attendees work in tech ("Operators Runclub" is out: the activity is running).
+- Food and drink (brunches, supper clubs), parties, dating, language exchange, faith, general
   community socials.
 - General business, sales, marketing, property or finance networking with no
   tech or startup focus. Generic careers fairs.
