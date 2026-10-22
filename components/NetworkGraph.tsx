@@ -13,7 +13,7 @@ export type NetLink = { c: string; e: string; role: string; url: string }
 export type NetData = { events: NetEvent[]; companies: NetCompany[]; links: NetLink[]; source: 'supabase' | 'seed' }
 
 type Props = NetData & { top?: number; cap?: number }
-type Node = { id: string; ref: string; type: 'event' | 'company'; r: number; size: number; charge: number; color: string; x: number; y: number; vx: number; vy: number; fx?: number; fy?: number; deg: number }
+type Node = { id: string; ref: string; type: 'event' | 'company'; r: number; size: number; charge: number; color: string; x: number; y: number; vx: number; vy: number; fx?: number; fy?: number; deg: number; lw?: number }
 type Edge = { id: string; s: string; t: string; color: string; heavy: boolean }
 type Cam = { x: number; y: number; k: number }
 
@@ -34,6 +34,8 @@ function hash(s: string) {
 
 const clamp = (v: number, a: number, b: number) => Math.max(a, Math.min(b, v))
 const ease = (t: number) => 1 - Math.pow(1 - t, 3)
+const LABELS = 12
+const short = (s: string | undefined, n = 28) => (!s ? '' : s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s)
 const logo = (domain: string) => `https://www.google.com/s2/favicons?domain=${domain}&sz=64`
 
 function tick(ns: Node[], es: Edge[], byId: Map<string, Node>, a: number) {
@@ -111,14 +113,19 @@ function fit(ns: Node[], w: number, h: number, right: number): Cam {
   if (!ns.length) return { x: w / 2, y: h / 2, k: 1 }
   let x0 = Infinity, y0 = Infinity, x1 = -Infinity, y1 = -Infinity
   for (const n of ns) {
-    x0 = Math.min(x0, n.x - n.size)
+    const half = n.type === 'event' ? Math.max(n.size, (n.lw ?? 0) / 2) : n.size
+    x0 = Math.min(x0, n.x - half)
     y0 = Math.min(y0, n.y - n.size)
-    x1 = Math.max(x1, n.x + n.size + (n.type === 'company' ? 50 : 0))
-    y1 = Math.max(y1, n.y + n.size + 18)
+    x1 = Math.max(x1, n.x + (n.type === 'company' ? n.size + (n.lw ?? 0) : half))
+    y1 = Math.max(y1, n.y + n.size + (n.type === 'event' && n.lw ? 24 : 4))
   }
+  // Leave room for the search bar on top and the caption at the bottom left.
   const aw = Math.max(200, w - right)
-  const k = clamp(Math.min(aw / (x1 - x0 + 120), (h - 140) / (y1 - y0 + 60)), 0.2, 1.6)
-  return { k, x: aw / 2 - ((x0 + x1) / 2) * k, y: h / 2 + 10 - ((y0 + y1) / 2) * k }
+  const top = 76
+  const bottom = 132
+  const ah = Math.max(200, h - top - bottom)
+  const k = clamp(Math.min((aw - 96) / (x1 - x0), ah / (y1 - y0)), 0.2, 1.6)
+  return { k, x: aw / 2 - ((x0 + x1) / 2) * k, y: top + ah / 2 - ((y0 + y1) / 2) * k }
 }
 
 export default function NetworkGraph({ events, companies, links, source, top = 60, cap = 40 }: Props) {
@@ -165,7 +172,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
   }, [mode, extra, index, top])
 
   const sim = useRef(new Map<string, Node>())
-  const { nodes, edges, byId } = useMemo(() => {
+  const { nodes, edges, byId, labelled } = useMemo(() => {
     const deg = new Map<string, number>()
     for (const l of view.vl) {
       deg.set('c:' + l.c, (deg.get('c:' + l.c) ?? 0) + 1)
@@ -209,7 +216,14 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
     const es: Edge[] = view.vl.map(l => ({
       id: `${l.c}>${l.e}`, s: 'c:' + l.c, t: 'e:' + l.e, color: index.color.get(l.e) ?? 'var(--ink3)', heavy: index.heavy.has(l.e),
     }))
-    return { nodes: out, edges: es, byId: new Map(out.map(n => [n.id, n])) }
+    // Only the largest nodes carry a permanent label; the rest appear on hover/selection.
+    const big = [...out].sort((a, b) => b.size - a.size || b.deg - a.deg).slice(0, LABELS)
+    const labelled = new Set(big.map(n => n.id))
+    for (const n of out) {
+      const name = n.type === 'event' ? short(index.ev.get(n.ref)?.name) : index.co.get(n.ref)?.name ?? ''
+      n.lw = labelled.has(n.id) ? name.length * (n.type === 'event' ? 7 : 6.2) + 8 : 0
+    }
+    return { nodes: out, edges: es, byId: new Map(out.map(n => [n.id, n])), labelled }
   }, [view, index])
 
   // ---------- simulation + camera loop ----------
@@ -232,7 +246,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
   const draw = useCallback(() => {
     const c = cam.current
     vp.current?.setAttribute('transform', `translate(${c.x.toFixed(2)},${c.y.toFixed(2)}) scale(${c.k.toFixed(4)})`)
-    svg.current?.setAttribute('data-zoom', c.k > 1.35 ? 'near' : 'far')
+    svg.current?.setAttribute('data-zoom', c.k > 2.4 ? 'near' : 'far')
     const { nodes: ns, edges: es, byId: m } = live.current
     for (const n of ns) nodeEls.current.get(n.id)?.setAttribute('transform', `translate(${n.x.toFixed(1)},${n.y.toFixed(1)})`)
     for (const e of es) {
@@ -273,7 +287,8 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
     } else if (autoFit.current && busy) {
       const f = fit(ns, size.current.w, size.current.h, fitRight())
       const c = cam.current
-      cam.current = { x: c.x + (f.x - c.x) * 0.09, y: c.y + (f.y - c.y) * 0.09, k: c.k + (f.k - c.k) * 0.09 }
+      const s = 0.06
+      cam.current = { x: c.x + (f.x - c.x) * s, y: c.y + (f.y - c.y) * s, k: c.k + (f.k - c.k) * s }
     }
     draw()
     if (busy) raf.current = requestAnimationFrame(() => frame.current())
@@ -302,7 +317,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
       const r = el.getBoundingClientRect()
       const first = size.current.w === 900 && cam.current.x === 0
       size.current = { w: r.width, h: r.height }
-      if (first) cam.current = { x: r.width / 2, y: r.height / 2, k: 0.9 }
+      if (first) cam.current = fit(live.current.nodes, r.width, r.height, 0)
       draw()
     })
     ro.observe(el)
@@ -474,12 +489,12 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
     return l == null ? 0.1 : l === 2 ? 0.5 : 1
   }
   const edgeStyle = (e: Edge) => {
-    if (!level) return { opacity: e.heavy ? 0.14 : 0.32, width: 1 }
+    if (!level) return { opacity: e.heavy ? 0.07 : 0.16, width: 0.75 }
     const ls = level.get(e.s)
     const lt = level.get(e.t)
-    if (e.s === focusId || e.t === focusId) return { opacity: 0.95, width: 1.8 }
-    if (ls != null && lt != null) return { opacity: 0.32, width: 1 }
-    return { opacity: 0.03, width: 1 }
+    if (e.s === focusId || e.t === focusId) return { opacity: 0.9, width: 1.5 }
+    if (ls != null && lt != null) return { opacity: 0.22, width: 0.75 }
+    return { opacity: 0.025, width: 0.75 }
   }
 
   // ---------- search ----------
@@ -612,7 +627,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
                     <g className="nn-pop" style={{ animationDelay: delay }}>
                       {isSel && <rect className="nn-ring" x={-s / 2 - 4} y={-s / 2 - 4} width={s + 8} height={s + 8} rx={7} stroke={n.color} />}
                       <rect x={-s / 2} y={-s / 2} width={s} height={s} rx={5} fill={n.color} className="nn-square" />
-                      <text className="nn-label nn-elabel" y={s / 2 + 15} textAnchor="middle">{ev?.name}</text>
+                      <text className={`nn-label nn-elabel${labelled.has(n.id) || show || isSel ? ' nn-show' : ''}`} y={s / 2 + 15} textAnchor="middle">{short(ev?.name)}</text>
                       <text className="nn-count mono" y={4} textAnchor="middle" style={{ fontSize: Math.max(9, s * 0.3) }}>{ev?.count}</text>
                     </g>
                   </g>
@@ -638,12 +653,12 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
                     <circle r={n.r} fill="var(--card)" stroke={n.color} strokeWidth={n.deg >= 2 ? 2 : 1.5} className="nn-circle" />
                     {c && <image href={logo(c.domain)} x={-img / 2} y={-img / 2} width={img} height={img} clipPath="url(#nn-clip)" style={{ pointerEvents: 'none' }} />}
                     <text
-                      className={`nn-label${n.deg >= 2 ? '' : ' nn-minor'}${show || isSel ? ' nn-show' : ''}`}
+                      className={`nn-label nn-clabel${labelled.has(n.id) || show || isSel ? ' nn-show' : ''}`}
                       x={n.r + 5}
                       y={4}
                       style={n.deg >= 2 ? { fontWeight: 550, fill: 'var(--ink)' } : undefined}
                     >
-                      {c?.name}
+                      {short(c?.name, 24)}
                     </text>
                   </g>
                 </g>
@@ -869,14 +884,15 @@ const CSS = `
 .nn-node { cursor: pointer; transition: opacity 240ms cubic-bezier(.2,.8,.2,1); }
 .nn-pop { animation: nnPop 560ms cubic-bezier(.2,.8,.2,1) both; }
 .nn-edges { animation: nnFade 900ms ease 250ms both; }
-.nn-edge { stroke-linecap: round; transition: opacity 240ms cubic-bezier(.2,.8,.2,1), stroke-width 240ms cubic-bezier(.2,.8,.2,1); }
+.nn-edge { stroke-linecap: round; vector-effect: non-scaling-stroke; transition: opacity 240ms cubic-bezier(.2,.8,.2,1), stroke-width 240ms cubic-bezier(.2,.8,.2,1); }
 .nn-circle { transition: r 240ms cubic-bezier(.2,.8,.2,1); filter: drop-shadow(0 1px 1.5px rgba(0,0,0,.08)); }
 .nn-node:hover .nn-circle { stroke-width: 2.5px; }
 .nn-square { filter: drop-shadow(0 2px 4px rgba(0,0,0,.14)); }
-.nn-label { font-size: 11px; fill: var(--ink2); paint-order: stroke; stroke: var(--canvas); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; transition: opacity 200ms ease; }
-.nn-elabel { font-size: 12.5px; font-weight: 600; fill: var(--ink); letter-spacing: -0.01em; }
+.nn-label { font-size: 11px; fill: var(--ink2); paint-order: stroke; stroke: var(--canvas); stroke-width: 4px; stroke-opacity: .92; stroke-linejoin: round; pointer-events: none; opacity: 0; transition: opacity 200ms ease; }
+.nn-label.nn-show { opacity: 1; }
+.nn-svg[data-zoom=near] .nn-clabel { opacity: 1; }
+.nn-elabel { font-size: 12px; font-weight: 600; fill: var(--ink); letter-spacing: -0.01em; }
 .nn-count { fill: #fff; font-weight: 500; pointer-events: none; font-family: var(--font-geist-mono), ui-monospace, monospace; }
-.nn-svg[data-zoom=far] .nn-minor:not(.nn-show) { opacity: 0; }
 .nn-ring { fill: none; stroke-width: 1.5px; animation: nnPulse 1.8s cubic-bezier(.2,.8,.2,1) infinite; }
 .nn-top { position: absolute; top: 16px; left: 16px; display: flex; gap: 10px; align-items: flex-start; z-index: 2; animation: nnRise 420ms cubic-bezier(.2,.8,.2,1) both; }
 .nn-search { width: 300px; }
