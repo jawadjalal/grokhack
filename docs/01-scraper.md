@@ -10,7 +10,7 @@ The whole product depends on this data. Without "who backed which London event",
 
 ## Build
 
-1. `lib/scrape/event.ts`: given a Luma or event page URL, fetch the HTML and pull out name, date, description and the sponsor/partner section. Use an LLM to turn messy HTML into JSON if selectors are painful.
+1. `app/api/event/route.ts`: given a Luma or event page URL, fetch the HTML and pull out name, date, description and the sponsor/partner section. Use an LLM to turn messy HTML into JSON if selectors are painful.
 2. `scripts/seed.ts`: run that over a list of **30+ London tech/community events** and write `events`, `sponsors` and `backings` to Supabase. Start with:
    - Tonight's page: https://gb-community-eng-hackathon-10-2026.teamdeel.workers.dev/hackathon (Supabase, Cognee, Zero, Notion, Cursor, Expedite as venue)
    - Luma London tech calendar pages, past hackathons, AI meetups

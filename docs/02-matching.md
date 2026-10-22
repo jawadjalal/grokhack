@@ -10,7 +10,7 @@ Turn the map into a ranked list for one event. This is what the judges look at f
 
 ## Build
 
-1. `lib/match/index.ts`: `match(event: EventInput): Promise<Lead[]>`
+1. `lib/match.ts`: `match(event: EventInput): Promise<Lead[]>`
    - Pull candidate sponsors and their past backings from Supabase.
    - Cheap first pass: score on topic overlap with events they backed, how often and how recently they back London events, audience size fit.
    - Then an LLM pass on the top ~30 to set the final `score` (0-100) and write 1-3 short `reasons` a human would believe.

@@ -10,7 +10,7 @@ The "wow" moment in the demo is a pitch that reads like the organiser actually r
 
 ## Build
 
-1. `lib/pitch/index.ts`: `pitch(event: EventInput, lead: Lead): Promise<Lead>`
+1. `lib/pitch.ts`: `pitch(event: EventInput, lead: Lead): Promise<Lead>`
    - Subject and body under 120 words. Names 1-2 events this sponsor backed (from `lead.pastBackings`), says why this event's audience fits them, makes one clear ask.
    - No fluff openers ("I hope this finds you well"). Sounds like a 20-year-old organiser, not a marketing team.
 2. Pricing: suggest a tier and a GBP price. Simple rules are fine:
