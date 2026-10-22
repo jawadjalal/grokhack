@@ -17,11 +17,28 @@ Built at the Grok Bot Community Engineering London Hackathon, 22 Oct 2026. Track
 npm install && npm run dev
 ```
 
-That is the whole setup. Leads come from the committed London map in `data/london.json`, so it runs with no Supabase key and no API token. Paste an event URL on http://localhost:3000.
+That is the whole setup. Leads come from the committed London map in `data/london.json` (loaded by `lib/seed.ts`), so ranking works with no Supabase key and no API token. Paste an event URL on http://localhost:3000.
 
 ![Ranked backers for the Company Brain Buildathon](docs/backer-demo.png)
 
-The pitch for one of those rows is in [DEMO.md](DEMO.md). Pushing the top leads to Notion needs `NOTION_TOKEN` (see `.env.example`).
+The pitch for one of those rows is in [DEMO.md](DEMO.md). A real Notion push needs a private server token and the Backer data source ID.
+
+## Notion pipeline
+
+Create the **Backer pipeline** database and the properties listed in [the setup guide](docs/04-pipeline-setup.md). Share only that database with a dedicated Notion connection. Put the credentials in `.env.local` (which Git ignores):
+
+```dotenv
+NOTION_TOKEN=your_notion_connection_token
+NOTION_DATA_SOURCE_ID=your_backer_data_source_id
+```
+
+`POST /api/push` accepts `{ event, leads }` and returns the same leads with `notionUrl`. It reuses an existing page for the same event and domain, so repeated pushes preserve a human-updated pipeline status. The setup guide includes a 20-lead smoke check. Zero enrichment is optional and does not block the Notion pipeline.
+
+Joel's private [Pipeline board](https://app.notion.com/p/40190f1b6491806f9a71ccb5bd1bcb38?v=40190f1b6491814cb40a000cb3b358a8) is configured and connected. The 22 Oct 2026 synthetic smoke event contains 20 fictional records for testing, clearly labelled in each card. One 20-lead push returned distinct page URLs; a repeat push kept one manually changed `Contacted` status and did not create a duplicate.
+
+## Hackathon checkpoints
+
+Run `bash scripts/checkpoint.sh` to typecheck, test the Notion adapter, and commit only Joel's pipeline files when they have changed. During the build, a Codex scheduled task runs this every five minutes on the `joel/pipeline-integration` branch, until the 21:50 London code freeze. Review and push the branch before merging. The helper never stages `.env.local` or other teammates' files.
 
 ## Team docs
 
