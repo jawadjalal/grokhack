@@ -221,7 +221,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
     const labelled = new Set(big.map(n => n.id))
     for (const n of out) {
       const name = n.type === 'event' ? short(index.ev.get(n.ref)?.name) : index.co.get(n.ref)?.name ?? ''
-      n.lw = labelled.has(n.id) ? name.length * (n.type === 'event' ? 7 : 6.2) + 8 : 0
+      n.lw = labelled.has(n.id) ? name.length * (n.type === 'event' ? 7.8 : 6.8) + 8 : 0
     }
     return { nodes: out, edges: es, byId: new Map(out.map(n => [n.id, n])), labelled }
   }, [view, index])
@@ -287,7 +287,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
     } else if (autoFit.current && busy) {
       const f = fit(ns, size.current.w, size.current.h, fitRight())
       const c = cam.current
-      const s = 0.06
+      const s = 0.08
       cam.current = { x: c.x + (f.x - c.x) * s, y: c.y + (f.y - c.y) * s, k: c.k + (f.k - c.k) * s }
     }
     draw()
@@ -343,6 +343,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
   }, [draw])
 
   // Reheat whenever the visible graph changes.
+  const warm = useRef(false)
   useEffect(() => {
     alpha.current = Math.max(alpha.current, 0.7)
     if (reduce.current) {
@@ -354,6 +355,20 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
       if (autoFit.current) cam.current = fit(ns, size.current.w, size.current.h, fitRight())
       draw()
       return
+    }
+    // First load: settle most of the way off-screen so the camera opens on the
+    // real shape and the visible motion is only the last gentle drift.
+    if (!warm.current && wrap.current) {
+      warm.current = true
+      const r = wrap.current.getBoundingClientRect()
+      if (r.width) size.current = { w: r.width, h: r.height }
+      const { nodes: ns, edges: es, byId: m } = live.current
+      while (alpha.current > 0.12) {
+        tick(ns, es, m, alpha.current)
+        alpha.current += (0 - alpha.current) * DECAY
+      }
+      cam.current = fit(ns, size.current.w, size.current.h, fitRight())
+      draw()
     }
     kick()
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -627,7 +642,7 @@ export default function NetworkGraph({ events, companies, links, source, top = 6
                     <g className="nn-pop" style={{ animationDelay: delay }}>
                       {isSel && <rect className="nn-ring" x={-s / 2 - 4} y={-s / 2 - 4} width={s + 8} height={s + 8} rx={7} stroke={n.color} />}
                       <rect x={-s / 2} y={-s / 2} width={s} height={s} rx={5} fill={n.color} className="nn-square" />
-                      <text className={`nn-label nn-elabel${labelled.has(n.id) || show || isSel ? ' nn-show' : ''}`} y={s / 2 + 15} textAnchor="middle">{short(ev?.name)}</text>
+                      <text className={`nn-label nn-elabel${labelled.has(n.id) || show || isSel ? ' nn-show' : ''}`} y={s / 2 + 17} textAnchor="middle">{short(ev?.name)}</text>
                       <text className="nn-count mono" y={4} textAnchor="middle" style={{ fontSize: Math.max(9, s * 0.3) }}>{ev?.count}</text>
                     </g>
                   </g>
@@ -888,10 +903,10 @@ const CSS = `
 .nn-circle { transition: r 240ms cubic-bezier(.2,.8,.2,1); filter: drop-shadow(0 1px 1.5px rgba(0,0,0,.08)); }
 .nn-node:hover .nn-circle { stroke-width: 2.5px; }
 .nn-square { filter: drop-shadow(0 2px 4px rgba(0,0,0,.14)); }
-.nn-label { font-size: 11px; fill: var(--ink2); paint-order: stroke; stroke: var(--canvas); stroke-width: 4px; stroke-opacity: .92; stroke-linejoin: round; pointer-events: none; opacity: 0; transition: opacity 200ms ease; }
+.nn-label { font-size: 12.5px; fill: var(--ink2); paint-order: stroke; stroke: var(--canvas); stroke-width: 4px; stroke-opacity: .92; stroke-linejoin: round; pointer-events: none; opacity: 0; transition: opacity 200ms ease; }
 .nn-label.nn-show { opacity: 1; }
 .nn-svg[data-zoom=near] .nn-clabel { opacity: 1; }
-.nn-elabel { font-size: 12px; font-weight: 600; fill: var(--ink); letter-spacing: -0.01em; }
+.nn-elabel { font-size: 14px; font-weight: 600; fill: var(--ink); letter-spacing: -0.01em; }
 .nn-count { fill: #fff; font-weight: 500; pointer-events: none; font-family: var(--font-geist-mono), ui-monospace, monospace; }
 .nn-ring { fill: none; stroke-width: 1.5px; animation: nnPulse 1.8s cubic-bezier(.2,.8,.2,1) infinite; }
 .nn-top { position: absolute; top: 16px; left: 16px; display: flex; gap: 10px; align-items: flex-start; z-index: 2; animation: nnRise 420ms cubic-bezier(.2,.8,.2,1) both; }

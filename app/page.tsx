@@ -335,7 +335,7 @@ export default function Home() {
 
         {!leads.length && !busy && (
           <section className="rise" style={{ paddingTop: '12vh' }}>
-            <h1 style={{ fontSize: 'clamp(40px, 5vw, 60px)', lineHeight: 0.98, letterSpacing: '-0.045em', margin: 0, fontWeight: 600 }}>
+            <h1 style={{ fontSize: 'clamp(44px, 5.6vw, 80px)', lineHeight: 0.96, letterSpacing: '-0.045em', margin: 0, fontWeight: 600 }}>
               Who will back
               <br />
               your event?
