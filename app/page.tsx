@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { DitherBar } from '@/components/DitherBar'
 import { Icon, Mark } from '@/components/Mark'
+import { LeadMemory, track } from '@/components/Touches'
 import type { EventInput, Lead } from '@/lib/types'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
@@ -228,6 +229,7 @@ export default function Home() {
       const byId = new Map(done.map(l => [l.sponsorId, l]))
       setLeads(ls => ls.map(l => byId.get(l.sponsorId) ?? l))
       setOpen(o => (o ? (byId.get(o.sponsorId) ?? o) : o))
+      track(event, done.filter(l => l.notionUrl), 'pushed')
     } catch (e) {
       setError(e instanceof Error ? e.message : String(e))
     } finally {
@@ -247,9 +249,14 @@ export default function Home() {
           <Icon name="star" size={22} />
           <strong style={{ fontSize: 16.5, letterSpacing: '-0.01em' }}>Backer</strong>
         </div>
-        <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer" style={{ fontSize: 14 }}>
-          <Icon name="star" size={16} /> Open source, MIT
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+          <a className="btn" href="/memory" style={{ fontSize: 14 }}>
+            Memory
+          </a>
+          <a className="btn" href="https://github.com/jawadjalal/grokhack" target="_blank" rel="noreferrer" style={{ fontSize: 14 }}>
+            <Icon name="star" size={16} /> Open source, MIT
+          </a>
+        </div>
       </header>
 
       <main style={{ width: '100%', maxWidth: 1120, margin: '0 auto', padding: '0 24px 220px' }}>
@@ -332,7 +339,7 @@ export default function Home() {
       </main>
 
       <Composer value={input} onChange={setInput} onRun={run} busy={busy} compact={!!leads.length} />
-      {open && event && <Drawer lead={open} onClose={() => setOpen(null)} />}
+      {open && event && <Drawer lead={open} event={event} onClose={() => setOpen(null)} />}
     </div>
   )
 }
@@ -473,7 +480,7 @@ function Composer({ value, onChange, onRun, busy, compact }: { value: string; on
 }
 
 // Sends the pitch to an address a person types. Nothing goes out on its own.
-function SendBox({ subject, body }: { subject: string; body: string }) {
+function SendBox({ subject, body, onSent }: { subject: string; body: string; onSent?: (to: string) => void }) {
   const [to, setTo] = useState('')
   const [state, setState] = useState<{ kind: 'idle' | 'sending' | 'sent' | 'error'; note?: string }>({ kind: 'idle' })
   async function send() {
@@ -481,6 +488,7 @@ function SendBox({ subject, body }: { subject: string; body: string }) {
     try {
       await post<{ id: string }>('/api/send', { to, subject, body })
       setState({ kind: 'sent', note: `Sent to ${to}` })
+      onSent?.(to)
     } catch (e) {
       setState({ kind: 'error', note: e instanceof Error ? e.message : String(e) })
     }
@@ -521,7 +529,7 @@ function SendBox({ subject, body }: { subject: string; body: string }) {
   )
 }
 
-function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
+function Drawer({ lead, event, onClose }: { lead: Lead; event: EventInput; onClose: () => void }) {
   const [copied, setCopied] = useState(false)
   return (
     <aside key={lead.sponsorId} style={{ position: 'fixed', top: 0, right: 0, bottom: 0, width: 470, zIndex: 10, background: 'var(--bg)', boxShadow: 'var(--drawer), 0 0 0 1px var(--divider)', display: 'flex', flexDirection: 'column', animation: 'slide .35s var(--ease)' }}>
@@ -593,9 +601,11 @@ function Drawer({ lead, onClose }: { lead: Lead; onClose: () => void }) {
               <div style={{ fontWeight: 600, marginBottom: 10, fontSize: 14.5 }}>{lead.pitch.subject}</div>
               <div style={{ whiteSpace: 'pre-wrap', color: 'var(--ink2)', fontSize: 14.5, lineHeight: 1.55 }}>{lead.pitch.body}</div>
             </div>
-            <SendBox subject={lead.pitch.subject} body={lead.pitch.body} />
+            <SendBox subject={lead.pitch.subject} body={lead.pitch.body} onSent={to => track(event, [lead], 'sent', { to_email: to, subject: lead.pitch!.subject, body: lead.pitch!.body })} />
           </section>
         )}
+
+        <LeadMemory lead={lead} event={event} />
       </div>
 
       <div style={{ marginTop: 'auto', padding: '14px 20px', borderTop: '1px solid var(--divider)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
