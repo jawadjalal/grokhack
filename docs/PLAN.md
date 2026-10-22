@@ -16,7 +16,7 @@ Code freeze is **21:50**. Top 5 demo live at 22:20, 3 minutes each. Everything b
 ## Stack
 
 - Next.js (App Router, TypeScript) on Vercel
-- Supabase Postgres for the event and sponsor map
+- Supabase Postgres (`backer-db`, London) for the event and sponsor map. Schema in `db/schema.sql`; the app reads it through `lib/data.ts` and falls back to `lib/seed.ts`. Get the keys with `vercel env pull .env.local`, load seed rows with `npm run db:seed`.
 - LLM calls through the AI SDK; model name lives in the `MODEL` env var (Grok if we get access, so the sponsor tie-in is obvious)
 - Notion API for the pipeline
 - Zero for lead search and enrichment, **only if** Mariia (Zero) gives us credits. Don't pay.

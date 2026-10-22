@@ -98,5 +98,5 @@ export const sponsors: SeedSponsor[] = (map.sponsors as MapSponsor[]).map(s => {
 export const backings: SeedBacking[] = rows.flatMap(b => {
   const event = events.get(b.eventId)
   if (!event) return []
-  return [{ sponsorId: b.sponsorId, event: event.name, eventTopic: event.topic, role: b.role, url: b.sourceUrl }]
+  return [{ sponsorId: b.sponsorId, event: event.name, eventTopic: event.topic, role: b.role, url: event.url }]
 })

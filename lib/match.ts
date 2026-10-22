@@ -4,7 +4,8 @@
 //   Audience      15  do they want the people this event brings
 //   Habit         10  do they back hackathons and community events at all
 // Avi: tune the weights or add an LLM pass on the top 15 (docs/02-matching.md).
-import { type Audience, backings, sponsors } from './seed'
+import type { BackerMap } from './data'
+import { type Audience, backings as seedBackings, sponsors as seedSponsors } from './seed'
 import type { EventInput, Lead } from './types'
 
 // Words that mean the same thing for matching purposes.
@@ -42,7 +43,8 @@ const AUDIENCE_HINTS: Record<Audience, string> = {
   community: 'community',
 }
 
-export function match(event: EventInput): Lead[] {
+export function match(event: EventInput, map: Pick<BackerMap, 'sponsors' | 'backings'> = { sponsors: seedSponsors, backings: seedBackings }): Lead[] {
+  const { sponsors, backings } = map
   const want = concepts(`${event.name} ${event.topic} ${event.description ?? ''}`)
   const audience = (Object.keys(AUDIENCE_HINTS) as Audience[]).filter(a => want.has(a))
   if (!audience.length) audience.push('developers')

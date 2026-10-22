@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "typecheck": "tsc --noEmit",
-    "seed": "node --experimental-strip-types scripts/seed.ts"
+    "seed": "node --experimental-strip-types scripts/seed.ts",
+    "db:seed": "node --env-file=.env.local --experimental-strip-types --no-warnings scripts/seed-db.ts"
   },
   "dependencies": {
     "geist": "^1.3.1",
