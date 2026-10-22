@@ -8,6 +8,7 @@ import type { EventInput, Lead } from '@/lib/types'
 
 const STEPS = ['Reading your event', 'Checking who backed London events like it', 'Scoring fit and pricing each ask']
 const PUSH_LIMIT = 15
+const SHOW = 40 // rows pitched and shown; the rest are counted
 const STRONG = 60 // fit at or above this counts toward the money on the table
 
 async function post<T>(path: string, body: unknown): Promise<T> {
@@ -186,6 +187,7 @@ export default function Home() {
   const [input, setInput] = useState('')
   const [step, setStep] = useState(-1)
   const [ms, setMs] = useState(0)
+  const [ranked, setRanked] = useState(0)
   const [event, setEvent] = useState<EventInput | null>(null)
   const [leads, setLeads] = useState<Lead[]>([])
   const [filter, setFilter] = useState<Filter>('all')
@@ -205,7 +207,10 @@ export default function Home() {
       setStep(1)
       const matched = await post<Lead[]>('/api/match', ev)
       setStep(2)
-      const priced = await Promise.all(matched.map(l => post<Lead>('/api/pitch', { event: ev, lead: l })))
+      // Pitch the top of the list; a lead whose pitch fails still shows, without one.
+      const head = matched.slice(0, SHOW)
+      const priced = await Promise.all(head.map(l => post<Lead>('/api/pitch', { event: ev, lead: l }).catch(() => l)))
+      setRanked(matched.length)
       setEvent(ev)
       setLeads(priced)
       setFilter('all')
@@ -281,7 +286,7 @@ export default function Home() {
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', gap: 32 }}>
               <div style={{ minWidth: 0 }}>
                 <div style={{ color: 'var(--ink3)', fontSize: 13, display: 'flex', gap: 7, alignItems: 'center' }}>
-                  <Icon name="sparkle" size={15} /> {leads.length} London backers ranked in {(ms / 1000).toFixed(1)}s
+                  <Icon name="sparkle" size={15} /> {ranked.toLocaleString()} London backers ranked in {(ms / 1000).toFixed(1)}s · top {leads.length} shown
                 </div>
                 <h2 style={{ fontSize: 28, lineHeight: 1.12, letterSpacing: '-0.028em', margin: '8px 0 0', fontWeight: 600, maxWidth: 640, textWrap: 'balance' }}>{event.name}</h2>
                 <Finding leads={shown} onOpen={setOpen} />
