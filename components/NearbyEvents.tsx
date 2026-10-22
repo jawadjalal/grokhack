@@ -82,6 +82,8 @@ const css = `
 .ne-row:hover { transform: translateY(-2px); background: var(--card) !important; box-shadow: var(--lift), 0 0 0 1px var(--border); }
 .ne-row:active { transform: translateY(0); box-shadow: 0 0 0 1px var(--border); }
 .ne-row:hover .ne-go { opacity: 1; transform: none; }
+.ne-sub { transition: color .15s var(--ease); }
+.ne-sub:hover { color: var(--ink); }
 .ne-img img { transition: transform .5s var(--ease); }
 .ne-row:hover .ne-img img { transform: scale(1.06); }
 @media (prefers-reduced-motion: reduce) { .ne-row, .ne-row:hover, .ne-row:active { transform: none; transition: background .15s; } }
@@ -135,6 +137,7 @@ export function NearbyEvents({ near, ready = true, onPick }: { near: SavedLocati
           ) : (
             'No upcoming events listed yet.'
           )}
+          {!loading && !data.failed && <SubscribeLink near={near} />}
         </p>
       </div>
 
@@ -228,6 +231,22 @@ export function NearbyEvents({ near, ready = true, onPick }: { near: SavedLocati
         )
       )}
     </section>
+  )
+}
+
+// Quiet calendar subscription link: webcal:// opens the calendar app, https is the fallback title.
+function SubscribeLink({ near }: { near: SavedLocation }) {
+  const [host, setHost] = useState('')
+  useEffect(() => setHost(window.location.host), [])
+  const path = `/api/v1/calendar.ics?lat=${near.lat}&lng=${near.lng}&radiusKm=${near.radiusKm}`
+  const https = `${host ? `https://${host}` : ''}${path}`
+  return (
+    <>
+      {' '}
+      <a href={host ? `webcal://${host}${path}` : path} title={https} className="ne-sub" style={{ color: 'var(--ink3)', textDecoration: 'underline', textUnderlineOffset: 3, textDecorationColor: 'var(--divider)' }}>
+        Subscribe to this calendar
+      </a>
+    </>
   )
 }
 

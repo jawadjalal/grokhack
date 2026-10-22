@@ -160,8 +160,8 @@ export default function MemoryPage() {
 
       <div style={{ flex: 1, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr) 360px', minHeight: 0 }}>
         <div ref={wrap} style={{ position: 'relative', height: '100vh', borderRight: '1px solid var(--divider)' }}>
-          <div style={{ position: 'absolute', left: 24, top: 20, zIndex: 1, pointerEvents: 'none' }}>
-            <h1 style={{ fontSize: 28, letterSpacing: '-0.025em', margin: 0, fontWeight: 600 }}>Memory</h1>
+          <div style={{ position: 'absolute', left: 32, top: 40, zIndex: 1, pointerEvents: 'none' }}>
+            <h1 style={{ fontSize: 28, letterSpacing: '-0.02em', margin: 0, fontWeight: 600 }}>Memory</h1>
             <p style={{ margin: '6px 0 0', color: 'var(--ink2)', fontSize: 14.5, maxWidth: 520 }}>
               Every email and reply, remembered. {nodes.filter(n => n.type === 'sponsor').length} sponsors, {data.touches.length} touches.
             </p>
