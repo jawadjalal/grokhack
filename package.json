@@ -6,18 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:pitch": "node --import tsx --test lib/pitch/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22"
   },
   "dependencies": {
+    "@ai-sdk/xai": "^5.0.27",
+    "ai": "^7.0.148",
     "geist": "^1.3.1",
     "next": "15.5.4",
     "react": "19.1.1",
-    "react-dom": "19.1.1"
+    "react-dom": "19.1.1",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^19.1.0",
     "@types/react-dom": "^19.1.0",
+    "tsx": "^4.23.15",
     "typescript": "^5.6.0"
   }
 }
