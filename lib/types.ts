@@ -18,6 +18,7 @@ export type Lead = {
   kind: 'sponsor' | 'venue'
   score: number // 0-100
   reasons: string[]
+  fit?: { label: string; points: number; max: number; note: string }[] // how the score was built
   pastBackings: Backing[]
   pitch?: { subject: string; body: string }
   suggestedTier?: 'Headline' | 'Partner' | 'Supporter' | 'Venue'

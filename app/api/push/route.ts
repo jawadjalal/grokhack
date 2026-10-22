@@ -1,7 +1,11 @@
-// Joel: Notion push lands here (docs/04-pipeline.md). Until then it echoes.
+import { push } from '@/lib/notion'
 import type { EventInput, Lead } from '@/lib/types'
 
 export async function POST(req: Request) {
-  const { leads } = (await req.json()) as { event: EventInput; leads: Lead[] }
-  return Response.json(leads)
+  const { event, leads } = (await req.json()) as { event: EventInput; leads: Lead[] }
+  try {
+    return Response.json(await push(event, leads))
+  } catch (e) {
+    return Response.json({ error: e instanceof Error ? e.message : String(e) }, { status: 400 })
+  }
 }

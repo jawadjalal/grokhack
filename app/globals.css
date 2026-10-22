@@ -85,3 +85,7 @@ a { color: inherit; }
 @keyframes slide { from { transform: translateX(24px); opacity: 0; } to { transform: none; opacity: 1; } }
 @keyframes blink { 50% { opacity: 0.35; } }
 .rise { animation: rise 0.45s var(--ease) both; }
+
+.row { transition: background .15s var(--ease); cursor: pointer; }
+.row:hover { background: var(--hover) !important; }
+.btn:disabled { cursor: default; }
